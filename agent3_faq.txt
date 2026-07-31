@@ -1,0 +1,159 @@
+ResilientEdTech — Agent 3: FAQ
+================================
+File:      app/agents/faq.py
+Endpoint:  POST /api/faq
+Schema:    app/schemas.py (FaqRequest, FaqResult)
+
+
+OVERVIEW
+--------
+FAQ is the on-demand help desk. After the Auditor (Agent 2) suggests tools
+like "Plickers" or "PhET Simulations (offline)" inside the revised plan, a
+teacher who has never heard of a tool can tap it (or type a question) and
+get a plain-language explanation plus concrete, low-resource execution
+steps — without leaving the app or needing internet access to look it up.
+
+
+ROLE / RESPONSIBILITY
+----------------------
+- Explain any term, tool or technique mentioned in the suggested lesson in
+  plain, jargon-free language.
+- Give clear, ordered, step-by-step instructions for using it in a
+  low-resource rural classroom.
+- Always state what internet access and what devices are actually needed.
+- Always offer a no-tech or offline fallback/alternative, so the teacher is
+  never stuck if the primary tool genuinely isn't feasible.
+- Stay practical and encouraging in tone — this is a help desk, not a
+  lecture.
+
+
+INPUT
+-----
+Pydantic model: FaqRequest
+
+  Field     Type              Required   Description
+  -----     ----              --------   -----------
+  question  string            yes        e.g. "What is Plickers?"
+  context   string | null     no         Surrounding lesson-plan text (e.g.
+                                          the Auditor's revised_plan), used
+                                          purely for grounding — helps the
+                                          model tailor the answer to the
+                                          actual lesson
+
+Example request body:
+  {
+    "question": "What is Plickers and how do I use it with one device and
+      no internet?",
+    "context": "Revised Lesson Plan: Cell as a Unit of Life ... recommended
+      tools: Plickers, PhET Simulations (Offline) ..."
+  }
+
+Notes:
+  - The endpoint rejects empty/whitespace-only question with HTTP 400.
+  - Only the first 600 characters of context are sent to the model, to keep
+    the prompt small.
+
+
+OUTPUT
+------
+Pydantic model: FaqResult
+
+  Field               Type            Description
+  -----               ----            -----------
+  term                string          The tool/term identified from the
+                                       question (may differ from the raw
+                                       question text, e.g. extracted name)
+  explanation         string          Plain-language definition
+  how_to_execute      list[string]    Ordered, step-by-step instructions
+  low_resource_notes  string          Internet/device requirements and
+                                       low-resource tips
+  alternatives        list[string]    Offline / no-tech alternative(s)
+  powered_by          string          "Llama 3.2 3B" or "rule-based"
+
+Example response (real output from a live run, question = "What is
+Plickers and how do I use it with one device and no internet?"):
+  {
+    "term": "Plickers",
+    "explanation": "Plickers is a free formative assessment tool that
+      allows teachers to quickly gather student responses without needing
+      devices or internet during the scan. Students hold a printed paper
+      card with a QR-like code, which they rotate to choose their answer
+      (A/B/C/D). The teacher scans the whole class with one phone camera,
+      and Plickers captures every response instantly.",
+    "how_to_execute": [
+      "Step 1: Create a free account on the Plickers website and build a
+        question set at home or wherever there is internet.",
+      "Step 2: Print one Plickers card per student (reusable, laminate if
+        possible).",
+      "In-class:",
+      "Step 3: Display or read the question to the students.",
+      "Step 4: Have students raise their card and orient it to their
+        answer (A/B/C/D).",
+      "Step 5: Open the Plickers app on your device, pan the camera across
+        the room to capture every answer at once, and review instant class
+        results.",
+      "Offline alternative: Use A/B/C/D coloured paper cards or fingers
+        (1-4) for instant voting without any device."
+    ],
+    "low_resource_notes": "Plickers is a low-resource tool as it only
+      requires one device (phone/tablet) and printed cards. The teacher
+      can also use offline mode once the question set is loaded.",
+    "alternatives": ["A/B/C/D coloured paper cards or fingers for instant
+      voting without any device."],
+    "powered_by": "Llama 3.2 3B"
+  }
+
+
+TOOLS & DATA USED
+------------------
+1. Ollama — Llama 3.2 3B (local, offline LLM)
+   - Invoked via app/llm.py::structured_call(system_prompt, user_prompt,
+     json_schema, max_tokens=1500) — the smallest token budget of the three
+     agents, since a single-term explanation is the shortest output.
+   - JSON-schema constrained so the reply matches FaqResult's shape
+     directly.
+
+2. Ed-tech tool knowledge base — app/data/tech_tools.json
+   - Same file the Auditor (Agent 2) uses: tools[] -> {name, category,
+     what, needs_internet, devices_required, how_to_use[],
+     offline_alternative, best_for[]}.
+   - Loaded via app/config.py::load_tech_tools()
+   - faq.py::_relevant_tool_note() scans the question for a known tool
+     name and, if found, injects ONLY that tool's entry (name, category,
+     description, internet/device requirements, how-to-use steps, offline
+     alternative) into the prompt as a grounding reference — keeping the
+     prompt tiny instead of dumping the whole knowledge base. If no known
+     tool matches, the model falls back on its own general knowledge.
+
+3. System prompt (faq.py::_SYSTEM)
+   - Frames the model as the "FAQ" agent, a friendly help desk for rural
+     teachers, explicitly instructed to state internet/device needs, offer
+     an offline fallback, and reply with ONLY a JSON object.
+
+4. Rule-based fallback — faq.py::_fallback()
+   - Used automatically when structured_call() returns None or the
+     model's explanation was too short (<20 characters) to be useful.
+   - If the question names a tool present in tech_tools.json, returns that
+     tool's entry directly (what/category as explanation, how_to_use as
+     how_to_execute, needs_internet/devices_required as
+     low_resource_notes, offline_alternative as alternatives).
+   - If no known tool matches, returns a generic "no offline definition
+     found" response prompting the teacher to start Ollama for a full
+     answer, plus generic low-resource guidance.
+   - Returns powered_by = "rule-based".
+
+
+UPSTREAM / DOWNSTREAM
+-----------------------
+- Upstream: typically triggered by tapping one of the recommended_tools[]
+  chips the frontend renders from the Auditor's (Agent 2) output, or by a
+  teacher typing a free-text question directly into the FAQ panel.
+- Downstream: none — this is a terminal, on-demand lookup with no further
+  agent chaining.
+
+
+QUALITY GUARDS
+---------------
+- The LLM result is only trusted if result.explanation has more than 20
+  non-whitespace characters — otherwise the rule-based fallback runs,
+  preventing the teacher from ever seeing an empty or one-word "answer".

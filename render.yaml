@@ -1,0 +1,24 @@
+# Render blueprint for the Resilient EdTech backend.
+#
+# Deploys the FastAPI app in rule-based (basic) mode. There is no Ollama in the
+# cloud — a free instance has ~512 MB RAM and Llama 3.2 3B needs 6-8 GB — so the
+# agents use their built-in rule-based engine. Everything else is real: DSKP
+# grounding, SQLite memory, saved plans, feedback, the teaching profile, EN/BM.
+#
+# Put this file at the REPO ROOT (same level as app/ and frontend/).
+
+services:
+  - type: web
+    name: resilient-edtech
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    # Render supplies $PORT; binding 0.0.0.0 is required (127.0.0.1 won't be reachable).
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: ENGINE_MODE
+        value: basic
+      - key: LLM_ENABLED
+        value: "false"
+      - key: PYTHON_VERSION
+        value: "3.11.9"

@@ -1,0 +1,128 @@
+{
+  "_about": "Knowledge base of education technology tools and low-resource teaching strategies. Grounds the Auditor (which proposes tools) and the FAQ agent (which explains them). Each entry notes connectivity and device requirements so suggestions stay realistic for rural classrooms.",
+  "tools": [
+    {
+      "name": "Plickers",
+      "category": "Formative assessment / polling",
+      "what": "A free assessment tool where each student holds a printed paper card (a QR-like code). The teacher scans the whole class with ONE phone camera; students rotate their card to choose A/B/C/D. No student devices or internet needed during scanning.",
+      "needs_internet": "Only to set up questions beforehand and to view saved reports. The in-class scan works offline once the question set is loaded.",
+      "devices_required": "1 teacher device (phone/tablet) + printed cards (free to print).",
+      "how_to_use": [
+        "Create a free account and build a question set at home or wherever there is internet.",
+        "Print one Plickers card per student (reusable, laminate if possible).",
+        "In class, display or read the question; students raise their card oriented to their answer.",
+        "Open the Plickers app and pan the camera across the room to capture every answer at once.",
+        "Review instant class results; save for reports later when back online."
+      ],
+      "offline_alternative": "A/B/C/D coloured paper cards or fingers (1-4) for instant voting without any device.",
+      "best_for": ["No internet", "1 device only", "Large classes"]
+    },
+    {
+      "name": "Kahoot!",
+      "category": "Game-based quiz",
+      "what": "A live multiplayer quiz game projected on a screen; students answer on their own devices.",
+      "needs_internet": "Yes, for every player in classic mode.",
+      "devices_required": "Teacher device + projector + one device per student or per group.",
+      "how_to_use": [
+        "Create or pick a quiz.",
+        "Host it; a game PIN appears on the shared screen.",
+        "Students join with the PIN on their devices and answer against the clock."
+      ],
+      "offline_alternative": "Run it as a team game: project questions, teams huddle and hold up an answer card. Or use 'Paper Kahoot' with corner-of-the-room voting.",
+      "best_for": ["Good connectivity", "Many devices"]
+    },
+    {
+      "name": "Google Classroom",
+      "category": "Learning management",
+      "what": "A hub to post materials, assignments and feedback.",
+      "needs_internet": "Yes to sync, but content can be downloaded for offline reading on Android.",
+      "devices_required": "Any device with a browser or the app.",
+      "how_to_use": [
+        "Create a class and share the join code.",
+        "Post materials and assignments.",
+        "Students submit work; teacher grades and comments."
+      ],
+      "offline_alternative": "Distribute the same materials on a USB drive or printed packet; collect work on paper.",
+      "best_for": ["Limited connectivity", "Blended learning"]
+    },
+    {
+      "name": "Quizizz",
+      "category": "Self-paced quiz",
+      "what": "Quizzes students complete at their own pace; supports paper mode.",
+      "needs_internet": "Yes for live mode; Paper Mode needs internet only on the teacher device.",
+      "devices_required": "Teacher device + printed answer cards (Paper Mode) OR student devices.",
+      "how_to_use": [
+        "Pick or build a quiz.",
+        "Use Paper Mode: print cards, scan answers with the teacher device, like Plickers."
+      ],
+      "offline_alternative": "Printed worksheet with self-check answer key.",
+      "best_for": ["1 device only", "No internet"]
+    },
+    {
+      "name": "PhET Simulations",
+      "category": "Interactive science/maths simulations",
+      "what": "Free interactive simulations (e.g. circuits, forces, fractions) from the University of Colorado.",
+      "needs_internet": "No — simulations can be DOWNLOADED and run offline.",
+      "devices_required": "1 device + projector is enough for a whole-class demo.",
+      "how_to_use": [
+        "Download the relevant simulation while online.",
+        "Project it and manipulate variables as a class, or let groups take turns on one device.",
+        "Pair with a guided worksheet."
+      ],
+      "offline_alternative": "Hands-on physical demonstration or a teacher-drawn animation on the board.",
+      "best_for": ["No internet", "1 device only", "1 screen"]
+    },
+    {
+      "name": "Kolibri",
+      "category": "Offline learning platform",
+      "what": "An open-source offline platform (by Learning Equality) that serves Khan Academy and other content from a local device with no internet.",
+      "needs_internet": "Only once, to load the content library; then fully offline over a local hotspot.",
+      "devices_required": "1 server device (laptop/Raspberry Pi) + client devices on a local network.",
+      "how_to_use": [
+        "Install Kolibri and import content channels while online.",
+        "Run it as a local server; students connect over the device's hotspot/LAN.",
+        "Track progress locally; sync later if/when online."
+      ],
+      "offline_alternative": "Pre-downloaded videos played from a USB drive.",
+      "best_for": ["No internet", "Limited connectivity"]
+    },
+    {
+      "name": "Canva for Education",
+      "category": "Design & presentations",
+      "what": "Free design tool for posters, infographics and slides.",
+      "needs_internet": "Yes to create; exports (PDF/PNG) can be used offline once downloaded.",
+      "devices_required": "Teacher device; outputs can be printed.",
+      "how_to_use": ["Design a visual aid online.", "Export and print, or display offline."],
+      "offline_alternative": "Hand-drawn charts and manila-card posters.",
+      "best_for": ["Limited connectivity"]
+    }
+  ],
+  "constraint_strategies": {
+    "no_internet": [
+      "Pre-download everything (videos, simulations, quizzes) while you have access elsewhere.",
+      "Use offline-first platforms like Kolibri served over a local hotspot.",
+      "Carry content on a USB drive; play from the teacher device through a projector/TV."
+    ],
+    "limited_connectivity": [
+      "Front-load downloads; avoid live streaming.",
+      "Use tools that sync opportunistically (Google Classroom offline, Quizizz Paper Mode)."
+    ],
+    "one_device_only": [
+      "Use the single device as a 'station' or a whole-class projection hub.",
+      "Tools where ONE camera scans the whole class: Plickers, Quizizz Paper Mode.",
+      "Rotate small groups through the device while others do unplugged tasks."
+    ],
+    "one_screen": [
+      "Whole-class interactive demos: project a simulation and let students predict-observe-explain.",
+      "Think-Pair-Share around a single projected prompt."
+    ],
+    "limited_devices": [
+      "Group-based rotation; pair stronger and weaker students.",
+      "Jigsaw method so each group masters one part using the shared device."
+    ],
+    "no_electricity": [
+      "Use solar/power-bank-charged tablets for short bursts.",
+      "Printed manipulatives and unplugged coding activities (e.g. CS Unplugged)."
+    ]
+  }
+}

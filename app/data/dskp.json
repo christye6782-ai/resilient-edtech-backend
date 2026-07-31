@@ -1,0 +1,97 @@
+{
+  "_about": "Compact reference of Malaysian DSKP (Dokumen Standard Kurikulum dan Pentaksiran) structure and sample content/learning standards. Used as grounding for the Analyst agent. This is a representative sample, not the full official curriculum.",
+  "framework": {
+    "components": [
+      "Standard Kandungan (Content Standard)",
+      "Standard Pembelajaran (Learning Standard)",
+      "Standard Prestasi (Performance Standard / TP1-TP6)",
+      "Elemen Merentas Kurikulum (EMK / Cross-Curricular Elements)"
+    ],
+    "lesson_plan_must_have": [
+      "Objektif Pembelajaran (Learning Objectives)",
+      "Kriteria Kejayaan (Success Criteria)",
+      "Aktiviti (Set Induction, Development, Closure)",
+      "Pentaksiran (Assessment)",
+      "Bahan Bantu Belajar (Teaching Aids)",
+      "EMK & nilai murni"
+    ]
+  },
+  "subjects": [
+    {
+      "subject": "Science",
+      "form": "Form 1",
+      "scheme_of_work_sample": [
+        {"week": "1-2", "theme": "Introduction to Science", "topic": "Scientific Investigation"},
+        {"week": "3-5", "theme": "Maintenance and Continuity of Life", "topic": "Cell as a Unit of Life"},
+        {"week": "6-8", "theme": "Matter", "topic": "Matter and its Properties"}
+      ],
+      "topics": [
+        {
+          "topic": "Cell as a Unit of Life",
+          "textbook_chapter": "Chapter 2",
+          "content_standards": [
+            "2.1 Cells",
+            "2.2 Cell organisation"
+          ],
+          "learning_standards": [
+            "2.1.1 Justify that cell is a basic unit of life",
+            "2.1.2 Identify and draw the general structure of animal and plant cells",
+            "2.1.3 State the function of each cell structure",
+            "2.2.1 Sequence the levels of cell organisation"
+          ]
+        },
+        {
+          "topic": "Matter and its Properties",
+          "textbook_chapter": "Chapter 3",
+          "content_standards": ["3.1 Matter", "3.2 The three states of matter"],
+          "learning_standards": [
+            "3.1.1 Explain matter and its characteristics",
+            "3.2.1 Describe the arrangement of particles in solids, liquids and gases"
+          ]
+        }
+      ]
+    },
+    {
+      "subject": "Mathematics",
+      "form": "Form 1",
+      "scheme_of_work_sample": [
+        {"week": "1-2", "topic": "Rational Numbers"},
+        {"week": "3-4", "topic": "Factors and Multiples"},
+        {"week": "5-6", "topic": "Squares, Square Roots, Cubes and Cube Roots"}
+      ],
+      "topics": [
+        {
+          "topic": "Rational Numbers",
+          "textbook_chapter": "Chapter 1",
+          "content_standards": ["1.1 Integers", "1.2 Basic arithmetic operations involving integers"],
+          "learning_standards": [
+            "1.1.1 Recognise positive and negative numbers based on real-life situations",
+            "1.2.1 Add and subtract integers using number lines or other appropriate methods"
+          ]
+        }
+      ]
+    },
+    {
+      "subject": "English",
+      "form": "Form 1",
+      "scheme_of_work_sample": [
+        {"week": "1-3", "topic": "It's Personal (Self & Family)"},
+        {"week": "4-6", "topic": "Daily Routines"}
+      ],
+      "topics": [
+        {
+          "topic": "It's Personal",
+          "textbook_chapter": "Unit 1",
+          "content_standards": [
+            "1.1 Listening (Understand meaning in a variety of familiar contexts)",
+            "2.1 Speaking (Communicate information, ideas, opinions)"
+          ],
+          "learning_standards": [
+            "1.1.1 Understand the main idea in simple texts",
+            "2.1.1 Ask about and describe future plans or events"
+          ]
+        }
+      ]
+    }
+  ]
+}

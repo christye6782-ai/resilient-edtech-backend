@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -m py_compile app/*.py app/agents/*.py)",
+      "Bash(python -c \"import fastapi, uvicorn, pydantic; print\\('fastapi stack OK'\\)\")",
+      "Bash(python *)",
+      "Bash(python -m uvicorn app.main:app --host 127.0.0.1 --port 8000)",
+      "Bash(echo \"started, pid $!\")",
+      "Bash(curl -s http://127.0.0.1:8000/api/health)",
+      "Bash(curl -s -F 'file=@samples/sample_lesson_plan.txt;type=text/plain' http://127.0.0.1:8000/api/extract -o /tmp/extract.json)",
+      "Bash(curl -s -F 'file=@samples/sample_lesson_plan.txt;type=text/plain' http://127.0.0.1:8000/api/extract -o __TRACKED_VAR__/extract.json)",
+      "Bash(echo \" \\(exit $?\\)\")",
+      "Bash(curl -s -o /dev/null -w '%{http_code}' http://127.0.0.1:8000/)",
+      "Bash(echo \"homepage : $\\(curl -s -o /dev/null -w '%{http_code}' http://127.0.0.1:8000/\\)\")",
+      "Bash(curl -s -o /dev/null -w '%{http_code}' http://127.0.0.1:8000/css/style.css)",
+      "Bash(echo \"css      : $\\(curl -s -o /dev/null -w '%{http_code}' http://127.0.0.1:8000/css/style.css\\)\")",
+      "Bash(curl -s -o /dev/null -w '%{http_code}' http://127.0.0.1:8000/js/app.js)"
+    ]
+  }
+}

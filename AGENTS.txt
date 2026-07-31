@@ -1,0 +1,170 @@
+ResilientEdTech — Agent Reference
+==================================
+Three AI agents work together to turn a teacher's own lesson plan into a
+constraint-aware, curriculum-aligned, technology-integrated lesson plan.
+Each agent is a FastAPI endpoint backed by Llama 3.2 3B (via Ollama), with a
+deterministic rule-based fallback when the model is unavailable.
+
+
+AGENT 1 — THE ANALYST
+----------------------
+File:     app/agents/analyst.py
+Endpoint: POST /api/analyse
+
+Role:
+  Reads the teacher's uploaded lesson plan and checks it against the DSKP
+  (Dokumen Standard Kurikulum dan Pentaksiran), the scheme of work, and the
+  textbook topics/chapters. Reports an alignment score, the content and
+  learning standards it detects, concrete gaps, and actionable
+  recommendations — framed constructively for a rural teacher.
+
+Input (AnalystRequest):
+  - lesson_text (string, required) — the extracted text of the teacher's plan
+  - subject     (string, optional) — e.g. "Science"
+  - form        (string, optional) — e.g. "Form 1"
+  - topic       (string, optional) — e.g. "Cell as a Unit of Life"
+
+Output (AnalystResult):
+  - summary                      — plain-language overall assessment
+  - overall_alignment_score      — 0-100
+  - alignments[]                 — one entry per dimension (DSKP, Scheme of
+                                    Work, Textbook), each with a status of
+                                    aligned / partial / not_aligned + notes
+  - content_standards_detected[] — DSKP content standards the lesson touches
+  - learning_standards_detected[]— DSKP learning standards the lesson touches
+  - gaps[]                       — specific missing elements
+  - recommendations[]            — concrete next steps
+  - powered_by                   — "Llama 3.2 3B" or "rule-based"
+
+Tools / data used:
+  - Ollama (Llama 3.2 3B) via app/llm.py::structured_call — JSON-schema
+    constrained generation so the model's reply always matches AnalystResult
+  - DSKP knowledge base — app/data/dskp.json (subjects → topics → content/
+    learning standards → textbook chapter), loaded via app/config.py::load_dskp
+  - Rule-based fallback — keyword/topic matching against dskp.json when the
+    LLM is unreachable (no Ollama running, or LLM_ENABLED=false)
+
+
+AGENT 2 — THE AUDITOR
+----------------------
+File:     app/agents/auditor.py
+Endpoint: POST /api/audit
+
+Role:
+  Takes the constraints the school faces (e.g. no internet, one device, one
+  screen, no electricity) and redesigns the lesson so it still integrates
+  technology meaningfully — favouring free, low-bandwidth, offline-capable
+  tools — while remaining fully aligned to the DSKP, scheme of work and
+  textbook. Produces a complete, printable, phased lesson plan (Set
+  Induction / Development / Closure) with an explicit strategy for every
+  constraint.
+
+Input (AuditorRequest):
+  - lesson_text     (string, required)      — the original lesson plan text
+  - constraints[]   (string list, required) — e.g. ["no_internet",
+                                               "one_device"]
+  - subject         (string, optional)
+  - form            (string, optional)
+  - topic           (string, optional)
+  - analyst_summary (string, optional)      — Agent 1's summary, for context
+
+Output (AuditorResult):
+  - revised_plan (RevisedLessonPlan):
+      - title, subject, form, topic, duration
+      - objectives[], success_criteria[]
+      - recommended_tools[]        — e.g. Plickers, Quizizz Paper Mode,
+                                      PhET Simulations (offline)
+      - constraint_solutions[]     — {constraint, strategy} pairs, one per
+                                      constraint faced
+      - phases[]                   — {phase, duration, activity, technology}
+      - assessment                 — how learning is checked
+      - materials[]
+      - alignment_note             — confirms DSKP/scheme/textbook alignment
+                                      is preserved after the redesign
+  - powered_by — "Llama 3.2 3B" or "rule-based"
+
+Tools / data used:
+  - Ollama (Llama 3.2 3B) via app/llm.py::structured_call
+  - Ed-tech tool knowledge base — app/data/tech_tools.json (tool name,
+    category, internet/device requirements, how-to-use steps, offline
+    alternative, best-for tags) and its constraint_strategies map, loaded via
+    app/config.py::load_tech_tools
+  - Rule-based fallback — matches constraints to constraint_strategies and
+    picks tools from tech_tools.json whose "best_for" tags fit the stated
+    constraints
+  - Output can be sent to POST /api/export to render a printable PDF
+    (reportlab) for the teacher
+
+
+AGENT 3 — FAQ
+--------------
+File:     app/agents/faq.py
+Endpoint: POST /api/faq
+
+Role:
+  Explains any term or tool that appears in the Auditor's suggested plan
+  (e.g. "What is Plickers?") in plain, jargon-free language, then gives
+  step-by-step, low-resource execution guidance — always naming the
+  internet/device requirements and offering a no-tech/offline fallback.
+
+Input (FaqRequest):
+  - question (string, required) — e.g. "What is Plickers?"
+  - context  (string, optional) — surrounding lesson-plan text, for grounding
+
+Output (FaqResult):
+  - term               — the tool/term identified from the question
+  - explanation         — plain-language definition
+  - how_to_execute[]    — ordered step-by-step instructions
+  - low_resource_notes  — internet/device requirements, low-resource tips
+  - alternatives[]      — offline/no-tech alternative(s)
+  - powered_by          — "Llama 3.2 3B" or "rule-based"
+
+Tools / data used:
+  - Ollama (Llama 3.2 3B) via app/llm.py::structured_call
+  - Ed-tech tool knowledge base — app/data/tech_tools.json; if the question
+    names a known tool, that tool's entry is injected into the prompt as a
+    reference so the model stays grounded and accurate
+  - Rule-based fallback — direct lookup of the named tool in tech_tools.json
+
+
+SHARED PIPELINE (feeds all three agents)
+-----------------------------------------
+File:     app/cv_service.py
+Endpoint: POST /api/extract
+
+Role:
+  Turns whatever the teacher uploads into plain text so the agents above can
+  work with it.
+
+Input:  file upload (image, PDF, DOCX or TXT) of a lesson plan
+Output (ExtractionResult):
+  - text            — extracted plain text
+  - source_type     — image | pdf | docx | text
+  - method          — e.g. "OCR (Tesseract)" or "Direct text decode"
+  - confidence      — mean OCR confidence 0-100 (images only)
+  - word_count
+  - preview_image   — base64 PNG showing what the CV pipeline "saw"
+                      (grayscale → denoise → deskew → adaptive threshold)
+  - warnings[]
+
+Tools used:
+  - OpenCV — image pre-processing (grayscale, denoise, deskew, adaptive
+    threshold)
+  - Tesseract OCR (via pytesseract) — text recognition on the processed image
+  - pypdf — PDF text extraction
+  - python-docx — DOCX text extraction
+
+
+COMMON INFRASTRUCTURE
+-----------------------
+  - app/llm.py           — Ollama client wrapper; structured_call() enforces
+                            a JSON schema per agent and returns None on
+                            failure/timeout, which triggers each agent's
+                            rule-based fallback
+  - app/config.py         — settings (.env) + loaders for dskp.json and
+                            tech_tools.json
+  - app/db.py             — SQLite-backed uploads/jobs tracking
+                            (data/resilient.db)
+  - Every agent reports "powered_by" so the frontend can show whether the
+    answer came from the local Llama 3.2 3B model or the offline rule-based
+    fallback.

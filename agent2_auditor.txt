@@ -1,0 +1,211 @@
+ResilientEdTech — Agent 2: The Auditor
+========================================
+File:      app/agents/auditor.py
+Endpoint:  POST /api/audit
+Schema:    app/schemas.py (AuditorRequest, AuditorResult, RevisedLessonPlan)
+
+
+OVERVIEW
+--------
+The Auditor is the constraint-aware lesson redesigner. After the Analyst
+(Agent 1) has checked curriculum alignment, the teacher selects the real
+technology constraints their school faces (no internet, one device, one
+screen, limited devices, no electricity, etc.). The Auditor rewrites the
+lesson so it keeps meaningful technology integration — favouring free,
+low-bandwidth, offline-capable tools — while working entirely within those
+constraints, and produces a complete, printable, ready-to-teach plan.
+
+
+ROLE / RESPONSIBILITY
+----------------------
+- Take the original lesson plan + the stated constraints.
+- Redesign it into a phased plan (Set Induction / Development / Closure)
+  that still uses technology meaningfully.
+- Never suggest a tool that requires a resource the teacher said they lack
+  (e.g. never suggest a live internet quiz for a "no_internet" constraint).
+- Prefer free, low-bandwidth, offline-capable tools: Plickers, PhET
+  Simulations (offline), Kolibri, Quizizz Paper Mode, projected
+  simulations, USB-served media, etc.
+- Give one explicit strategy per constraint faced (constraint_solutions).
+- Preserve the original DSKP/scheme-of-work/textbook alignment — only the
+  delivery method changes, not the curriculum content.
+- Produce output that can be sent straight to POST /api/export to generate
+  a printable PDF for the classroom.
+
+
+INPUT
+-----
+Pydantic model: AuditorRequest
+
+  Field            Type              Required   Description
+  -----            ----              --------   -----------
+  lesson_text      string            yes        Original lesson plan text
+  constraints      list[string]      yes        e.g. ["no_internet",
+                                                 "one_device"]
+  subject          string | null     no         e.g. "Science"
+  form             string | null     no         e.g. "Form 1"
+  topic            string | null     no         e.g. "Cell as a Unit of
+                                                 Life"
+  analyst_summary  string | null     no         Agent 1's `summary`, passed
+                                                 through for context/
+                                                 consistency
+
+Example request body:
+  {
+    "lesson_text": "Lesson Plan\nSubject: Science\n...",
+    "subject": "Science",
+    "form": "Form 1",
+    "topic": "Cell as a Unit of Life",
+    "constraints": ["no_internet", "one_device"]
+  }
+
+Recognised constraint phrasings (see auditor.py::_CONSTRAINT_KEYS — used by
+the rule-based fallback; the LLM path accepts free-text constraint labels
+too):
+  "no internet" / "no_internet"                 -> no_internet
+  "limited connectivity" / "limited_connectivity" -> limited_connectivity
+  "1 device" / "one device" / "one_device_only"   -> one_device_only
+  "1 screen" / "one screen" / "one_screen"        -> one_screen
+  "limited devices" / "limited_devices"           -> limited_devices
+  "no electricity" / "no power" / "no_electricity"-> no_electricity
+
+Notes:
+  - The endpoint rejects empty/whitespace-only lesson_text with HTTP 400.
+  - Only the first 2500 characters of lesson_text are sent to the model.
+
+
+OUTPUT
+------
+Pydantic model: AuditorResult { revised_plan: RevisedLessonPlan, powered_by }
+
+RevisedLessonPlan fields:
+
+  Field                 Type                    Description
+  -----                 ----                    -----------
+  title                 string                  Title of the revised plan
+  subject               string                  Carried over / inferred
+  form                  string                  Carried over / inferred
+  topic                 string                  Carried over / inferred
+  duration              string                  e.g. "60 min"
+  objectives            list[string]            Learning objectives
+  success_criteria      list[string]            Measurable success criteria
+  recommended_tools     list[string]            e.g. ["Plickers",
+                                                 "Quizizz Paper Mode",
+                                                 "PhET Simulations
+                                                 (Offline)"]
+  constraint_solutions  list[ConstraintSolution] One {constraint, strategy}
+                                                 pair per constraint faced
+  phases                list[LessonPhase]       Each phase has:
+                                                   phase: string (e.g.
+                                                     "Set Induction")
+                                                   duration: string
+                                                   activity: string
+                                                   technology: string —
+                                                     what tech is used and
+                                                     how it works around
+                                                     the constraint
+  assessment            string                  How learning is checked
+  materials             list[string]            Physical/technical items
+                                                 needed
+  alignment_note        string                  Confirms DSKP/scheme/
+                                                 textbook alignment is
+                                                 preserved after the
+                                                 redesign
+
+powered_by: "Llama 3.2 3B" or "rule-based"
+
+Example response (abridged, real output from a live run for constraints
+["no_internet", "one_device"]):
+  {
+    "revised_plan": {
+      "title": "Revised Lesson Plan: Cell as a Unit of Life",
+      "objectives": ["...identify the general structure of animal and
+        plant cells and state the function of each cell structure."],
+      "success_criteria": ["Students can label and describe the main
+        parts of an animal and plant cell", "..."],
+      "recommended_tools": ["PhET Simulations (Offline)", "Plickers",
+        "Quizizz Paper Mode", "Canva for Education"],
+      "constraint_solutions": [
+        {"constraint": "no_internet", "strategy": "Use PhET Simulations
+          offline and have students work in pairs to identify cell
+          structures"},
+        {"constraint": "one_device", "strategy": "Use Plickers for
+          formative assessment, Quizizz Paper Mode for self-paced quiz,
+          and Canva for presentations"}
+      ],
+      "phases": [
+        {"phase": "Set Induction (10 min)", "duration": "10 minutes",
+         "activity": "Show a picture of an onion and human skin...",
+         "technology": "No technology required"},
+        {"phase": "Development (40 min)", "duration": "40 minutes",
+         "activity": "Use PhET Simulations offline to explore cell
+           structures...", "technology": "PhET Simulations Offline"},
+        {"phase": "Development (20 min)", "duration": "20 minutes",
+         "activity": "Use Plickers for formative assessment...",
+         "technology": "Plickers"}
+      ],
+      "...": "assessment, materials, alignment_note follow the same shape"
+    },
+    "powered_by": "Llama 3.2 3B"
+  }
+
+
+TOOLS & DATA USED
+------------------
+1. Ollama — Llama 3.2 3B (local, offline LLM)
+   - Invoked via app/llm.py::structured_call(system_prompt, user_prompt,
+     json_schema, max_tokens=3000) — a larger token budget than the other
+     two agents because a full phased plan is a longer document.
+   - JSON-schema constrained so the reply matches RevisedLessonPlan's
+     shape directly.
+
+2. Ed-tech tool knowledge base — app/data/tech_tools.json
+   - Structure: tools[] -> {name, category, what, needs_internet,
+     devices_required, how_to_use[], offline_alternative, best_for[]},
+     plus a constraint_strategies map keyed by constraint (e.g.
+     "no_internet", "one_device_only") with candidate strategies.
+   - Loaded via app/config.py::load_tech_tools()
+   - Compressed into a compact digest by auditor.py::_tools_digest()
+     (name, category, short description, internet requirement, best-for
+     tags) so the 3B model gets a token-light view of every available tool.
+
+3. System prompt (auditor.py::_SYSTEM)
+   - Frames the model as "The Auditor", a resourceful instructional
+     technology coach, explicitly instructed to only suggest tools that
+     are feasible under the stated constraints and to reply with ONLY a
+     JSON object.
+
+4. Rule-based fallback — auditor.py::_fallback()
+   - Used automatically when structured_call() returns None or the model's
+     output was off-shape / missing a title, phases or objectives.
+   - Maps each stated constraint to a strategy via constraint_strategies
+     in tech_tools.json (_CONSTRAINT_KEYS normalises free-text labels).
+   - Selects up to 4 tools whose "best_for" tags overlap the constraints
+     faced (falls back to Plickers + PhET Simulations offline if none
+     match).
+   - Builds a generic but complete 3-phase plan (Set Induction /
+     Development / Closure) using the topic name, so the API contract
+     never breaks even with no model available.
+   - Returns powered_by = "rule-based".
+
+5. PDF export (downstream, not part of this agent's code but its natural
+   consumer) — POST /api/export (app/main.py) renders the plan text via
+   reportlab into a printable PDF ("🖨️ Print lesson plan" in the UI).
+
+
+UPSTREAM / DOWNSTREAM
+-----------------------
+- Upstream: takes the original lesson_text (same source as the Analyst —
+  usually from POST /api/extract) plus the Analyst's `summary` as
+  analyst_summary for consistency, plus the constraints the teacher
+  selected in the UI.
+- Downstream: recommended_tools[] feeds the FAQ agent (Agent 3) — the
+  frontend renders one FAQ chip per suggested tool so the teacher can ask
+  "What is X?" for anything unfamiliar.
+
+
+QUALITY GUARDS
+---------------
+- The LLM result is only trusted if it has a non-empty title AND at least
+  one phase AND at least one objective — otherwise the rule-based fallback
+  runs instead, guaranteeing the teacher never sees a hollow plan.

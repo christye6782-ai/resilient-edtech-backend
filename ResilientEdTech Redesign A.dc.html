@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<style>
+  *{box-sizing:border-box;}
+  html,body{margin:0;}
+  body{background:#e8f2ee;}
+  @keyframes riseA{from{opacity:0;transform:translateY(14px);}to{opacity:1;transform:none;}}
+  @keyframes spinA{to{transform:rotate(360deg);}}
+  ::selection{background:#f3d6ee;}
+  @media print{
+    @page{margin:11mm;}
+    body{background:#fff !important;}
+    #a-root > header,#a-root > section,#a-root > main,#a-root > footer{display:none !important;}
+    #erph-doc{display:block !important;}
+    #erph-doc tr{break-inside:avoid;}
+  }
+</style>
+</helmet>
+<div id="a-root" style="font-family:'Nunito',system-ui,sans-serif;color:#3a3340;background:#e8f2ee;min-height:100vh;line-height:1.55;-webkit-font-smoothing:antialiased;">
+
+  <!-- ============ TOP BAR ============ -->
+  <header style="background:#ffffff;border-bottom:1px solid #dbe8e2;box-shadow:0 2px 10px rgba(31,90,72,.05);">
+    <div style="max-width:1180px;margin:0 auto;padding:14px 28px;display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;">
+      <div style="display:flex;align-items:center;gap:13px;">
+        <div style="width:46px;height:46px;border-radius:14px;background:linear-gradient(135deg,#9b2c8f,#c0359e);display:grid;place-items:center;flex:none;box-shadow:0 6px 16px rgba(155,44,143,.28);">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:1px;">
+          <span style="font-family:'Baloo 2',cursive;font-size:1.4rem;font-weight:700;letter-spacing:-.01em;line-height:1.1;color:#9b2c8f;">ResilientEdTech</span>
+          <span style="font-size:.78rem;color:#8b8494;font-weight:600;">{{ s.tagline }}</span>
+        </div>
+      </div>
+      <div style="display:flex;align-items:center;gap:12px;">
+        <div style="display:flex;align-items:center;gap:8px;background:#e3f4e7;border:1px solid #c3e6cd;color:#2c8a4a;padding:8px 15px;border-radius:999px;font-size:.78rem;font-weight:700;">
+          <span style="width:9px;height:9px;border-radius:50%;background:#33a94a;display:inline-block;box-shadow:0 0 0 3px rgba(51,169,74,.22);"></span>
+          {{ s.offline }}
+        </div>
+        <div style="display:flex;border:1px solid #e2d3ee;border-radius:999px;overflow:hidden;font-size:.78rem;font-weight:800;">
+          <span onClick="{{ setEn }}" style="{{ enPillStyle }}">EN</span>
+          <span onClick="{{ setMs }}" style="{{ msPillStyle }}">BM</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section style="max-width:1180px;margin:0 auto;padding:44px 28px 14px;">
+    <div style="display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:44px;align-items:center;">
+      <div>
+        <span style="display:inline-block;font-size:.75rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#1f7ec4;background:#e4f0fa;padding:6px 14px;border-radius:999px;margin-bottom:18px;">{{ s.heroEyebrow }}</span>
+        <h1 style="font-family:'Baloo 2',cursive;font-weight:700;font-size:clamp(2.1rem,4vw,3.1rem);line-height:1.12;letter-spacing:-.01em;color:#7d2570;margin:0 0 16px;text-wrap:balance;">{{ s.heroTitle }}</h1>
+        <p style="font-size:1.05rem;color:#5d5568;max-width:33em;margin:0 0 26px;font-weight:500;">{{ s.heroText }}</p>
+        <div style="display:flex;gap:14px;flex-wrap:wrap;align-items:center;">
+          <a href="#start" style="display:inline-flex;align-items:center;gap:9px;background:#9b2c8f;color:#fff;text-decoration:none;font-weight:800;font-size:1rem;padding:14px 26px;border-radius:14px;box-shadow:0 8px 22px rgba(155,44,143,.28);">
+            {{ s.heroCta }}
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <span style="font-size:.92rem;color:#8b8494;font-weight:600;">{{ s.heroAligned }}</span>
+        </div>
+      </div>
+
+      <!-- three agents card -->
+      <div style="background:#ffffff;border:1px solid #e4ede9;border-radius:20px;padding:22px;box-shadow:0 12px 34px rgba(31,90,72,.09);">
+        <div style="display:flex;align-items:center;justify-content:space-between;background:#f5e7f2;border-radius:11px;padding:9px 15px;margin-bottom:15px;">
+          <span style="font-family:'Baloo 2',cursive;font-size:.98rem;font-weight:700;color:#9b2c8f;">{{ s.agentsTitle }}</span>
+          <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="#c98cc0" stroke-width="2.2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:11px;">
+          <div style="display:flex;gap:13px;align-items:flex-start;padding:14px;border-radius:15px;background:#e4f0fa;">
+            <div style="width:40px;height:40px;border-radius:12px;background:#1f7ec4;color:#fff;display:grid;place-items:center;flex:none;font-family:'Baloo 2',cursive;font-weight:700;font-size:1.05rem;">1</div>
+            <div>
+              <div style="font-weight:800;color:#1a5f96;display:flex;align-items:center;gap:8px;">{{ s.a1t }}<svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="#1f7ec4" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m7 14 3-3 3 3 5-6"/></svg></div>
+              <div style="font-size:.88rem;color:#5d6b75;line-height:1.4;font-weight:500;">{{ s.a1d }}</div>
+            </div>
+          </div>
+          <div style="display:flex;gap:13px;align-items:flex-start;padding:14px;border-radius:15px;background:#f5e7f2;">
+            <div style="width:40px;height:40px;border-radius:12px;background:#9b2c8f;color:#fff;display:grid;place-items:center;flex:none;font-family:'Baloo 2',cursive;font-weight:700;font-size:1.05rem;">2</div>
+            <div>
+              <div style="font-weight:800;color:#7d2570;display:flex;align-items:center;gap:8px;">{{ s.a2t }}<svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="#9b2c8f" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2h6a2 2 0 0 1 2 2v2H7V4a2 2 0 0 1 2-2z"/><path d="M7 4H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2"/><path d="m9 14 2 2 4-4"/></svg></div>
+              <div style="font-size:.88rem;color:#6b5b68;line-height:1.4;font-weight:500;">{{ s.a2d }}</div>
+            </div>
+          </div>
+          <div style="display:flex;gap:13px;align-items:flex-start;padding:14px;border-radius:15px;background:#e3f4e7;">
+            <div style="width:40px;height:40px;border-radius:12px;background:#2ea44a;color:#fff;display:grid;place-items:center;flex:none;font-family:'Baloo 2',cursive;font-weight:700;font-size:1.05rem;">3</div>
+            <div>
+              <div style="font-weight:800;color:#237a39;display:flex;align-items:center;gap:8px;">{{ s.a3t }}<svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="#2ea44a" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.1 9a3 3 0 0 1 5.8 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg></div>
+              <div style="font-size:.88rem;color:#556b5c;line-height:1.4;font-weight:500;">{{ s.a3d }}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MAIN ============ -->
+  <main id="start" style="max-width:1180px;margin:0 auto;padding:26px 28px 56px;">
+    <!-- TAB BAR -->
+    <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:24px;border-bottom:2px solid #d8e6df;">
+      <sc-for list="{{ tabs }}" as="t" hint-placeholder-count="4">
+        <button onClick="{{ t.onClick }}" style="{{ t.btnStyle }}">{{ t.label }}</button>
+      </sc-for>
+    </div>
+
+    <!-- PANEL: PLAN INPUT -->
+    <div style="{{ panelInput }}">
+      <div style="display:flex;flex-direction:column;gap:22px;">
+      <article style="background:#ffffff;border:1px solid #e4ede9;border-radius:18px;padding:24px 26px;box-shadow:0 8px 26px rgba(31,90,72,.07);">
+        <div style="display:flex;gap:14px;align-items:center;margin-bottom:20px;">
+          <span style="flex:none;width:42px;height:42px;border-radius:13px;background:#1f7ec4;color:#fff;display:grid;place-items:center;font-family:'Baloo 2',cursive;font-weight:700;font-size:1.2rem;box-shadow:0 6px 14px rgba(31,126,196,.26);">1</span>
+          <div>
+            <h2 style="font-family:'Baloo 2',cursive;font-weight:700;font-size:1.35rem;color:#7d2570;margin:0;line-height:1.15;">{{ s.step1Title }}</h2>
+            <p style="margin:2px 0 0;font-size:.92rem;color:#8b8494;font-weight:600;">{{ s.step1Help }}</p>
+          </div>
+        </div>
+
+        <div style="border:2px dashed #bcd9cd;border-radius:16px;padding:30px 24px;text-align:center;cursor:pointer;background:#f2f9f5;transition:.15s;" style-hover="border-color:#2ea44a;background:#e3f4e7;">
+          <div style="color:#2ea44a;display:flex;justify-content:center;margin-bottom:8px;">
+            <svg viewBox="0 0 24 24" width="34" height="34" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3v4a1 1 0 0 0 1 1h4"/><path d="M17 21H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h7l5 5v11a2 2 0 0 1-2 2z"/><path d="M12 11v6M9.5 13.5 12 11l2.5 2.5"/></svg>
+          </div>
+          <p style="margin:4px 0;font-size:1rem;font-weight:600;color:#5d5568;"><strong style="color:#7d2570;font-weight:800;">{{ s.dzClick }}</strong>{{ s.dzOr }}</p>
+          <p style="margin:4px 0;font-size:.82rem;color:#9a93a3;font-weight:600;">{{ s.dzHint }}</p>
+        </div>
+
+        <div style="display:flex;align-items:center;gap:10px;margin:16px 0;padding:12px 15px;border-radius:13px;background:#e3f4e7;border:1px solid #c3e6cd;font-size:.88rem;color:#2c8a4a;font-weight:600;">
+          <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+          <span>{{ s.extractNote }}</span>
+        </div>
+
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:18px 0;">
+          <label style="display:flex;flex-direction:column;gap:6px;font-weight:800;font-size:.78rem;color:#6b6478;">{{ s.subject }}
+            <input type="text" value="{{ metaSubject }}" style="font:inherit;font-weight:600;padding:11px 13px;border:1.5px solid #dbe4df;border-radius:11px;background:#fff;color:#3a3340;" />
+          </label>
+          <label style="display:flex;flex-direction:column;gap:6px;font-weight:800;font-size:.78rem;color:#6b6478;">{{ s.grade }}
+            <input type="text" value="{{ metaForm }}" style="font:inherit;font-weight:600;padding:11px 13px;border:1.5px solid #dbe4df;border-radius:11px;background:#fff;color:#3a3340;" />
+          </label>
+          <label style="display:flex;flex-direction:column;gap:6px;font-weight:800;font-size:.78rem;color:#6b6478;">{{ s.topic }}
+            <input type="text" value="{{ metaTopicField }}" style="font:inherit;font-weight:600;padding:11px 13px;border:1.5px solid #dbe4df;border-radius:11px;background:#fff;color:#3a3340;" />
+          </label>
+        </div>
+
+        <label style="display:flex;flex-direction:column;gap:6px;font-weight:800;font-size:.78rem;color:#6b6478;">
+          <span>{{ s.lessonLabel }} <span style="font-weight:600;color:#9a93a3;">{{ s.lessonHint }}</span></span>
+          <textarea rows="7" style="font:inherit;font-weight:500;padding:12px 14px;border:1.5px solid #dbe4df;border-radius:11px;background:#fff;color:#3a3340;line-height:1.55;resize:vertical;">Topic: Cell as a Unit of Life
+
+Learning Objective: By the end of the lesson, students will be able to identify the general structure of animal and plant cells and state the function of each cell structure.
+
+Set Induction (10 min): Teacher shows a picture of an onion and a piece of human skin and asks what they are made of.
+
+Development (40 min): Teacher explains the parts of a cell using the textbook diagram (Chapter 2). Students draw and label an animal cell and a plant cell, then discuss the function of the nucleus, cytoplasm, cell membrane, cell wall and chloroplast.
+
+Closure (10 min): Students answer five short questions to recap.
+
+Assessment: Worksheet with labelling and short-answer questions. Materials: Textbook, whiteboard, worksheet.</textarea>
+        </label>
+      </article>
+
+      <article style="background:#ffffff;border:1px solid #e4ede9;border-radius:18px;padding:24px 26px;box-shadow:0 8px 26px rgba(31,90,72,.07);">
+        <div style="display:flex;gap:14px;align-items:center;margin-bottom:20px;">
+          <span style="flex:none;width:42px;height:42px;border-radius:13px;background:#1f7ec4;color:#fff;display:grid;place-items:center;font-family:'Baloo 2',cursive;font-weight:700;font-size:1.2rem;box-shadow:0 6px 14px rgba(31,126,196,.26);">2</span>
+          <div>
+            <h2 style="font-family:'Baloo 2',cursive;font-weight:700;font-size:1.35rem;color:#7d2570;margin:0;line-height:1.15;">{{ s.step2Title }}</h2>
+            <p style="margin:2px 0 0;font-size:.92rem;color:#8b8494;font-weight:600;">{{ s.step2Help }}</p>
+          </div>
+        </div>
+
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;">
+          <sc-for list="{{ constraints }}" as="c" hint-placeholder-count="6">
+            <div onClick="{{ c.onToggle }}" style="{{ c.chipStyle }}">
+              <span style="{{ c.dotStyle }}">
+                <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" style="{{ c.checkStyle }}"><path d="M20 6 9 17l-5-5"/></svg>
+              </span>
+              <span style="font-weight:700;font-size:.92rem;color:#3a3340;">{{ c.label }}</span>
+            </div>
+          </sc-for>
+        </div>
+        <p style="margin:16px 0 0;font-size:.85rem;color:#8b8494;font-weight:600;">{{ selectedLine }}</p>
+      </article>
+
+      <div style="display:flex;align-items:center;gap:18px;flex-wrap:wrap;">
+        <button onClick="{{ run }}" style="display:inline-flex;align-items:center;gap:11px;background:#9b2c8f;color:#fff;border:none;font:inherit;font-weight:800;font-size:1.05rem;padding:16px 30px;border-radius:15px;cursor:pointer;box-shadow:0 10px 26px rgba(155,44,143,.30);transition:.15s;" style-hover="transform:translateY(-1px);box-shadow:0 14px 30px rgba(155,44,143,.38);">
+          <sc-if value="{{ analyzing }}" hint-placeholder-val="{{ false }}">
+            <span style="width:17px;height:17px;border:2.5px solid currentColor;border-right-color:transparent;border-radius:50%;display:inline-block;animation:spinA .7s linear infinite;"></span>
+          </sc-if>
+          <sc-if value="{{ notAnalyzing }}" hint-placeholder-val="{{ true }}">
+            <svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3 1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z"/><path d="M19 15v4M21 17h-4"/></svg>
+          </sc-if>
+          <span>{{ runLabel }}</span>
+        </button>
+        <span style="font-size:.9rem;color:#8b8494;max-width:22em;font-weight:600;">{{ s.runHint }}</span>
+      </div>
+      </div>
+    </div>
+
+    <!-- PANEL: ANALYSIS -->
+    <div style="{{ panelAnalysis }}">
+      <sc-if value="{{ notRun }}" hint-placeholder-val="{{ true }}">
+        <div style="{{ emptyStyle }}">{{ s.emptyAnalysis }}</div>
+      </sc-if>
+      <sc-if value="{{ showResults }}" hint-placeholder-val="{{ false }}">
+        <div style="animation:riseA .45s ease both;">
+          <article style="background:#ffffff;border:1px solid #e4ede9;border-radius:18px;padding:24px 26px;box-shadow:0 8px 26px rgba(31,90,72,.07);">
+            <div style="display:flex;align-items:center;justify-content:space-between;background:#e4f0fa;border-radius:12px;padding:11px 16px;margin-bottom:20px;">
+              <div style="display:flex;align-items:center;gap:12px;">
+                <span style="width:38px;height:38px;border-radius:11px;background:#1f7ec4;color:#fff;display:grid;place-items:center;flex:none;">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m7 14 3-3 3 3 5-6"/></svg>
+                </span>
+                <div>
+                  <span style="display:block;font-size:.7rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#1f7ec4;">{{ s.analystEyebrow }}</span>
+                  <h2 style="font-family:'Baloo 2',cursive;font-weight:700;font-size:1.3rem;color:#1a5f96;margin:0;line-height:1.1;">{{ s.analystTitle }}</h2>
+                </div>
+              </div>
+            </div>
+
+            <div style="display:flex;gap:26px;align-items:center;margin-bottom:24px;flex-wrap:wrap;">
+              <div style="position:relative;width:128px;height:128px;flex:none;">
+                <svg viewBox="0 0 120 120" width="128" height="128" style="transform:rotate(-90deg);">
+                  <circle cx="60" cy="60" r="52" fill="none" stroke="#e7edf2" stroke-width="12"></circle>
+                  <circle cx="60" cy="60" r="52" fill="none" stroke="#9b2c8f" stroke-width="12" stroke-linecap="round" stroke-dasharray="327" stroke-dashoffset="{{ gaugeOffset }}" style="transition:stroke-dashoffset 1.1s cubic-bezier(.22,1,.36,1);"></circle>
+                </svg>
+                <div style="position:absolute;inset:0;display:grid;place-items:center;text-align:center;">
+                  <div>
+                    <div style="font-family:'Baloo 2',cursive;font-size:2.3rem;font-weight:800;color:#9b2c8f;line-height:1;">{{ score }}</div>
+                    <div style="font-size:.62rem;letter-spacing:.08em;text-transform:uppercase;color:#8b8494;font-weight:700;">{{ s.alignmentLabel }}</div>
+                  </div>
+                </div>
+              </div>
+              <p style="margin:0;flex:1;min-width:240px;font-size:1.02rem;color:#5d5568;line-height:1.6;font-weight:500;">{{ summary }}</p>
+            </div>
+
+            <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:13px;margin-bottom:22px;">
+              <sc-for list="{{ alignments }}" as="a" hint-placeholder-count="6">
+                <div style="border:1px solid #e8eef1;border-radius:14px;padding:15px;background:#f6faf8;">
+                  <span style="display:inline-flex;align-items:center;gap:6px;font-size:.68rem;font-weight:800;padding:4px 10px;border-radius:999px;margin-bottom:10px;text-transform:uppercase;letter-spacing:.03em;background:{{ a.bg }};color:{{ a.color }};">
+                    <span style="width:6px;height:6px;border-radius:50%;background:{{ a.dot }};"></span>{{ a.statusLabel }}
+                  </span>
+                  <h4 style="font-size:.92rem;font-weight:800;color:#3a3340;margin:0 0 5px;">{{ a.dimension }}</h4>
+                  <p style="margin:0;font-size:.84rem;color:#8b8494;line-height:1.45;font-weight:500;">{{ a.notes }}</p>
+                </div>
+              </sc-for>
+            </div>
+
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:20px;">
+              <div style="border:1px solid #f3ddcb;border-radius:14px;padding:16px 18px;background:#fdefe4;">
+                <h4 style="font-size:.74rem;font-weight:800;text-transform:uppercase;letter-spacing:.06em;color:#c85a2c;margin:0 0 10px;">{{ s.gapsTitle }}</h4>
+                <ul style="margin:0;padding-left:18px;">
+                  <sc-for list="{{ gaps }}" as="g" hint-placeholder-count="3"><li style="margin-bottom:8px;font-size:.9rem;color:#5d5568;line-height:1.45;font-weight:500;">{{ g }}</li></sc-for>
+                </ul>
+              </div>
+              <div style="border:1px solid #c3e6cd;border-radius:14px;padding:16px 18px;background:#e3f4e7;">
+                <h4 style="font-size:.74rem;font-weight:800;text-transform:uppercase;letter-spacing:.06em;color:#2c8a4a;margin:0 0 10px;">{{ s.recsTitle }}</h4>
+                <ul style="margin:0;padding-left:18px;">
+                  <sc-for list="{{ recommendations }}" as="r" hint-placeholder-count="3"><li style="margin-bottom:8px;font-size:.9rem;color:#5d5568;line-height:1.45;font-weight:500;">{{ r }}</li></sc-for>
+                </ul>
+              </div>
+            </div>
+
+            <div style="padding-top:16px;border-top:1px dashed #d7e2db;font-size:.85rem;color:#8b8494;font-weight:600;">
+              <strong style="color:#5d5568;">{{ s.standardsLabel }}</strong>
+              <sc-for list="{{ standards }}" as="st" hint-placeholder-count="4"><code style="background:#e4f0fa;color:#1f7ec4;padding:3px 10px;border-radius:7px;margin:0 4px 4px 0;font-size:.78rem;display:inline-block;font-weight:700;">{{ st }}</code></sc-for>
+            </div>
+          </article>
+        </div>
+      </sc-if>
+    </div>
+
+    <!-- PANEL: REVISED PLAN -->
+    <div style="{{ panelPlan }}">
+      <sc-if value="{{ notRun }}" hint-placeholder-val="{{ true }}">
+        <div style="{{ emptyStyle }}">{{ s.emptyPlan }}</div>
+      </sc-if>
+      <sc-if value="{{ showResults }}" hint-placeholder-val="{{ false }}">
+        <div style="animation:riseA .45s ease both;">
+          <article style="background:#ffffff;border:1px solid #e4ede9;border-radius:18px;padding:24px 26px;box-shadow:0 8px 26px rgba(31,90,72,.07);">
+            <div style="display:flex;align-items:center;gap:13px;justify-content:space-between;background:#f5e7f2;border-radius:12px;padding:11px 16px;margin-bottom:22px;flex-wrap:wrap;">
+              <div style="display:flex;align-items:center;gap:12px;">
+                <span style="width:38px;height:38px;border-radius:11px;background:#9b2c8f;color:#fff;display:grid;place-items:center;flex:none;">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2h6a2 2 0 0 1 2 2v2H7V4a2 2 0 0 1 2-2z"/><path d="M7 4H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2"/><path d="m9 14 2 2 4-4"/></svg>
+                </span>
+                <div>
+                  <span style="display:block;font-size:.7rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#9b2c8f;">{{ s.auditorEyebrow }}</span>
+                  <h2 style="font-family:'Baloo 2',cursive;font-weight:700;font-size:1.3rem;color:#7d2570;margin:0;line-height:1.1;">{{ s.auditorTitle }}</h2>
+                </div>
+              </div>
+              <button onClick="{{ doPrint }}" style="display:inline-flex;align-items:center;gap:8px;background:#fff;color:#9b2c8f;border:1.5px solid #e2c9dd;font:inherit;font-weight:700;font-size:.88rem;padding:9px 15px;border-radius:11px;cursor:pointer;" style-hover="background:#faf0f8;">
+                <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9V2h12v7"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><path d="M6 14h12v8H6z"/></svg>
+                {{ s.printBtn }}
+              </button>
+            </div>
+
+            <h3 style="font-family:'Baloo 2',cursive;font-weight:700;font-size:1.5rem;color:#7d2570;margin:0 0 12px;line-height:1.15;">{{ planTitle }}</h3>
+            <div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px;">
+              <sc-for list="{{ meta }}" as="m" hint-placeholder-count="4">
+                <span style="background:#fdf3dc;border:1px solid #f2e0b0;color:#a97c14;font-size:.82rem;font-weight:700;padding:6px 14px;border-radius:999px;">{{ m.label }}</span>
+              </sc-for>
+            </div>
+
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-bottom:24px;">
+              <div>
+                <h4 style="font-size:.74rem;font-weight:800;text-transform:uppercase;letter-spacing:.07em;color:#9b2c8f;margin:0 0 10px;padding-bottom:7px;border-bottom:2px solid #f0e0ec;">{{ s.objTitle }}</h4>
+                <ul style="margin:0;padding-left:19px;"><sc-for list="{{ objectives }}" as="o" hint-placeholder-count="3"><li style="margin-bottom:8px;color:#5d5568;line-height:1.45;font-weight:500;">{{ o }}</li></sc-for></ul>
+              </div>
+              <div>
+                <h4 style="font-size:.74rem;font-weight:800;text-transform:uppercase;letter-spacing:.07em;color:#9b2c8f;margin:0 0 10px;padding-bottom:7px;border-bottom:2px solid #f0e0ec;">{{ s.scTitle }}</h4>
+                <ul style="margin:0;padding-left:19px;"><sc-for list="{{ successCriteria }}" as="sc" hint-placeholder-count="3"><li style="margin-bottom:8px;color:#5d5568;line-height:1.45;font-weight:500;">{{ sc }}</li></sc-for></ul>
+              </div>
+            </div>
+
+            <div style="margin-bottom:24px;">
+              <h4 style="font-size:.74rem;font-weight:800;text-transform:uppercase;letter-spacing:.07em;color:#9b2c8f;margin:0 0 11px;padding-bottom:7px;border-bottom:2px solid #f0e0ec;">{{ s.techTitle }}</h4>
+              <div style="display:flex;flex-wrap:wrap;gap:9px;">
+                <sc-for list="{{ toolTags }}" as="t" hint-placeholder-count="4">
+                  <span onClick="{{ t.onAsk }}" style="display:inline-flex;align-items:center;gap:7px;background:#e4f0fa;color:#1f7ec4;border:1px solid #c5e0f5;padding:8px 15px;border-radius:999px;font-size:.86rem;font-weight:700;cursor:pointer;transition:.14s;" style-hover="background:#d3e8f8;">
+                    {{ t.name }}
+                    <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+                  </span>
+                </sc-for>
+              </div>
+            </div>
+
+            <div style="margin-bottom:24px;">
+              <h4 style="font-size:.74rem;font-weight:800;text-transform:uppercase;letter-spacing:.07em;color:#9b2c8f;margin:0 0 11px;padding-bottom:7px;border-bottom:2px solid #f0e0ec;">{{ s.consTitle }}</h4>
+              <div style="display:flex;flex-direction:column;gap:10px;">
+                <sc-for list="{{ solutions }}" as="sol" hint-placeholder-count="3">
+                  <div style="border-left:4px solid #f7b71d;background:#fdf3dc;padding:12px 16px;border-radius:0 12px 12px 0;font-size:.9rem;color:#5d5568;line-height:1.5;font-weight:500;"><strong style="color:#a97c14;">{{ sol.constraint }}:</strong> {{ sol.strategy }}</div>
+                </sc-for>
+              </div>
+            </div>
+
+            <div style="margin-bottom:24px;">
+              <h4 style="font-size:.74rem;font-weight:800;text-transform:uppercase;letter-spacing:.07em;color:#9b2c8f;margin:0 0 11px;padding-bottom:7px;border-bottom:2px solid #f0e0ec;">{{ s.flowTitle }}</h4>
+              <div style="border:1px solid #e8eef1;border-radius:14px;overflow:hidden;">
+                <div style="display:grid;grid-template-columns:150px 1fr 1fr;background:#eef4f1;font-size:.7rem;font-weight:800;text-transform:uppercase;letter-spacing:.05em;color:#8b8494;">
+                  <div style="padding:11px 14px;">{{ s.phaseH }}</div><div style="padding:11px 14px;">{{ s.activityH }}</div><div style="padding:11px 14px;">{{ s.techH }}</div>
+                </div>
+                <sc-for list="{{ phases }}" as="p" hint-placeholder-count="3">
+                  <div style="display:grid;grid-template-columns:150px 1fr 1fr;border-top:1px solid #e8eef1;font-size:.88rem;">
+                    <div style="padding:13px 14px;"><strong style="color:#7d2570;">{{ p.phase }}</strong><br><span style="font-size:.8rem;color:#9a93a3;font-weight:600;">{{ p.duration }}</span></div>
+                    <div style="padding:13px 14px;color:#5d5568;line-height:1.45;font-weight:500;">{{ p.activity }}</div>
+                    <div style="padding:13px 14px;color:#5d5568;line-height:1.45;font-weight:500;">{{ p.technology }}</div>
+                  </div>
+                </sc-for>
+              </div>
+            </div>
+
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-bottom:22px;">
+              <div>
+                <h4 style="font-size:.74rem;font-weight:800;text-transform:uppercase;letter-spacing:.07em;color:#9b2c8f;margin:0 0 10px;padding-bottom:7px;border-bottom:2px solid #f0e0ec;">{{ s.assessTitle }}</h4>
+                <p style="margin:0;color:#5d5568;line-height:1.55;font-size:.92rem;font-weight:500;">{{ assessment }}</p>
+              </div>
+              <div>
+                <h4 style="font-size:.74rem;font-weight:800;text-transform:uppercase;letter-spacing:.07em;color:#9b2c8f;margin:0 0 10px;padding-bottom:7px;border-bottom:2px solid #f0e0ec;">{{ s.matTitle }}</h4>
+                <ul style="margin:0;padding-left:19px;"><sc-for list="{{ materials }}" as="mt" hint-placeholder-count="5"><li style="margin-bottom:6px;color:#5d5568;line-height:1.4;font-size:.92rem;font-weight:500;">{{ mt }}</li></sc-for></ul>
+              </div>
+            </div>
+
+            <div style="background:#e3f4e7;border:1px solid #c3e6cd;border-radius:14px;padding:15px 18px;display:flex;gap:12px;align-items:flex-start;">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#2c8a4a" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex:none;margin-top:2px;"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+              <p style="margin:0;font-size:.9rem;color:#2c8a4a;line-height:1.55;font-weight:600;"><strong>{{ s.alignedNote }}</strong> {{ alignmentNote }}</p>
+            </div>
+          </article>
+        </div>
+      </sc-if>
+    </div>
+
+    <!-- PANEL: FAQ COACH -->
+    <div style="{{ panelFaq }}">
+      <div style="background:#ffffff;border:1px solid #e4ede9;border-radius:18px;padding:24px 26px;box-shadow:0 8px 26px rgba(31,90,72,.07);max-width:820px;">
+        <div style="display:flex;align-items:center;justify-content:space-between;background:#e3f4e7;border-radius:12px;padding:10px 15px;margin-bottom:15px;">
+          <div style="display:flex;align-items:center;gap:11px;">
+            <span style="width:36px;height:36px;border-radius:11px;background:#2ea44a;color:#fff;display:grid;place-items:center;flex:none;">
+              <svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.1 9a3 3 0 0 1 5.8 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>
+            </span>
+            <div>
+              <span style="display:block;font-size:.68rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#2c8a4a;">{{ s.faqEyebrow }}</span>
+              <h2 style="font-family:'Baloo 2',cursive;font-weight:700;font-size:1.15rem;color:#237a39;margin:0;line-height:1.1;">{{ s.faqTitle }}</h2>
+            </div>
+          </div>
+        </div>
+        <p style="margin:0 0 16px;font-size:.9rem;color:#8b8494;line-height:1.5;font-weight:500;">{{ s.faqText }}</p>
+
+        <div style="display:flex;gap:9px;margin-bottom:14px;">
+          <input type="text" value="{{ faqQuery }}" onInput="{{ setFaqQuery }}" onKeyDown="{{ faqKeyDown }}" placeholder="{{ s.faqPlaceholder }}" style="flex:1;font:inherit;font-weight:500;padding:11px 13px;border:1.5px solid #dbe4df;border-radius:11px;background:#fff;color:#3a3340;min-width:0;" />
+          <button onClick="{{ submitFaq }}" style="background:#2ea44a;color:#fff;border:none;font:inherit;font-weight:800;font-size:.9rem;padding:11px 18px;border-radius:11px;cursor:pointer;flex:none;">{{ s.askBtn }}</button>
+        </div>
+
+        <div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:6px;">
+          <sc-for list="{{ faqChips }}" as="c" hint-placeholder-count="4">
+            <span onClick="{{ c.onAsk }}" style="border:1.5px solid #dbe4df;background:#f4f8f6;padding:6px 12px;border-radius:999px;cursor:pointer;font-size:.78rem;font-weight:600;color:#5d6b64;transition:.14s;" style-hover="border-color:#2ea44a;color:#2c8a4a;background:#e3f4e7;">{{ c.label }}</span>
+          </sc-for>
+        </div>
+
+        <sc-if value="{{ hasFaqItems }}" hint-placeholder-val="{{ false }}">
+          <div style="display:flex;flex-direction:column;gap:13px;margin-top:16px;max-height:60vh;overflow-y:auto;padding-right:4px;">
+            <sc-for list="{{ faqItems }}" as="f" hint-placeholder-count="1">
+              <div style="border:1px solid #e8eef1;border-radius:14px;padding:16px;background:#f6faf8;animation:riseA .35s ease both;">
+                <h4 style="font-family:'Baloo 2',cursive;font-weight:700;font-size:1.05rem;margin:0 0 7px;color:#237a39;">{{ f.term }}</h4>
+                <p style="margin:0 0 8px;font-size:.88rem;color:#5d5568;line-height:1.5;font-weight:500;">{{ f.explanation }}</p>
+                <sc-if value="{{ f.hasSteps }}" hint-placeholder-val="{{ false }}">
+                  <strong style="display:block;font-size:.74rem;text-transform:uppercase;letter-spacing:.05em;color:#2c8a4a;margin:10px 0 5px;">{{ s.howToLabel }}</strong>
+                  <ol style="margin:0;padding-left:18px;font-size:.84rem;color:#5d5568;font-weight:500;"><sc-for list="{{ f.steps }}" as="st" hint-placeholder-count="3"><li style="margin-bottom:4px;line-height:1.4;">{{ st }}</li></sc-for></ol>
+                </sc-if>
+                <div style="background:#e4f0fa;border:1px solid #c5e0f5;border-radius:10px;padding:9px 11px;font-size:.8rem;color:#1f7ec4;margin-top:10px;line-height:1.45;font-weight:600;">📶 {{ f.lowResource }}</div>
+                <sc-if value="{{ f.hasAlts }}" hint-placeholder-val="{{ false }}">
+                  <strong style="display:block;font-size:.74rem;text-transform:uppercase;letter-spacing:.05em;color:#c85a2c;margin:10px 0 5px;">{{ s.altLabel }}</strong>
+                  <ul style="margin:0;padding-left:18px;font-size:.84rem;color:#5d5568;font-weight:500;"><sc-for list="{{ f.alternatives }}" as="al" hint-placeholder-count="2"><li style="margin-bottom:4px;line-height:1.4;">{{ al }}</li></sc-for></ul>
+                </sc-if>
+              </div>
+            </sc-for>
+          </div>
+        </sc-if>
+      </div>
+    </div>
+  </main>
+
+  <!-- ============ PRINT-ONLY ERPH DOCUMENT ============ -->
+  <div id="erph-doc" style="display:none;color:#1a1a1a;font-family:'Nunito',sans-serif;font-size:11.5px;line-height:1.45;">
+    <div style="text-align:center;margin-bottom:14px;">
+      <div style="font-family:'Baloo 2',cursive;font-weight:700;font-size:17px;letter-spacing:.02em;color:#7d2570;">RANCANGAN PENGAJARAN HARIAN (ERPH)</div>
+      <div style="font-size:10.5px;color:#555;font-style:italic;margin-top:2px;">Daily Lesson Plan · {{ planTitle }}</div>
+    </div>
+
+    <table style="width:100%;border-collapse:collapse;">
+      <tbody>
+        <tr>
+          <td style="{{ erphKeyStyle }}">Nama Guru<div style="{{ erphEnStyle }}">Teacher</div></td>
+          <td style="{{ erphValStyle }}">&nbsp;</td>
+          <td style="{{ erphKeyStyle }}">Nama Kelas<div style="{{ erphEnStyle }}">Class</div></td>
+          <td style="{{ erphValStyle }}">{{ metaForm }}</td>
+        </tr>
+        <tr>
+          <td style="{{ erphKeyStyle }}">Tarikh<div style="{{ erphEnStyle }}">Date</div></td>
+          <td style="{{ erphValStyle }}">&nbsp;</td>
+          <td style="{{ erphKeyStyle }}">Hari<div style="{{ erphEnStyle }}">Day</div></td>
+          <td style="{{ erphValStyle }}">&nbsp;</td>
+        </tr>
+        <tr>
+          <td style="{{ erphKeyStyle }}">Masa<div style="{{ erphEnStyle }}">Time</div></td>
+          <td style="{{ erphValStyle }}">&nbsp;</td>
+          <td style="{{ erphKeyStyle }}">Tempoh<div style="{{ erphEnStyle }}">Duration</div></td>
+          <td style="{{ erphValStyle }}">{{ metaDuration }}</td>
+        </tr>
+        <tr>
+          <td style="{{ erphKeyStyle }}">Subjek<div style="{{ erphEnStyle }}">Subject</div></td>
+          <td style="{{ erphValStyle }}">{{ metaSubject }}</td>
+          <td style="{{ erphKeyStyle }}">Tema<div style="{{ erphEnStyle }}">Theme</div></td>
+          <td style="{{ erphValStyle }}">{{ erphTema }}</td>
+        </tr>
+        <tr>
+          <td style="{{ erphKeyStyle }}">Tajuk / Unit<div style="{{ erphEnStyle }}">Topic / Unit</div></td>
+          <td style="{{ erphValStyle }}" colspan="3">{{ metaTopic }}</td>
+        </tr>
+        <tr>
+          <td style="{{ erphKeyStyle }}">Standard Kandungan (SK)<div style="{{ erphEnStyle }}">Content Standard</div></td>
+          <td style="{{ erphValStyle }}" colspan="3">{{ erphSK }}</td>
+        </tr>
+        <tr>
+          <td style="{{ erphKeyStyle }}">Standard Pembelajaran (SP)<div style="{{ erphEnStyle }}">Learning Standards</div></td>
+          <td style="{{ erphValStyle }}" colspan="3">
+            <ul style="margin:0;padding-left:16px;"><sc-for list="{{ erphSP }}" as="sp" hint-placeholder-count="4"><li style="margin-bottom:2px;">{{ sp }}</li></sc-for></ul>
+          </td>
+        </tr>
+        <tr>
+          <td style="{{ erphKeyStyle }}">Kemahiran TMK<div style="{{ erphEnStyle }}">ICT Skills</div></td>
+          <td style="{{ erphValStyle }}" colspan="3">{{ erphTMK }}</td>
+        </tr>
+        <tr>
+          <td style="{{ erphKeyStyle }}">Objektif Pembelajaran<div style="{{ erphEnStyle }}">Learning Objectives</div></td>
+          <td style="{{ erphValStyle }}" colspan="3">
+            <ol style="margin:0;padding-left:17px;"><sc-for list="{{ objectives }}" as="o" hint-placeholder-count="3"><li style="margin-bottom:2px;">{{ o }}</li></sc-for></ol>
+          </td>
+        </tr>
+        <tr>
+          <td style="{{ erphKeyStyle }}">Kriteria Kejayaan<div style="{{ erphEnStyle }}">Success Criteria</div></td>
+          <td style="{{ erphValStyle }}" colspan="3">
+            <ol style="margin:0;padding-left:17px;"><sc-for list="{{ successCriteria }}" as="c" hint-placeholder-count="3"><li style="margin-bottom:2px;">{{ c }}</li></sc-for></ol>
+          </td>
+        </tr>
+        <tr>
+          <td style="{{ erphKeyStyle }}">Set Induksi<div style="{{ erphEnStyle }}">Set Induction</div></td>
+          <td style="{{ erphValStyle }}" colspan="3"><strong>{{ erphSet.duration }}.</strong> {{ erphSet.activity }} <em style="color:#555;">({{ erphSet.technology }})</em></td>
+        </tr>
+        <tr>
+          <td style="{{ erphKeyStyle }}">Aktiviti Utama — Langkah 1<div style="{{ erphEnStyle }}">Main Activity — Step 1</div></td>
+          <td style="{{ erphValStyle }}" colspan="3"><strong>{{ erphStep1.duration }}.</strong> {{ erphStep1.activity }} <em style="color:#555;">({{ erphStep1.technology }})</em></td>
+        </tr>
+        <tr>
+          <td style="{{ erphKeyStyle }}">Aktiviti Utama — Langkah 2<div style="{{ erphEnStyle }}">Main Activity — Step 2</div></td>
+          <td style="{{ erphValStyle }}" colspan="3"><strong>{{ erphStep2.duration }}.</strong> {{ erphStep2.activity }} <em style="color:#555;">({{ erphStep2.technology }})</em></td>
+        </tr>
+        <tr>
+          <td style="{{ erphKeyStyle }}">Penutup / Refleksi<div style="{{ erphEnStyle }}">Closure</div></td>
+          <td style="{{ erphValStyle }}" colspan="3">{{ erphClosure }}</td>
+        </tr>
+        <tr>
+          <td style="{{ erphKeyStyle }}">Elemen KBAT<div style="{{ erphEnStyle }}">HOTS Element</div></td>
+          <td style="{{ erphValStyle }}" colspan="3">
+            <div style="margin-bottom:3px;"><strong>Aras / Level:</strong> {{ erphKbatLevel }}</div>
+            <ul style="margin:0;padding-left:16px;"><sc-for list="{{ erphKbat }}" as="k" hint-placeholder-count="2"><li style="margin-bottom:2px;">{{ k }}</li></sc-for></ul>
+          </td>
+        </tr>
+        <tr>
+          <td style="{{ erphKeyStyle }}">Bahan Bantu Mengajar (BBM)<div style="{{ erphEnStyle }}">Teaching Aids</div></td>
+          <td style="{{ erphValStyle }}" colspan="3">
+            <ul style="margin:0;padding-left:16px;"><sc-for list="{{ materials }}" as="m" hint-placeholder-count="5"><li style="margin-bottom:2px;">{{ m }}</li></sc-for></ul>
+          </td>
+        </tr>
+        <tr>
+          <td style="{{ erphKeyStyle }}">Pentaksiran (PBD)<div style="{{ erphEnStyle }}">Assessment</div></td>
+          <td style="{{ erphValStyle }}" colspan="3">{{ erphPbd }}</td>
+        </tr>
+        <tr>
+          <td style="{{ erphKeyStyle }}">Refleksi Guru<div style="{{ erphEnStyle }}">Teacher Reflection</div></td>
+          <td style="{{ erphValStyle }}" colspan="3">
+            <div style="margin-bottom:4px;">1. Berapa ramai murid mencapai objektif? / Pupils achieving objective: ____ / ____</div>
+            <div style="border-bottom:1px solid #bbb;height:16px;"></div>
+            <div style="border-bottom:1px solid #bbb;height:16px;"></div>
+          </td>
+        </tr>
+        <tr>
+          <td style="{{ erphKeyStyle }}">Catatan / Nota Tambahan<div style="{{ erphEnStyle }}">Notes</div></td>
+          <td style="{{ erphValStyle }}" colspan="3">{{ alignmentNote }}</td>
+        </tr>
+      </tbody>
+    </table>
+    <p style="text-align:center;font-size:9px;color:#999;margin-top:10px;">Jana oleh ResilientEdTech — pembantu pengajaran luar talian, sejajar DSKP. Lengkapkan ruangan kosong sebelum kelas.</p>
+  </div>
+
+  <footer style="border-top:1px solid #d8e6df;background:#dcede6;">
+    <div style="max-width:1180px;margin:0 auto;padding:22px 28px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:.84rem;color:#7a8a82;font-weight:600;">
+      <span>{{ s.footL }}</span>
+      <span>{{ s.footR }}</span>
+    </div>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { lang: "en", constraints: { no_internet: true, single_device: true, no_power: true, limited_connectivity: false, restricted_hardware: false, single_screen: false }, analyzing: false, showResults: false, faqQuery: "", faqItems: [], activeTab: "input" };
+
+  STR = {
+    en: {
+      tagline: "A teacher's companion for tech-rich lessons that work anywhere",
+      offline: "Works fully offline",
+      heroEyebrow: "For teachers in rural & remote schools",
+      heroTitle: "Plan a technology-rich lesson that still works when the power's out.",
+      heroText: "Upload your lesson plan — even a photo of a handwritten one. Three AI assistants check it against the curriculum, redesign it around the constraints your school actually faces, and explain every tool. All on one device, fully offline.",
+      heroCta: "Start with my lesson plan",
+      heroAligned: "Aligned to DSKP · scheme of work · textbook",
+      agentsTitle: "Three assistants, one workflow",
+      a1t: "The Analyst", a1d: "Scores how well your plan fits the curriculum and finds the gaps.",
+      a2t: "The Auditor", a2d: "Rebuilds the lesson around your constraints — keeping the technology.",
+      a3t: "The FAQ Coach", a3d: "Explains any unfamiliar tool, step by step, for low-resource rooms.",
+      tabInput: "1 · Plan Input", tabAnalysis: "2 · Analysis", tabPlan: "3 · Revised Plan", tabFaq: "FAQ Coach",
+      step1Title: "Bring in your lesson plan", step1Help: "Snap a photo of a handwritten plan, or drop in a PDF, Word or text file. The vision model reads it for you.",
+      dzClick: "Click to choose", dzOr: " or drag a file here", dzHint: "Handwritten photo, scan, PDF, DOCX or TXT · up to 15 MB",
+      extractNote: "Read sample_lesson_plan.txt via direct text · 121 words · review below, then continue.",
+      subject: "Subject", grade: "Grade / Year", topic: "Topic", lessonLabel: "Lesson plan text", lessonHint: "— auto-filled from your file, edit if needed",
+      step2Title: "What does your classroom have to work around?", step2Help: "Tap everything that applies — the plan adapts to exactly these conditions.",
+      ofSelected: "of 6 constraints selected.",
+      runIdle: "Analyse & rebuild my plan", runBusy: "Working through your plan…", runRerun: "Re-run analysis",
+      runHint: "The Analyst reviews first, then the Auditor rebuilds your plan.",
+      emptyAnalysis: "Run the analysis on the Plan Input tab to see how your plan lines up against the curriculum.",
+      emptyPlan: "Run the analysis on the Plan Input tab to generate your revised, ready-to-teach plan.",
+      analystEyebrow: "The Analyst · curriculum review", analystTitle: "How your plan lines up", alignmentLabel: "alignment",
+      gapsTitle: "Gaps to close", recsTitle: "Recommended actions", standardsLabel: "Detected standards:",
+      auditorEyebrow: "The Auditor · resilient redesign", auditorTitle: "Your ready-to-teach plan", printBtn: "Print plan",
+      objTitle: "Learning objectives", scTitle: "Success criteria", techTitle: "Technology that fits your constraints",
+      consTitle: "How we get around each constraint", flowTitle: "Lesson flow", phaseH: "Phase", activityH: "Activity", techH: "Technology (offline-fit)",
+      assessTitle: "Assessment", matTitle: "Materials", alignedNote: "Still curriculum-aligned.",
+      faqEyebrow: "The FAQ Coach", faqTitle: "Tool & term helper", faqText: "Not sure what a suggested tool is? Ask for a plain explanation and step-by-step, low-resource tips.",
+      faqPlaceholder: "e.g. What is Plickers?", askBtn: "Ask", whatIs: "What is", howToLabel: "How to use it", altLabel: "No-tech alternatives",
+      faqFallback: "A low-resource teaching tool. Tap one of the suggested tools above for a full offline how-to guide.", faqFallbackLR: "Favour tools that work on one charged device with no internet.",
+      footL: "ResilientEdTech · Built for remote teachers · Offline-friendly", footR: "Curriculum-aligned lesson planning · runs on one device",
+    },
+    ms: {
+      tagline: "Rakan guru untuk pelajaran kaya teknologi yang berfungsi di mana-mana",
+      offline: "Berfungsi sepenuhnya luar talian",
+      heroEyebrow: "Untuk guru di sekolah luar bandar & terpencil",
+      heroTitle: "Rancang pelajaran kaya teknologi yang tetap berfungsi ketika bekalan elektrik terputus.",
+      heroText: "Muat naik rancangan pengajaran anda — malah foto tulisan tangan pun boleh. Tiga pembantu AI menyemaknya berbanding kurikulum, mereka bentuk semula mengikut had yang dihadapi sekolah anda, dan menerangkan setiap alat. Semuanya pada satu peranti, sepenuhnya luar talian.",
+      heroCta: "Mula dengan rancangan saya",
+      heroAligned: "Sejajar DSKP · RPT · buku teks",
+      agentsTitle: "Tiga pembantu, satu aliran kerja",
+      a1t: "Penganalisis", a1d: "Menilai sejauh mana rancangan anda sepadan dengan kurikulum dan mencari jurang.",
+      a2t: "Juru Audit", a2d: "Membina semula pelajaran mengikut had anda — mengekalkan teknologi.",
+      a3t: "Jurulatih FAQ", a3d: "Menerangkan sebarang alat yang asing, langkah demi langkah, untuk bilik sumber rendah.",
+      tabInput: "1 · Input Rancangan", tabAnalysis: "2 · Analisis", tabPlan: "3 · Rancangan Disemak", tabFaq: "Jurulatih FAQ",
+      step1Title: "Bawa masuk rancangan pengajaran anda", step1Help: "Ambil foto rancangan tulisan tangan, atau muat naik fail PDF, Word atau teks. Model visi akan membacanya untuk anda.",
+      dzClick: "Klik untuk pilih", dzOr: " atau seret fail ke sini", dzHint: "Foto tulisan tangan, imbasan, PDF, DOCX atau TXT · sehingga 15 MB",
+      extractNote: "Dibaca sample_lesson_plan.txt melalui teks terus · 121 patah perkataan · semak di bawah, kemudian teruskan.",
+      subject: "Subjek", grade: "Gred / Tahun", topic: "Topik", lessonLabel: "Teks rancangan pengajaran", lessonHint: "— diisi automatik daripada fail anda, sunting jika perlu",
+      step2Title: "Apa yang perlu diatasi di bilik darjah anda?", step2Help: "Ketik semua yang berkenaan — rancangan menyesuaikan diri dengan keadaan ini.",
+      ofSelected: "daripada 6 had dipilih.",
+      runIdle: "Analisis & bina semula rancangan", runBusy: "Sedang memproses rancangan anda…", runRerun: "Jalankan semula analisis",
+      runHint: "Penganalisis menyemak dahulu, kemudian Juru Audit membina semula rancangan anda.",
+      emptyAnalysis: "Jalankan analisis pada tab Input Rancangan untuk melihat penjajaran rancangan anda dengan kurikulum.",
+      emptyPlan: "Jalankan analisis pada tab Input Rancangan untuk menjana rancangan sedia-ajar anda.",
+      analystEyebrow: "Penganalisis · semakan kurikulum", analystTitle: "Penjajaran rancangan anda", alignmentLabel: "penjajaran",
+      gapsTitle: "Jurang untuk ditutup", recsTitle: "Tindakan disyorkan", standardsLabel: "Standard dikesan:",
+      auditorEyebrow: "Juru Audit · reka bentuk berdaya tahan", auditorTitle: "Rancangan sedia-ajar anda", printBtn: "Cetak rancangan",
+      objTitle: "Objektif pembelajaran", scTitle: "Kriteria kejayaan", techTitle: "Teknologi yang sesuai dengan had anda",
+      consTitle: "Cara kami mengatasi setiap had", flowTitle: "Aliran pelajaran", phaseH: "Fasa", activityH: "Aktiviti", techH: "Teknologi (sesuai luar talian)",
+      assessTitle: "Pentaksiran", matTitle: "Bahan", alignedNote: "Masih sejajar kurikulum.",
+      faqEyebrow: "Jurulatih FAQ", faqTitle: "Pembantu alat & istilah", faqText: "Tidak pasti apa itu alat yang dicadangkan? Minta penjelasan ringkas dan petua langkah demi langkah untuk sumber rendah.",
+      faqPlaceholder: "cth: Apa itu Plickers?", askBtn: "Tanya", whatIs: "Apa itu", howToLabel: "Cara menggunakannya", altLabel: "Alternatif tanpa teknologi",
+      faqFallback: "Alat pengajaran sumber rendah. Ketik salah satu alat yang dicadangkan di atas untuk panduan luar talian penuh.", faqFallbackLR: "Utamakan alat yang berfungsi pada satu peranti bercas tanpa internet.",
+      footL: "ResilientEdTech · Dibina untuk guru terpencil · Mesra luar talian", footR: "Perancangan pelajaran sejajar kurikulum · berjalan pada satu peranti",
+    },
+  };
+
+  constraintDefs = [
+    { key: "no_internet", en: "No internet", ms: "Tiada internet" },
+    { key: "limited_connectivity", en: "Limited connectivity", ms: "Sambungan terhad" },
+    { key: "single_device", en: "One device only", ms: "Satu peranti sahaja" },
+    { key: "restricted_hardware", en: "Limited hardware", ms: "Perkakasan terhad" },
+    { key: "single_screen", en: "One screen", ms: "Satu skrin" },
+    { key: "no_power", en: "No electricity", ms: "Tiada elektrik" },
+  ];
+
+  DATA = {
+    en: {
+      analyst: {
+        score: 68,
+        summary: "Strong, textbook-aligned coverage of cell structure — but the lesson is delivered almost entirely as whole-class talk and leans on the textbook diagram. Two small moves add the missing technology and assessment evidence without changing what students learn.",
+        alignments: [
+          { dimension: "DSKP Content Standard", status: "aligned", statusLabel: "Aligned", notes: "Covers 2.1 — cell structure & function for Form 1 Science." },
+          { dimension: "Learning Standard", status: "partial", statusLabel: "Partial", notes: "LS 2.1.3 (communicate about cells) is touched but never assessed." },
+          { dimension: "Scheme of Work", status: "aligned", statusLabel: "On pace", notes: "Matches Week 6 placement for the Cell topic." },
+          { dimension: "Textbook", status: "aligned", statusLabel: "Matched", notes: "Anchored on Chapter 2 diagrams as intended." },
+          { dimension: "ICT Integration", status: "not_aligned", statusLabel: "Missing", notes: "No technology element yet — the key gap for a tech-rich lesson." },
+          { dimension: "Inquiry / 21st-c skills", status: "partial", statusLabel: "Partial", notes: "Group discussion present; needs a hands-on investigation." },
+        ],
+        gaps: ["No technology integration, despite the tech-rich requirement.", "Learning standard 2.1.3 (communicating findings) is not assessed.", "Closure is recall-only — little higher-order thinking."],
+        recommendations: ["Add one offline tech activity — a projected PhET cell simulation runs with no internet.", "Convert the labelling worksheet into a Plickers exit poll for instant whole-class data.", "Add a 60-second 'explain to your partner' task to cover the communication standard."],
+        standards: ["DSKP 2.1", "LS 2.1.1", "LS 2.1.2", "LS 2.1.3"],
+      },
+      plan: {
+        title: "Cell as a Unit of Life — a resilient, tech-integrated lesson",
+        subject: "Science", form: "Form 1", topic: "Cell structure & function", duration: "60 min",
+        objectives: ["Identify the general structure of animal and plant cells and state each part's function.", "Use an offline simulation to compare a plant cell and an animal cell.", "Communicate one cell function in their own words to a partner."],
+        success_criteria: ["I can label the nucleus, cytoplasm, membrane, cell wall and chloroplast.", "I can say why a plant cell has parts an animal cell does not.", "I answer the exit poll correctly and explain my choice."],
+        tools: ["Plickers", "PhET Simulations (offline)", "USB-served media", "Quizizz Paper Mode"],
+        constraint_solutions: [
+          { constraint: "No internet", strategy: "Pre-download the PhET cell simulation and media to a USB stick the night before; everything runs from the teacher's device, no connection needed." },
+          { constraint: "One device only", strategy: "Use the single device + projector for whole-class demos, then rotate small groups through it for the hands-on simulation task." },
+          { constraint: "No electricity", strategy: "Charge the device beforehand; a 60-minute lesson runs on one charge. Printed Plickers cards mean students need no power at all." },
+        ],
+        phases: [
+          { phase: "Set Induction", duration: "10 min", activity: "Project an onion-skin and human-skin image; ask 'what are living things built from?' to surface prior ideas.", technology: "Single device + projector showing pre-downloaded images (offline)." },
+          { phase: "Development", duration: "35 min", activity: "Whole-class PhET cell walkthrough, then groups rotate through the device to build & label a plant vs. animal cell.", technology: "PhET Simulations served from USB — fully offline, one shared screen." },
+          { phase: "Closure", duration: "15 min", activity: "Every student raises a printed Plickers card to answer 5 questions; teacher scans once for instant results, then a 60-sec partner explanation.", technology: "Plickers / Quizizz Paper Mode — one camera scans the class, no student internet." },
+        ],
+        assessment: "Plickers exit poll: every student answers, the teacher scans once, results appear instantly on the projected screen — covering the recall and the communication standard in one move.",
+        materials: ["Teacher device (phone or laptop)", "Projector or TV", "Printed Plickers response cards", "Pre-downloaded PhET sim + images on USB", "Textbook Chapter 2"],
+        alignment_note: "Every original DSKP content and learning standard is preserved — only the delivery method changes. The added technology and exit poll close the ICT and assessment gaps the Analyst flagged.",
+        tema: "Life Science / Sains Hayat",
+        kbat_level: "Analysing & Creating / Menganalisis & Mencipta",
+        kbat: ["Why does a plant cell have a cell wall and chloroplast when an animal cell does not — and what would happen to each cell without them?", "Design a simple model of a cell using only objects found in the classroom, and explain what each part represents."],
+        pbd: "Target Band 3–4 (PBD). Evidence: the Plickers exit-poll results plus each pupil's labelled cell diagram / comparison product. Assess understanding of cell structure and function and the ability to communicate it — value depth of thinking, not just right or wrong answers.",
+        erph_langkah2: { duration: "10–15 min", activity: "In pairs, pupils create one creative product comparing a plant and an animal cell — a labelled diagram, a comparison chart, or a short analogy (the cell as a kampung or a factory). Pupils choose their own format; the teacher facilitates with challenge questions rather than giving answers.", technology: "Paper or mini-whiteboards; an optional worked exemplar projected from the offline device." },
+        penutup: "Pupils summarise in their own words — ask 'who can explain today's lesson to someone who was absent?' Then a 60-second partner explanation of one cell function, covering the communication standard.",
+      },
+      faqDB: {
+        plickers: { term: "Plickers", explanation: "A free classroom-response tool where each student holds up a printed card. The teacher scans the whole room once with a phone camera to capture every answer — no devices or internet needed for students.", steps: ["Print one Plickers card per student (free, reusable).", "Display a question on the projector or read it aloud.", "Students rotate their card so their chosen letter faces up.", "Scan the class once with the teacher phone — results appear instantly."], lowResource: "Only the teacher's device needs charge; works completely offline once cards are printed.", alternatives: ["Hand-drawn A/B/C/D cards", "Coloured paper for each option", "Hands-up voting"] },
+        phet: { term: "PhET Simulations (offline)", explanation: "Free interactive science & maths simulations from the University of Colorado. The whole library can be downloaded and run from a USB stick or local folder with no internet.", steps: ["Download the PhET offline bundle once where internet is available.", "Copy it to a USB stick or the teacher device.", "Open the simulation in any browser — no connection required.", "Project it for the class or pass the device between groups."], lowResource: "Runs from USB on a single charged device; ideal for one-screen, no-internet classrooms.", alternatives: ["Printed simulation screenshots as a worksheet", "A physical cell model from clay or paper", "Textbook diagrams with guided questions"] },
+        quizizz: { term: "Quizizz Paper Mode", explanation: "A quiz mode where students answer on a printed paper card instead of a device. The teacher scans answers with one phone — the same low-resource idea as Plickers.", steps: ["Build a quiz and switch on Paper Mode.", "Print the answer cards for your class.", "Run the quiz, scanning cards with the teacher device.", "Review the instant report to see who needs help."], lowResource: "Students need no device or internet; only the teacher device is used.", alternatives: ["Plickers", "Printed worksheet with self-marking", "Mini whiteboards"] },
+      },
+    },
+    ms: {
+      analyst: {
+        score: 68,
+        summary: "Liputan struktur sel yang kukuh dan sejajar dengan buku teks — tetapi pelajaran ini hampir sepenuhnya disampaikan secara syarahan seluruh kelas dan bergantung pada rajah buku teks. Dua langkah kecil menambah teknologi dan bukti pentaksiran yang hilang tanpa mengubah apa yang dipelajari murid.",
+        alignments: [
+          { status: "aligned", dimension: "Standard Kandungan DSKP", statusLabel: "Sejajar", notes: "Merangkumi 2.1 — struktur & fungsi sel bagi Sains Tingkatan 1." },
+          { status: "partial", dimension: "Standard Pembelajaran", statusLabel: "Separa", notes: "SP 2.1.3 (berkomunikasi tentang sel) disentuh tetapi tidak ditaksir." },
+          { status: "aligned", dimension: "Rancangan Pengajaran Tahunan", statusLabel: "Ikut jadual", notes: "Sepadan dengan penempatan Minggu 6 bagi topik Sel." },
+          { status: "aligned", dimension: "Buku Teks", statusLabel: "Sepadan", notes: "Berpaksikan rajah Bab 2 seperti yang dirancang." },
+          { status: "not_aligned", dimension: "Integrasi ICT", statusLabel: "Tiada", notes: "Belum ada elemen teknologi — jurang utama bagi pelajaran kaya teknologi." },
+          { status: "partial", dimension: "Inkuiri / kemahiran abad ke-21", statusLabel: "Separa", notes: "Perbincangan kumpulan ada; perlukan penyiasatan amali." },
+        ],
+        gaps: ["Tiada integrasi teknologi, walaupun pelajaran ini sepatutnya kaya teknologi.", "Standard pembelajaran 2.1.3 (menyampaikan penemuan) tidak ditaksir.", "Penutup hanya mengingat semula — kurang pemikiran aras tinggi."],
+        recommendations: ["Tambah satu aktiviti teknologi luar talian — simulasi sel PhET yang ditayangkan berfungsi tanpa internet.", "Tukar lembaran kerja melabel kepada undian keluar Plickers untuk data seluruh kelas serta-merta.", "Tambah tugasan 'terangkan kepada rakan' selama 60 saat untuk memenuhi standard komunikasi."],
+        standards: ["DSKP 2.1", "SP 2.1.1", "SP 2.1.2", "SP 2.1.3"],
+      },
+      plan: {
+        title: "Sel sebagai Unit Kehidupan — pelajaran berdaya tahan, bersepadu teknologi",
+        subject: "Sains", form: "Tingkatan 1", topic: "Struktur & fungsi sel", duration: "60 minit",
+        objectives: ["Mengenal pasti struktur am sel haiwan dan tumbuhan serta menyatakan fungsi setiap bahagian.", "Menggunakan simulasi luar talian untuk membandingkan sel tumbuhan dan sel haiwan.", "Menyampaikan satu fungsi sel dengan ayat sendiri kepada rakan."],
+        success_criteria: ["Saya boleh melabel nukleus, sitoplasma, membran, dinding sel dan kloroplas.", "Saya boleh menyatakan mengapa sel tumbuhan mempunyai bahagian yang tiada pada sel haiwan.", "Saya menjawab undian keluar dengan betul dan menerangkan pilihan saya."],
+        tools: ["Plickers", "Simulasi PhET (luar talian)", "Media dari USB", "Quizizz Mod Kertas"],
+        constraint_solutions: [
+          { constraint: "Tiada internet", strategy: "Muat turun awal simulasi sel PhET dan media ke pemacu USB pada malam sebelumnya; semuanya berjalan dari peranti guru, tanpa sambungan." },
+          { constraint: "Satu peranti sahaja", strategy: "Gunakan satu peranti + projektor untuk demonstrasi seluruh kelas, kemudian giliran kumpulan kecil menggunakannya untuk tugasan simulasi amali." },
+          { constraint: "Tiada elektrik", strategy: "Cas peranti terlebih dahulu; pelajaran 60 minit boleh berjalan dengan satu cas. Kad Plickers bercetak bermakna murid langsung tidak memerlukan kuasa." },
+        ],
+        phases: [
+          { phase: "Set Induksi", duration: "10 minit", activity: "Tayang imej kulit bawang dan kulit manusia; tanya 'daripada apakah hidupan dibina?' untuk menggali idea sedia ada.", technology: "Satu peranti + projektor menayangkan imej yang dimuat turun awal (luar talian)." },
+          { phase: "Perkembangan", duration: "35 minit", activity: "Tunjuk cara sel PhET seluruh kelas, kemudian kumpulan bergilir menggunakan peranti untuk membina & melabel sel tumbuhan vs. sel haiwan.", technology: "Simulasi PhET dari USB — sepenuhnya luar talian, satu skrin dikongsi." },
+          { phase: "Penutup", duration: "15 minit", activity: "Setiap murid mengangkat kad Plickers bercetak untuk menjawab 5 soalan; guru mengimbas sekali untuk keputusan serta-merta, kemudian penerangan rakan selama 60 saat.", technology: "Plickers / Quizizz Mod Kertas — satu kamera mengimbas kelas, tiada internet untuk murid." },
+        ],
+        assessment: "Undian keluar Plickers: setiap murid menjawab, guru mengimbas sekali, keputusan muncul serta-merta pada skrin tayangan — memenuhi standard mengingat dan komunikasi sekali gus.",
+        materials: ["Peranti guru (telefon atau komputer riba)", "Projektor atau TV", "Kad jawapan Plickers bercetak", "Simulasi PhET + imej dimuat turun awal dalam USB", "Buku teks Bab 2"],
+        alignment_note: "Setiap standard kandungan dan pembelajaran DSKP asal dikekalkan — hanya kaedah penyampaian berubah. Teknologi dan undian keluar yang ditambah menutup jurang ICT dan pentaksiran yang ditandakan oleh Penganalisis.",
+        tema: "Sains Hayat",
+        kbat_level: "Menganalisis & Mencipta",
+        kbat: ["Mengapa sel tumbuhan mempunyai dinding sel dan kloroplas sedangkan sel haiwan tidak — dan apa akan berlaku kepada setiap sel tanpanya?", "Reka satu model sel mudah menggunakan objek yang ada di dalam bilik darjah sahaja, dan terangkan apa yang diwakili oleh setiap bahagian."],
+        pbd: "Band Sasaran 3–4 (PBD). Bukti: keputusan undian keluar Plickers serta rajah/produk perbandingan sel berlabel setiap murid. Nilai kefahaman struktur dan fungsi sel serta keupayaan menyampaikannya — utamakan kedalaman pemikiran, bukan sekadar jawapan betul atau salah.",
+        erph_langkah2: { duration: "10–15 minit", activity: "Secara berpasangan, murid menghasilkan satu produk kreatif membandingkan sel tumbuhan dan sel haiwan — rajah berlabel, carta perbandingan, atau analogi ringkas (sel sebagai sebuah kampung atau kilang). Murid memilih formatnya sendiri; guru memudah cara dengan soalan mencabar dan bukan memberi jawapan.", technology: "Kertas atau papan putih mini; contoh boleh ditayangkan dari peranti luar talian." },
+        penutup: "Murid merumus dengan ayat sendiri — tanya 'siapa boleh terangkan pelajaran hari ini kepada seseorang yang tidak hadir?' Kemudian penerangan rakan selama 60 saat tentang satu fungsi sel, memenuhi standard komunikasi.",
+      },
+      faqDB: {
+        plickers: { term: "Plickers", explanation: "Alat respons kelas percuma di mana setiap murid mengangkat kad bercetak. Guru mengimbas seluruh bilik sekali dengan kamera telefon untuk merekod setiap jawapan — murid tidak perlukan peranti atau internet.", steps: ["Cetak satu kad Plickers bagi setiap murid (percuma, boleh guna semula).", "Paparkan soalan pada projektor atau bacakan.", "Murid memutar kad supaya huruf pilihan menghadap atas.", "Imbas kelas sekali dengan telefon guru — keputusan muncul serta-merta."], lowResource: "Hanya peranti guru perlu dicas; berfungsi sepenuhnya luar talian setelah kad dicetak.", alternatives: ["Kad A/B/C/D lukisan tangan", "Kertas berwarna bagi setiap pilihan", "Undian angkat tangan"] },
+        phet: { term: "Simulasi PhET (luar talian)", explanation: "Simulasi sains & matematik interaktif percuma daripada Universiti Colorado. Seluruh pustaka boleh dimuat turun dan dijalankan dari pemacu USB atau folder setempat tanpa internet.", steps: ["Muat turun pakej luar talian PhET sekali di tempat yang ada internet.", "Salin ke pemacu USB atau peranti guru.", "Buka simulasi dalam mana-mana pelayar — tanpa sambungan.", "Tayang untuk kelas atau gilirkan peranti antara kumpulan."], lowResource: "Berjalan dari USB pada satu peranti bercas; sesuai untuk bilik darjah satu skrin tanpa internet.", alternatives: ["Tangkapan skrin simulasi bercetak sebagai lembaran kerja", "Model sel fizikal daripada tanah liat atau kertas", "Rajah buku teks dengan soalan berpandu"] },
+        quizizz: { term: "Quizizz Mod Kertas", explanation: "Mod kuiz di mana murid menjawab pada kad kertas bercetak dan bukan peranti. Guru mengimbas jawapan dengan satu telefon — idea sumber rendah yang sama seperti Plickers.", steps: ["Bina kuiz dan hidupkan Mod Kertas.", "Cetak kad jawapan untuk kelas anda.", "Jalankan kuiz, imbas kad dengan peranti guru.", "Semak laporan serta-merta untuk lihat siapa perlukan bantuan."], lowResource: "Murid tidak perlukan peranti atau internet; hanya peranti guru digunakan.", alternatives: ["Plickers", "Lembaran kerja bercetak dengan penanda sendiri", "Papan putih mini"] },
+      },
+    },
+  };
+
+  renderVals() {
+    const L = this.state.lang;
+    const s = this.STR[L];
+    const D = this.DATA[L];
+    const analyst = D.analyst;
+    const plan = D.plan;
+
+    const sel = this.state.constraints;
+    const toggle = (key) => this.setState(st => ({ constraints: { ...st.constraints, [key]: !st.constraints[key] } }));
+    const constraints = this.constraintDefs.map(c => {
+      const active = !!sel[c.key];
+      return {
+        key: c.key, label: c[L], active,
+        onToggle: () => toggle(c.key),
+        chipStyle: "display:flex;align-items:center;gap:11px;padding:14px 15px;border-radius:14px;cursor:pointer;user-select:none;transition:.14s;border:1.5px solid " + (active ? "#1f7ec4" : "#dbe4df") + ";background:" + (active ? "#e4f0fa" : "#f4f8f6") + ";",
+        dotStyle: "width:18px;height:18px;border-radius:6px;flex:none;display:grid;place-items:center;background:" + (active ? "#1f7ec4" : "#fff") + ";border:1.5px solid " + (active ? "#1f7ec4" : "#c3d0cb") + ";",
+        checkStyle: "opacity:" + (active ? "1" : "0") + ";",
+      };
+    });
+    const selectedCount = constraints.filter(c => c.active).length;
+
+    const score = analyst.score;
+    const gaugeOffset = 327 - 327 * score / 100;
+    const statusStyles = {
+      aligned: { bg: "#e3f4e7", color: "#2c8a4a", dot: "#33a94a" },
+      partial: { bg: "#fdf3dc", color: "#a97c14", dot: "#f7b71d" },
+      not_aligned: { bg: "#fbe4d6", color: "#c85a2c", dot: "#e07840" },
+    };
+    const alignments = analyst.alignments.map(a => ({ ...a, ...statusStyles[a.status] }));
+
+    const askFaqFn = (term) => {
+      const norm = String(term).toLowerCase().replace(/[^a-z]/g, "");
+      let entry = null;
+      for (const k in D.faqDB) { if (norm.indexOf(k) !== -1) { entry = D.faqDB[k]; break; } }
+      if (!entry) entry = { term: String(term), explanation: s.faqFallback, steps: [], lowResource: s.faqFallbackLR, alternatives: [] };
+      this.setState(st => ({ faqItems: [{ ...entry, id: Date.now() + Math.random() }, ...st.faqItems], faqQuery: "", activeTab: "faq" }));
+    };
+    const faqChips = plan.tools.slice(0, 4).map(term => ({ term, label: s.whatIs + " " + term + "?", onAsk: () => askFaqFn(term) }));
+    const toolTags = plan.tools.map(name => ({ name, onAsk: () => askFaqFn(name) }));
+
+    const tab = this.state.activeTab;
+    const tabsDef = [
+      { id: "input", label: s.tabInput },
+      { id: "analysis", label: s.tabAnalysis },
+      { id: "plan", label: s.tabPlan },
+      { id: "faq", label: s.tabFaq },
+    ];
+    const tabs = tabsDef.map(t => {
+      const active = tab === t.id;
+      return {
+        ...t,
+        onClick: () => this.setState({ activeTab: t.id }),
+        btnStyle: "font:inherit;font-family:'Baloo 2',cursive;font-weight:600;font-size:.98rem;padding:11px 18px;border:none;background:none;cursor:pointer;border-bottom:3px solid " + (active ? "#9b2c8f" : "transparent") + ";color:" + (active ? "#7d2570" : "#8b8494") + ";margin-bottom:-2px;transition:.13s;",
+      };
+    });
+    const panelOf = (id) => "display:" + (tab === id ? "block" : "none") + ";";
+
+    const enActive = L === "en";
+    return {
+      s,
+      setEn: () => this.setState({ lang: "en" }),
+      setMs: () => this.setState({ lang: "ms" }),
+      enPillStyle: "padding:8px 14px;cursor:pointer;background:" + (enActive ? "#9b2c8f" : "transparent") + ";color:" + (enActive ? "#fff" : "#9b2c8f") + ";",
+      msPillStyle: "padding:8px 14px;cursor:pointer;background:" + (!enActive ? "#9b2c8f" : "transparent") + ";color:" + (!enActive ? "#fff" : "#9b2c8f") + ";",
+      tabs,
+      panelInput: panelOf("input"),
+      panelAnalysis: panelOf("analysis"),
+      panelPlan: panelOf("plan"),
+      panelFaq: panelOf("faq"),
+      notRun: !this.state.showResults,
+      emptyStyle: "background:#fff;border:2px dashed #cbd9d2;border-radius:16px;padding:44px 28px;text-align:center;color:#8b8494;font-weight:600;font-size:1rem;line-height:1.5;",
+      constraints,
+      selectedLine: selectedCount + " " + s.ofSelected,
+      analyzing: this.state.analyzing,
+      notAnalyzing: !this.state.analyzing,
+      runLabel: this.state.analyzing ? s.runBusy : (this.state.showResults ? s.runRerun : s.runIdle),
+      showResults: this.state.showResults,
+      run: () => {
+        this.setState({ analyzing: true });
+        setTimeout(() => this.setState({ analyzing: false, showResults: true, activeTab: "analysis" }), 1100);
+      },
+      score, gaugeOffset,
+      summary: analyst.summary,
+      alignments,
+      gaps: analyst.gaps,
+      recommendations: analyst.recommendations,
+      standards: analyst.standards,
+      planTitle: plan.title,
+      metaSubject: plan.subject, metaForm: plan.form, metaTopic: plan.topic, metaTopicField: plan.topic, metaDuration: plan.duration,
+      meta: [{ label: plan.subject }, { label: plan.form }, { label: plan.topic }, { label: plan.duration }],
+      objectives: plan.objectives,
+      successCriteria: plan.success_criteria,
+      toolTags,
+      solutions: plan.constraint_solutions,
+      phases: plan.phases,
+      assessment: plan.assessment,
+      materials: plan.materials,
+      alignmentNote: plan.alignment_note,
+      faqChips,
+      faqQuery: this.state.faqQuery,
+      setFaqQuery: (e) => this.setState({ faqQuery: e.target.value }),
+      faqItems: this.state.faqItems.map(it => ({ ...it, hasSteps: it.steps && it.steps.length > 0, hasAlts: it.alternatives && it.alternatives.length > 0 })),
+      hasFaqItems: this.state.faqItems.length > 0,
+      submitFaq: () => { const q = this.state.faqQuery.trim(); if (q) askFaqFn(q); },
+      faqKeyDown: (e) => { if (e.key === "Enter") { const q = this.state.faqQuery.trim(); if (q) askFaqFn(q); } },
+      doPrint: () => window.print(),
+      erphTema: plan.tema,
+      erphSK: "DSKP 2.1 — " + plan.topic,
+      erphSP: analyst.standards.filter(x => /LS|SP/.test(x)),
+      erphTMK: plan.tools.join(", "),
+      erphSet: plan.phases[0],
+      erphStep1: plan.phases[1],
+      erphStep2: plan.erph_langkah2,
+      erphClosure: plan.penutup,
+      erphKbatLevel: plan.kbat_level,
+      erphKbat: plan.kbat,
+      erphPbd: plan.pbd,
+      erphKeyStyle: "border:1px solid #999;padding:5px 8px;background:#f5e7f2;font-weight:700;color:#7d2570;width:20%;vertical-align:top;",
+      erphValStyle: "border:1px solid #999;padding:5px 8px;vertical-align:top;",
+      erphEnStyle: "font-weight:600;font-size:9px;color:#a98ca4;font-style:italic;",
+    };
+  }
+}
+</script>
+</body>
+</html>

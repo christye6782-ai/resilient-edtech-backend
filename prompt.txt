@@ -1,0 +1,38 @@
+Act as an experienced Computer Vision Engineer,Create a professional and fantastic application for teachers in rural areas to plan a lesson that use technology, using the best resources albeit the constraints they are facing.
+
+
+Agent 1: The Analyst
+= Teacher will upload own lesson plan
+- Agent will analyse if lesson plan is according to DSKP, scheme of work and topics in the textbook
+
+Agent 2: The Auditor
+- Teacher will choose constraints faced at school especially in terms of technology integration
+- For example: Limited connectivity, no internet, 1 device only, 1 screen etc.
+- Agent will propose the best way to carry on with lesson plan by proposing ways to overcome constraints, at the same time keep the use of technology
+- Teacher can print lesson plan
+
+
+Agent 3: FAQ
+-Agent can actually explain terminology based on lesson suggested and also ways to execute them
+-For example: If agent 2 suggested the use of 'plickers', Agent 3 will answer what 'plickers' is
+
+
+Input:
+1.Teacher upload own lesson plan
+2. teacher choose constraint/s
+
+output:
+1. revised lesson with best integration of technology based on constrained but still aligned with dskp, textbook and scheme of work
+
+
+Application should run in anaconda environment through uvicorn server, 
+
+
+Backend : fastapi
+
+Frontend : html,css and javascript
+
+the backend should connect with CV model to capture the output
+
+
+

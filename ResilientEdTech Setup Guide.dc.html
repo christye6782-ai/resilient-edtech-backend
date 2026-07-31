@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  doc-page:not(:defined){visibility:hidden;}
+  body{margin:0;background:#e8f2ee;}
+</style>
+</helmet>
+<x-import component-from-global-scope="doc-page" from="./doc-page.js" size="letter" margin="0.7in" hint-size="100%,100%">
+
+  <div slot="footer" style="display:flex;justify-content:space-between;align-items:center;font-family:'Nunito',sans-serif;font-size:9px;color:#9aa39f;padding:6px 4px 0;border-top:1px solid #e2ddd0;">
+    <span>ResilientEdTech — Local Setup Guide</span>
+    <span>Runs offline · one device</span>
+  </div>
+
+  <div style="font-family:'Nunito',sans-serif;color:#3a3340;line-height:1.5;">
+
+    <!-- TITLE -->
+    <div style="border-bottom:3px solid #9b2c8f;padding-bottom:16px;margin-bottom:22px;">
+      <div style="display:flex;align-items:center;gap:11px;margin-bottom:14px;">
+        <div style="width:32px;height:32px;border-radius:9px;background:linear-gradient(135deg,#9b2c8f,#c0359e);display:grid;place-items:center;flex:none;">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+        </div>
+        <span style="font-family:'Baloo 2',cursive;font-weight:700;font-size:15px;color:#9b2c8f;">ResilientEdTech</span>
+      </div>
+      <div style="font-size:10px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:#1f7ec4;margin-bottom:9px;">Localized · Offline · Agentic AI</div>
+      <h1 style="font-family:'Baloo 2',cursive;font-weight:700;font-size:30px;line-height:1.08;color:#7d2570;margin:0 0 10px;">Local Setup Guide</h1>
+      <p style="font-size:12.5px;color:#5d5568;margin:0;max-width:44em;">Everything you need to save on one machine to run the prototype now — no internet required at runtime. A connection is needed only once, to install the packages and (optionally) the model.</p>
+    </div>
+
+    <!-- FOLDER TREE -->
+    <div style="break-inside:avoid;margin-bottom:22px;">
+      <div style="display:flex;align-items:center;gap:9px;margin-bottom:10px;">
+        <span style="width:22px;height:22px;border-radius:6px;background:#9b2c8f;color:#fff;font-family:'Baloo 2',cursive;font-weight:700;font-size:12px;display:grid;place-items:center;flex:none;">1</span>
+        <h2 style="font-family:'Baloo 2',cursive;font-weight:700;font-size:17px;color:#7d2570;margin:0;">Files &amp; folders to save</h2>
+      </div>
+      <div style="background:#fbf7fa;border:1px solid #ecd9e7;border-radius:12px;padding:14px 18px;">
+        <pre style="margin:0;font-family:'JetBrains Mono',monospace;font-size:10.5px;line-height:1.65;color:#3a3340;white-space:pre;">ResilientEdTech/
+├─ app/                          <span style="color:#9b8ca0;"># FastAPI backend</span>
+│  ├─ main.py                    <span style="color:#9b8ca0;"># routes + serves the frontend</span>
+│  ├─ config.py                  <span style="color:#9b8ca0;"># settings loader</span>
+│  ├─ llm.py                     <span style="color:#9b8ca0;"># offline engine (on-device → rule-based)</span>
+│  ├─ cv_service.py              <span style="color:#9b8ca0;"># OCR / CV pipeline</span>
+│  ├─ db.py                      <span style="color:#9b8ca0;"># SQLite access</span>
+│  ├─ schemas.py                 <span style="color:#9b8ca0;"># request/response models</span>
+│  ├─ schema.sql                 <span style="color:#9b8ca0;"># DB schema (run once)</span>
+│  ├─ __init__.py
+│  ├─ agents/
+│  │  ├─ analyst.py
+│  │  ├─ pedagogy_architect.py   <span style="color:#9b8ca0;"># (or auditor.py)</span>
+│  │  ├─ faq.py
+│  │  └─ __init__.py
+│  └─ data/
+│     ├─ dskp.json               <span style="color:#9b8ca0;"># curriculum reference</span>
+│     ├─ tech_tools.json         <span style="color:#9b8ca0;"># offline-tool knowledge base</span>
+│     ├─ differentiation_scaffolds.json
+│     ├─ resilient.db            <span style="color:#9b8ca0;"># SQLite file (from schema.sql)</span>
+│     └─ uploads/                <span style="color:#9b8ca0;"># empty folder for incoming files</span>
+├─ frontend/
+│  ├─ index.html                 <span style="color:#9b8ca0;"># chosen design (DELIMA A or B)</span>
+│  ├─ css/  js/  locales/
+├─ requirements.txt              <span style="color:#9b8ca0;"># Python dependencies</span>
+├─ .env                          <span style="color:#9b8ca0;"># copied from .env.example</span>
+└─ README.md</pre>
+      </div>
+    </div>
+
+    <!-- INSTALL ON MACHINE -->
+    <div style="break-inside:avoid;margin-bottom:22px;">
+      <div style="display:flex;align-items:center;gap:9px;margin-bottom:10px;">
+        <span style="width:22px;height:22px;border-radius:6px;background:#9b2c8f;color:#fff;font-family:'Baloo 2',cursive;font-weight:700;font-size:12px;display:grid;place-items:center;flex:none;">2</span>
+        <h2 style="font-family:'Baloo 2',cursive;font-weight:700;font-size:17px;color:#7d2570;margin:0;">Installed on the machine (not repo files)</h2>
+      </div>
+      <table style="width:100%;border-collapse:collapse;font-size:11.5px;">
+        <tbody>
+          <tr>
+            <td style="border:1px solid #e2d3ee;padding:7px 11px;background:#f5e7f2;font-weight:800;color:#7d2570;width:26%;">Python 3.10+</td>
+            <td style="border:1px solid #e2d3ee;padding:7px 11px;">Required. Runs the backend.</td>
+          </tr>
+          <tr>
+            <td style="border:1px solid #e2d3ee;padding:7px 11px;background:#f5e7f2;font-weight:800;color:#7d2570;">Ollama + <span style="font-family:'JetBrains Mono',monospace;font-size:10px;">llama3.2:3b</span></td>
+            <td style="border:1px solid #e2d3ee;padding:7px 11px;"><strong>Optional</strong> (~2–3 GB). The on-device model. Without it, the app runs in rule-based <em>basic</em> mode.</td>
+          </tr>
+          <tr>
+            <td style="border:1px solid #e2d3ee;padding:7px 11px;background:#f5e7f2;font-weight:800;color:#7d2570;">Tesseract</td>
+            <td style="border:1px solid #e2d3ee;padding:7px 11px;"><strong>Optional.</strong> Only needed to read photographed / scanned handwritten plans.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- RUN -->
+    <div style="break-inside:avoid;margin-bottom:22px;">
+      <div style="display:flex;align-items:center;gap:9px;margin-bottom:10px;">
+        <span style="width:22px;height:22px;border-radius:6px;background:#2ea44a;color:#fff;font-family:'Baloo 2',cursive;font-weight:700;font-size:12px;display:grid;place-items:center;flex:none;">3</span>
+        <h2 style="font-family:'Baloo 2',cursive;font-weight:700;font-size:17px;color:#7d2570;margin:0;">Run it</h2>
+      </div>
+      <div style="background:#14403c;border-radius:12px;padding:15px 18px;">
+        <pre style="margin:0;font-family:'JetBrains Mono',monospace;font-size:10.5px;line-height:1.7;color:#cfe3db;white-space:pre-wrap;">pip install -r requirements.txt
+cp .env.example .env
+sqlite3 app/data/resilient.db &lt; app/schema.sql   <span style="color:#8fb3aa;"># once</span>
+uvicorn app.main:app --host 127.0.0.1 --port 5000
+<span style="color:#8fb3aa;"># then open</span> http://127.0.0.1:5000</pre>
+      </div>
+    </div>
+
+    <!-- MINIMUM CALLOUT -->
+    <div style="break-inside:avoid;background:#e3f4e7;border:1px solid #c3e6cd;border-radius:12px;padding:14px 18px;display:flex;gap:11px;align-items:flex-start;">
+      <svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="#2c8a4a" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex:none;margin-top:1px;"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+      <p style="margin:0;font-size:11.5px;color:#2c6b3f;line-height:1.55;"><strong>Bare minimum to see it work today:</strong> the <span style="font-family:'JetBrains Mono',monospace;font-size:10px;">app/</span> code + <span style="font-family:'JetBrains Mono',monospace;font-size:10px;">app/data/*.json</span> + the frontend + <span style="font-family:'JetBrains Mono',monospace;font-size:10px;">requirements.txt</span> + <span style="font-family:'JetBrains Mono',monospace;font-size:10px;">.env</span>. Ollama and Tesseract are optional — without the model the app still runs in rule-based mode, and the database file is created from the schema in one command. Nothing here needs the internet at runtime.</p>
+    </div>
+
+  </div>
+</x-import>
+</x-dc>
+</body>
+</html>

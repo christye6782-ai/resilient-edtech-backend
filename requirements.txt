@@ -1,0 +1,24 @@
+# Resilient EdTech — Python dependencies
+# (Conda users: prefer environment.yml; this file is for pip-based installs.)
+
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+python-multipart==0.0.18
+pydantic==2.10.4
+python-dotenv==1.0.1
+
+# Ollama client — drives the local Llama 3.2 3B model for the three agents.
+# Harmless in a cloud/basic-mode deploy: it is imported lazily and never called
+# when ENGINE_MODE=basic, so no model connection is attempted.
+ollama==0.4.5
+
+# Computer Vision / OCR pipeline
+opencv-python-headless==4.10.0.84
+numpy==2.1.3
+pytesseract==0.3.13
+Pillow==11.0.0
+
+# Document parsing (PDF / DOCX lesson plans)
+pypdf==5.1.0
+python-docx==1.1.2
+reportlab>=4.0

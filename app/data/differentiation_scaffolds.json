@@ -1,0 +1,26 @@
+{
+  "_comment": "Differentiation scaffolds playbook (Agent D). Maps KSSR performance levels (Tahap Penguasaan) to tier templates and generic scaffold moves. The Pedagogy Architect uses this to split the lesson's hands-on step into readiness tiers; the rule-based fallback builds tiers directly from these templates when no model is available.",
+  "performance_levels": {
+    "remedial":   { "label": "Remedial",   "malay": "Pemulihan",  "tp": "TP1\u20132" },
+    "core":       { "label": "Core",        "malay": "Teras",      "tp": "TP3\u20134" },
+    "enrichment": { "label": "Enrichment",  "malay": "Pengayaan",  "tp": "TP5\u20136" }
+  },
+  "intro_template": "The hands-on and formative-check steps split into three readiness pathways, so every learner \u2014 from TP1 to TP6 \u2014 works at the right level on the same offline activity.",
+  "note": "Tiers map to the KSSR performance levels (Tahap Penguasaan). No extra devices or internet are required for any tier \u2014 only printed scaffolds and peer grouping.",
+  "scaffolds": {
+    "remedial": [
+      "Provide visual vocabulary matching boards / picture-word cards for the key terms so tactile learners pair each item to its name before the main task.",
+      "Pair the student with a Core- or Enrichment-tier peer for any shared-device rotation; together they narrate one step aloud.",
+      "Reduce the formative check to fewer, picture-based questions instead of the full text set."
+    ],
+    "core": [
+      "Run the baseline offline activity exactly as the plan describes.",
+      "Complete the full formative check, then explain one key idea to a partner in their own words."
+    ],
+    "enrichment": [
+      "Act as peer-mentors during the device rotation, coaching a Remedial-tier classmate through the task.",
+      "Formulate alternative descriptors: write a short analogy comparing the concept to a familiar system.",
+      "Propose one additional challenge question to add to the class formative check."
+    ]
+  }
+}

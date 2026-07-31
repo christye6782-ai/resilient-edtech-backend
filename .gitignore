@@ -1,0 +1,27 @@
+# --- Python ---
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.Python
+
+# --- Environment / secrets ---
+.env
+
+# --- Local data (never commit teacher data or databases) ---
+*.db
+*.sqlite
+*.sqlite3
+graph_state.db
+app/data/uploads/
+data/uploads/
+
+# --- OS / editor noise ---
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# --- Large local artefacts ---
+*.xlsx
+screenshots/

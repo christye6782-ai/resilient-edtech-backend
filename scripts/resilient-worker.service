@@ -1,0 +1,14 @@
+[Unit]
+Description=ResilientEdTech Worker
+After=network.target
+
+[Service]
+Type=simple
+User=www-data
+WorkingDirectory=/opt/resilientedtech
+ExecStart=/usr/bin/python3 /opt/resilientedtech/scripts/worker.py
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

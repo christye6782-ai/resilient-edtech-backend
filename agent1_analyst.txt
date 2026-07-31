@@ -1,0 +1,176 @@
+ResilientEdTech — Agent 1: The Analyst
+========================================
+File:      app/agents/analyst.py
+Endpoint:  POST /api/analyse
+Schema:    app/schemas.py (AnalystRequest, AnalystResult)
+
+
+OVERVIEW
+--------
+The Analyst is the curriculum-compliance checker. A rural teacher uploads
+their own lesson plan (as text, or as a photo/PDF/DOCX processed by the CV
+pipeline first); the Analyst reads it and checks it against three
+dimensions — the DSKP (Dokumen Standard Kurikulum dan Pentaksiran), the
+scheme of work, and the textbook chapter/topic — before the Auditor (Agent
+2) ever touches it. Its output tells the teacher exactly how well their plan
+already aligns with the curriculum, what's missing, and what to fix, in
+encouraging, non-judgemental language suited to a teacher working with
+limited resources.
+
+
+ROLE / RESPONSIBILITY
+----------------------
+- Evaluate a lesson plan against:
+    1. DSKP content & learning standards
+    2. Scheme of work sequencing
+    3. Textbook chapter/topic alignment
+- Detect which specific DSKP content and learning standards the plan
+  addresses (e.g. "2.1.1 Justify that cell is a basic unit of life").
+- Identify concrete gaps (e.g. missing objectives, no assessment, standards
+  not sequenced correctly).
+- Give an overall 0-100 alignment score.
+- Produce specific, actionable recommendations — never vague praise or
+  vague criticism.
+- Stay constructive: these are rural teachers doing their best with limited
+  resources, so tone matters as much as accuracy.
+
+
+INPUT
+-----
+Pydantic model: AnalystRequest
+
+  Field         Type            Required   Description
+  -----         ----            --------   -----------
+  lesson_text   string          yes        Extracted plain text of the
+                                            teacher's lesson plan (usually
+                                            the output of POST /api/extract)
+  subject       string | null   no         e.g. "Science"
+  form          string | null   no         e.g. "Form 1"
+  topic         string | null   no         e.g. "Cell as a Unit of Life"
+
+Example request body:
+  {
+    "lesson_text": "Lesson Plan\nSubject: Science\nForm: Form 1\n...",
+    "subject": "Science",
+    "form": "Form 1",
+    "topic": "Cell as a Unit of Life"
+  }
+
+Notes:
+  - The endpoint rejects empty/whitespace-only lesson_text with HTTP 400.
+  - Only the first 3000 characters of lesson_text are sent to the model
+    (see analyst.py::analyse) to keep prompts small and fast on a local
+    3B model — supply subject/form/topic to help matching when the plan is
+    long or the key details are further down.
+
+
+OUTPUT
+------
+Pydantic model: AnalystResult
+
+  Field                          Type              Description
+  -----                          ----              -----------
+  summary                        string            Plain-language overall
+                                                    assessment of the plan
+  overall_alignment_score        integer (0-100)   Aggregate alignment score
+  alignments                     list[AlignmentItem]
+                                                    One entry per dimension:
+                                                    DSKP, Scheme of Work,
+                                                    Textbook. Each item has:
+                                                      dimension: string
+                                                      status: "aligned" |
+                                                        "partial" |
+                                                        "not_aligned"
+                                                      notes: string
+  content_standards_detected     list[string]      DSKP content standards
+                                                    the lesson appears to
+                                                    address
+  learning_standards_detected    list[string]      DSKP learning standards
+                                                    the lesson appears to
+                                                    address
+  gaps                           list[string]      Specific missing elements
+  recommendations                list[string]      Concrete next steps
+  powered_by                     string            "Llama 3.2 3B" or
+                                                    "rule-based"
+
+Example response (abridged, real output from a live run):
+  {
+    "summary": "The teacher's lesson plan for Form 1 Science aligns with
+      the DSKP content & learning standards for Cell as a Unit of Life
+      (Chapter 2). However, there are some gaps in scheme of work
+      sequencing and textbook alignment.",
+    "overall_alignment_score": 7,
+    "alignments": [
+      {"dimension": "DSKP", "status": "aligned", "notes": ""},
+      {"dimension": "Scheme of Work", "status": "partial",
+       "notes": "Does not explicitly sequence the levels of cell
+         organisation (standard 2.2.1)."},
+      {"dimension": "Textbook", "status": "aligned", "notes": ""}
+    ],
+    "content_standards_detected": ["2.1 Cells; 2.2 Cell organisation"],
+    "learning_standards_detected": ["2.1.1 Justify that cell is a basic
+      unit of life; 2.1.2 Identify and draw the general structure of
+      animal and plant cells; ..."],
+    "gaps": ["Sequence the levels of cell organisation (standard 2.2.1)"],
+    "recommendations": [
+      "Consider adding a brief introduction to explain why cells are
+        considered the basic unit of life.",
+      "Emphasise the sequencing of cell organisation in the lesson plan."
+    ],
+    "powered_by": "Llama 3.2 3B"
+  }
+
+
+TOOLS & DATA USED
+------------------
+1. Ollama — Llama 3.2 3B (local, offline LLM)
+   - Invoked via app/llm.py::structured_call(system_prompt, user_prompt,
+     json_schema)
+   - The call is JSON-schema constrained (Ollama structured output), so the
+     model's reply is forced to match AnalystResult's shape — no manual
+     parsing of free-text output.
+   - Config: OLLAMA_HOST, OLLAMA_MODEL (default llama3.2:3b),
+     OLLAMA_NUM_CTX, OLLAMA_TEMPERATURE, OLLAMA_TIMEOUT — all in .env,
+     read by app/config.py.
+
+2. DSKP knowledge base — app/data/dskp.json
+   - Structure: subjects[] -> topics[] -> {topic, textbook_chapter,
+     content_standards[], learning_standards[]}
+   - Loaded via app/config.py::load_dskp()
+   - Compressed into a compact "digest" string by
+     analyst.py::_dskp_digest() before being placed in the prompt, so the
+     3B model gets a token-light curriculum reference instead of the raw
+     JSON.
+
+3. System prompt (analyst.py::_SYSTEM)
+   - Frames the model as "The Analyst", an expert on the Malaysian
+     KSSM/KSSR curriculum, instructed to always return all three
+     dimensions and reply with ONLY a JSON object.
+
+4. Rule-based fallback — analyst.py::_fallback()
+   - Used automatically when structured_call() returns None (Ollama not
+     running, LLM_ENABLED=false, or the model's output was empty/off-shape).
+   - Matches lesson_text keywords/topic name against dskp.json entries.
+   - Heuristically scores alignment (base 30, +25 for topic match, +15 each
+     for detected objectives / assessment / activity keywords, capped 95).
+   - Still returns a fully-formed AnalystResult so the API contract never
+     breaks, with powered_by = "rule-based" and a note prompting the user
+     to start Ollama for a deeper review.
+
+
+UPSTREAM / DOWNSTREAM
+-----------------------
+- Upstream: usually consumes the text produced by POST /api/extract
+  (app/cv_service.py), which turns an uploaded photo/PDF/DOCX/TXT into
+  lesson_text via OpenCV + Tesseract OCR, pypdf, or python-docx.
+- Downstream: the frontend commonly passes this agent's `summary` into the
+  Auditor (Agent 2) as AuditorRequest.analyst_summary, so the redesigned
+  plan stays consistent with the Analyst's findings.
+
+
+QUALITY GUARDS
+---------------
+- If the LLM returns a syntactically valid but semantically empty result
+  (no summary text and a zero alignment score), the code discards it and
+  falls back to the rule-based path rather than showing the teacher a
+  blank analysis.

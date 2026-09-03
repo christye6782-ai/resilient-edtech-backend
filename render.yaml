@@ -20,5 +20,11 @@ services:
         value: basic
       - key: LLM_ENABLED
         value: "false"
+      # Serves frontend/index-demo.html instead of index.html — the peer-review
+      # bundle, which carries the "demonstration build" banner stating that the
+      # on-device AI runs only in the installed offline app. The packaged .exe
+      # never sets this, so it keeps index.html.
+      - key: DEMO_FRONTEND
+        value: "true"
       - key: PYTHON_VERSION
         value: "3.11.9"

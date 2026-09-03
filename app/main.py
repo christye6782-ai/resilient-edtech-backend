@@ -18,6 +18,7 @@ import logging
 import time
 import io
 from pathlib import Path
+from typing import Optional
 from reportlab.pdfgen import canvas
 
 from fastapi import FastAPI, File, Form, HTTPException, UploadFile, BackgroundTasks
@@ -30,7 +31,7 @@ from . import __version__, cv_service
 from . import db as dbmod
 from . import rag as ragmod
 from .agents import analyst, auditor, faq, pedagogy_architect
-from .config import FRONTEND_DIR, DATA_DIR, settings
+from .config import FRONTEND_DIR, DATA_DIR, UPLOADS_DIR, settings
 from .llm import engine_status, get_mode, set_mode, get_model, set_model, MODEL_CHOICES
 from .schemas import (
     AnalystRequest,
@@ -46,8 +47,10 @@ from .schemas import (
     FeedbackResult,
 )
 import os
+import re
 
 logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger("resilient-edtech.api")
 
 app = FastAPI(
     title="ResilientEdTech",
@@ -56,11 +59,36 @@ app = FastAPI(
     "Analyst, Auditor and FAQ agents with a CV/OCR upload pipeline.",
 )
 
+# --------------------------------------------------------------------------- #
+# CORS.
+#
+# This was previously allow_origins=["*"], which is unsafe for a local app with
+# no authentication. The localhost binding does NOT protect against it: if a
+# teacher has the app running and then visits any web page, that page's
+# JavaScript can call http://127.0.0.1:5000 from their browser, and a wildcard
+# origin tells the browser to hand back the response. With /api/export that is
+# a drive-by copy of the whole database; with DELETE /api/plans it is silent
+# data loss.
+#
+# The interface is served from the same origin as the API, so CORS is not
+# needed for normal operation. Only explicit localhost origins are allowed, for
+# the case where the HTML is opened separately during development.
+# --------------------------------------------------------------------------- #
+_ALLOWED_ORIGINS = [
+    "http://127.0.0.1:5000", "http://localhost:5000",
+    "http://127.0.0.1:8000", "http://localhost:8000",
+    "http://127.0.0.1:5500", "http://localhost:5500",
+]
+if os.getenv("RET_ALLOWED_ORIGINS"):
+    _ALLOWED_ORIGINS += [
+        o.strip() for o in os.getenv("RET_ALLOWED_ORIGINS", "").split(",") if o.strip()
+    ]
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
-    allow_methods=["*"],
-    allow_headers=["*"],
+    allow_origins=_ALLOWED_ORIGINS,
+    allow_methods=["GET", "POST", "DELETE", "OPTIONS"],
+    allow_headers=["Content-Type"],
 )
 
 MAX_UPLOAD_BYTES = 15 * 1024 * 1024  # 15 MB
@@ -137,6 +165,24 @@ def post_engine_model(req: EngineModelRequest) -> dict:
     return {"model": get_model(), "choices": MODEL_CHOICES, "engine": engine_status()}
 
 
+def _safe_upload_name(raw: str) -> str:
+    """Reduce an uploaded filename to something safe to join onto a directory.
+
+    `UploadFile.filename` is supplied by the client, and it was being embedded
+    directly into the stored path. A name like "../../../evil.bat" escapes the
+    uploads folder, giving a write-anywhere primitive — which, combined with the
+    permissive CORS that used to be set here, was reachable from any web page
+    the teacher happened to have open.
+
+    Keep only the final path component, and only characters that cannot be
+    interpreted as path syntax on Windows or POSIX.
+    """
+    name = os.path.basename(str(raw or "").replace("\\", "/")).strip()
+    name = re.sub(r"[^A-Za-z0-9._-]", "_", name)
+    name = name.lstrip(".") or "upload"          # no leading dots / empty names
+    return name[:120]                            # keep well under path limits
+
+
 @app.post("/api/extract", response_model=ExtractionResult)
 async def extract(file: UploadFile = File(...)) -> ExtractionResult:
     """CV/OCR pipeline: turn an uploaded lesson plan (image/PDF/DOCX/TXT) into text."""
@@ -146,9 +192,9 @@ async def extract(file: UploadFile = File(...)) -> ExtractionResult:
     if len(content) > MAX_UPLOAD_BYTES:
         raise HTTPException(status_code=413, detail="File too large (max 15 MB).")
     # persist uploaded file to local storage
-    storage_dir = Path(DATA_DIR) / "uploads"
+    storage_dir = Path(UPLOADS_DIR)
     storage_dir.mkdir(parents=True, exist_ok=True)
-    stored_path = storage_dir / f"upload_{int(time.time())}_{file.filename}"
+    stored_path = storage_dir / f"upload_{int(time.time())}_{_safe_upload_name(file.filename)}"
     with open(stored_path, "wb") as fh:
         fh.write(content)
 
@@ -170,9 +216,9 @@ async def extract_async(background_tasks: BackgroundTasks, file: UploadFile = Fi
     if len(content) > MAX_UPLOAD_BYTES:
         raise HTTPException(status_code=413, detail="File too large (max 15 MB).")
 
-    storage_dir = Path(DATA_DIR) / "uploads"
+    storage_dir = Path(UPLOADS_DIR)
     storage_dir.mkdir(parents=True, exist_ok=True)
-    stored_path = storage_dir / f"upload_{int(time.time())}_{file.filename}"
+    stored_path = storage_dir / f"upload_{int(time.time())}_{_safe_upload_name(file.filename)}"
     with open(stored_path, "wb") as fh:
         fh.write(content)
 
@@ -285,10 +331,21 @@ def design(req: DesignRequest) -> DesignResult:
     """
     if not req.lesson_text.strip():
         raise HTTPException(status_code=400, detail="lesson_text is required.")
-    if os.getenv("USE_LANGGRAPH") == "1":
-        from .graph import run_design
-        return run_design(req)
-    return pedagogy_architect.design(req)
+    result = pedagogy_architect.design(req)
+
+    # Optional Critic debate (USE_CRITIC=1): a senior-teacher agent raises
+    # objections and the Architect revises to answer them. Wrapped so a missing
+    # model, bad JSON, or any error just returns the original plan.
+    if os.getenv("USE_CRITIC") == "1":
+        try:
+            from .agents import critic
+            from .config import load_tech_tools
+            result, transcript = critic.debate(result, req, load_tech_tools())
+            if transcript:
+                logger.info("critic debate: %s", transcript)
+        except Exception:  # noqa: BLE001
+            pass
+    return result
 
 
 @app.post("/api/audit", response_model=AuditorResult, deprecated=True)
@@ -357,6 +414,144 @@ def api_rag_status() -> dict:
     return ragmod.status()
 
 
+@app.get("/api/export")
+def api_export_data():
+    """Download every piece of teacher data as one zip.
+
+    Nothing backs up %LOCALAPPDATA% on a school PC, so a reimage would destroy
+    months of lesson history. This gives a teacher a single file they can copy
+    to a USB stick.
+
+    The database is snapshotted through SQLite's backup API rather than copied
+    off disk: a plain file copy taken while a write is in flight can produce a
+    corrupt archive, which is worse than no backup at all because it is not
+    obvious until restore.
+    """
+    import sqlite3
+    import tempfile
+    import zipfile
+
+    dbmod.init_db()
+    buf = io.BytesIO()
+    stamp = time.strftime("%Y-%m-%d")
+
+    with tempfile.TemporaryDirectory() as tmp:
+        snapshot = Path(tmp) / "resilient.db"
+        src = dbmod.get_conn()
+        try:
+            dst = sqlite3.connect(str(snapshot))
+            try:
+                with dst:
+                    src.backup(dst)
+            finally:
+                dst.close()
+        finally:
+            src.close()
+
+        with zipfile.ZipFile(buf, "w", zipfile.ZIP_DEFLATED) as z:
+            z.write(snapshot, "resilient.db")
+            uploads = Path(UPLOADS_DIR)
+            if uploads.exists():
+                for f in uploads.rglob("*"):
+                    if f.is_file():
+                        z.write(f, f"uploads/{f.relative_to(uploads)}")
+            z.writestr("RESTORE.txt", (
+                "Resilient EdTech - data backup\n"
+                f"Created: {stamp}\n\n"
+                "CONTENTS\n"
+                "  resilient.db   All lesson plans, teacher profiles and feedback.\n"
+                "  uploads/       Lesson files and photographs you uploaded.\n\n"
+                "HOW TO RESTORE\n"
+                "  1. Close Resilient EdTech.\n"
+                "  2. Open the data folder shown in the app's System tab\n"
+                "     (usually %LOCALAPPDATA%\\ResilientEdTech).\n"
+                "  3. Copy resilient.db and the uploads folder from this zip\n"
+                "     into it, replacing what is there.\n"
+                "  4. Start the app again.\n\n"
+                "Keep this file somewhere other than the classroom PC. If that\n"
+                "machine is reimaged or replaced, this zip is the only copy.\n"
+            ))
+
+    buf.seek(0)
+    return StreamingResponse(
+        buf,
+        media_type="application/zip",
+        headers={"Content-Disposition": f'attachment; filename="resilient-edtech-backup-{stamp}.zip"'},
+    )
+
+
+@app.get("/api/diagnostics")
+def api_diagnostics() -> dict:
+    """One-shot health snapshot for the in-app System panel.
+
+    Aggregates what an administrator (often the teacher themselves, with no IT
+    support) needs to answer "why isn't this working?" — engine tier, model
+    readiness, curriculum index state, and where the database actually lives.
+    Deliberately unauthenticated: this is an offline single-device app, nothing
+    here leaves the machine, and a lost password would brick the only person
+    able to fix it.
+    """
+    import platform
+    import sys
+
+    eng = engine_status()
+    try:
+        rag = ragmod.status()
+    except Exception as exc:  # noqa: BLE001
+        rag = {"error": str(exc)}
+
+    # Database: size on disk + row counts, so a blank app is distinguishable
+    # from a broken one.
+    db_info: dict = {"path": str(dbmod.DB_PATH)}
+    try:
+        db_info["size_kb"] = round(dbmod.DB_PATH.stat().st_size / 1024, 1) if dbmod.DB_PATH.exists() else 0
+        c = dbmod.get_conn()
+        cur = c.cursor()
+        counts = {}
+        for t in ("plans", "teachers", "plan_feedback", "teacher_profile", "rag_vectors"):
+            try:
+                cur.execute(f"SELECT COUNT(*) FROM {t}")
+                counts[t] = cur.fetchone()[0]
+            except Exception:  # noqa: BLE001 — table may not exist yet
+                counts[t] = None
+        c.close()
+        db_info["rows"] = counts
+    except Exception as exc:  # noqa: BLE001
+        db_info["error"] = str(exc)
+
+    # OCR is optional; report it rather than failing when Tesseract is absent
+    # (this is exactly the case on the cloud demo instance).
+    ocr = {"available": False, "detail": "not installed"}
+    try:
+        import pytesseract  # noqa: PLC0415
+        ocr = {"available": True, "detail": str(pytesseract.get_tesseract_version())}
+    except Exception as exc:  # noqa: BLE001
+        ocr["detail"] = type(exc).__name__
+
+    return {
+        "app": {"version": __version__, "python": sys.version.split()[0],
+                "platform": platform.platform()},
+        "engine": {
+            "mode": eng.get("mode"),
+            "resolved": eng.get("resolved"),
+            "label": eng.get("label"),
+            "model": get_model(),
+            "reachable": (eng.get("local") or {}).get("reachable", False),
+            "model_ready": (eng.get("local") or {}).get("model_ready", False),
+            "host": (eng.get("local") or {}).get("host"),
+        },
+        "curriculum": {
+            "embed_ready": rag.get("embed_ready"),
+            "embed_model": rag.get("embed_model"),
+            "indexed": rag.get("indexed", {}),
+            "by_subject": rag.get("indexed_by_subject", {}),
+            "subjects": rag.get("subjects", []),
+        },
+        "database": db_info,
+        "ocr": ocr,
+    }
+
+
 @app.post("/api/rag/reindex")
 def api_rag_reindex(force: bool = False) -> dict:
     """Embed + index the curriculum corpus (one-time / after corpus changes).
@@ -389,20 +584,38 @@ def api_save_plan(rec: dict, teacher_id: int = 1) -> dict:
     return saved
 
 
-@app.get("/api/plans/{plan_id}")
-def api_get_plan(plan_id: int) -> dict:
-    """Full saved record (with parsed payload) for reopening a past plan."""
-    dbmod.init_db()
+def _owned_plan(plan_id: int, teacher_id: Optional[int]) -> dict:
+    """Fetch a plan, enforcing profile ownership when a teacher is named.
+
+    On a shared classroom device several teachers keep separate histories. The
+    client already filters Recent plans by profile, but that is presentation
+    only — without this check any plan id read directly returns a colleague's
+    work. 404 (not 403) is deliberate: there is no login here, so a plan the
+    caller does not own is simply not found from their point of view.
+    """
     p = dbmod.get_plan(plan_id)
     if not p:
+        raise HTTPException(status_code=404, detail="plan not found")
+    if teacher_id is not None and p.get("teacher_id") not in (None, teacher_id):
         raise HTTPException(status_code=404, detail="plan not found")
     return p
 
 
-@app.delete("/api/plans/{plan_id}")
-def api_delete_plan(plan_id: int) -> dict:
-    """Delete one saved plan."""
+@app.get("/api/plans/{plan_id}")
+def api_get_plan(plan_id: int, teacher_id: Optional[int] = None) -> dict:
+    """Full saved record (with parsed payload) for reopening a past plan.
+
+    Pass ?teacher_id=N to scope the read to that profile.
+    """
     dbmod.init_db()
+    return _owned_plan(plan_id, teacher_id)
+
+
+@app.delete("/api/plans/{plan_id}")
+def api_delete_plan(plan_id: int, teacher_id: Optional[int] = None) -> dict:
+    """Delete one saved plan, scoped to a profile when teacher_id is given."""
+    dbmod.init_db()
+    _owned_plan(plan_id, teacher_id)
     if not dbmod.delete_plan(plan_id):
         raise HTTPException(status_code=404, detail="plan not found")
     return {"deleted": True, "id": plan_id}
@@ -417,9 +630,8 @@ def api_delete_plan(plan_id: int) -> dict:
 def api_save_feedback(plan_id: int, req: FeedbackRequest) -> FeedbackResult:
     """Upsert how this plan went. One feedback row per plan."""
     dbmod.init_db()
-    if dbmod.get_plan(plan_id) is None:
-        raise HTTPException(status_code=404, detail="plan not found")
     tid = req.teacher_id or 1
+    _owned_plan(plan_id, tid)
     dbmod.upsert_feedback(
         plan_id, tid, req.rating, req.tools_worked, req.tools_flopped,
         req.notes, req.taught_on,
@@ -481,7 +693,21 @@ def api_suggestion(teacher_id: int) -> dict:
 
 @app.get("/")
 def index() -> FileResponse:
-    return FileResponse(FRONTEND_DIR / "index.html")
+    # The cloud review instance serves a bundle carrying a "demonstration build"
+    # banner; the packaged app never sets DEMO_FRONTEND, so it keeps index.html.
+    # Falls back rather than 404ing if the demo bundle hasn't been built.
+    page = FRONTEND_DIR / "index.html"
+    if os.getenv("DEMO_FRONTEND", "").strip().lower() in {"1", "true", "yes"}:
+        demo = FRONTEND_DIR / "index-demo.html"
+        if demo.is_file():
+            page = demo
+    return FileResponse(
+        page,
+        # A teacher's browser must never serve a cached copy of the interface
+        # after an update — it looks like the update silently failed. The file
+        # is on local disk, so re-reading it costs nothing.
+        headers={"Cache-Control": "no-store, must-revalidate"},
+    )
 
 
 app.mount("/", StaticFiles(directory=str(FRONTEND_DIR), html=True), name="frontend")

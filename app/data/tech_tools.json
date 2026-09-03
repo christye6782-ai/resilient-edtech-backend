@@ -1,5 +1,5 @@
 {
-  "_about": "Knowledge base of education technology tools and low-resource teaching strategies. Grounds the Auditor (which proposes tools) and the FAQ agent (which explains them). Each entry notes connectivity and device requirements so suggestions stay realistic for rural classrooms.",
+  "_about": "Knowledge base of education technology tools and low-resource teaching strategies. Grounds the Auditor (which proposes tools) and the FAQ agent (which explains them). Each entry notes connectivity and device requirements so suggestions stay realistic for rural classrooms. HYBRID/OFFLINE build: constraint_strategies expanded to match the UI's six constraints (no_internet, limited_connectivity, unstable_power, mixed_ability, large_class, restricted_hardware). Older keys are retained for back-compat.",
   "tools": [
     {
       "name": "Plickers",
@@ -15,7 +15,7 @@
         "Review instant class results; save for reports later when back online."
       ],
       "offline_alternative": "A/B/C/D coloured paper cards or fingers (1-4) for instant voting without any device.",
-      "best_for": ["No internet", "1 device only", "Large classes"]
+      "best_for": ["No internet", "Low-spec device", "Large class size"]
     },
     {
       "name": "Kahoot!",
@@ -56,7 +56,7 @@
         "Use Paper Mode: print cards, scan answers with the teacher device, like Plickers."
       ],
       "offline_alternative": "Printed worksheet with self-check answer key.",
-      "best_for": ["1 device only", "No internet"]
+      "best_for": ["Low-spec device", "No internet", "Mixed-ability class"]
     },
     {
       "name": "PhET Simulations",
@@ -70,7 +70,7 @@
         "Pair with a guided worksheet."
       ],
       "offline_alternative": "Hands-on physical demonstration or a teacher-drawn animation on the board.",
-      "best_for": ["No internet", "1 device only", "1 screen"]
+      "best_for": ["No internet", "Low-spec device", "Large class size"]
     },
     {
       "name": "Kolibri",
@@ -84,7 +84,7 @@
         "Track progress locally; sync later if/when online."
       ],
       "offline_alternative": "Pre-downloaded videos played from a USB drive.",
-      "best_for": ["No internet", "Limited connectivity"]
+      "best_for": ["No internet", "Limited connectivity", "Mixed-ability class"]
     },
     {
       "name": "Canva for Education",
@@ -106,6 +106,28 @@
     "limited_connectivity": [
       "Front-load downloads; avoid live streaming.",
       "Use tools that sync opportunistically (Google Classroom offline, Quizizz Paper Mode)."
+    ],
+    "unstable_power": [
+      "Charge the teacher device and a power bank fully before the lesson; a 60-minute lesson runs on one charge.",
+      "Design a 'no-power fallback' half of the lesson (printed cards, board work) so learning continues if the supply cuts out mid-class.",
+      "Front-load the device-dependent activity early in the period, while charge is highest, and keep printed Plickers/worksheet tasks ready for any outage."
+    ],
+    "mixed_ability": [
+      "Tier the same core task into Remedial (TP1-2), Core (TP3-4) and Enrichment (TP5-6) versions so every learner works at the right level on one activity.",
+      "Pair or group stronger with weaker students (peer tutoring) during any shared-device rotation.",
+      "Use self-paced tools (Quizizz, printed self-check worksheets) so fast finishers extend while others consolidate.",
+      "Offer choice of output (diagram, chart, or spoken explanation) so pupils show understanding in their strongest mode."
+    ],
+    "large_class": [
+      "Use whole-class response tools where ONE teacher device captures every answer at once (Plickers, Quizizz Paper Mode) — no queue, no extra devices.",
+      "Group-based rotation and stations so a large class stays engaged with limited resources.",
+      "Assign group roles (leader, recorder, reporter) to keep every student accountable in big groups.",
+      "Project one shared screen for whole-class Predict-Observe-Explain so all pupils follow the same demonstration."
+    ],
+    "restricted_hardware": [
+      "Favour lightweight, browser-based or printable tools that run on an old or low-spec phone without a modern GPU.",
+      "Use the single low-spec device as a whole-class projection hub rather than for per-student interaction.",
+      "Prefer static, pre-downloaded media (images, PDFs) over heavy simulations if the device struggles."
     ],
     "one_device_only": [
       "Use the single device as a 'station' or a whole-class projection hub.",

@@ -9,6 +9,11 @@ from ..config import load_dskp
 from ..llm import structured_call, powered_by_label
 from ..schemas import AnalystRequest, AnalystResult
 
+try:  # RAG is optional — the Analyst works fine without it
+    from .. import rag
+except Exception:  # noqa: BLE001
+    rag = None
+
 _SCHEMA = {
     "type": "object",
     "additionalProperties": False,
@@ -46,8 +51,9 @@ _SYSTEM = (
     "against three dimensions: (1) DSKP content & learning standards, (2) the scheme of "
     "work sequencing, and (3) alignment to the textbook chapter/topic. Be specific, "
     "constructive and encouraging — these are rural teachers doing their best with limited "
-    "resources. Ground your judgement in the provided DSKP reference where relevant, but use "
-    "your broader curriculum knowledge too. Always return the three dimensions DSKP, "
+    "resources. When a 'RETRIEVED DSKP CURRICULUM' block is present, treat it as the "
+    "authoritative standard for this lesson and cite its codes; otherwise use the provided "
+    "DSKP reference and your broader curriculum knowledge. Always return the three dimensions DSKP, "
     "Scheme of Work and Textbook in 'alignments'. Reply with ONLY a JSON object."
 )
 
@@ -68,8 +74,17 @@ def _dskp_digest(dskp: dict) -> str:
 
 def analyse(req: AnalystRequest) -> AnalystResult:
     dskp = load_dskp()
+    # Level 3: ground the evaluation in the REAL DSKP passages retrieved for this
+    # lesson (decided: the Analyst is curriculum-grounded). No-op if RAG is off.
+    rag_block = ""
+    if rag is not None:
+        try:
+            rag_block = rag.curriculum_context(req.subject, req.form, req.topic, req.lesson_text)
+        except Exception:  # noqa: BLE001
+            rag_block = ""
     user = (
-        f"DSKP REFERENCE (sample topics & standards):\n{_dskp_digest(dskp)}\n\n"
+        (rag_block + "\n\n" if rag_block else "")
+        + f"DSKP REFERENCE (sample topics & standards):\n{_dskp_digest(dskp)}\n\n"
         f"LESSON METADATA: subject={req.subject or 'unknown'}, "
         f"form={req.form or 'unknown'}, topic={req.topic or 'unknown'}\n\n"
         f"TEACHER'S LESSON PLAN:\n{req.lesson_text[:3000]}\n\n"

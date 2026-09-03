@@ -25,9 +25,10 @@ from __future__ import annotations
 
 from typing import Optional
 
-from ..config import load_tech_tools, load_diff_scaffolds, load_tp_pbd
+from ..config import load_tech_tools, load_diff_scaffolds
 from ..llm import structured_call, powered_by_label
 from ..schemas import (
+    CurriculumSource,
     DesignRequest,
     DesignResult,
     Differentiation,
@@ -35,6 +36,11 @@ from ..schemas import (
     RevisedLessonPlan,
 )
 from .auditor import _CONSTRAINT_KEYS, _tools_digest
+
+try:  # RAG is optional — the Architect works fine without it
+    from .. import rag
+except Exception:  # noqa: BLE001
+    rag = None
 
 # --------------------------------------------------------------------------- #
 # Combined JSON schema: the full revised plan + a differentiation block.
@@ -78,6 +84,8 @@ _PLAN_PROPS = {
     "assessment": {"type": "string"},
     "materials": {"type": "array", "items": {"type": "string"}},
     "alignment_note": {"type": "string"},
+    "kbat_level": {"type": "string"},
+    "kbat": {"type": "array", "items": {"type": "string"}},
 }
 
 _DIFF_PROPS = {
@@ -114,7 +122,7 @@ _SCHEMA = {
     "required": [
         "title", "objectives", "success_criteria", "recommended_tools",
         "constraint_solutions", "phases", "assessment", "materials",
-        "alignment_note", "differentiation",
+        "alignment_note", "kbat_level", "kbat", "differentiation",
     ],
 }
 
@@ -147,38 +155,72 @@ def _scaffold_digest(scaffolds: dict) -> str:
     return "\n".join(lines)
 
 
-def _tp_pbd_digest(tp, subject, form):
-    """Compact TP1-6 descriptor list for the standards matching this lesson.
-    Falls back to all standards if subject/form don't match."""
-    lines = []
-    for subj in tp.get("subjects", []):
-        if subject and subject.lower() not in (subj.get("subject", "") + " " + subj.get("subject_en", "")).lower():
-            continue
-        for st in subj.get("standards", []):
-            tiers = st.get("tp", {})
-            desc = "; ".join(f"TP{n}: {tiers[n]['en']}" for n in ["1", "2", "3", "4", "5", "6"] if n in tiers)
-            lines.append(f"- {st['learning_standard']} ({st.get('topic_en', '')}): {desc}")
-    return "\n".join(lines) if lines else "(no matching Standard Prestasi; use general KSSR TP1-6 bands.)"
-
-
 def design(req: DesignRequest) -> DesignResult:
     """One call → revised plan + differentiation tiers (with partial fallback)."""
     tools = load_tech_tools()
     scaffolds = load_diff_scaffolds()
-    tp = load_tp_pbd()
+    # Level 3: ground the redesign in the REAL DSKP passages for this lesson.
+    _rag_block = ""
+    _rag_sources: list = []
+    if rag is not None:
+        try:
+            _rag_block = rag.curriculum_context(req.subject, req.form, req.topic, req.lesson_text)
+            _rag_sources = rag.curriculum_sources(req.subject, req.form, req.topic, req.lesson_text)
+        except Exception:  # noqa: BLE001
+            _rag_block = ""
+            _rag_sources = []
+    # Level 3 (P2) lesson recall: retrieve THIS teacher's most similar past lessons
+    # and fold them into the design context. Gated in rag.lesson_context() behind a
+    # minimum saved-lesson count; returns "" (→ falls back to the Level-2 digest below)
+    # until the teacher has enough history. Architect only — never the Analyst.
+    _recall_block = ""
+    if rag is not None and req.teacher_id is not None:
+        try:
+            _recall_query = " ".join(
+                x for x in [req.subject, req.form, req.topic, (req.lesson_text or "")[:400]] if x
+            ).strip()
+            _recall_block = rag.lesson_context(_recall_query, req.teacher_id)
+        except Exception:  # noqa: BLE001
+            _recall_block = ""
+    # Level 4/5: reflective memory — prefer the CONSOLIDATED profile (L5) when
+    # one exists; fall back to the raw reflection digest (L4) otherwise. Both
+    # fold in what this teacher marked as working / flopping so the redesign
+    # promotes their successes and avoids their flops. Architect only.
+    _reflection_block = ""
+    if req.teacher_id is not None:
+        try:
+            from .. import db as _dbmod
+            _reflection_block = _dbmod.profile_context(req.teacher_id) or _dbmod.reflection_context(req.teacher_id)
+        except Exception:  # noqa: BLE001
+            _reflection_block = ""
     user = (
-        f"TECHNOLOGY TOOLS AVAILABLE:\n{_tools_digest(tools)}\n\n"
+        (_rag_block + "\n\n" if _rag_block else "")
+        + f"TECHNOLOGY TOOLS AVAILABLE:\n{_tools_digest(tools)}\n\n"
         f"DIFFERENTIATION SCAFFOLDS (KSSR performance levels):\n{_scaffold_digest(scaffolds)}\n\n"
-        f"STANDARD PRESTASI — Tahap Penguasaan TP1-6 descriptors for PBD (ground the tiers AND the assessment in these):\n{_tp_pbd_digest(tp, req.subject, req.form)}\n\n"
-        f"LESSON METADATA: subject={req.subject or 'unknown'}, "
+        f"LESSON METADATA (AUTHORITATIVE — copy these EXACTLY into subject/form/topic; "
+        f"never substitute a subject or form you saw in the reference data above): "
+        f"subject={req.subject or 'unknown'}, "
         f"form={req.form or 'unknown'}, topic={req.topic or 'unknown'}\n"
         f"ANALYST SUMMARY: {(req.analyst_summary or 'n/a')[:400]}\n\n"
-        f"CONSTRAINTS FACED: {', '.join(req.constraints) or 'none specified'}\n\n"
+        + (
+            f"TEACHER CONTEXT (memory from this teacher's recent lessons — treat these as "
+            f"PRIORS you may OVERRIDE whenever THIS lesson clearly differs; never let them "
+            f"override the curriculum or the stated constraints):\n{req.teacher_context[:600]}\n\n"
+            if req.teacher_context else ""
+        )
+        + (_recall_block + "\n\n" if _recall_block else "")
+        + (_reflection_block + "\n\n" if _reflection_block else "")
+        + f"CONSTRAINTS FACED: {', '.join(req.constraints) or 'none specified'}\n\n"
         f"ORIGINAL LESSON PLAN:\n{req.lesson_text[:2500]}\n\n"
         "Produce a revised, printable, constraint-proof lesson plan AND split its hands-on / "
-        "formative step into Remedial (TP1-2), Core (TP3-4) and Enrichment (TP5-6) tiers that "
-        "match the Standard Prestasi descriptors above. Write the assessment as a PBD judgement "
-        "against those Tahap Penguasaan bands."
+        "formative step into Remedial (TP1-2), Core (TP3-4) and Enrichment (TP5-6) tiers using the "
+        "differentiation scaffolds above. Write the assessment as a PBD judgement against the "
+        "general KSSR Tahap Penguasaan bands for this subject and year. "
+        "Also fill the KBAT (HOTS) element, which every Malaysian RPH requires: set 'kbat_level' "
+        "to the Bloom's band this lesson targets, written bilingually (e.g. "
+        "'Analysing & Evaluating / Menganalisis & Menilai'), and give 2-3 'kbat' questions the "
+        "teacher can actually ask aloud. They must be open-ended and specific to THIS lesson's "
+        "topic — never generic recall questions."
     )
 
     data = structured_call(_SYSTEM, user, _SCHEMA, max_tokens=3800, lang=getattr(req, "lang", "en"))
@@ -191,6 +233,16 @@ def design(req: DesignRequest) -> DesignResult:
         # Try to salvage the plan independently of the tiers.
         try:
             plan_data = {k: v for k, v in data.items() if k != "differentiation"}
+            # The TEACHER's metadata is authoritative. The model sometimes echoes a
+            # subject/form it saw in the reference data (e.g. "Form 1" from a Sains
+            # Tingkatan 1 band) instead of the lesson's own. Never let it override
+            # what the teacher actually entered.
+            if (req.subject or "").strip():
+                plan_data["subject"] = req.subject.strip()
+            if (req.form or "").strip():
+                plan_data["form"] = req.form.strip()
+            if (req.topic or "").strip():
+                plan_data["topic"] = req.topic.strip()
             cand = RevisedLessonPlan(**plan_data)
             if cand.title.strip() and cand.phases and cand.objectives:
                 plan = cand
@@ -220,6 +272,7 @@ def design(req: DesignRequest) -> DesignResult:
         powered_by=powered_by,
         plan_source=plan_source,
         differentiation_source=diff_source,
+        curriculum_sources=[CurriculumSource(**s) for s in _rag_sources],
     )
 
 
@@ -284,6 +337,12 @@ def _fallback_plan(req: DesignRequest, tools: dict) -> RevisedLessonPlan:
             assessment="Undian keluar Plickers/kad kertas: setiap murid menjawab, guru mengimbas sekali, keputusan serta-merta.",
             materials=["Peranti guru (telefon/komputer riba)", "Projektor atau TV", "Kad respons bercetak", "Media pra-muat turun dalam USB"],
             alignment_note="Aktiviti mengekalkan Standard Kandungan & Standard Pembelajaran DSKP asal; hanya kaedah penyampaian disesuaikan dengan kekangan.",
+            kbat_level="Menganalisis & Menilai / Analysing & Evaluating",
+            kbat=[
+                f"Mengapa {topic} penting dalam kehidupan seharian kamu? Berikan satu contoh sendiri.",
+                f"Jika kamu perlu mengajar {topic} kepada rakan yang tidak hadir, bagaimana kamu menerangkannya?",
+                f"Apakah satu cara lain untuk menyelesaikan tugasan {topic} ini, dan mana satu lebih baik? Mengapa?",
+            ],
         )
 
     topic = req.topic or "the lesson topic"
@@ -317,6 +376,12 @@ def _fallback_plan(req: DesignRequest, tools: dict) -> RevisedLessonPlan:
         assessment="Plickers/paper-card exit poll: every student answers, teacher scans once, instant results.",
         materials=["Teacher device (phone/laptop)", "Projector or TV", "Printed response cards", "Pre-downloaded media on USB"],
         alignment_note="Activities preserve the original DSKP content & learning standards; only the delivery method is adapted to the constraints.",
+        kbat_level="Analysing & Evaluating / Menganalisis & Menilai",
+        kbat=[
+            f"Why does {topic} matter in your own daily life? Give one example of your own.",
+            f"If you had to teach {topic} to a friend who missed today's class, how would you explain it?",
+            f"What is another way to approach this {topic} task, and which way is better? Why?",
+        ],
     )
 
 

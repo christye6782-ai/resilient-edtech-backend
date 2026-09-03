@@ -1,0 +1,667 @@
+[
+  {
+    "id": "sn-y1-001",
+    "year": 1,
+    "section": "General",
+    "codes": [],
+    "chars": 1105,
+    "text": "Sains\nTAHUN 1\nDokumen Standard Kurikulum dan Pentaksiran\nKURIKULUM STANDARD SEKOLAH RENDAH\ni\nKEMENTERIAN PENDIDIKAN MALAYSIA\nKURIKULUM STANDARD SEKOLAH RENDAH\nSains\nDokumen Standard Kurikulum dan Pentaksiran\nTahun 1\nBahagian Pembangunan Kurikulum\nMEI 2015\nii\nTerbitan 2015\n© Kementerian Pendidikan Malaysia\nHak Cipta Terpelihara. Tidak dibenarkan mengeluar ulang mana -mana bahagian artikel, ilustrasi dan isi kandungan buku ini dalam\napa juga bentuk dan dengan cara apa jua sama ada secara elektronik, fotokopi, mekanik, rakaman atau cara lain sebelum mendapat\nkebenaran bertulis daripada Pengarah, Bahagian Pembangunan Kurikulum, Kementerian Pendidikan Malaysia, Aras 4 -8, Blok E9,\nParcel E, Kompleks Pentadbiran Kerajaan Persekutuan, 62604 Putrajaya.\nISBN: 978-967-420-105-0\niii\nKANDUNGAN\nRukun Negara .................................................................................................................................................. v\nFalsafah Pendidikan Kebangsaan .................................................................................................................... vi"
+  },
+  {
+    "id": "sn-y1-002",
+    "year": 1,
+    "section": "General",
+    "codes": [],
+    "chars": 1109,
+    "text": "Definisi Kurikulum Kebangsaan ........................................................................................................................ vii\nFalsafah Pendidikan Sains Kebangsaan .......................................................................................................... viii\nKata Pengantar ................................................................................................................................................. ix\nPendahuluan ..................................................................................................................................................... 1\nMatlamat ........................................................................................................................................................... 2\nObjektif .............................................................................................................................................................. 2\nKerangka Kurikulum Standard Sekolah Rendah................................................................................................ 2"
+  },
+  {
+    "id": "sn-y1-003",
+    "year": 1,
+    "section": "General",
+    "codes": [],
+    "chars": 1115,
+    "text": "Fokus ................................................................................................................................................................. 4\nKemahiran Abad Ke-21...................................................................................................................................... 14\nKemahiran Berfikir Aras Tinggi........................................................................................................................... 15\nStrategi Pengajaran dan Pembelajaran ............................................................................................................ 16\nElemen Merentas Kurikulum ............................................................................................................................. 21\nPentaksiran ........................................................................................................................................................ 23\nOrganisasi Kandungan ...................................................................................................................................... 26"
+  },
+  {
+    "id": "sn-y1-004",
+    "year": 1,
+    "section": "Inkuiri dalam Sains",
+    "codes": [],
+    "chars": 321,
+    "text": "Inkuiri Dalam Sains\nKemahiran Saintifik................................................................................................................................ 28\nPeraturan Bilik Sains ............................................................................................................................. 34"
+  },
+  {
+    "id": "sn-y1-005",
+    "year": 1,
+    "section": "Sains Hayat",
+    "codes": [],
+    "chars": 618,
+    "text": "Sains Hayat\nBenda Hidup dan Benda Bukan Hidup .................................................................................................. 36\nManusia .................................................................................................................................................. 38\nHaiwan.................................................................................................................................................... 39\nTumbuhan .............................................................................................................................................. 40"
+  },
+  {
+    "id": "sn-y1-006",
+    "year": 1,
+    "section": "Sains Fizikal",
+    "codes": [],
+    "chars": 171,
+    "text": "Sains Fizikal\nMagnet ................................................................................................................................................... 42"
+  },
+  {
+    "id": "sn-y1-007",
+    "year": 1,
+    "section": "Sains Bahan",
+    "codes": [],
+    "chars": 344,
+    "text": "Sains Bahan\nPenyerapan ............................................................................................................................................ 44\nBumi dan Angkasa.\nBumi ....................................................................................................................................................... 46"
+  },
+  {
+    "id": "sn-y1-008",
+    "year": 1,
+    "section": "Teknologi dan Kehidupan Lestari",
+    "codes": [],
+    "chars": 1132,
+    "text": "Teknologi dan Kehidupan Lestari\nAsas Binaan ........................................................................................................................................... 47\nv\nRUKUN NEGARA\nBAHAWASANYA Negara kita Malaysia mendukung cita-cita hendak:\nMencapai perpaduan yang lebih erat dalam kalangan seluruh masyarakatnya;\nMemelihara satu cara hidup demokratik;\nMencipta satu masyarakat yang adil di mana kemakmuran negara\nakan dapat dinikmati bersama secara adil dan saksama;\nMenjamin satu cara yang liberal terhadap tradisi-tradisi\nkebudayaannya yang kaya dan berbagai corak;\nMembina satu masyarakat progresif yang akan menggunakan sains\ndan teknologi moden;\nMAKA KAMI, rakyat Malaysia, berikrar akan menumpukan seluruh tenaga dan usaha\nkami untuk mencapai cita-cita tersebut berdasarkan prinsip-prinsip yang berikut:\nKEPERCAYAAN KEPADA TUHAN\nKESETIAAN KEPADA RAJA DAN NEGARA\nKELUHURAN PERLEMBAGAAN\nKEDAULATAN UNDANG-UNDANG\nKESOPANAN DAN KESUSILAAN\nvi\nFALSAFAH PENDIDIKAN KEBANGSAAN\n“Pendidikan di Malaysia adalah suatu usaha berterusan ke arah lebih\nmemperkembangkan pot ensi individu secara menyeluruh dan bersepadu"
+  },
+  {
+    "id": "sn-y1-009",
+    "year": 1,
+    "section": "Teknologi dan Kehidupan Lestari",
+    "codes": [],
+    "chars": 1118,
+    "text": "untuk melahirkan insan yang seimbang dan harmonis dari segi intelek, rohani,\nemosi dan jasmani, berdasarkan kepercayaan dan kepatuhan kepada Tuhan.\nUsaha ini adalah bertujuan untuk melahirkan warganegara Mal aysia yang\nberilmu pengetahuan, berketerampilan, be rakhlak mulia, bertanggungjawab\ndan berkeupayaan mencapai kesejahteraan diri serta memberikan\nsumbangan terhadap keharmo nian dan kemakmuran keluarga, masyarakat\ndan negara”\nSumber: Akta Pendidikan 1996 (Akta 550)\nvii\nDEFINISI KURIKULUM KEBANGSAAN\n3. Kurikulum Kebangsaan\n(1) Kurikulum Kebangsaan ialah suatu program pendidikan yang termasuk\nkurikulum dan kegiatan kurikulum yang merangkumi semua pengetahuan,\nkemahiran, norma, nilai, unsur kebudayaan dan kepercayaan untuk membantu\nperkembangan seseorang murid dengan sepenuhnya dari segi jasmani, rohani,\nmental dan emosi serta untuk menanam dan mempertingkatkan nilai moral\nyang diingini dan untuk menyampaikan pengetahuan.\nSumber: Peraturan-Peraturan Pendidikan (Kurikulum Kebangsaan) 1997.\n[PU(A)531/97]\nviii\nFALSAFAH PENDIDIKAN SAINS KEBANGSAAN\nSelaras dengan Falsafah Pendidikan Kebangsaan, pendidikan"
+  },
+  {
+    "id": "sn-y1-010",
+    "year": 1,
+    "section": "Teknologi dan Kehidupan Lestari",
+    "codes": [],
+    "chars": 1148,
+    "text": "sains di Malaysia memupuk budaya Sains dan Teknologi dengan\nmemberi tumpuan kepada perkembangan individu yang kompetitif,\ndinamik, tangkas dan berdaya tahan serta dapat menguasai ilmu\nsains dan keterampilan teknologi.\nSumber: Kementerian Sains, Teknologi dan Inovasi (MOSTI)\nix\nKATA PENGANTAR\nKurikulum Standard Sekolah Rendah (KSSR) yang\ndilaksanakan secara berperingkat mulai tahun 2011 telah\ndisemak semula bagi memenuhi dasar baharu di bawah Pelan\nPembangunan Pendid ikan Malaysia (PPPM) 2013 -2025\nsupaya kualiti kurikulum yang dilaksanakan di sekolah rendah\nsetanding dengan standard antarabangsa . Kurikulum\nberasaskan standard yang menjadi amalan antarabangsa\ntelah dijelmakan dalam KSSR menerusi penggubalan\nDokumen Standard Kurikulum dan Pentaksiran (DSKP) untuk\nsemua mata pelajaran yang mengandungi Standard\nKandungan, Standard Pembelajaran dan Standard Prestasi.\nUsaha m emasukkan standard p entaksiran dalam dokumen\nkurikulum telah mengubah landskap sejarah sejak Kurikulum\nKebangsaan dilaksanakan di bawah Sistem Pendidikan\nKebangsaan. Menerusinya murid dapat ditaksir secara\nberterusan untuk mengenal pasti tahap penguasaannya dalam"
+  },
+  {
+    "id": "sn-y1-011",
+    "year": 1,
+    "section": "Teknologi dan Kehidupan Lestari",
+    "codes": [],
+    "chars": 1106,
+    "text": "sesuatu mata pelajaran, serta membolehkan guru membuat\ntindakan susulan bagi mempertingkatkan pencapaian murid.\nDSKP yang dihasilkan juga telah menyepadukan enam\ntunjang Kerangka KSSR , mengintegrasikan pengetahuan,\nkemahiran dan nilai , serta memasukkan secara eksplisit\nKemahiran Abad Ke-21 dan Kemahiran Berfikir Aras Tinggi\n(KBAT). Penyepaduan tersebut dilakukan untuk melahir kan\ninsan seimbang dan harmonis dari segi intelek, rohani, emosi\ndan jasmani sebagaimana tun tutan Falsafah Pendi dikan\nKebangsaan.\nBagi menjayakan pelaksanaan KSSR , pengajaran dan\npembelajaran guru perlu memberi penekanan kepada KBAT\ndengan memberi fokus kepada pendekatan Pembelajaran\nBerasaskan I nkuiri dan Pembelajaran Berasaskan Projek,\nsupaya murid dapat menguasai k emahiran yang diperlukan\ndalam abad ke-21.\nKementerian Pendidikan Malaysia merakamkan setinggi-tinggi\npenghargaan dan ucapan terima kasih kepada semua pihak\nyang terlibat dalam penggubalan KSSR. Semoga pelaksanaan\nKSSR akan mencapai hasrat dan matlamat Sistem Pendidikan\nKebangsaan.\nDr. SARIAH BINTI ABD. JALIL\nPengarah\nBahagian Pembangunan Kurikulum"
+  },
+  {
+    "id": "sn-y1-012",
+    "year": 1,
+    "section": "Teknologi dan Kehidupan Lestari",
+    "codes": [],
+    "chars": 1111,
+    "text": "KSSR SAINS TAHUN 1\n1\nPENDAHULUAN\nPendidikan di Malaysia seperti yang termaktub dalam Falsafah\nPendidikan Kebangsaan adalah satu usaha berterusan untuk\nmemperkembangkan lagi potensi individu secara menyeluruh\ndan bersepadu supaya dapat melahirkan insan yang\nseimbang, dari segi intelek, roh ani, emosi dan jasmani.\nStandard Kurikulum Sains sekolah rendah dan menengah\ndibangunkan untuk menghasilkan insan yang dihasratkan.\nMalaysia yang sedang melangkah ke arah status negara maju,\nperlu mewujudkan masyarakat yang saintifik, progresif,\nberdaya c ipta dan berpandangan jauh bukan sahaja dapat\nmemanfaatkan teknologi terkini tetapi turut menjadi\npenyumbang kepada pembentukan peradaban sains dan\nteknologi masa hadapan. Bagi mencapai hasrat ini, kita perlu\nmembentuk warganegara kritis, kreatif dan berke terampilan\nyang mengamalkan budaya sains dan teknologi.\nPenandaarasan kurikulum Sains telah dibuat dengan negara\nyang berpencapaian tinggi dalam pentaksiran antarabangsa\nbagi memastikan kurikulum sains relevan dan setanding\ndengan negara lain di dunia.\nKurikulum sains Malaysia merangkumi tiga mata pelajaran"
+  },
+  {
+    "id": "sn-y1-013",
+    "year": 1,
+    "section": "Teknologi dan Kehidupan Lestari",
+    "codes": [],
+    "chars": 1129,
+    "text": "sains teras dan empat mata pelajaran sains elektif. Mata\npelajaran teras adalah Sains Sekolah Rendah, Sains\nMenengah Rendah dan Sains Menengah Atas. Mata pelajaran\nSains Elektif ditawarkan pada Menenga h Atas dan terdiri\ndaripada Fizik, Kimia, Biologi dan Sains Tambahan.\nMata pelajaran Sains Teras untuk Sekolah rendah dan\nmenengah direka bentuk untuk mengembangkan literasi sains\ndengan memberi pengetahuan asas sains kepada murid agar\nmenjadi celik sains dan mampu mengikuti sains di peringkat\nmenengah atas. Mata pelajaran Sains Teras untuk Menengah\natas direka bentuk untuk me nghasilkan murid yang\nmempunyai literasi sains, inovatif dan berupaya\nmengaplikasikan pengetahuan sains, membuat keputusan dan\nmenyelesaikan masalah dalam kehidupan sebenar.\nMata pelajaran sains elektif menyediakan murid yang\ncenderung dalam bidang sains untuk melanjutkan pelajaran di\nbidang sains pada peringkat pra -menengah atas. Golongan\nmurid ini akan menceburi kerjaya dalam bidang sains dan\nteknologi yang memainkan peranan dalam bidang\npembangunan negara.\nKSSR SAINS TAHUN 1\n2\nMATLAMAT\nMatlamat Kurikulum Sains Sekolah Rendah adalah untuk"
+  },
+  {
+    "id": "sn-y1-014",
+    "year": 1,
+    "section": "Teknologi dan Kehidupan Lestari",
+    "codes": [],
+    "chars": 1123,
+    "text": "menanam minat dan mengembangkan kreativiti murid melalui\npengalaman dan penyiasatan bagi menguasai ilmu sains,\nkemahiran saintifik dan kemahiran berfikir serta sikap saintifik\ndan nilai murni.\nOBJEKTIF\nKurikulum Sains Sekolah Rendah bertujuan untuk murid\nmencapai objektif berikut:\n1. Menggunakan pendekatan inkuiri untuk memenuhi sifat\ningin tahu tentang dunia di sekeliling mereka;\n2. Mengaplikasi kemahiran saintifik dan kemahiran berfikir\nsecara kritis dan kreatif;\n3. Memperoleh pengetahuan tentang fakta dan konsep\nsains;\n4. Mengaplikasi pengetahuan secara krtitis, kreatif dan\nanalitis bagi membuat keputusan , menghasilkan inovasi\nserta menyelesaikan masalah;\n5. Mengamalkan sikap saintifik dan nilai murni; dan\n6. Memainkan peranan dalam menjaga alam sekitar.\nKERANGKA KURIKULUM STANDARD SEKOLAH\nRENDAH\nKurikulum Standard Sekolah Rendah (KSSR) dibina\nberasaskan enam tunjang, iaitu Komunikasi; Kerohanian,\nSikap dan Nilai; Kemanusiaan; Keterampilan Diri;\nPerkembangan Fizikal dan Estetika; serta Sains dan\nTeknologi. Enam tunjang tersebut merupakan domain utama\nyang menyokong antara satu sama lain dan disepadukan"
+  },
+  {
+    "id": "sn-y1-015",
+    "year": 1,
+    "section": "Teknologi dan Kehidupan Lestari",
+    "codes": [],
+    "chars": 1157,
+    "text": "dengan pemikiran kritis, kreatif dan inovatif. Kesepaduan ini\nbertujuan membangunkan modal insan yang menghayati nilai-\nnilai murni berteraskan keagamaan, berpengetahuan,\nberketerampilan, berpemikiran kritis dan kreatif serta inovatif\nsebagaimana yang digambarkan dalam Rajah 1.\nKSSR SAINS TAHUN 1\n3\nRajah 1: Kerangka Kurikulum Standard Sekolah Rendah\nKSSR SAINS TAHUN 1\n4\nFOKUS\nMata pelajaran Sains untuk sekolah rendah berfokus kepada\npembelajaran berfikrah yang melibatkan kemahiran saintifik\ndan kemahiran berfikir bagi pemerolehan pengetahuan yang\nditerapkan melalui pendekatan utama dalam pendidikan sains\niaitu inkuiri. Kurikulum sains juga berhasrat untuk\nmenyediakan murid yang akan menghadapi era pembangunan\nteknologi yang pesat dan pelbagai cabaran abad ke 21.\nGolongan murid yang melalui kurikulum ini bakal menjadi\nsumber tenaga manusia dalam bidang sains dan teknologi\nyang akan menyumbang kepada pembangunan negara.\nKandungan Standard Kurikulum Sains T ahun 1 hingga ke\nTingkatan 5 dibangunkan berasaskan ti ga domain iaitu\npengetahuan, kemahiran dan nilai. Ketiga -tiga domain ini\ndialami oleh murid melalui kaedah inkuiri bagi menghasilkan"
+  },
+  {
+    "id": "sn-y1-016",
+    "year": 1,
+    "section": "Teknologi dan Kehidupan Lestari",
+    "codes": [],
+    "chars": 1105,
+    "text": "individu yang fikrah sains (Rajah 2). Pendekatan inkuiri\nmerangkumi pembelajaran berpusatkan murid,\nkonstruktivisme, pembe lajaran kontekstual, pembelajaran\nberasaskan masalah, pembelajaran masteri serta strategi dan\nkaedah yang berkaitan.\nRajah 2: Kerangka Konsep Kurikulum Sains\nFikrah Sains\nFikrah menurut Kamus Dewan Edisi Keempat (2005)\nmembawa pengertian yang sama dengan daya berfikir dan\npemikiran. Dalam konteks pendidikan sains, fikrah sains\nmerujuk kualiti murid yang dihasratkan untuk dilahirkan melalui\nKSSR SAINS TAHUN 1\n5\nsistem pendidikan sains kebangsaa n. Murid yang berfikrah\nsains merupakan murid yang boleh memahami idea sains\ndan berupaya berkomunikasi menggunakan bahasa saintifik,\nboleh menilai serta mengaplikasikan secara\nbertanggungjawab pengetahuan dan kemahiran saintifik\ndalam kehidupan harian y ang melibatkan sains dan teknologi\nberlandaskan sikap dan nilai murni. Fikrah sains juga\nberhasrat menghasilkan individu yang kreatif dan kritis untuk\nmemenuhi keperluan abad ke-21 di mana kemampuan negara\namat bergantung kepada modal insan yang mampu berf ikir\ndan menjana idea."
+  },
+  {
+    "id": "sn-y1-017",
+    "year": 1,
+    "section": "Teknologi dan Kehidupan Lestari",
+    "codes": [],
+    "chars": 1135,
+    "text": "Pembelajaran Berfikrah\nPembelajaran berfikrah boleh dicapai jika murid dilibatkan\nsecara aktif dalam proses pengajaran dan pembelajaran.\nDalam proses ini aktiviti pengajaran dan pembelajaran yang\ndirancang dapat mencungkil minda muri d dan mendorongnya\nuntuk berfikir agar mereka dapat mengkonsepsikan,\nmenyelesaikan masalah dan membuat keputusan. Juster u,\nkemahiran berfikir harus diterapkan murid.\nKemahiran berfikir boleh digolongkan kepada pemikiran kritis\ndan pemikiran kreatif. Seseor ang yang berfikir secara kritis\nakan sentiasa menilai sesuatu idea dengan sistematik\nsebelum menerimanya. Seseorang yang berfikir secara kreatif\nmempunyai daya imaginasi yang tinggi, berupaya menjanakan\nidea yang inovatif dan asli, serta boleh mengubah sua i idea\ndan produk yang sedia ada.\nStrategi berfikir merupakan proses berfikir yang lebih tinggi\nperingkatnya yang melibatkan beberapa langkah dan setiap\nlangkah melibatkan beberapa kemahiran berfikir kritis dan\nkreatif. Strategi berfikir merupakan fungsi utama dan matlamat\nakhir kepada proses berfikir.\nKemahiran Berfikir Kritis\nKemahiran berfikir kritis adalah kebolehan untuk menilai"
+  },
+  {
+    "id": "sn-y1-018",
+    "year": 1,
+    "section": "Teknologi dan Kehidupan Lestari",
+    "codes": [],
+    "chars": 1115,
+    "text": "sesuatu idea secara logik dan rasional untuk membuat\npertimbangan yang wajar dengan menggunakan alasan dan\nbukti yang munasabah.\nPenerangan ringkas tentang setiap kemahiran berfikir adalah\nseperti yang berikut :\nMencirikan\nMengenal pasti kriteria seperti ciri,\nsifat, kualiti dan unsur sesuatu\nkonsep atau objek.\nMembandingkan\ndan membezakan\nMencari persamaan dan perbezaan\nberdasarkan kriteria seperti ciri, sifat,\nkualiti dan unsur sesuatu objek atau\nperistiwa.\nKSSR SAINS TAHUN 1\n6\nMengumpulkan\ndan mengelaskan\nMengasingkan dan mengumpulkan\nobjek atau fenomena kepada\nkumpulan masing -masing\nberdasarkan kriteria tertentu seperti\nciri atau sifat. Pengumpulan ini\nadalah berdasarkan ciri atau sifat\nsepunya.\nMembuat urutan\nMenyusun objek dan maklumat\nmengikut tertib berdasarkan kualiti\natau kuantiti ciri atau sifatnya seperti\nsaiz, masa, bentuk atau bilangan.\nMenyusun\nmengikut\nkeutamaan\nMenyusun objek atau maklumat\nmengikut tertib berdasarkan\nkepentingan atau keutamaan.\nMenganalisis\nMencerakinkan maklumat kepada\nbahagian kecil untuk memahami\ndengan lebih mendalam berkenaan\nserta hubung kait antara bahagian"
+  },
+  {
+    "id": "sn-y1-019",
+    "year": 1,
+    "section": "Teknologi dan Kehidupan Lestari",
+    "codes": [],
+    "chars": 1113,
+    "text": "Mengesan\nKecondongan\nMengesan pandangan atau\npendapat yang berpihak kepada atau\nmenentang sesuatu\nMenilai\nMembuat pertimbangan dan\nkeputusan menggunakan\npengetahuan, pengalaman,\nkemahiran, dan nilai serta memberi\njustifikasi\nMembuat\nkesimpulan\nMembuat pernyataan tentang hasil\nsesuatu kajian yang berdasarkan\nkepada sesuatu hipotesis.\nKemahiran Berfikir Kreatif\nKemahiran berfikir kreatif adalah kemampuan untuk\nmenghasilkan atau mencipta sesuatu yang baharu dan bernilai\ndengan menggunakan daya imaginasi secara asli serta berfikir\ntidak mengikut kelaziman.\nPenerangan ringkas tentang setiap kemahiran berfikir kreatif\nadalah seperti yang berikut :\nMenjanakan idea Menghasilkan idea yang berkaitan\ndengan sesuatu perkara.\nMenghubungkait\nkan\nMembuat perkaitan dalam sesuatu\nkeadaan atau peristiwa untuk mencari\nsesuatu struktur atau corak hubungan.\nKSSR SAINS TAHUN 1\n7\nMembuat\ninferens\nMenggunakan pengumpulan data dan\npengalaman lalu untuk membuat\nkesimpulan dan menerangkan sesuatu\nperistiwa.\nMeramalkan\nMembuat jangkaan tentang sesuatu\nperistiwa berdasarkan pemerhatian dan\npengalaman yang lalu atau data yang"
+  },
+  {
+    "id": "sn-y1-020",
+    "year": 1,
+    "section": "Teknologi dan Kehidupan Lestari",
+    "codes": [],
+    "chars": 1138,
+    "text": "boleh dipercayai.\nMengitlakkan\nMembuat pernyataan umum terhadap\nsesuatu perkara untuk keseluruhan\nkumpulan berdasarkan pemerhatian ke\natas sampel atau beberapa maklumat\ndaripada kumpulan itu.\nMembuat\ngambaran mental\nMembuat tanggapan atau\nmembayangkan sesuatu idea, konsep,\nkeadaan atau gagasan dalam minda\natau fikiran.\nMensintesiskan\nMenggabungkan unsur yang\nberasingan untuk menghasilkan satu\ngambaran menyeluruh dalam bentuk\nseperti pernyataan, lukisan dan artifak.\nMembuat Membuat sesuatu penyataan umum\nhipotesis\ntentang hubungan antara pemboleh\nubah yang dimanipulasi dan pemboleh\nubah yang bergerak balas untuk\nmenerangkan sesuatu peristiwa atau\npemerhatian.. Pernyataan i ni boleh\ndiuji untuk membuktikan kesahihannya.\nMenganalogikan\nMembentuk kefahaman tentang\nsesuatu konsep yang kompleks atau\nabstrak secara mengaitkan konsep itu\ndengan konsep yang mudah atau\nmaujud yang mempunyai ciri yang\nserupa.\nMereka cipta Menghasilkan sesuatu yang baru atau\nmelakukan pengubahsuaian kepada\nsesuatu yang sedia ada untuk\nmengatasi masalah secara terancang.\nStrategi Berfikir\nStrategi berfikir merupakan cara berfikir yang berstruktur dan"
+  },
+  {
+    "id": "sn-y1-021",
+    "year": 1,
+    "section": "Teknologi dan Kehidupan Lestari",
+    "codes": [],
+    "chars": 1123,
+    "text": "berfokus untuk menyelesaikan masalah.\nPenerangan tentang setiap strategi berfikir adalah seperti\nyang berikut :\nKSSR SAINS TAHUN 1\n8\nMengkonsepsikan\nMembuat pengitlakan ke arah\nmembina pengertian, konsep atau\nmodel berdasarkan ciri spesifik\nsepunya yang saling berhubung\nkait.\nMembuat keputusan\nMemilih satu alternatif\npenyelesaian yang terbaik daripada\nbeberapa alternatif berdasarkan\nkriteria tertentu bagi mencapai\nmatlamat yang ditetapkan\nMenyelesaikan\nmasalah\nMencari penyelesaian yang tepat\nsecara terancang terhadap situasi\nyang tidak pasti atau mencabar\nataupun kesulitan yang tidak\ndijangkakan.\nSelain daripada kemahiran berfikir dan strategi berfikir yang\ntersebut, kemahiran menaakul merupakan satu lagi kemahiran\nyang diutamakan. Kemahiran menaakul ialah kemahiran\nyang digunakan untuk membuat pertimbang an secara logik,\nrasional, adil dan saksama. Penguasaan kemahiran berfikir\nkritis dan kreatif serta strategi berfikir menjadi lebih mudah jika\nseseorang itu berkebolehan membuat penaakulan secar a\ninduktif dan deduktif. Rajah 3 memberi gambaran keseluruhan\ntentang kemahiran berfikir dan strategi berfikir."
+  },
+  {
+    "id": "sn-y1-022",
+    "year": 1,
+    "section": "Teknologi dan Kehidupan Lestari",
+    "codes": [],
+    "chars": 1052,
+    "text": "Penguasaan kemahiran berfikir dan strategi berfikir (KBSB)\nmelalui pengajaran dan pembelajaran sains boleh\ndikembangkan melalui peringkat berikut :\n1. KBSB diperkenalkan;\n2. KBSB dipraktikkan dengan bimbingan guru;\n3. KBSB dipraktikkan tanpa bimbingan guru;\n4. KBSB diaplikasikan ke situasi baru dan\ndiperkembangkan dengan bimbingan guru; dan\n5. KBSB digunakan bersama dengan kemahiran yang\nlain untuk mencapai tugasan berfikir.\nPenerangan lanjut tentang peringkat penerapan KB SB dalam\nsains diberi dalam Buku Panduan Penerapan Kemahiran\nBerfikir dan Strategi Berfikir dalam Pengajaran dan\nPembelajaran Sains ( Pusat Pembangunan Kurikulum, 1999).\nKSSR SAINS TAHUN 1\n9\nRajah 3 : Model KBSB dalam Sains\nKemahiran Saintifik\nSains mengutamakan kaedah inkuiri dan penyelesaian\nmasalah. Dalam proses inkuiri dan menyelesaikan masalah,\nkemahiran saintifik dan kemahiran berfikir digunakan.\nKemahiran saintifik merupakan kemahiran yang penting untuk\nmenjalankan sebarang aktiviti mengikut kaedah saintifik\nseperti menjalankan eksperimen dan projek. K emahiran"
+  },
+  {
+    "id": "sn-y1-023",
+    "year": 1,
+    "section": "Inkuiri dalam Sains",
+    "codes": [],
+    "chars": 1103,
+    "text": "saintifik terdiri daripada kemahiran proses sains dan\nkemahiran manipulatif.\nKemahiran Proses Sains\nKemahiran proses sains ialah kemahiran yang diperlukan\nuntuk mencari jawapan kepada sesuatu masalah atau\nmembuat keputusan secara bersistem. Ia me rupakan satu\nproses mental yang menggalakkan pemikiran secara, kreatif,\nanalitis dan sistematik. Penguasaan kemahiran proses sains\nbersama dengan sikap dan pengetahuan yang sesuai\nmenjamin keupayaan murid untuk berfikir secara berkesan.\nPenerangan tentang setiap kemahiran proses sains adalah:\nMemerhatikan Menggunakan deria penglihatan,\npendengaran, sentuhan, rasa atau\nbau untuk mengumpulkan maklumat\ntentang objek dan fenomena\nStrategi Berfikir\n Mengkonsepsikan\n Membuat keputusan\n Menyelesaikan masalah\nKemahiran Berfikir\nKritis\n Mencirikan\n Membandingkan\n& membezakan\n Mengumpulkan &\nmengelaskan\n Membuat urutan\n Menyusun\nmengikut\nkeutamaan\n Menganalisis\n Mengesan\nkecondongan\n Menilai\n Membuat\nkesimpulan\nKreatif\n Menjana idea\n Menghubungkait\n Membuat inferens\n Meramalkan\n Membuat\nhipotesis\n Mensintesiskan\n Mengitlakkan\n Membuat"
+  },
+  {
+    "id": "sn-y1-024",
+    "year": 1,
+    "section": "Inkuiri dalam Sains",
+    "codes": [],
+    "chars": 1110,
+    "text": "gambaran mental\n Menganalogikan\n Mereka cipta\nMenaakul\nKSSR SAINS TAHUN 1\n10\nMengelaskan Melalui pemerhatian, mengumpulkan\nobjek atau fenomena berdasarkan\npersamaan dan perbezaan.\nMengukur dan\nmenggunakan\nnombor\nMembuat pemerhatian secara\nkuantitatif dengan menggunakan\nnombor dan alat berunit piawai.\nPengukuran menjadikan\npemerhatian lebih jitu.\nMembuat inferens\nMenggunakan pengumpulan data\ndan pengalaman lalu untuk membuat\nkesimpulan dan menerangkan\nsesuatu peristiwa.\nMeramalkan\nMembuat jangkaan tentang sesuatu\nperistiwa berdasarkan pemerhatian\ndan pengalaman yang lalu atau data\nyang boleh dipercayai.\nBerkomunikasi\nMenggunakan perkataan atau simbol\ngrafik seperti jadual, graf, rajah atau\nmodel untuk menerangkan tindakan,\nobjek atau peristiwa\nMenggunakan\nperhubungan\nruang dan masa\nMemperihalkan perubahan\nparameter dengan masa.\nContohnya lokasi, arah, bentuk,\nsaiz,isipadu, berat dan jisim\nMentafsir data\nMemberi penerangan yang rasional\ntentang objek, peristiwa atau pola\ndaripada data yang dikumpulkan.\nMendefinasi\nsecara operasi\nMemberi tafsiran tentang sesuatu\nkonsep dengan menyatakan perkara"
+  },
+  {
+    "id": "sn-y1-025",
+    "year": 1,
+    "section": "Inkuiri dalam Sains",
+    "codes": [],
+    "chars": 1100,
+    "text": "yang dilakukan dan diperhatikan.\nMengawal\npemboleh ubah\nMengenalpasti pemboleh ubah\ndimanipulasikan, pemboleh ubah\nbergerak balas dan pemboleh ubah\nyang dimalarkan. Dalam sesuatu\npenyiasatan satu pembolehubah\ndimanipulasikan untuk memerhatikan\nhubungannya dengan pemb oleh\nubah yang bergerak balas. Pada\nmasa yang sama pemboleh ubah\nyang lain dimalarkan.\nMembuat\nhipotesis\nMembuat sesuatu penyataan umum\ntentang hubungan antara pemboleh\nubah yang dimanipulasi dan\nKSSR SAINS TAHUN 1\n11\npemboleh ubah yang bergerak balas\nuntuk menerangkan sesuatu\nperistiwa atau pemerhatian.\nPernyataan ini boleh diuji untuk\nmembuktikan kesahihannya.\nMengeksperimen Merancang dan menjalankan aktiviti\nuntuk menguji sesuatu hipotesis,\nmengumpulkan data, mentafsirkan\ndata sehingga mendapat rumusan\ndaripada aktiviti itu.\nKemahiran Manipulatif\nKemahiran manipulatif merupakan kemahiran psikomotor\ndalam penyiasatan sains yang membolehkan murid:\n Menggunakan dan mengendalikan peralatan sains dan\nbahan dengan betul;\n Mengendalikan spesimen dengan betul dan cermat;\n Melakar spesimen, bahan d an peralatan sains dengan"
+  },
+  {
+    "id": "sn-y1-026",
+    "year": 1,
+    "section": "Inkuiri dalam Sains",
+    "codes": [],
+    "chars": 1103,
+    "text": "tepat;\n Membersihkan peralat an sains dengan cara yang\nbetul; dan\n Menyimpan peralatan sains dan bahan dengan betul\ndan selamat.\nPerkaitan antara Kemahiran Proses Sains dan Kemahiran\nBerfikir\nUntuk menguasai kemahiran proses sains, seseorang perlu\njuga menguasai kemahiran berfikir yang berkaitan. Kemahiran\nberfikir yang berkaitan dengan setiap kemahiran proses sains\nadalah seperti jadual berikut:\nKemahiran Proses\nSains\nKemahiran Berfikir\nMemerhatikan\nMencirikan\nMembandingkan dan membezakan\nMenghubungkaitkan\nMengelaskan\nMencirikan\nMembandingkan dan membezakan\nMengumpulkan dan mengelaskan\nMengukur dan\nmenggunakan\nnombor\nMenghubungkaitkan\nMembandingkan dan membezakan\nMembuat inferens\nMenghubungkaitkan\nMembandingkan dan membezakan\nMenganalisis\nMembuat inferens\nKSSR SAINS TAHUN 1\n12\nMeramalkan Menghubungkaitkan\nMembuat gambaran mental\nMenggunakan\nperhubungan ruang\ndan masa\nMembuat urutan\nMenyusun mengikut keutamaan\nMentafsir data\nMembandingkan dan membezakan\nMenganalisis\nMengesan kecondongan\nMembuat kesimpulan\nMengitlakkan\nMenilai\nMendefinisi secara\noperasi\nMenghubungkaitkan\nMenganalogikan"
+  },
+  {
+    "id": "sn-y1-027",
+    "year": 1,
+    "section": "Inkuiri dalam Sains",
+    "codes": [],
+    "chars": 1122,
+    "text": "Membuat gambaran mental\nMenganalisis\nMengawal\npemboleh ubah\nMencirikan\nMembandingkan dan membezakan\nMenghubungkaitkan\nMenganalisis\nMembuat hipotesis\nMencirikan\nMenghubungkaitkan\nMembandingkan dan membezakan\nMenjana idea\nMembuat hipotesis\nMeramalkan\nMensintesiskan\nMengeksperimen Semua kemahiran berfikir\nBerkomunikasi Semua kemahiran berfikir\nPengajaran dan Pembelajaran yang Berteraskan\nKemahiran Berfikir dan Kemahiran Saintifik\nKurikulum sains ini menekankan pembelajaran berfikrah yang\nberteraskan kemahiran berfikir dan kemahiran saintifik. Dalam\nkurikulum ini, standard pembelajaran yang dihasratkan ditulis\nsecara mengintegrasikan pemerolehan pengetahuan dengan\npenguasaan kemahiran iaitu kemahiran berfikir dan kemahiran\nsaintifik. Dalam pengajaran dan pembelajaran, guru perlu\nmenitikberatkan penguasan kemahiran bersama d engan\npemerolehan pengetahuan, di samping penerapan nilai murni\ndan sikap saintifik.\nPelaksanaan KPS dalam Sains secara eksklusif telah\nmencakupi kemahiran yang dihasratkan dalam abad ke -21\ndan secara tidak langsung telah menggalakkan dan\nmembangunkan kemahiran berfikir aras tinggi murid."
+  },
+  {
+    "id": "sn-y1-028",
+    "year": 1,
+    "section": "Inkuiri dalam Sains",
+    "codes": [],
+    "chars": 1149,
+    "text": "KSSR SAINS TAHUN 1\n13\nSikap Saintifik dan Nilai Murni\nPengalaman pembelajaran sains boleh memupuk sikap dan\nnilai positif dalam diri murid. Sikap dan nilai positif yang\ndipupuk adalah seperti berikut:\n• Minat dan bersifat ingin tahu tentang alam sekeliling;\n• Jujur dan tepat dalam merekod dan mengesahkan data;\n• Rajin dan tabah;\n• Bertanggungjawab ke atas keselamatan diri dan rakan\nserta terhadap alam sekitar;\n• Berfikiran kritikal dan analitis;\n• Luwes dan berfikiran terbuka;\n• Baik hati dan penyayang;\n• Bersifat objektif;\n• Beretika dan bersistematik;\n• Bekerjasama;\n• Adil dan saksama;\n• Berani mencuba.\n• Berfikir secara rasional;\n• Yakin dan berdikari;\n• Pengurusan masa yang baik;\n• Menghargai keseimbangan alam semula jadi;\n• Berhemah tinggi dan hormat-menghormati;\n• Menghargai sumbangan sains dan teknologi;\n• Menyedari bahawa sains merupakan satu daripada cara\nuntuk memahami alam;\n• Menghargai dan mengamalkan kehidupan yang bersih\ndan sihat; dan\n• Mensyukuri nikmat yang dikurniakan Tuhan.\nPenerapan sikap saintifik dan nilai murni secara umum berlaku\nmengikut peringkat berikut :\n• Menyedari dan memahami kepentingan dan keperluan"
+  },
+  {
+    "id": "sn-y1-029",
+    "year": 1,
+    "section": "Inkuiri dalam Sains",
+    "codes": [],
+    "chars": 1122,
+    "text": "sikap saintifik dan nilai murni;\n• Memberi perhatian kepada sikap dan nilai murni, dan\n• Menghayati dan mengamalkan sikap saintifik dan nilai\nmurni.\nPerancangan yang rapi adalah diperlukan untuk\nmengoptimumkan penerapan sikap saintifik dan nilai murni\nsemasa pelajaran sains. Guru perlu meneliti semua hasil\npembelajaran dalam sesuatu bidang pembelajaran yang\nKSSR SAINS TAHUN 1\n14\nberkaitan termasuk standard pembelajaran tentang penerapan\nsikap saintifik dan nilai murni sebelum memulakan pelajaran.\nKEMAHIRAN ABAD KE-21\nSatu daripada hasrat KSSR adalah untuk melahirkan murid\nyang mempunyai kemahiran Abad Ke -21 dengan memberi\nfokus kepada kemahiran berfikir serta kemahiran hi dup dan\nkerjaya yang berteraskan amalan nilai murni. Kemahiran\nAbad Ke-21 bermatla mat untuk melahirkan murid yang\nmempunyai ciri-ciri yang dinyatakan dalam profil murid seperti\ndalam Jadual 1 supaya berupaya bersaing di peringkat global.\nPenguasaan SK dan SP dalam kurikulum Sains menyumbang\nkepada pemerolehan kemahiran abad 21 dalam kalangan\nmurid.\nJadual 1: Profil Murid\nPROFIL MURID PENERANGAN\nBerdaya Tahan\nMereka mampu menghadapi dan"
+  },
+  {
+    "id": "sn-y1-030",
+    "year": 1,
+    "section": "Inkuiri dalam Sains",
+    "codes": [],
+    "chars": 1103,
+    "text": "mengatasi kesukaran, mengatasi\ncabaran dengan kebijaksanaan,\nkeyakinan, toleransi, dan empati.\nMahir\nBerkomunikasi\nMereka menyuarakan dan meluahkan\nfikiran, idea dan maklumat dengan yakin\ndan kreatif secara lisan dan bertulis,\nmenggunakan pelbagai media dan\nteknologi.\nPROFIL MURID PENERANGAN\nPemikir\nMereka berfikir secara kritikal, kreatif dan\ninovatif; mampu untuk menangani\nmasalah yang kompleks dan membuat\nkeputusan yang beretika. Mereka berfikir\ntentang pembelajaran dan diri mereka\nsebagai pelajar. Mereka menjana soalan\ndan bersifat terbuka kepada perspektif,\nnilai dan tradisi individu dan masyarakat\nlain. Mereka berkeyakinan dan kreatif\ndalam menangani bidang pembelajaran\nyang baru.\nKerja\nSepasukan\nMereka boleh bekerjasama secara\nberkesan dan harmoni dengan orang\nlain. Mereka mengalas tanggungjawab\nbersama serta menghormati dan\nmenghargai sumbangan yang diberikan\noleh setiap ahli pasukan. Mereka\nmemperoleh kemahiran interpersonal\nmelalui aktiviti kolaboratif, dan ini\nmenjadikan mereka pemi mpin dan ahli\npasukan yang lebih baik.\nBersifat Ingin\nTahu\nMereka membangunkan rasa ingin tahu"
+  },
+  {
+    "id": "sn-y1-031",
+    "year": 1,
+    "section": "Inkuiri dalam Sains",
+    "codes": [],
+    "chars": 1108,
+    "text": "semula jadi untuk meneroka strategi dan\nidea baru. Mereka mempelajari\nkemahiran yang diperlukan untuk\nmenjalankan inkuiri dan penyelidikan,\nserta menunjukkan sifat berdikari dalam\npembelajaran. Mereka menikmati\npengalaman pembelajaran sepanjang\nhayat secara berterusan.\nBerprinsip Mereka berintegriti dan jujur,\nkesamarataan, adil dan menghormati\nKSSR SAINS TAHUN 1\n15\nPROFIL MURID PENERANGAN\nmaruah individu, kumpulan dan komuniti.\nMereka bertanggungjawab atas tindakan,\nakibat tindakan serta keputusan mereka.\nBermaklumat\nMereka mendapatkan pengetahuan dan\nmembentuk pemahaman yang luas dan\nseimbang merentasi pelbagai disiplin\npengetahuan. Mereka meneroka\npengetahuan dengan cekap dan\nberkesan dalam konteks isu tempatan\ndan global. Mereka memahami isu -isu\netika / undang -undang berkaitan\nmaklumat yang diperoleh.\nPenyayang/\nPrihatin\nMereka menunjukkan empati, belas\nkasihan dan rasa hormat terhadap\nkeperluan dan perasaan orang lain.\nMereka komited untuk berkhi dmat\nkepada masyarakat dan memastikan\nkelestarian alam sekitar.\nPatriotik Mereka mempamerkan kasih sayang,\nsokongan dan rasa hormat terhadap"
+  },
+  {
+    "id": "sn-y1-032",
+    "year": 1,
+    "section": "Inkuiri dalam Sains",
+    "codes": [],
+    "chars": 1126,
+    "text": "negara.\nKEMAHIRAN BERFIKIR ARAS TINGGI\nKemahiran Berfikir Aras Tinggi (KBAT) dinyatakan dalam\nkurikulum secara eksplisit supaya guru dapat menterjemahkan\ndalam pengajaran dan pembelajaran bagi meran gsang\npemikiran berstruktur dan berfokus dalam kalangan murid.\nPenerangan KBAT adalah berfokus kepada empat tahap\npemikiran seperti Jadual 2.\nKBAT ialah keupayaan untuk mengaplikasikan pengetahuan,\nkemahiran dan nilai dalam membua t penaakulan dan refleksi\nbagi menyelesaikan masalah, membuat keputusan, berinovasi\ndan berupaya mencipta sesuatu.\nKBAT merangkumi kemahiran berfikir kritis, kreatif dan\nmenaakul dan strategi berfikir.\nJadual 2: Tahap pemikiran dalam KBAT\nTAHAP\nPEMIKIRAN PENERANGAN\nMengaplikasi Menggunakan pengetahuan, kemahiran,\ndan nilai dalam situasi berlainan untuk\nmelaksanakan sesuatu perkara.\nMenganalisis Mencerakinkan maklumat kepada bahagian\nkecil untuk memahami dengan lebih\nmendalam serta hubung kait antara\nbahagian berkenaan.\nMenilai Membuat pertimbangan dan keputusan\nmenggunakan pengetahuan, pengalaman,\nkemahiran, dan nilai serta memberi\njustifikasi.\nMencipta Menghasilkan idea atau produk atau"
+  },
+  {
+    "id": "sn-y1-033",
+    "year": 1,
+    "section": "Inkuiri dalam Sains",
+    "codes": [],
+    "chars": 1132,
+    "text": "kaedah yang kreatif dan inovatif.\nKSSR SAINS TAHUN 1\n16\nKemahiran berfikir kritis adalah kebolehan untuk menilai\nsesuatu idea secara logik dan rasional untuk membuat\npertimbangan yang wajar dengan menggunakan alasan dan\nbukti yang munasabah.\nKemahiran berfikir kreatif adalah kemampuan untuk\nmenghasilkan atau mencipta sesuatu yang baharu dan bernilai\ndengan menggunakan daya imaginasi secara asli serta berfikir\ntidak mengikut kelaziman.\nKemahiran menaakul adalah keupayaan individu membuat\npertimbangan dan penilaian secara logik dan rasional.\nStrategi berfikir merupakan cara berfikir yang berstruktur dan\nberfokus untuk menyelesaikan masalah.\nKBAT boleh diaplikasikan dalam bilik darjah melalui aktiviti\nberbentuk menaakul, pembelajaran inkuiri, penyelesaian\nmasalah dan projek. Guru dan murid perlu menggunakan alat\nberfikir seperti peta pemikiran dan peta minda serta penyoalan\naras tinggi untuk menggalakkan murid berfikir.\nSTRATEGI PENGAJARAN DAN PEMBELAJARAN\nStrategi pengajaran dan pembelajaran dalam kurikulum sains\nmengutamakan pembelajaran berfikrah. Pembelajaran\nberfikrah adalah satu proses pemerolehan dan penguasaan"
+  },
+  {
+    "id": "sn-y1-034",
+    "year": 1,
+    "section": "Inkuiri dalam Sains",
+    "codes": [],
+    "chars": 1140,
+    "text": "kemahiran dan ilmu pengetahuan yang dapat\nmengembangkan minda seseorang murid ke tahap yang\noptimum.\nPembelajaran berfikrah dapat mencetuskan pelbagai\npendekatan pembelajaran seperti inkuiri, konstruktivisme,\npembelajaran kontekstual dan pembelajaran masteri. Aktiviti\nyang dirancangkan dalam pembelajaran berfikrah mesti yang\ndapat mencetuskan pemikiran kr itis dan kreatif murid dan\nbukan berbentuk rutin. Murid perlu sedar secara eksplisit\nkemahiran berfikir dan strategi berfikir yang digunakan dalam\npembelajaran.\nSoalan atau masalah yang beraras tinggi ditanyakan kepada\nmurid dan murid diminta m enyelesaikan masalah\nmenggunakan daya kreatif dan kritis mereka. Murid dilibatkan\nsecara aktif dalam pengajaran dan pembelajaran yang\nmengintegrasikan pemerolehan pengetahuan, penguasaan\nkemahiran dan penerapan nilai murni dan sikap saintifik.\nKSSR SAINS TAHUN 1\n17\nPendekatan Inkuiri\nInkuiri merupakan pendekatan yang mementingkan\npembelajaran melalui pengalaman. Inkuiri secara am\nbermaksud mencari maklumat, menyoal dan menyiasat\nsesuatu fenomena yang berlaku di sekeliling. Penemuan\nmerupakan sifat utama inkuiri. Pembelajaran secara"
+  },
+  {
+    "id": "sn-y1-035",
+    "year": 1,
+    "section": "Inkuiri dalam Sains",
+    "codes": [],
+    "chars": 1111,
+    "text": "penemuan berlaku apabila konsep dan prinsip utama dikaji\ndan ditemui oleh murid sendiri. Murid melalui aktiviti seperti\neksperimen akan menyiasat sesuatu fenomena dan mencapai\nkesimpulan sendiri. Guru kemudian membimbing murid untuk\nmemahami konsep sains melalu i hasil inkuiri tersebut.\nKemahiran berfikir dan kemahiran saintifik dikembangkan\nsemasa proses inkuiri ini. Namun demikian, perlu diingat\nbahawa pendekatan inkuiri tidak sesuai digunakan dalam\nsemua situasi pengajaran dan pembelajaran. Beberapa\nkonsep dan prinsip lebih sesuai didedahkan secara langsung\noleh guru atau melalui inkuiri terbimbing.\nKonstruktivisme\nKonstruktivisme adalah satu fahaman yang mencadangkan\nmurid belajar sesuatu apabila mereka membina pemahaman\nmereka sendiri. Antara unsur penting dalam konstruktivisme\nialah:\n Guru mengambil kira pengetahuan sedia ada murid;\n Pembelajaran adalah hasil usaha murid itu sendiri;\n Pembelajaran berlaku bila murid menghubungkan idea\nasal dengan idea baru bagi me nstrukturkan semula\nidea mereka; dan\n Murid berp eluang bekerjasama, berkongsi idea dan\npengalaman serta membuat refleksi."
+  },
+  {
+    "id": "sn-y1-036",
+    "year": 1,
+    "section": "Inkuiri dalam Sains",
+    "codes": [],
+    "chars": 1152,
+    "text": "Sains, Teknologi dan Masyarakat\nPembelajaran yang bermakna akan berlaku jika murid dapat\nmenghubungkaitkan apa yang dipelajari dengan kehidupan\nharian mereka. Pembelajaran bermakna berlaku dalam\npendekatan seperti pembelajaran kontekstual dan Pendekatan\nSains, Teknologi dan Masyarakat (STM).\nTema dan standard pembelajaran yang berunsurkan STM\ndiwujudkan dalam kurikulum ini. Pendekatan STM\nmengesyorkan pembelajaran sains melalui penyiasatan dan\nperbincangan berlandaskan isu sains dan teknologi dalam\nmasyarakat. Pengetahuan sains dan tekn ologi dipelajari\nbersama dengan aplikasi, sains dan teknologi serta implikasi\nkepada masyarakat.\nPembelajaran Kontekstual\nPembelajaran kontekstual adalah pembelajaran yang dikaitkan\ndengan kehidupan murid. Dalam konteks ini murid tidak\nKSSR SAINS TAHUN 1\n18\nbelajar secara teori sahaja tetapi dapat menghargai\nkerelevanan pembelajaran sains dengan kehidupan mereka.\nPendekatan kontekstual digunakan di mana murid belajar\nsecara menyiasat seperti dalam pendekatan inkuiri penemuan.\nPembelajaran Masteri\nPembelajaran masteri merupakan s atu pendekatan yang\nmemastikan semua murid menguasai objektif pembelajaran"
+  },
+  {
+    "id": "sn-y1-037",
+    "year": 1,
+    "section": "Inkuiri dalam Sains",
+    "codes": [],
+    "chars": 1115,
+    "text": "yang ditetapkan. Pendekatan ini berpegang kepada prinsip\nbahawa setiap murid mampu belajar jika diberi peluang.\nPeluang perlu diberi kepada murid untuk belajar mengikut\nkadarnya, tindakan pengayaan dan pemulihan perlu dijadikan\nsebahagian daripada proses pengajaran dan pembelajaran.\nPenerapan Unsur Patriotisme\nKurikulum sains dapat mengukuhkan dan memupuk unsur\npatriotisme di kalangan murid. Sebagai contoh, dalam\npembelajaran proses pengkolonian dan proses sesaran di\ndalam ekosistem, murid akan belajar mengenai kekayaan\nbiodiversiti negara, mereka akan menghargai kepelbagaian\ndan keunikan sumber semulajadi negara dan meningkatkan\nkecintaan kepada negara.\nPenekanan Strategi Pengajaran dan Pembelajaran Dalam\nSains\nKaedah pengajaran dan pembelajaran yang pelbagai dapat\nmeningkatkan minat murid terhadap sains. Pelajaran sains\nyang kurang menarik tidak memotivasikan murid untuk belajar\ndan seterusnya mempengaruhi pencapaian murid. Penentuan\nkaedah pengajaran dan pembelajaran seharusnya\nberdasarkan kandungan kurikulum, kebolehan dan\nkepelbagaian jenis kecerdasan murid serta sumber dan\nprasarana yang ada."
+  },
+  {
+    "id": "sn-y1-038",
+    "year": 1,
+    "section": "Inkuiri dalam Sains",
+    "codes": [],
+    "chars": 1100,
+    "text": "Berikut diberi penerangan ringkas tentang beberapa kaedah\npengajaran dan pembelajaran Sains.\nEksperimen\nKaedah eksperimen adalah satu kaedah yang lazim dijalankan\ndalam pembelajaran sains. Murid menguji hipotesis melalui\npenyiasatan untuk menemui konsep dan prinsip sains tertentu\nsecara saintifik. Menjalankan eksperimen menggunakan\nkemahiran berfikir, kemahiran saintifik dan kemahiran\nmanipulatif.\nKSSR SAINS TAHUN 1\n19\nSecara umum, langkah yang diikuti secara eksperimen adalah\nseperti Rajah 4:\nRajah 4: Langkah Perlaksanaan Eksperimen\nDalam perlaksanaan kurikulum Sains, adalah dicadangkan\nselain daripada eksperimen yang dibimbing oleh guru, murid\ndiberi peluang merekabentuk eksperimen, iaitu mereka sendiri\nyang merangka cara eksperimen yang berkenaan, data yang\nboleh diukur dan bagaimana menganalisis data serta\nbagaimana membentangkan hasil eksperimen mereka.\nSimulasi\nAktiviti yang dijalankan menyerupai yang sebenarnya. Contoh\nsimulasi yang utama ialah main peranan, permainan dan\npenggunaan model. Dalam main peranan, murid melakonkan\nsesuatu peranan secara spontan berdasarkan beberapa"
+  },
+  {
+    "id": "sn-y1-039",
+    "year": 1,
+    "section": "Inkuiri dalam Sains",
+    "codes": [],
+    "chars": 1109,
+    "text": "syarat yang telah ditentukan. Permainan pula mempunyai\nperaturan yang harus dipatuhi. Murid bermain untuk\nmempelajari sesuatu prinsip ataupun untuk memahami proses\nuntuk membuat keputusan. Model boleh digunakan untuk\nmewakili objek atau keadaan sebenar. Murid dapat\nmembayangkan situasi tersebut dan seterusnya memahami\nkonsep dan prinsip yang dipelajari.\nProjek (pembelajaran kolaboratif)\nAktiviti yang dijalankan oleh in dividu atau sekumpulan murid\nuntuk mencapai sesuatu tujuan tertentu. Projek mengambil\nmasa yang panjang serta menjangkau waktu pembelajaran\nyang formal untuk dilengkapkan. Hasil projek dalam bentuk\nlaporan, artifak atau lain -lain perlu dibentangkan kepada guru\ndan murid lain. Kerja projek menggalakkan perkembangan\nMengenal pasti masalah yang boleh diuji dengan\npenyiasatan saintifik\nMembina hipotesis\nMerangka bagaimana pemboleh ubah\ndimanipulasikan\ndan cara pengumpulan data\nMerancang dan menjalankan penyiasatan saintifik\nMembentang data yang dikumpul\nMenginterpretasi data dan keputusan dengan\npenaakulan saintifik\nMembuat keputusan dan mempersembahkan\nlaporan.\nKSSR SAINS TAHUN 1"
+  },
+  {
+    "id": "sn-y1-040",
+    "year": 1,
+    "section": "Inkuiri dalam Sains",
+    "codes": [],
+    "chars": 1133,
+    "text": "20\nkemahiran penyelesaian masalah, kemahiran pengurusan\nmasa dan pembelajaran kendiri.\nLawatan dan Penggunaan Sumber Luar\nPembelajaran sains tidak hanya terhad di sekolah sahaja.\nPembelajaran sains b oleh melalui lawatan ke tempat seperti\nzoo, muzium, pusat sains, institut penyelidikan, paya bakau\ndan kilang. Lawatan ke tempat -tempat sedemikian boleh\nmenjadikan pembelajaran lebih berkesan, menyeronokkan\ndan bermakna. Untuk mengoptimumkan pembelajaran m elalui\nlawatan, ia mesti dirancang secara rapi. Murid perlu\nmenjalankan aktiviti atau melaksanakan tugasan semasa\nlawatan. Perbincangan selepas lawatan perlu diadakan.\nPenggunaan Teknologi\nTeknologi merupakan alat yang amat berkesan dan\nmempunyai potensi y ang tinggi untuk meningkatkan minat\ndalam pembelajaran sains. Melalui penggunaan teknologi\nseperti televisyen, radio, video, komputer dan internet,\npengajaran dan pembelajaran sains boleh menjadi lebih\nmenarik dan berkesan. Simulasi dan animasi berkomputer\nmerupakan alat yang berkesan untuk menjelaskan pengajaran\ndan pembelajaran yang abstrak atau konsep sains yang sukar.\nSimulasi dan animasi berkomputer juga boleh"
+  },
+  {
+    "id": "sn-y1-041",
+    "year": 1,
+    "section": "Inkuiri dalam Sains",
+    "codes": [],
+    "chars": 1131,
+    "text": "dipersembahkan dalam bentuk perisian atau melalui laman\nweb. Per isian aplikasi seperti ‘ word processers’, perisian\npersembahan grafik ( graphic presentation softw are) dan\nhamparan elektronik ( electronic spreadsheets ) adalah\nmerupakan satu alat yang bernilai untuk menganalisis dan\nmempersembahkan data. Penggunaan teknologi lain seperti\n‘data logger s’ dan antara muka berkomputer dalam\neksperimen dan projek dapat membantu pengajaran dan\npembelajaran sains berkesan.\nKSSR SAINS TAHUN 1\n21\nELEMEN MERENTAS KURIKULUM\nElemen Merentas Kurikulum (EMK) ialah unsur nilai tambah\nyang diterapkan dalam proses PdP selain yang ditetapkan\ndalam standard kandungan. Elemen -elemen ini diterapkan\nbertujuan mengukuhkan kemahiran dan keterampilan modal\ninsan yang dihasratkan serta dapa t menangani cabaran\nsemasa dan masa hadapan. Elemen -elemen di dalam EMK\nadalah seperti berikut:\n1. Bahasa\n Penggunaan bahasa pengantar yang betul perlu\ndititikberatkan dalam semua mata pelajaran; dan\n Semasa PdP bagi setiap mata pelajaran, aspek\nsebutan, struktur ayat, tatabahasa, istilah dan laras\nbahasa perlu diberi penekanan bagi membantu murid"
+  },
+  {
+    "id": "sn-y1-042",
+    "year": 1,
+    "section": "Inkuiri dalam Sains",
+    "codes": [],
+    "chars": 1131,
+    "text": "menyusun idea dan berkomunikasi secara berkesan.\n2. Kelestarian Alam Sekitar\n Kesedaran mencintai dan menyayangi ala m sekitar\ndalam jiwa murid perlu dipupuk m elalui PdP semua\nmata pelajaran.\n Pengetahuan dan kesedaran terhadap kepentingan\nalam sekitar dan kelestarian global penting dalam\nmembentuk etika murid untuk menghargai alam.\n3. Nilai Murni\n Nilai murni diberi penekanan dalam semua mata\npelajaran supaya murid sedar akan kepentingan dan\nmengamalkannya.\n Nilai murni merangkumi aspek kerohanian,\nkemanusiaan dan kewarganegaraan kebangsaan dan\nglobal yang menjadi amalan dalam kehidupan harian.\n4. Sains dan Teknologi\n Menambahkan minat terhadap sains dan teknologi\ndapat meningkatkan literasi sains serta teknologi\ndalam kalangan murid;\n Penggunaan teknologi dalam pengajaran dapat\nmembantu serta menyumbang kepada pembelajaran\nyang lebih cekap dan berkesan; dan\n Pengintegrasian Sains dan Teknologi dalam PdP\nmerangkumi empat perkara iaitu:\n(i) Pengetahuan sains dan teknologi (fakta,\nprinsip, konsep yang berkaitan dengan\nsains dan teknologi);\nKSSR SAINS TAHUN 1\n22\n(ii) Kemahiran saintifik (proses pemikiran dan"
+  },
+  {
+    "id": "sn-y1-043",
+    "year": 1,
+    "section": "Inkuiri dalam Sains",
+    "codes": [],
+    "chars": 1123,
+    "text": "kemahiran manipulatif tertentu);\n(iii) Sikap saintifik (seperti ketepatan, kejujuran,\nkeselamatan); dan\n(iv) Penggunaan teknologi dalam aktiviti PdP.\n5. Patriotisme\n Semangat patriotik dapat dipupuk melalui semua mata\npelajaran, aktiviti kokurikulum dan khidmat masyarakat;\ndan\n Semangat patriotik dapat melahirkan murid yang\nmempunyai semangat cintakan negara dan berbangga\nsebagai rakyat Malaysia.\n6. Kreativiti dan Inovasi\n Kreativiti adalah kebolehan menggunakan imaginasi\nuntuk mengumpul, mencerna dan menjana idea atau\nmencipta sesuatu yang baharu atau a sli melalui il ham\natau gabungan idea yang ada;\n Inovasi merupakan pengaplikasian kreativiti melalui\nubah suaian, membaiki dan mempraktikkan idea;\n Kreativiti dan inovasi saling bergandingan dan perlu\nuntuk memastikan pembangunan modal insan yang\nmampu menghadapi cabaran Abad ke-21; dan\n Elemen kreativiti dan inovasi perlu diintegrasikan\ndalam PdP.\n7. Keusahawanan\n Penerapan elemen keusahawanan bertujuan\nmembentuk ciri -ciri dan amalan keusahawanan\nsehingga menjadi s atu budaya dalam kalangan murid;\ndan\n Ciri keusahawanan boleh diterapkan dalam PdP"
+  },
+  {
+    "id": "sn-y1-044",
+    "year": 1,
+    "section": "Inkuiri dalam Sains",
+    "codes": [],
+    "chars": 1117,
+    "text": "melalui aktiviti yang mampu memupuk sikap seperti\nrajin, jujur, amanah dan bertanggungjawab serta\nmembangunkan minda kreatif dan inovatif untuk\nmemacu idea ke pasaran.\n8. Teknologi Maklumat dan Komunikasi\n Penerapan elemen TMK dalam PdP memastikan murid\ndapat mengaplikasi dan mengukuhkan pengetahuan\ndan kemahiran asas TMK yang dipelajari;\n Pengaplikasian TMK bukan sahaja mendorong murid\nmenjadi kreatif malah menjadikan PdP lebih menarik\ndan menyeronokkan serta m eningkatkan kualiti\npembelajaran; dan\n TMK diintegrasikan mengikut kesesuaian topik yang\nhendak diajar dan sebagai pengupaya bagi\nKSSR SAINS TAHUN 1\n23\nmeningkatkan lagi kefahaman murid terhadap\nkandungan mata pelajaran.\nPENTAKSIRAN\nPentaksiran atau penilaian adalah proses peng umpulan\nmaklumat melalui pelbagai kaedah seperti kerja rumah,\npembentangan, kerja projek, ujian dan sebagainya.\nPentaksiran ialah satu kayu pengukur untuk menilai\npencapaian murid dalam memperoleh pengetahuan,\nmenguasai kemahiran dan mengamalkan nilai di samping\nmenilai keberkesanan pengajaran d an pembelajaran guru.\nPentaksiran juga menyokong pembelajaran murid dan"
+  },
+  {
+    "id": "sn-y1-045",
+    "year": 1,
+    "section": "Inkuiri dalam Sains",
+    "codes": [],
+    "chars": 1127,
+    "text": "memberi maklum balas yang berguna kepada pihak\nberkepentingan seperti pentadbir, guru dan ibu bapa atau\npenjaga tentang perkembangan murid.\nTujuan utama pentaksiran formatif adalah un tuk memantau\npembelajaran murid. Oleh itu penting bagi guru merekabentuk\ninstrumen pentaksiran yang sah boleh dipercayai serta\nautentik. Maklumat yang dikumpul melalui pentaksiran formatif\nseharusnya membantu guru menentukan kekuatan dan\nkelemahan murid dalam mencapai sesuatu standard\nkandungan bagi sesuatu mata pelajaran. Maklumat yang\ndikumpul ini juga seharusnya membantu guru mengadaptasi\npengajaran dan pembelajaran berdasarkan keperluan dan\nkelemahan murid mereka. Pentaksiran sumatif pula adalah\nuntuk m enilai pembelajaran murid dengan standard\nkandungan bagi sesuatu mata pelajaran.\nPentaksiran dalam KSSR, terdiri daripada 4 komponen iaitu:\n Pentaksiran Sekolah;\n Pentaksiran Pusat;\n Pentaksiran Ak tiviti Jasmani Sukan dan Kokurikulum ;\ndan\n Pentaksiran Psikometrik.\nPentaksiran yang menyeluruh perlu dirancang dengan baik\ndan dijalankan secara berterusan sebagai sebahagian\ndaripada aktiviti di bilik darjah. Usaha guru dalam"
+  },
+  {
+    "id": "sn-y1-046",
+    "year": 1,
+    "section": "Inkuiri dalam Sains",
+    "codes": [],
+    "chars": 1117,
+    "text": "melaksanakan pentaksiran yang holistik di samping membantu\nmemperbaiki kelemahan murid akan membentuk ekosistem\npembelajaran yang kondusif dan seimbang.\nDalam usaha memastikan pentaksiran membantu\nmeningkatkan keupayaan dan pencapaian murid, guru harus\nmenggunakan strategi pentaksiran yang mempunyai ciri -ciri\nberikut:\n pelbagai bentuk;\n adil kepada semua murid;\nKSSR SAINS TAHUN 1\n24\n mengambilkira pelbagai aras kognitif;\n membolehkan murid mempamerkan pelbagai\nkeupayaan pembelajaran; dan\n mengambilkira pengetahuan dan kemahiran yang telah\ndipelajari oleh murid dan mentaksir sejauh mana\nmereka fahami.\nPentaksiran sekolah bagi sains dilaksanakan bersandarkan\ntiga domain utama i aitu pengetahuan, kemahiran dan nilai.\nPentaksiran Pengetahuan dalam sesuatu tema disertakan\npengintegrasian proses kemahiran sains ini bertujuan melihat\nsejauh mana murid memahami standard kandungan tertentu\nsecara menyeluruh dan holistik. Oleh itu adalah penting bagi\nguru m enggunakan pertimbangan profesi onal dalam\nmenentukan tahap penguasaan murid. Hierarki tahap\npenguasaan murid di bah agikan kepada enam tahap seperti"
+  },
+  {
+    "id": "sn-y1-047",
+    "year": 1,
+    "section": "Inkuiri dalam Sains",
+    "codes": [],
+    "chars": 1135,
+    "text": "yang ditunjukkan dalam Jadual 3.\nJadual 3 : Pernyataan Umum Tafsiran Tahap Penguasaan\nPengetahuan Bagi Mata Pelajaran Sains\nTAHAP\nPENGUASAAN TAFSIRAN\n1 Mengingat kembali pengetahuan dan\nkemahiran asas sains.\n2 Memahami pengetahuan dan kemahiran\nsains serta dapat menjelaskan kefahaman\ntersebut.\n3 Mengaplikasikan pengetahuan dan\nkemahiran sains untuk melaksanakan\ntugasan mudah.\n4 Menganalisis pengetahuan dan kemahiran\nsains dalam konteks penyelesaian\nmasalah.\n5 Menilai pengetahuan dan kemahiran sains\ndalam konteks penyelesaian masalah dan\nmembuat keputusan untuk melaksanakan\nsatu tugasan.\n6 Merekacipta menggunakan pengetahuan\ndan kemahiran sains dalam konteks\npenyelesaian masalah dan membuat\nkeputusan atau dalam melaksanakan satu\ntugasan dalam situasi baru secara kreatif\ndan inovatif.\nKSSR SAINS TAHUN 1\n25\nPentaksiran bagi setiap kelompok Standard Kandungan boleh\ndijalankan dengan menggunakan Standard Prestasi sebagai\nskala rujukan guru untuk menentukan pencapaian murid\ndalam menguasai sesuatu Standard Kandungan yang\nditetapkan. Standard Prestasi menunjukkan 6 Tahap\nPenguasaan yang disusun secara hi erarki di mana Tahap"
+  },
+  {
+    "id": "sn-y1-048",
+    "year": 1,
+    "section": "Inkuiri dalam Sains",
+    "codes": [],
+    "chars": 1117,
+    "text": "Penguasaan 1 menunjukkan pencapaian terendah sehingga\npencapaian tertinggi iaitu Tahap Penguasaan 6. Pentaksiran\nyang dibuat seharusnya diintegrasikan kandungan, kemahiran\ndan nilai untuk melihat sejauh mana murid me nguasai\nStandard Kandungan t ertentu secara holistik. Pentaksiran\nSikap Saintifik dan nilai murni bagi Sains Sekolah Rendah\ndibuat dengan merujuk kepada Jadual 4.\nJadual 4: Tafsiran Tahap Penguasaan bagi Sikap Saintifik\ndan Nilai Murni\nTAHAP\nPENGUASAAN TAFSIRAN\n1 Minat\n2 Minat dan bersifat ingin tahu\n3 Minat, bersifat ingin tahu, jujur dan tepat\ndalam merekod data.\n4 Minat, bersifat ingin tahu, jujur dan tepat\ndalam merekod data, berani mencuba dan\nbersistematik\n5 Minat, bersifat ingin tahu, jujur dan tepat\ndalam merekod data, berani mencuba,\nbersistematik, bekerjasama, rajin dan tabah\ndalam menjalankan tugasan.\n6 Minat, bersifat ingin tahu, jujur dan tepat\ndalam merekod data, berani mencuba,\nbersistematik,bekerjasama, rajin dan tabah\ndalam menjalankan tugas, bertanggung\njawab ke atas diri, rakan, alam sekitar dan\nberhemah tinggi.\nPentaksiran sekolah yang dibuat, hendaklah merujuk kepada"
+  },
+  {
+    "id": "sn-y1-049",
+    "year": 1,
+    "section": "Inkuiri dalam Sains",
+    "codes": [],
+    "chars": 1133,
+    "text": "Standard Prestasi yang disediakan. Tahap penguasaan yang\ndicapai oleh murid mestilah direkodkan ke dalam borang\npelaporan pentaksiran.\nKSSR SAINS TAHUN 1\n26\nTahap Penguasaan Keseluruhan\nTahap penguasaan keseluruhan perlu ditentukan bagi\nmemberi satu nilai tahap penguasaan murid pada akhir sesi\npersekolahan. Tahap penguasaan keseluruhan ini\nmerangkumi aspek kandungan, kemahiran saintifik serta sikap\nsaintifik dan nilai murni. Untuk itu, guru perlu menilai murid\nsecara kolektif dan holistik dengan melihat semua aspek\nsemasa proses pembelajaran murid secara berterusan melalui\npelbagai kaedah seperti pencapaian dalam ujian topikal,\npemerhatian, latihan, pembentangan, respon murid secara\nlisan, kerja projek berkumpulan dan sebagainya. Guru boleh\nmembuat pertimbangan profesional untuk memberi satu nilai\ntahap penguasaan keseluruhan murid berdasarkan\npengalaman guru bersama murid, kebijaksanaan serta melalui\nperbincangan bersama rakan sejawat.\nORGANISASI KANDUNGAN\nStandard Kurikulum Sains Sekolah Rendah memberi fokus\nkepada pengusaan ilmu pengetahuan, kemahiran dan nilai\nyang sesuai dengan tahap kebolehan murid berdasarkan"
+  },
+  {
+    "id": "sn-y1-050",
+    "year": 1,
+    "section": "Inkuiri dalam Sains",
+    "codes": [],
+    "chars": 787,
+    "text": "Standard Kandungan, Standard Pembelajaran dan Standard\nPrestasi yang disusun dalam 3 lajur secara bersebelahan\nseperti dalam Jadual 5.\nJadual 5: Organisasi DSKP\nSTANDARD\nKANDUNGAN\nSTANDARD\nPEMBELAJARAN\nSTANDARD\nPRESTASI\nPenyataan spesifik\ntentang perkara\nyang murid patut\nketahui dan boleh\nlakukan dalam\nsuatu tempoh\npersekolahan\nmerangkumi aspek\npengetahuan,\nkemahiran dan\nnilai.\nSuatu penetapan\nkriteria atau\nindikator kualiti\npembelajaran dan\npencapaian yang\nboleh diukur bagi\nsetiap standard\nkandungan.\nSuatu set kriteria\numum yang\nmenunjukkan\ntahap-tahap\nprestasi yang perlu\nmurid pamerkan\nsebagai tanda\nbahawa sesuatu\nperkara itu telah\ndikuasai murid\n(indicator of\nsuccess).\nStandard Kurikulum Sains Tahun 1 hingga ke Tahun 6\ndisusun mengikut tema bidang pembelajaran iaitu Inkuiri"
+  },
+  {
+    "id": "sn-y1-051",
+    "year": 1,
+    "section": "Teknologi dan Kehidupan Lestari",
+    "codes": [],
+    "chars": 233,
+    "text": "dan Angkasa serta Teknologi dan Kehidupan Lestari.\nSkop bagi mata pelajaran Sains Tahap 1 untuk kemahir an\nadalah seperti dalam Jadual 6 manakala skop untuk konten\nadalah seperti dalam Jadual 7 seperti di bawah:\nKSSR SAINS TAHUN 1\n27"
+  },
+  {
+    "id": "sn-y1-052",
+    "year": 1,
+    "section": "Inkuiri dalam Sains",
+    "codes": [],
+    "chars": 776,
+    "text": "Jadual 6 :Kemahiran Proses Sains\nKEMAHIRAN SKOP\nMemerhati Memerihalkan penggunaan anggota dan\nsemua deria yang terlibat untuk membuat\npemerhatian tentang fenomena atau\nperubahan yang berlaku.\nMengelas Memerihalkan ciri objek dengan\nmenyatakan persamaan dan perbezaan.\nMengukur\nMenggunakan\nNombor\nMengukur dengan menggunakan alat dan\nunit piawai yang sesuai.\nMembuat\nInferens\nMenyatakan satu penerangan yang\nmunasabah bagi satu pemerhatian.\nMeramal Memerihalkan satu kemungkinan bagi satu\nperistiwa atau data.\nBerkomunikasi Merekod maklumat atau idea dalam\nsebarang bentuk.\nJadual 7: Kandungan Sains Tahap 1\nTema Skop\nInkuiri Dalam\nSains\nMemerhati, mengelas, mengukur\nmenggunakan nombor, membuat inferens,\nmeramal, berkomunikasi, kemahiran\nmanipulatif dan peraturan bilik sains"
+  },
+  {
+    "id": "sn-y1-053",
+    "year": 1,
+    "section": "Sains Hayat",
+    "codes": [],
+    "chars": 199,
+    "text": "Sains Hayat Benda hidup dan benda bukan hidup\nManusia: deria, proses hidup, kelas makanan,\nHaiwan: bahagian tubuh, proses hidup, tabiat\nmakan, kelas haiwan,\nTumbuhan: bahagian tumbuhan, proses hidup,"
+  },
+  {
+    "id": "sn-y1-054",
+    "year": 1,
+    "section": "Sains Bahan",
+    "codes": [],
+    "chars": 1144,
+    "text": "Sains Bahan Keupayaan bahan menyerap air, campuran,\nsifat kimia bahan\nBumi dan\nAngkasa\nBentuk muka bumi, tanah , air, udara,sistem\nsuria\nTeknologi\ndan\nKehidupan\nLestari\nAsas binaan, memasang model mengikut\nmanual, mesin.\nPengajaran dan Pembelajaran sebaiknya dirancang secara\nholistik bagi membolehkan beberapa Standard Pembelajaran\ndicapai bergantung kepada kesesuaian dan keperluan\npembelajaran. Guru seharusnya meneliti semua Standard\nPembelajaran d a n S t a n d a r d P r e s t a s i dalam suatu\nkelompok yang berkenaan sebelum merancang aktiviti\npengajaran dan pembelajaran. Aktiviti bo leh d ipelbagaikan\nuntuk mencapai S tandard Pembelajaran bagi memenuhi\nkeperluan pembelajaran, sesuai de ngan kebolehan serta\ngaya pembelajaran murid.\nGuru digalakkan merancang aktiviti yang dapat melibatkan\nmurid secara aktif bagi menjana pemikiran secara analitis,\nkritis, inovatif dan kreatif di samping menggunakan teknologi\nsebagai wahana dalam mencapai S tandard Pembelajaran\ntersebut dengan lebih berkesan. Pelaksanaan pengajaran dan\npembelajaran yang memerlukan aktiviti, penyiasatan dan\neksperimen yang difikirkan sesuai bagi mencapai sesuatu"
+  },
+  {
+    "id": "sn-y1-055",
+    "year": 1,
+    "section": "Inkuiri dalam Sains",
+    "codes": [
+      "1.1.1"
+    ],
+    "chars": 1104,
+    "text": "INKUIRI DALAM SAINS\n1. KEMAHIRAN SAINTIFIK\nSTANDARD\nKANDUNGAN STANDARD PEMBELAJARAN\nSTANDARD PRESTASI\nCATATAN TAHAP\nPENGUASAAN TAFSIRAN\n1.1 Kemahiran\nProses Sains\nMurid boleh:\n1.1.1 Memerhati\n1 Menyatakan semua deria yang\nterlibat untuk membuat\npemerhatian tentang fenomena\nyang berlaku.\nGuru menjalankan aktiviti\nyang boleh membawa\nkepada penerapan dan\npentaksiran kemahiran\nmemerhati.\n2\nMemerihalkan penggunaan semua\nderia yang terlibat untuk membuat\npemerhatian tentang feno mena\natau perubahan yang berlaku.\n3\nMenggunakan semua deria yang\nterlibat untuk membuat\npemerhatian tentang fenomena\natau perubahan yang berlaku.\n4\n(i) Menggunakan semua deria\nyang terlibat untuk\nmembuat pemerhatian\nsecara kualitatif bagi\nmenerangkan fenomena\natau perubahan yang\nberlaku.\n(ii) Menggunakan alat yang\nsesuai jika perlu untuk\nmembantu pemerhatian.\nKSSR SAINS TAHUN 1\n29\nSTANDARD\nKANDUNGAN STANDARD PEMBELAJARAN\nSTANDARD PRESTASI\nCATATAN TAHAP\nPENGUASAAN TAFSIRAN\n5\n(i) Menggunakan semua deria\nyang terlibat untuk\nmembuat pemerhatian\nsecara kualitatif dan\nkuantitatif bagi\nmenerangkan fenomena\natau perubahan yang"
+  },
+  {
+    "id": "sn-y1-056",
+    "year": 1,
+    "section": "Inkuiri dalam Sains",
+    "codes": [
+      "1.1.2"
+    ],
+    "chars": 1124,
+    "text": "berlaku.\n(ii) Menggunakan alat yang\nsesuai jika perlu untuk\nmembantu pemerhatian.\n6\n(i) Menggunakan semua deria\nyang terlibat untuk\nmembuat pemerhatian\nsecara kualitatif dan\nkuantitatif bagi\nmenerangkan fenomena\natau perubahan yang\nberlaku secara sistematik.\n(ii) Menggunakan alat yang\nsesuai jika perlu untuk\nmembantu pemerhatian.\nKSSR SAINS TAHUN 1\n30\nSTANDARD\nKANDUNGAN STANDARD PEMBELAJARAN\nSTANDARD PRESTASI\nCATATAN TAHAP\nPENGUASAAN TAFSIRAN\nMurid boleh:\n1.1.2 Berkomunikasi\n1 Menyatakan maklumat yang\ndiperoleh.\nGuru menjalankan aktiviti\nyang boleh membawa\nkepada p enerapan\nkemahiran\nberkomunikasi.\n2\nMerekod maklumat atau idea\ndalam sebarang bentuk.\n3\nMerekodkan maklumat atau idea\ndalam bentuk yang sesuai.\n4\nMerekod maklumat atau idea\ndalam bentuk yang sesuai dan\nmempersembahkan maklumat atau\nidea tersebut secara sistematik.\n5 Merekodkan maklumat atau idea\ndalam lebih dari satu be ntuk yang\nsesuai dan mempersembahkan\nmaklumat atau idea tersebut\nsecara sistematik.\nKSSR SAINS TAHUN 1\n31\nSTANDARD\nKANDUNGAN STANDARD PEMBELAJARAN\nSTANDARD PRESTASI\nCATATAN TAHAP\nPENGUASAAN TAFSIRAN\n6\nMerekodkan maklumat atau idea"
+  },
+  {
+    "id": "sn-y1-057",
+    "year": 1,
+    "section": "Inkuiri dalam Sains",
+    "codes": [
+      "1.2.1",
+      "1.2.2",
+      "1.2.3",
+      "1.2.4",
+      "1.2.5"
+    ],
+    "chars": 1119,
+    "text": "dalam lebih dari satu bentuk y ang\nsesuai dan mempersembahkan\nmaklumat atau idea tersebut\nsecara sistematik, kreatif dan\ninovatif serta boleh memberi\nmaklum balas.\nKSSR SAINS TAHUN 1\n32\nSTANDARD\nKANDUNGAN STANDARD PEMBELAJARAN\nSTANDARD PRESTASI\nCATATAN TAHAP\nPENGUASAAN TAFSIRAN\n1.2\nKemahiran\nManipulatif\nMurid boleh:\n1\nMenyenaraikan peralatan,\nbahan sains dan spesimen\nyang diperlukan bagi suatu\naktiviti.\nGuru boleh membuat\npentaksiran semasa murid\nmenjalankan aktivti\npembelajaran.\n1.2.1\n1.2.2\n1.2.3\n1.2.4\n1.2.5\nMenggunakan dan\nmengendalikan peralatan dan\nbahan sains dengan betul.\nMengendalikan spesimen\ndengan betul dan cermat.\nMelakar spesimen, peralatan\ndan bahan sains dengan betul.\nMembersihkan peralatan sains\ndengan cara yang betul.\nMenyimpan peralatan da n\nbahan sains dengan betul dan\nselamat.\n2\nMemerihalkan penggunaan\nperalatan, bahan sains dan\nspesimen yang diperlukan bagi\nsuatu aktiviti dengan kaedah\nyang betul.\n3\nMengendalikan peralatan,\nbahan sains dan spesimen\nyang diperlukan b agi suatu\naktiviti dengan kaedah yang\nbetul.\n4\nMengguna, mengendali,\nmelakar, membersih dan\nmenyimpan peralatan, bahan"
+  },
+  {
+    "id": "sn-y1-058",
+    "year": 1,
+    "section": "Inkuiri dalam Sains",
+    "codes": [
+      "2.1.1"
+    ],
+    "chars": 1119,
+    "text": "sains dan spesimen yang\ndigunakan dalam suatu aktiviti\ndengan kaedah yang betul.\nKSSR SAINS TAHUN 1\n33\nSTANDARD\nKANDUNGAN STANDARD PEMBELAJARAN\nSTANDARD PRESTASI\nCATATAN TAHAP\nPENGUASAAN TAFSIRAN\n5 Mengguna, mengendali, melakar,\nmembersih dan menyimpan\nperalatan, bahan sains dan\nspesimen yang digunakan dalam\nsuatu aktiviti dengan kaedah yang\nbetul, bersistematik dan berhemah.\n6\nMengguna, mengendali, melakar,\nmembersih dan menyimpan\nperalatan, bahan sains dan\nspesimen yang digunakan dalam\nsuatu aktiviti dengan kaedah yang\nbetul, bersistematik, berhemah dan\nmenjadi contoh kepada rakan lain.\nKSSR SAINS TAHUN 1\n34\n2. PERATURAN BILIK SAINS\nSTANDARD\nKANDUNGAN STANDARD PEMBELAJARAN\nSTANDARD PRESTASI\nCATATAN TAHAP\nPENGUASAAN TAFSIRAN\n2.1 Peraturan\nBilik Sains\nMurid boleh:\n2.1.1 Mematuhi peraturan bilik\nsains\n1\nMenyatakan salah satu peraturan\nbilik sains.\nGuru boleh membuat\npentaksiran melalui\npemerhatian semasa\nmurid menjalankan aktivti\npembelajaran.\n2\nMenyatakan lebih daripada satu\nperaturan bilik sains.\n3\nMengaplikasi salah satu peraturan\nbilik sains.\n4\nMengaplikasi lebih darip ada satu\nperaturan bilik sains"
+  },
+  {
+    "id": "sn-y1-059",
+    "year": 1,
+    "section": "Inkuiri dalam Sains",
+    "codes": [],
+    "chars": 259,
+    "text": "5\nMemberi sebab peraturan bilik\nsains perlu dipatuhi.\nKSSR SAINS TAHUN 1\n35\nSTANDARD\nKANDUNGAN STANDARD PEMBELAJARAN\nSTANDARD PRESTASI\nCATATAN TAHAP\nPENGUASAAN TAFSIRAN\n6\nMenjadi contoh kepada rakan\ndalam mematuhi peraturan bi lik\nsains.\nKSSR SAINS TAHUN 1\n36"
+  },
+  {
+    "id": "sn-y1-060",
+    "year": 1,
+    "section": "Sains Hayat",
+    "codes": [
+      "3.1.1",
+      "3.1.2"
+    ],
+    "chars": 1113,
+    "text": "SAINS HAYAT\n3. BENDA HIDUP DAN BENDA BUKAN HIDUP\nSTANDARD\nKANDUNGAN STANDARD PEMBELAJARAN\nSTANDARD PRESTASI\nCATATAN TAHAP\nPENGUASAAN TAFSIRAN\n3.1\nBenda hidup dan\nbenda bukan\nhidup\nMurid boleh:\n1\nMenyatakan contoh benda\nhidup dan benda bukan hidup.\nGuru membawa murid ke\nluar kelas untuk melihat\nkawasan sekitar sekolah\ndan mengecam benda -\nbenda yang di temui\nmereka.\nMurid berbincang sehingga\nmembuat kesimpulan\nbahawa manusia, haiwan\ndan tum buhan adalah\nbenda hidup.\nNota :\nTerdapat benda bukan\nhidup yang mempunyai ciri\nbenda hidup.\nContoh:\n(i) objek yang\nbergerak seperti\nkipas dan kereta;\ndan\n(ii) objek yang\nmembesar seperti\nbelon yang ditiup.\n3.1.1\n3.1.2\nMembanding dan\nmembezakan benda hidup dan\nbenda bukan hidup\nberdasarkan ciri-ciri berikut:\n(i) bernafas;\n(ii) memerlukan air dan\nmakanan;\n(iii) bergerak;\n(iv) membesar; dan\n(v) membiak.\nMembuat urutan contoh -\ncontoh benda hidup mengikut\nsaiz.\n2\nMembanding beza benda hidup\ndan benda bukan hidup.\n3\nMemerihalkan keperluan asas\nbenda hidup bagi manusia,\nhaiwan dan tumbuhan.\n4\nMembuat urutan contoh -contoh\nbenda hidup yang diberikan\nberdasarkan saiz."
+  },
+  {
+    "id": "sn-y1-061",
+    "year": 1,
+    "section": "Sains Hayat",
+    "codes": [
+      "3.2.1",
+      "3.2.2",
+      "3.2.3",
+      "3.2.4",
+      "3.2.5"
+    ],
+    "chars": 1116,
+    "text": "5\nMenaakul mengapa makanan,\nair, udara dan tempat\nperlindungan adalah penting\nkepada manusia dan haiwan.\nKSSR SAINS TAHUN 1\n37\nSTANDARD\nKANDUNGAN STANDARD PEMBELAJARAN\nSTANDARD PRESTASI\nCATATAN TAHAP\nPENGUASAAN TAFSIRAN\n3.2\nKeperluan asas\nbenda hidup\nMurid boleh:\n6\nBerkomunikasi untuk\nmenunjukkan manusia, haiwan\ndan tumbuhan mempunyai cara\nyang berlainan untuk\nmendapatkan makanan, air dan\nudara.\nMurid menyusun contoh\nbenda hidup dari yang\nbersaiz kecil hingga ke saiz\nbesar seperti gajah dan\nkuman, dan berkomunikasi\ntentang susunan yang\ndibuat.\n3.2.1\n3.2.2\n3.2.3\n3.2.4\n3.2.5\nMenyatakan keperluan asas\nbenda hidup iaitu makanan, air\ndan udara.\nMemerihalkan manusia,\nhaiwan dan tumbuhan\nmemerlukan makanan, air dan\nudara dalam cara yang\nberlainan.\nMemerihalkan manusia dan\nhaiwan, juga memerlukan\ntempat perlindungan.\nMenaakul kepentingan\nmakanan, air, udara dan\ntempat perlindungan kepada\nmanusia dan haiwan.\nMenjelaskan pemerhatian\ntentang ciri dan keperluan\nasas benda hidup melalui\nlakaran, TMK, penulisan atau\nlisan.\nKSSR SAINS TAHUN 1\n38\n4. MANUSIA\nSTANDARD\nKANDUNGAN STANDARD PEMBELAJARAN\nSTANDARD PRESTASI"
+  },
+  {
+    "id": "sn-y1-062",
+    "year": 1,
+    "section": "Sains Hayat",
+    "codes": [
+      "4.1.1",
+      "4.1.2",
+      "4.1.3",
+      "4.1.4",
+      "4.1.5"
+    ],
+    "chars": 1104,
+    "text": "CATATAN TAHAP\nPENGUASAAN TAFSIRAN\n4.1\nDeria manusia\nMurid boleh:\n1\nMenyatakan bahagian tubuh\nmanusia.\nBerbincang dengan murid\ntentang fungsi setiap\nbahagian tubuh.\nMenyentuh untuk\nmembezakan k eadaan\npermukaan, melihat untuk\nmembezakan warna,\nmenghidu untuk mengesan\nbau yang mungkin\nmendatangkan bahaya\nseperti bau asap\nkebakaran.\nMurid menjalankan aktiviti\nuntuk mengenal pasti objek\ncontoh, objek yang\nterdapat dalam kotak\nhitam.\nAlat yang bole h membantu\norgan deria yang tidak\nboleh berfungsi dengan\nbaik seperti cermin mata\ndan alat bantuan\npendengaran.\n4.1.1\n4.1.2\n4.1.3\n4.1.4\n4.1.5\nMengenal pasti bahagian\ntubuh manusia yang\nberkaitan dengan deria yang\nberkenaan.\nMengelaskan objek mengikut\nciri yang dikenalpasti.\nMenggunakan deria untuk\nmengenal pasti objek melalui\npenyiasatan.\nMenjelas dengan contoh,\npenggunaan deria lain\nsebagai ganti sekiranya satu\nderia tidak dapat berfungsi.\nMenjelaskan pemerhatian\ntentang deria manusia\nmelalui lakaran, TMK,\npenulisan atau lisan.\n2\nMenghubungkait bahagian\ntubuh manusia dengan deria\nyang berkenaan.\n3\nMemerihalkan ciri objek\nmenggunakan pelbagai deria"
+  },
+  {
+    "id": "sn-y1-063",
+    "year": 1,
+    "section": "Sains Hayat",
+    "codes": [
+      "5.1.1",
+      "5.1.2",
+      "5.1.3",
+      "5.1.4",
+      "5.1.5"
+    ],
+    "chars": 1107,
+    "text": "4\nMengelaskan objek yang\ndiberikan mengikut ciri yang\ndipilih\n5\nMengenalpasti objek yang\ndiberikan sekiranya salah\nsatu deria tidak dapat\nberfungsi\n6\nBerkomunikasi tentang alat\nyang boleh membantu organ\nderia yang tidak boleh\nberfungsi dengan baik\nKSSR SAINS TAHUN 1\n39\n5. HAIWAN\nSTANDARD\nKANDUNGAN STANDARD PEMBELAJARAN\nSTANDARD PRESTASI\nCATATAN TAHAP\nPENGUSAAN TAFSIRAN\n5.1\nBahagian tubuh\nhaiwan.\nMurid boleh: 1 Memberi contoh haiwan.\nMurid mengenal pasti\nbahagian tubuh haiwan\nseperti:\n(i) arnab;\n(ii) buaya;\n(iii) katak ;\n(iv) ikan;\n(v) siput;\n(vi) itik;\n(vii) lalat;\n(viii) badak sumbu; dan\n(ix) cacing.\nMurid menggunakan satu\ncontoh haiwan dan\nmengenalpasti bahagian\ntubuh haiwan tersebut.\nGuru menjalankan\nperbincangan untuk\nmencungkil idea murid\nlangkah yang diambil oleh\nmanusia bagi memastikan\nhaiwan tidak dizalimi dan\nkesan keceder aan pada\nhaiwan tersebut.\n5.1.1\n5.1.2\n5.1.3\n5.1.4\n5.1.5\nMengenal pasti bahagian\ntubuh haiwan seperti paruh,\nsisik, sirip, berbulu halus,\nberbulu pelepah, tanduk,\nsumbu, sesungut, kulit keras,\ncangkerang, sayap, kepak,\nkepala, badan , ekor dan kaki\nselaput renang."
+  },
+  {
+    "id": "sn-y1-064",
+    "year": 1,
+    "section": "Sains Hayat",
+    "codes": [],
+    "chars": 1123,
+    "text": "Menghubungkaitkan bahagian\ntubuh haiwan dan\nkepentingannya kepada\nhaiwan.\nMenjelaskan melalui contoh\nbahagian yang terdapat pada\ntubuh haiwan.\nMengitlak bahawa terdapat\nhaiwan yang berlainan\nmempunyai bahagian tubuh\nyang serupa.\nMenjelaskan pemerhatian\ntentang bahagian tubuh\nhaiwan melalui lakaran, TMK,\npenulisan atau lisan.\n2\nMemerihalkan bahagian tubuh\nbagi haiwan.\n3 Menghubungkaitkan\nkepentingan bahagian tubuh\nhaiwan kepada haiwan\nberkenaan.\n4 Menjelaskan melalui contoh\nbahagian yang terdapat pada\ntubuh haiwan yang dinyatakan.\n5 Mengitlak bahawa terdapat\nhaiwan yang berbeza tetapi\nmempunyai bahagian tubuh\nyang serupa.\n6\nBerkomunikasi tentang\nperanan manusia dalam\nmencegah haiwan dizalimi\nhingga mengakibatkan\nkecederaan pada bahagian\ntubuh haiwan.\nKSSR SAINS TAHUN 1\n40\n6. TUMBUHAN\nSTANDARD\nKANDUNGAN STANDARD PEMBELAJARAN\nSTANDARD PRESTASI\nCATATAN TAHAP\nPENGUASAAN TAFSIRAN\n6.1\nBahagian\ntumbuhan\nMurid boleh:\n1\nMenyatakan bahag ian pada\ntumbuhan.\nMurid diberi/ditunjukkan\ntumbuhan sebenar untuk\nmenjalankan aktiviti.\nMurid memberi contoh\ntumbuhan berbunga dan\ntumbuhan tidak berbunga\nseperti pokok b unga raya,"
+  },
+  {
+    "id": "sn-y1-065",
+    "year": 1,
+    "section": "Sains Hayat",
+    "codes": [
+      "6.1.1",
+      "6.1.2",
+      "6.1.3",
+      "6.1.4"
+    ],
+    "chars": 1119,
+    "text": "cendawan, paku pakis dan\npokok orkid.\nMurid boleh menjalankan\naktiviti pengelasan\nberdasarkan ciri yang\ndipelajari iaitu jenis urat\ndaun, mempunyai bunga,\njenis batang atau jenis akar.\nMurid boleh menggunakan\ncontoh seperti lalang dan\npokok keembong untuk\nmenunjukkan perbezaan.\n6.1.1\n6.1.2\n6.1.3\n6.1.4\nMembanding dan\nmembezakan bahagian pada\ntumbuhan iaitu:\n(i) daun: jenis urat daun;\n(ii) bunga: berbunga, tidak\nberbunga;\n(iii) batang: berkayu, tidak\nberkayu; dan\n(iv) akar: akar tunjang, akar\nserabut.\nMenghubungkaitkan bahagian\ntumbuhan iaitu daun, bunga,\nbatang dan akar serta\nkepentingannya kepada\ntumbuhan.\nMengitlak bahawa ada\ntumbuhan yang berlainan\nmempunyai bahagian yang\nserupa.\nMenjelaskan pemerhatian\ntentang bahagian tumbuhan\nmelalui lakaran, TMK,\npenulisan atau lisan.\n2 Mengenal pasti bahagian\nyang terda pat pada satu\ntumbuhan sebenar yang\ndipilih.\n3\nMenyatakan kepentingan\nbahagian tumbuhan kepada\ntumbuhan\n4 Mengelaskan tumbuhan\nberdasarkan ciri yang dipilih.\n5\nMengitlak bahawa terdapat\ntumbuhan yang berlainan\nmempunyai ciri yang sama\nKSSR SAINS TAHUN 1\n41\nSTANDARD\nKANDUNGAN STANDARD PEMBELAJARAN"
+  },
+  {
+    "id": "sn-y1-066",
+    "year": 1,
+    "section": "Sains Hayat",
+    "codes": [],
+    "chars": 246,
+    "text": "STANDARD PRESTASI\nCATATAN TAHAP\nPENGUASAAN TAFSIRAN\n6\nBerkomunikasi untuk menunjukkan\nperbezaan antara dua tumbuhan\nyang berlainan jenis dari aspek\njenis urat daun, berbunga atau\ntidak berbunga, je nis batang dan\njenis akar.\nKSSR SAINS TAHUN 1\n42"
+  },
+  {
+    "id": "sn-y1-067",
+    "year": 1,
+    "section": "Sains Fizikal",
+    "codes": [
+      "7.1.1",
+      "7.1.2",
+      "7.1.3",
+      "7.1.4",
+      "7.1.5"
+    ],
+    "chars": 1123,
+    "text": "SAINS FIZIKAL\n7. MAGNET\nSTANDARD\nKANDUNGAN STANDARD PEMBELAJARAN\nSTANDARD PRESTASI\nCATATAN TAHAP\nPENGUASAAN TAFSIRAN\n7.1\nMagnet\nMurid boleh:\n1\nMemberi contoh objek atau\nalat ya ng menggunakan\nmagnet.\nMurid digalakkan membawa\npelbagai alat yang\nmenggunakan magnet\nseperti kotak pensel\nbermagnet, magnet hiasan di\npeti sejuk dan permainan.\nMurid menjalankan\npenyiasatan dengan\nmendekatkan magnet\ndengan objek dan memerhati\nsama ada m enarik objek\natau tidak menarik objek.\nMurid menjalankan\npenyiasatan yang adil\nmenggunakan magnet untuk\nmenguji kekuatan magnet\ndari aspek jarak dan\nbilangan klip kertas yang\nboleh ditarik dengan\nmemalarkan bentuk dan saiz\nmagnet.\n7.1.1\n7.1.2\n7.1.3\n7.1.4\n7.1.5\nMemberi contoh kegunaan\nmagnet dalam kehidupan.\nMengenal pasti bentuk\nmagnet seperti magnet bar,\nsilinder, ladam, bentuk U,\nbutang dan cincin.\nMengitlak tindakan magnet\nke atas pelbagai objek\ndengan menjalankan aktiviti.\nMembuat kesimpulan tentang\ndaya tarikan dan tolakan\nantara kutub -kutub magnet\ndengan menjalankan\npenyiasatan.\nMenentukan kekuatan\nmagnet ke atas objek dengan\nmenjalankan penyiasatan.\n2 Mengenal pasti pelbagai"
+  },
+  {
+    "id": "sn-y1-068",
+    "year": 1,
+    "section": "Sains Fizikal",
+    "codes": [
+      "7.1.6"
+    ],
+    "chars": 649,
+    "text": "bentuk magnet.\n3\nMengitlak tindakan magnet ke\natas pelbagai objek.\n4\nMembuat pengitlakan tentang\ndaya tarikan dan tolakan\nantara kutub-kutub magnet.\n5\nMembuat kesimpulan\nkekuatan suatu magnet\nberdasarkan penyiasatan yang\ndibuat.\nKSSR SAINS TAHUN 1\n43\nSTANDARD\nKANDUNGAN STANDARD PEMBELAJARAN\nSTANDARD PRESTASI\nCATATAN TAHAP\nPENGUASAAN TAFSIRAN\n7.1.6\nMenjelaskan pemerhatian\ntentang magnet melalui\nlakaran, TMK, penulisan atau\nlisan.\n6\nMereka bentuk permainan\natau alat berdasarkan\npenggunaan magnet.\nMurid boleh mereka\npermainan mudah seperti\nperlumbaan menggerakan\npaku dengan menggunakan\nmagnet tanpa menyentuh\npaku tersebut.\nKSSR SAINS TAHUN 1\n44"
+  },
+  {
+    "id": "sn-y1-069",
+    "year": 1,
+    "section": "Sains Bahan",
+    "codes": [
+      "8.1.1",
+      "8.1.2",
+      "8.1.3",
+      "8.1.4"
+    ],
+    "chars": 1121,
+    "text": "SAINS BAHAN\n8. PENYERAPAN\nSTANDARD\nKANDUNGAN STANDARD PEMBELAJARAN\nSTANDARD PRESTASI\nCATATAN TAHAP\nPENGUASAAN TAFSIRAN\n8.1\nKeupayaan bahan\nmenyerap air\nMurid boleh:\n1\nMenyatakan objek yang\nboleh menyerap dan tidak\nboleh menyerap air.\nMurid menjalankan aktiviti\nmengelaskan objek yang\nmenyerap air dan tidak\nmenyerap air.\nContoh objek;\n(i) sapu tangan;\n(ii) kertas tisu;\n(iii) klip kertas;\n(iv) guli;\n(v) penutup botol;\n(vi) kertas; dan\n(vii) mop.\nMurid boleh menentukan\nkeupayaan objek menyerap air\nberdasarkan jenis bahan\ndengan mengumpulkan isipadu\nair yang telah diserap oleh\nobjek. Saiz objek yang\ndigunakan hendaklah di\nmalarkan.\n8.1.1\n8.1.2\n8.1.3\n8.1.4\nMengenal pasti objek yang\nboleh menyerap air dan tidak\nboleh menyerap air dengan\nmenjalankan penyiasatan.\nMengelas objek yang boleh\nmenyerap air dan tidak boleh\nmenyerap air.\nMemerihalkan keupayaan\nobjek menyerap air\nberdasarkan jenis bahan\ndengan menjalankan\npenyiasatan.\nMenyatakan kepentingan\nobjek yang boleh menyerap\nair dan tidak boleh menyerap\nair dalam kehidupan.\n2\nMenyenaraikan\nkepentingan kebolehan\nbahan yang boleh menyerap\nair dan tidak menyerap air"
+  },
+  {
+    "id": "sn-y1-070",
+    "year": 1,
+    "section": "Sains Bahan",
+    "codes": [
+      "8.1.5",
+      "8.1.6"
+    ],
+    "chars": 1101,
+    "text": "dalam kehidupan.\n3\nMengelas objek yang boleh\nmenyerap air dan tidak\nboleh menyerap air.\n4\nMenaakul kepentingan\nbahan yang tidak menyerap\nair dalam kehidupan.\nKSSR SAINS TAHUN 1\n45\nSTANDARD\nKANDUNGAN STANDARD PEMBELAJARAN\nSTANDARD PRESTASI\nCATATAN TAHAP\nPENGUASAAN TAFSIRAN\n8.1.5\n8.1.6\nMereka cipta objek\nberdasarkan kebolehan\nmenyerap air.\nMenjelaskan pemerhatian\ntentang keupayaan bahan\nmenyerap air melalui lakaran,\npenulisan, TMK atau lisan.\n5\nMembuat urutan\nkeupayaan objek menyerap\nair berdasarkan jenis\nbahan.\nNota: Span diperbuat daripada\nplastik dimana plastik tidak\nmenyerap air.\n6\nMenyelesaikan masalah\ndengan mengaplikasikan\npengetahuan tentang\nkeupayaan objek menyerap\nair.\nKSSR SAINS TAHUN 1\n46\nBUMI DAN ANGKASA\n9. BUMI\nSTANDARD\nKANDUNGAN STANDARD PEMBELAJARAN\nSTANDARD PRESTASI\nCATATAN TAHAP\nPENGUASAAN TAFSIRAN\n9.1\nBentuk muka\nBumi\nMurid boleh:\n1\nMenyatakan bentuk muka\nbumi.\nMurid berbincang tentang\nbentuk muka bumi dengan\nmemerhati model muka bumi\nMurid mencampurkan air pada\ncontoh tanah, menggoncang\ndan membiarkan seketika\nuntuk melihat kandungan tanah\nseperti ranting kayu, daun,"
+  },
+  {
+    "id": "sn-y1-071",
+    "year": 1,
+    "section": "Sains Bahan",
+    "codes": [
+      "9.1.1",
+      "9.2.1",
+      "9.2.2",
+      "9.2.3"
+    ],
+    "chars": 962,
+    "text": "batu, pasir dan haiwan kecil.\nMurid membuat banding beza\ntentang kandungan tanah yang\ndiambil dari sek urang-kurang\nnya dua tempat yang berbeza\nseperti tanah kebun dan pasir\npantai.\n9.1.1\nMenyatakan bentuk muka\nBumi seperti gunung, pantai,\nbukit, lembah, sungai, kolam,\ntasik dan laut.\n2\nMemberi contoh jenis\ntanah.\n9.2\nTanah\nMurid boleh:\n3 Mengenalpasti kandungan\nbagi satu jenis tanah\nberdasarkan pemerhatian.\n9.2.1\n9.2.2\n9.2.3\nMenyatakan jenis tanah\nseperti tanah kebun, tanah\nliat dan pasir.\nMembanding beza\nkandungan tanah bagi jenis\ntanah yang berbeza dengan\nmenjalankan penyiasatan\nMenjelaskan pemerhatian\ntentang bentuk muka bumi\ndan t anah melalui lakaran,\npenulisan, TMK atau lisan.\n4\nMembanding beza\nkandungan tanah bagi\ncontoh tanah yang\ndiberikan.\n5\nMerekodkan perbezaan\nkandungan bagi cont oh\ntanah yang berbeza.\n6 Berkomunikasi dengan\nmeramalkan kegunaan\ntanah dan menjelaskan\nberdasarkan pengetahuan\ntentang kandungan tanah.\nKSSR SAINS TAHUN 1\n47"
+  },
+  {
+    "id": "sn-y1-072",
+    "year": 1,
+    "section": "Teknologi dan Kehidupan Lestari",
+    "codes": [
+      "10.1.1",
+      "10.1.2",
+      "10.1.3",
+      "10.1.4",
+      "10.1.5"
+    ],
+    "chars": 1107,
+    "text": "TEKNOLOGI DAN KEHIDUPAN LESTARI\n10. ASAS BINAAN\nSTANDARD\nKANDUNGAN STANDARD PEMBELAJARAN\nSTANDARD PRESTASI\nCATATAN TAHAP\nPENGUASAAN TAFSIRAN\n10.1\nBinaan\ndaripada\nbongkah bentuk\nasas\nMurid boleh:\n1\nMenyatakan bentuk asas\niaitu segitiga, segi empat\nsama, segi empat tepat dan\nbulatan.\nNota: Bongkah bentuk asas\nboleh di bina dengan\nmenggunakan kad manila atau\nkotak.\n10.1.1\n10.1.2\n10.1.3\n10.1.4\n10.1.5\nMengenal pasti bentuk asas\niaitu segitiga, segi empat\nsama, segi empat tepat dan\nbulatan.\nMengenal pasti bongkah\nbentuk asas iaitu kubus,\nkuboid, piramid, prisma, kon,\nsilinder dan sfera.\nMereka bentuk objek atau\nstruktur menggunakan\nbongkah bentuk asas.\nMenaakul kepentingan\npelbagai bentuk bongkah.\nMenjelaskan pemerhatian\ntentang hasil binaan melalui\nlakaran, TMK, penulisan atau\nlisan.\n2\nMengenal pasti bo ngkah\niaitu kubus, kuboid, piramid,\nprisma, kon, silinder dan\nsfera.\n3 Melakar bongkah bentuk\nasas.\n4\nMembina objek atau struktur\nmenggunakan bentuk asas\ndan bongkah.\n5 Berkomunikasi untuk\nmenerangkan objek atau\nstruktur yang dibina.\n6 Menaakul kepentingan\npelbagai bentuk bongkah\ndalam kehidupan."
+  },
+  {
+    "id": "sn-y1-073",
+    "year": 1,
+    "section": "Teknologi dan Kehidupan Lestari",
+    "codes": [],
+    "chars": 1130,
+    "text": "PANEL PENGGUBAL\n1. Datin Dr Ng Soo Boon Bahagian Pembangunan Kurikulum\n2. Zaidah binti Mohd Yusoff Bahagian Pembangunan Kurikulum\n3. Zainon binti Abd Majid Bahagian Pembangunan Kurikulum\n4. Kamarul Azlan bin Ahmad Bahagian Pembangunan Kurikulum\n5. Siti Rozita binti Yahya Bahagian Pembangunan Kurikulum\n6. Wan Noorhayati binti Wan Zainulddin Bahagian Pembangunan Kurikulum\n7. Enchum binti Ibrahim IPG Kampus Ipoh. Perak\n8. Fathaiyah binti Abdullah IPG Kampus Raja Melewar. Negeri Sembilan\n9. Makrof bin Md. Daud IPG Kampus Perempuan Melayu. Melaka\n10. Dr Tay Chong Seng IPG Kampus Tun Hussein Onn. Johor\n11. Kamalhuzaimi bin Khamis Pejabat Pendidikan Daerah Kota Tinggi. Johor\n12. Abuzar A.Z bin Ahmad SK Putrajaya Presint 11(1). WP Putrajaya\n13. Adonie binti Adnan SK Bandar Sunway Semenyih. Selangor\n14. Arbiknah binti Husain SK Perempuan Methodist. Pahang\n15. Asah binti Tambol SK Kantan Permai. Selangor\n16. Aszoura binti Mohamed Salleh SK Dato’ Abu Bakar Baginda. Selangor\n17. Idaaznim binti Akasah SK Seri Sekamat. Selangor\n18. Krishnadevi A/P P. Subramaniam SJK(T) Kajang. Selangor\n19. Mariani binti Ali SK Sulaiman. Pahang"
+  },
+  {
+    "id": "sn-y1-074",
+    "year": 1,
+    "section": "Teknologi dan Kehidupan Lestari",
+    "codes": [],
+    "chars": 1118,
+    "text": "20. Mazlaily binti Zakaria SK Seri Kelana. Negeri Sembilan\n21. Ng Xiao Wen SJK(C) Kg. Baru Semenyih. Selangor\n22. Noorul Aisyah binti Abdul Ghaffar SK Kajang. Selangor\nTURUT MENYUMBANG\n1. Prof. Madya Dr.Rohaida binti Mohd Saat Universiti Malaya\n2. Prof. Madya Dr.Tajulariffin bin Sulaiman Universiti Putra Malaysia\n3. Prof. Datuk Dr.T. Subahan Mohd. Meerah Universiti Kebangsaan Malaysia\n4. Asmahan binti Abdul Hadi IPG Kampus Darul Aman. Kedah\n5. Che Asran bin Md Amin IPG Kampus Kota Bharu. Kelantan\n6. Wan Mazlan bin Wan Muda IPG Kampus Dato’ Razali Ismail. Terengganu\n7. Mohd Nazrul bin Husain Jabatan Pendidikan Negeri Selangor\n8. Nor Azmah binti Johari Jabatan Pendidikan Negeri Pulau Pinang\n9. Rosli bin Omar Jabatan Pendidikan Negeri Kedah\n10. Zainal Abidin bin Haris Jabatan Pendidikan Negeri Melaka. Melaka\n11. Zurina binti Mat Som Jabatan Pendidikan Negeri Perak\n12. Rabiatul Nazuha binti Mohd Pejabat Pendidikan Daerah Hulu Langat. Selangor\n13. Zam Ma’mor bin Misran Pejabat Pendidikan Daerah Hilir Perak. Perak\n23. Norhayati binti Markan SK Kulai. Johor\n24. Siti Aminah binti Ahmad SK Batu Belah. Selangor"
+  },
+  {
+    "id": "sn-y1-075",
+    "year": 1,
+    "section": "Teknologi dan Kehidupan Lestari",
+    "codes": [],
+    "chars": 704,
+    "text": "25. Siti Hawa binti Yaacob SK Ramuan China Kechil. Melaka\n26. Siti Roha binti Abd Karim SK Kampong Sawah. Johor\n27. Teh Malihah binti Hussain SK Simpang Empat. Perak\n28. Zainuddin bin Mohd Tajar SK Tun Abdul Aziz Majid. Selangor\nPENGHARGAAN\nPenasihat\nDr. Sariah binti Abd. Jalil Pengarah\nShamsuri bin Sujak Timbalan Pengarah\nDatin Dr. Ng Soo Boon Timbalan Pengarah\nPenasihat Editorial\nDr. A’azmi bin Shahri Ketua Sektor\nMohamed Zaki bin Abd. Ghani Ketua Sektor\nHaji Naza Idris bin Saadon Ketua Sektor\nHajah Chetrilah binti Othman Ketua Sektor\nZaidah binti Mohd. Yusof Ketua Sektor\nMohd Faudzan bin Hamzah Ketua Sektor\nDr. Rusilawati binti Othman Ketua Sektor\nMohamed Salim bin Taufix Rashidi Ketua Sektor"
+  }
+]

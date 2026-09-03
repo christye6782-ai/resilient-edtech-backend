@@ -25,3 +25,13 @@ Thumbs.db
 # --- Large local artefacts ---
 *.xlsx
 screenshots/
+
+# --- Installers and build output (far over GitHub's 100 MB file limit) ---
+*.exe
+*.msi
+Output/
+build/
+dist/
+
+# --- Route B deployment payload (~5 GB of models and installers) ---
+ResilientEdTech-USB/

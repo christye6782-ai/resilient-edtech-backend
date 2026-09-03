@@ -1,0 +1,50 @@
+{
+  "corpus": "KSSR Semakan 2017 · Sains · SK (primary, Year 1–6)",
+  "note": "Chunked for offline RAG. Embeddings generated on-device via Ollama (nomic-embed-text).",
+  "built": "2026-08-26T21:36:42.528Z",
+  "files": [
+    {
+      "year": 1,
+      "source": "Year 1.pdf",
+      "chunks": 75,
+      "chunksWithCodes": 15,
+      "uniqueStandards": 50
+    },
+    {
+      "year": 2,
+      "source": "Year 2.pdf",
+      "chunks": 88,
+      "chunksWithCodes": 20,
+      "uniqueStandards": 64
+    },
+    {
+      "year": 3,
+      "source": "Year 3.pdf",
+      "chunks": 92,
+      "chunksWithCodes": 20,
+      "uniqueStandards": 60
+    },
+    {
+      "year": 4,
+      "source": "Year 4.pdf",
+      "chunks": 94,
+      "chunksWithCodes": 19,
+      "uniqueStandards": 91
+    },
+    {
+      "year": 5,
+      "source": "Year 5.pdf",
+      "chunks": 94,
+      "chunksWithCodes": 22,
+      "uniqueStandards": 95
+    },
+    {
+      "year": 6,
+      "source": "Year 6.pdf",
+      "chunks": 77,
+      "chunksWithCodes": 14,
+      "uniqueStandards": 38
+    }
+  ],
+  "totalChunks": 520
+}

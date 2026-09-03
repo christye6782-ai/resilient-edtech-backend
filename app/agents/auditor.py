@@ -131,6 +131,20 @@ _CONSTRAINT_KEYS = {
     "no electricity": "no_electricity",
     "no power": "no_electricity",
     "no_electricity": "no_electricity",
+    "unstable electricity": "unstable_power",
+    "unstable power": "unstable_power",
+    "unstable_power": "unstable_power",
+    "mixed-ability class": "mixed_ability",
+    "mixed ability class": "mixed_ability",
+    "mixed ability": "mixed_ability",
+    "mixed_ability": "mixed_ability",
+    "large class size": "large_class",
+    "large class": "large_class",
+    "large_class": "large_class",
+    "low-spec device": "restricted_hardware",
+    "low spec device": "restricted_hardware",
+    "limited hardware": "restricted_hardware",
+    "restricted_hardware": "restricted_hardware",
 }
 
 

@@ -10,8 +10,14 @@ from datetime import datetime
 from pathlib import Path
 from typing import Any, Dict, List, Optional
 
-DB_PATH = Path(__file__).resolve().parent.parent / "data" / "resilient.db"
-DB_PATH.parent.mkdir(parents=True, exist_ok=True)
+from .config import USER_DATA_DIR
+
+# Teacher data lives in a guaranteed-writable location, NOT beside the bundled
+# code. Once the app is installed to Program Files the install folder is
+# read-only for a standard-user teacher, and because this directory used to be
+# created at import time the app raised PermissionError and refused to start.
+# See config._resolve_user_data_dir for the resolution order.
+DB_PATH = USER_DATA_DIR / "resilient.db"
 
 
 def get_conn():
@@ -714,13 +720,37 @@ def insert_teacher(name: str) -> Dict[str, Any]:
 
 
 def delete_teacher(teacher_id: int) -> bool:
-    """Remove a profile and its plans. The default profile (id=1) is protected."""
+    """Remove a profile and ALL data belonging to it. Profile id=1 is protected.
+
+    The cascade matters on a shared school device. SQLite reuses ids for a plain
+    ``INTEGER PRIMARY KEY``, so if a profile is deleted and a new one added, the
+    new teacher can be handed the same id — and would silently inherit the
+    previous teacher's feedback, consolidated profile and indexed lessons.
+    Every per-teacher table is therefore cleared here, not just ``plans``.
+    """
     if int(teacher_id) == 1:
         return False
     init_teachers_table()
+    init_plans_table()
+    init_feedback_table()
+    init_profile_table()
     c = get_conn()
     cur = c.cursor()
+    # Feedback rows are keyed by plan, so resolve this teacher's plans first.
+    cur.execute("SELECT id FROM plans WHERE teacher_id = ?", (teacher_id,))
+    plan_ids = [r[0] for r in cur.fetchall()]
+    if plan_ids:
+        marks = ",".join("?" for _ in plan_ids)
+        cur.execute(f"DELETE FROM plan_feedback WHERE plan_id IN ({marks})", plan_ids)
+    cur.execute("DELETE FROM plan_feedback WHERE teacher_id = ?", (teacher_id,))
+    cur.execute("DELETE FROM teacher_profile WHERE teacher_id = ?", (teacher_id,))
     cur.execute("DELETE FROM plans WHERE teacher_id = ?", (teacher_id,))
+    # Retrieval vectors for this teacher's own lessons. Curriculum rows carry a
+    # NULL teacher_id and must survive.
+    try:
+        cur.execute("DELETE FROM rag_vectors WHERE teacher_id = ?", (teacher_id,))
+    except Exception:  # noqa: BLE001 — table may not exist before first index
+        pass
     cur.execute("DELETE FROM teachers WHERE id = ?", (teacher_id,))
     deleted = cur.rowcount > 0
     c.commit()

@@ -1,0 +1,50 @@
+{
+  "corpus": "KSSR Semakan 2017 · Matematik · SK (primary, Year 1–6)",
+  "note": "Chunked for offline RAG. Embeddings generated on-device via Ollama (nomic-embed-text).",
+  "built": "2026-08-26T21:19:15.033Z",
+  "files": [
+    {
+      "year": 1,
+      "source": "Year 1.pdf",
+      "chunks": 74,
+      "chunksWithCodes": 13,
+      "uniqueStandards": 56
+    },
+    {
+      "year": 2,
+      "source": "Year 2.pdf",
+      "chunks": 78,
+      "chunksWithCodes": 16,
+      "uniqueStandards": 69
+    },
+    {
+      "year": 3,
+      "source": "Year 3.pdf",
+      "chunks": 92,
+      "chunksWithCodes": 22,
+      "uniqueStandards": 102
+    },
+    {
+      "year": 4,
+      "source": "Year 4.pdf",
+      "chunks": 88,
+      "chunksWithCodes": 20,
+      "uniqueStandards": 85
+    },
+    {
+      "year": 5,
+      "source": "Year 5.pdf",
+      "chunks": 86,
+      "chunksWithCodes": 18,
+      "uniqueStandards": 72
+    },
+    {
+      "year": 6,
+      "source": "Year 6.pdf",
+      "chunks": 81,
+      "chunksWithCodes": 13,
+      "uniqueStandards": 38
+    }
+  ],
+  "totalChunks": 499
+}

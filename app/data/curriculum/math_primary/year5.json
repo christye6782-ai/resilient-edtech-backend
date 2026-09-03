@@ -1,0 +1,780 @@
+[
+  {
+    "id": "mt-y5-001",
+    "year": 5,
+    "section": "General",
+    "codes": [],
+    "chars": 1154,
+    "text": "Matematik\nTahun 5\nMatematik\nTahun 5\nDokumen Standard Kurikulum dan Pentaksiran\nBahagian Pembangunan Kurikulum\nAPRIL 2019\nKURIKULUM STANDARD SEKOLAH RENDAH\nTerbitan 2019\n© Kementerian Pendidikan Malaysia\nHak Cipta Terpelihara. Tidak dibenarkan mengeluar ulang mana-mana bahagian artikel, ilustrasi dan isi kandungan buku ini dalam apa juga\nbentuk dan dengan cara apa jua sama ada secara elektronik, fotokopi, mekanik, rakaman atau cara lain sebelum mendapat kebenaran\nbertulis daripada Pengarah, Bahagian Pembangunan Kurikulum, Kementerian Pendidikan Malaysia, Aras 4 -8, Blok E9, Parcel E,\nKompleks Pentadbiran Kerajaan Persekutuan, 62604 Putrajaya.\nKANDUNGAN\nRukun Negara............................................................................................................................................................. v\nFalsafah Pendidikan Kebangsaan.............................................................................................................................. vi\nDefinisi Kurikulum Kebangsaan................................................................................................................................. vii"
+  },
+  {
+    "id": "mt-y5-002",
+    "year": 5,
+    "section": "General",
+    "codes": [],
+    "chars": 1193,
+    "text": "Kata Pengantar........................................................................................................................................................... ix\nPendahuluan............................................................................................................................................................... 1\nMatlamat..................................................................................................................................................................... 2\nObjektif........................................................................................................................................................................ 2\nKerangka Kurikulum Standard Sekolah Rendah........................................................................................................ 3\nFokus.......................................................................................................................................................................... 4\nKemahiran Abad Ke-21.............................................................................................................................................. 14"
+  },
+  {
+    "id": "mt-y5-003",
+    "year": 5,
+    "section": "General",
+    "codes": [],
+    "chars": 825,
+    "text": "Kemahiran Berfikir Aras Tinggi................................................................................................................................... 15\nStrategi Pengajaran dan Pembelajaran...................................................................................................................... 16\nElemen Merentas Kurikulum....................................................................................................................................... 19\nPentaksiran Bilik Darjah.............................................................................................................................................. 23\nOrganisasi Kandungan.................................................................................................................................................\n28"
+  },
+  {
+    "id": "mt-y5-004",
+    "year": 5,
+    "section": "Nombor dan Operasi",
+    "codes": [],
+    "chars": 492,
+    "text": "Nombor dan Operasi\nNombor Bulat dan Operasi Asas........................................................................................................................ 31\nPecahan, Perpuluhan dan Peratus.................................................................................................................... 37\nWang.................................................................................................................................................................. 41"
+  },
+  {
+    "id": "mt-y5-005",
+    "year": 5,
+    "section": "Sukatan dan Geometri",
+    "codes": [],
+    "chars": 513,
+    "text": "Sukatan dan Geometri\nMasa dan Waktu ...............................................................................................................................................\nUkuran dan Sukatan ..........................................................................................................................................\nRuang.................................................................................................................................................................\n45\n49\n55"
+  },
+  {
+    "id": "mt-y5-006",
+    "year": 5,
+    "section": "Perkaitan dan Algebra",
+    "codes": [],
+    "chars": 176,
+    "text": "Perkaitan dan Algebra\nKoordinat, Nisbah dan kadaran..........................................................................................................................\n59"
+  },
+  {
+    "id": "mt-y5-007",
+    "year": 5,
+    "section": "Statistik dan Kebarangkalian",
+    "codes": [],
+    "chars": 1101,
+    "text": "Statistik dan Kebarangkalian\nPengurusan Data...............................................................................................................................................\n63\nPanel Penggubal..........................................................................................................................................................\n67\nPenghargaan................................................................................................................................................................\n69\nRUKUN NEGARA\nBAHAWASANYA Negara kita Malaysia mendukung cita-cita hendak:\nMencapai perpaduan yang lebih erat dalam kalangan seluruh masyarakatnya;\nMemelihara satu cara hidup demokratik;\nMencipta satu masyarakat yang adil di mana kemakmuran negara\nakan dapat dinikmati bersama secara adil dan saksama;\nMenjamin satu cara yang liberal terhadap tradisi-tradisi\nkebudayaannya yang kaya dan berbagai corak;\nMembina satu masyarakat progresif yang akan menggunakan\nsains dan teknologi moden;\nMAKA KAMI, rakyat Malaysia, berikrar akan menumpukan seluruh tenaga dan usaha"
+  },
+  {
+    "id": "mt-y5-008",
+    "year": 5,
+    "section": "Statistik dan Kebarangkalian",
+    "codes": [],
+    "chars": 1154,
+    "text": "kami untuk mencapai cita-cita tersebut berdasarkan atas prinsip-prinsip yang berikut:\nKEPERCAYAAN KEPADA TUHAN\nKESETIAAN KEPADA RAJA DAN NEGARA\nKELUHURAN PERLEMBAGAAN\nKEDAULATAN UNDANG-UNDANG\nKESOPANAN DAN KESUSILAAN\nv\nFALSAFAH PENDIDIKAN KEBANGSAAN\n“Pendidikan di Malaysia adalah suatu usaha berterusan ke arah lebih\nmemperkembangkan potensi individu secara menyeluruh dan bersepadu untuk\nmelahirkan insan yang seimbang dan harmonis dari segi intelek, rohani, emosi\ndan jasmani, berdasarkan kepercayaan da n kepatuhan kepada Tuhan. Usaha\nini adalah bertujuan untuk melahirkan warganegara Malaysia yang berilmu\npengetahuan, berketerampilan, berakhlak mulia, bertanggungjawab dan\nberkeupayaan mencapai kesejahteraan diri serta memberikan sumbangan\nterhadap keharmonian dan kemakmuran keluarga, masyarakat dan negara”\nSumber: Akta Pendidikan 1996 (Akta 550)\nvi\nDEFINISI KURIKULUM KEBANGSAAN\n3. Kurikulum Kebangsaan\n(1) Kurikulum Kebangsaan ialah suatu program pendidikan yang\ntermasuk kurikulum dan kegiatan kokurikulum yang merangkumi\nsemua pengetahuan, kemahiran, norma, nilai, unsur kebudayaan\ndan kepercayaan untuk membantu perkembangan seseorang murid"
+  },
+  {
+    "id": "mt-y5-009",
+    "year": 5,
+    "section": "Statistik dan Kebarangkalian",
+    "codes": [],
+    "chars": 1133,
+    "text": "dengan sepenuhnya dari segi jasmani, rohani, mental dan\nemosi serta untuk menanam dan mempertingkatkan nilai moral yang\ndiingini dan untuk menyampaikan pengetahuan.\nSumber: Peraturan-Peraturan Pendidikan (Kurikulum Kebangsaan) 1997\n[PU(A)531/97.]\nvii\nKATA PENGANTAR\nKurikulum Standard Sekolah Rendah (KSSR) yang dilaksanakan\nsecara berperingkat mulai tahun 2011 telah disemak semula bagi\nmemenuhi dasar baharu di bawah Pelan Pembangunan Pendidikan\nMalaysia (PPPM) 2013 -2025 supaya kualiti kurikulum yang\ndilaksanakan di se kolah rendah setanding dengan standard\nantarabangsa. Kurikulum berasaskan standard yang menjadi\namalan antarabangsa telah dijelmakan dalam KSSR menerusi\npenggubalan Dokumen Standard Kurikulum dan Pentaksiran\n(DSKP) untuk semua mata pelajaran yang mengandun gi Standard\nKandungan, Standard Pembelajaran dan Standard Prestasi.\nUsaha memasukkan standard pentaksiran dalam dokumen\nkurikulum telah mengubah lanskap sejarah sejak Kurikulum\nKebangsaan dilaksanakan di bawa h Sistem Pendidikan\nKebangsaan. Menerusinya murid da pat ditaksir secara berterusan\nuntuk mengenal pasti tahap penguasaannya dalam sesuatu mata"
+  },
+  {
+    "id": "mt-y5-010",
+    "year": 5,
+    "section": "Statistik dan Kebarangkalian",
+    "codes": [],
+    "chars": 1120,
+    "text": "pelajaran, serta membolehkan guru membuat tindakan susulan\nbagi mempertingkatkan pencapaian murid.\nDSKP yang dihasilkan juga telah menyepadukan enam tunjang\nKerangka KSSR , mengintegrasikan pengetahuan, kemahiran dan\nnilai, sert a memasukkan secara eksplisit Kemahiran Abad Ke -21\ndan Kemahiran Berfikir Aras Tinggi (KBAT).\nPenyepaduan tersebut dilakukan untuk melahirkan insan seimbang\ndan harmonis dari segi intelek, rohani, emosi dan jasmani\nsebagaimana tuntutan Falsafah Pendidikan Kebangsaan.\nBagi menjayakan pelaksanaan KSSR, pengajaran dan\npembelajaran guru perlu memberi penekanan kepada KBAT\ndengan memberi fokus kepada pendekatan Pembelajaran\nBerasaskan Inkuiri dan Pembelajaran Berasaskan Projek, supaya\nmurid dapat menguasai kemahiran yang diperlukan dalam abad ke-\n21.\nKementerian Pendidikan Malaysia merakamkan setinggi -tinggi\npenghargaan dan ucapan terima kasih kepada semua pihak yang\nterlibat dalam penggubalan KSSR. Semoga pelaksanaan KSSR\nakan mencapai hasrat dan matlamat Sistem Pendidikan\nKebangsaan.\nDr. MOHAMED BIN ABU BAKAR\nPengarah\nBahagian Pembangunan Kurikulum\nKementerian Pendidikan Malaysia"
+  },
+  {
+    "id": "mt-y5-011",
+    "year": 5,
+    "section": "Statistik dan Kebarangkalian",
+    "codes": [],
+    "chars": 1135,
+    "text": "ix\nKSSR MATEMATIK TAHUN 5\n1\nPENDAHULUAN\nKurikulum Standard Sekolah Rendah (KSSR) Matematik merupakan\nmata pelajaran teras yang harus di pelajari oleh semua murid yang\nmengikuti Sistem Pendidikan Kebangsaan . Setiap murid di Malaysia\nberpeluang me ngikuti sekurang-kurangnya enam tahun pendidikan\nmatematik di sekolah rendah.\nPembelajaran m atematik peringkat sekolah rendah menyediakan\npeluang untuk murid melaksanakan tugasan yang menyeronokkan,\nbermakna, berguna dan mencabar serta meningkatkan sifat ingin tahu\nuntuk mempelajari ilmu matematik . Pengalaman sedemikian\nmeningkatkan minat dan menjadi daya penggerak murid mempelajari\nmatematik dan mengaplikasi pengetahuan dalam kehidupan harian.\nKSSR Matematik diolah dan dis usun semula dengan mengambil kira\nkesinambungan ke peringkat yang seterusnya. Langkah yang diambil\nadalah selaras dengan keperluan untuk menyediakan pengetahuan,\nkemahiran dan nilai dalam matematik kepada murid yang mempunyai\nlatar belakang dan keupayaan yang pelbagai. Penandaarasan\nkurikulum m atematik telah dijalankan dengan negara yang\nberpencapaian tinggi dalam pentaksiran peringkat antarabangsa bagi"
+  },
+  {
+    "id": "mt-y5-012",
+    "year": 5,
+    "section": "Statistik dan Kebarangkalian",
+    "codes": [],
+    "chars": 1112,
+    "text": "memastikan kurikulum matematik di Malaysia relevan dan setanding\ndengan negara lain di dunia.\nDalam usaha mengembangkan potensi dan profisiensi intelektual\nindividu dan pembinaan insan, matematik merupakan wadah terbaik\nkerana sifat tabiinya yang menggalakkan pemikiran mantik dan\nbersistem. Justeru, penggubalan KSSR Matematik, selain daripada\nberlandaskan kepada keperluan membangunkan negara, juga\nmengambil kira faktor yang menyumbang kepada pembentukan\nindividu yang berpemikiran logik, k ritis, analitis, kreatif dan in ovatif.\nLangkah ini selaras dengan keperluan menyediakan secukupnya\npengetahuan dan kemahiran matematik bagi memastikan negara\nmampu bersaing di peringkat global ser ta berupaya menghadapi\ncabaran abad k e-21. Latar belakang dan keupayaan murid yang\npelbagai diberi perhatian khusus dalam menentukan pengetahuan dan\nkemahiran yang dipelajari dalam mata pelajaran ini.\nKSSR MATEMATIK TAHUN 5\n2\nMATLAMAT\nKSSR Matematik bermatlamat membentuk individu yang berfikrah\nmatematik iaitu membina pemahaman murid tentang konsep nombor,\nkemahiran asas dalam pengiraan, memahami idea matematik yang"
+  },
+  {
+    "id": "mt-y5-013",
+    "year": 5,
+    "section": "Statistik dan Kebarangkalian",
+    "codes": [],
+    "chars": 667,
+    "text": "mudah dan berket erampilan mengaplikasikan pengetahuan dan\nkemahiran matematik secara berkesan dan bertanggungjawab dalam\nkehidupan se harian dalam menyelesaikan masalah dan membuat\nkeputusan, berlandaskan sikap dan nilai agar berupaya menangani\ncabaran dalam kehidupan harian, selaras dengan perkembangan\nsains dan teknologi dan cabaran abad ke-21.\nOBJEKTIF\nKSSR Matematik bertujuan membolehkan murid mencapai objektif\nberikut:\n1. Membentuk fikrah matematik.\n2. Membentuk pemahaman, mengaplikasi konsep dan kemahiran\nmatematik dalam pelbagai konteks.\n3. Memperluaskan penggunaan kemahiran operasi asas tambah,\ntolak, darab dan bahagi yang berkaitan dengan Nombor dan"
+  },
+  {
+    "id": "mt-y5-014",
+    "year": 5,
+    "section": "Statistik dan Kebarangkalian",
+    "codes": [],
+    "chars": 1120,
+    "text": "Statistik dan Kebarangkalian.\n4. Mengenal pasti dan menggunakan perkaitan dalam idea\nmatematik, antara bidang matematik dengan bidang l ain dan\ndengan kehidupan harian.\n5. Berkomunikasi menggunakan idea matematik dengan jelas serta\npenggunaan simbol dan istilah yang betul.\n6. Menggunakan pengetahuan dan kemahiran matematik untuk\ndiaplikasi dan membuat penyesuaian kepada pelbagai stra tegi\nbagi menyelesaikan masalah.\n7. Membentuk pemikiran aras tinggi, kritis, kreatif, inovatif ,\nmenaakul dan membuat penerokaan secara m atematik dalam\nkehidupan harian.\n8. Menggunakan pelbagai perwakilan untuk menyampaikan idea\nmatematik dan perkaitannya.\n9. Menghargai dan menghayati keindahan matematik.\n10. Menggunakan pelbagai peralatan matematik secara efektif\ntermasuk Teknologi Maklumat dan Komunikasi ( TMK) untuk\nmembina kefahaman konsep dan mengaplikasi ilmu matematik.\nKSSR MATEMATIK TAHUN 5\n3\nKERANGKA KURIKULUM STANDARD SEKOLAH RENDAH\nKSSR dibina berasaskan enam tunjang, iaitu Komunikasi;\nKerohanian, Sikap dan Nilai; Kemanusiaan; Ket erampilan Diri;\nPerkembangan Fizikal dan Estetika; serta Sains dan Teknologi. Enam"
+  },
+  {
+    "id": "mt-y5-015",
+    "year": 5,
+    "section": "Statistik dan Kebarangkalian",
+    "codes": [],
+    "chars": 1146,
+    "text": "tunjang tersebut merupakan domain utama yang men yokong antara\nsatu sama lain dan disepadukan dengan pemikiran kritis, kreatif dan\ninovatif. Kesepaduan ini bertujuan membangunkan modal insan\nyang menghayati nilai -nilai murni berteraskan keagamaan,\nberpengetahuan, berket erampilan, berpemikiran kritis dan kreatif\nserta inovatif sebagaimana yang digambarkan dalam Rajah 1. KSSR\nMatematik digubal berdasarkan enam tunjang kerangka KSSR.\nRajah 1: Kerangka Kurikulum Standard Sekolah Rendah\nKSSR MATEMATIK TAHUN 5\n4\nFOKUS\nKSSR Matematik berfokus kepada penguasaan pengetahuan dan\npemahaman bagi membolehkan murid mengaplikasikan konsep,\nprinsip dan proses matematik yang dipelajari.\nPenekanan kepada aspek perkembangan pemikiran murid secara\nmatematik dibina dan dikembangkan melalui proses PdP di dalam\nbilik darjah berdasarkan prinsip berikut iaitu penyelesaian masalah,\nkomunikasi, penaakulan, perkaitan , membuat perwakilan dan\npenggunaan teknologi dalam matematik.\nKerangka kurikulum Matematik yang digambarkan dalam Rajah 2,\nmerupakan asas kepada penggubalan kurikulum matematik sekolah\nrendah dan sekolah menengah . Empat elemen penting yang"
+  },
+  {
+    "id": "mt-y5-016",
+    "year": 5,
+    "section": "Statistik dan Kebarangkalian",
+    "codes": [],
+    "chars": 336,
+    "text": "menyumbang kepada pembangunan insan yang berfikrah matematik\nialah:\n1. Bidang Pembelajaran;\n2. Sikap dan Nilai;\n3. Kemahiran Matematik; dan\n4. Proses Matematik.\n Kemahiran matematik\n Kemahiran menganalisis\n Kemahiran menyelesaikan masalah\n Kemahiran membuat penyelidikan\n Kemahiran berkomunikasi\n Kemahiran menggunakan teknologi\n"
+  },
+  {
+    "id": "mt-y5-017",
+    "year": 5,
+    "section": "Perkaitan dan Algebra",
+    "codes": [],
+    "chars": 1124,
+    "text": " Perkaitan dan Algebra\n Statistik dan\nKebarangkalian\n Matematik Diskret\n Nilai matematik\n Sikap dan nilai\nsejagat\nRajah 2: Kerangka Kurikulum Matematik\n Penyelesaian\nmasalah\n Penaakulan\n Komunikasi secara\nmatematik\n Perwakilan\n Perkaitan\nKSSR MATEMATIK TAHUN 5\n5\nFikrah Matematik\nFikrah menurut Kamus Dewan Edisi Keempat (2005) membawa\npengertian yang sama den gan daya berfikir dan pemikiran . Dalam\nkonteks pendidi kan matematik, fikrah matematik merujuk kepada\nkualiti murid yang dihasratkan untuk dilahirkan melalui si stem\npendidikan matematik kebangsaan. Murid yang berfikrah matematik\nini merupakan murid yang berkeupayaan melakukan matematik dan\nmemahami idea matematik serta mengaplikasikan secara\nbertanggungjawab pengetahuan dan kemahiran matematik dalam\nkehidupan harian berlandaskan sikap dan nilai matematik.\nFikrah matematik juga berhasrat menghasilkan individu yang kreatif\ndan inovatif serta memenuhi keperluan abad k e-21 kerana\nkemampuan negara amat bergantu ng kepada modal insan yang\nmampu berfikir dan menjana idea.\nBidang Pembelajaran\nKandungan kurikulum Matematik dirangkumkan mengikut lima"
+  },
+  {
+    "id": "mt-y5-018",
+    "year": 5,
+    "section": "Statistik dan Kebarangkalian",
+    "codes": [],
+    "chars": 1147,
+    "text": "4. Statistik dan Kebarangkalian; dan\n5. Matematik Diskret (dipelajari di peringkat sekolah menengah).\nProses Matematik\nProses matematik yang menyokong pembelajaran matematik yang\nberkesan dan berfikrah adalah:\n Penyelesaian masalah;\n Penaakulan;\n Komunikasi secara matematik;\n Perkaitan; dan\n Perwakilan.\nKelima-lima proses matematik tersebut saling berkait dan perlu\ndilaksanakan secara bersepadu merentas kurikulum.\nPenyelesaian masalah merupakan fokus utama dalam PdP\nmatematik. Justeru, PdP perlu melibatkan kemahiran penyelesaian\nmasalah secara komprehensif dan merentasi keseluruhan kurikulum.\nPerkembangan kemahiran penyelesaian masalah perlu diberi\npenekanan sewajarnya supaya murid dapat menyelesaikan pelbagai\nmasalah secara berkesan. Kemahiran ini melibatkan langkah-langkah\nseperti dalam Model Polya:\n1. Memahami dan mentafsirkan masalah;\n2. Merancang strategi penyelesaian;\n3. Melaksanakan strategi; dan\n4. Menyemak jawapan.\nKSSR MATEMATIK TAHUN 5\n6\nKepelbagaian penggunaan strategi umum dalam penyelesaian\nmasalah, termasuk langk ah-langkah pen yelesaiannya harus\ndiperluaskan penggunaannya. Antara strategi yang biasa digunakan"
+  },
+  {
+    "id": "mt-y5-019",
+    "year": 5,
+    "section": "Statistik dan Kebarangkalian",
+    "codes": [],
+    "chars": 1131,
+    "text": "ialah melukis gambar rajah , mengenal pasti pola , membuat\njadual/carta atau senarai secara bersistem; menggunakan algebra,\nmencuba kes lebih mudah , menaakul se cara mantik , cuba jaya ,\nbekerja ke belakang serta menggunakan analogi.\nMenyemak jawapan adalah langkah penyelesaian masalah yang\npenting. Murid harus dilatih untuk menyemak jawapan terhadap\nsesuatu penyelesaian masalah. Menyemak jawapan membolehkan\nmurid melihat, memahami dan menghargai perspektif dari sudut yang\nberbeza di samping mengkonsolidasikan kefahaman mereka\nterhadap sesuatu konsep yang dipelajari.\nPenaakulan merupakan asas penting untuk memahami matematik\ndengan lebih berkesan dan menjadikan pengertian tentang matematik\nlebih bermakna. Perkembangan penaakulan matematik berkait rapat\ndengan perkembangan intelek dan komunikasi murid. Penaakulan\nberupaya mengembangkan bukan sahaja kapasiti pemikiran logikal\nmalah turut meningkatka n kapasiti pemikiran kritis yang juga\nmerupakan asas kepada pemahaman matematik secara mendalam\ndan bermakna. Bagi mencapai objektif ini, murid harus dilatih dan\ndibimbing untuk membuat konjektur, membuktikan konjektur,"
+  },
+  {
+    "id": "mt-y5-020",
+    "year": 5,
+    "section": "Statistik dan Kebarangkalian",
+    "codes": [],
+    "chars": 1134,
+    "text": "memberi penerangan logikal, menganalisa, membuat pertimbangan,\nmenilai dan memberi justifikasi terhadap semua aktiviti matematik.\nSelain itu, guru perlu menyediakan ruang dan peluang untuk\nperbincangan matematik yang bukan sahaja engaging tetapi\nmembolehkan setiap murid terlibat dengan baik.\nPenaakulan boleh dilakukan secara induktif melalui aktiviti matematik\nyang melibatkan pengenalpastian pola dan membuat kesimpu lan\nberdasarkan pola tersebut.\nElemen penaakulan dalam PdP mengelakkan murid dari\nmenganggap matematik sebagai hanya sa tu set prosedur atau\nalgoritma yang perlu diikuti bagi mendapatkan penyelesaian, tanpa\nmemahami konsep matematik yang sebenarnya. Penaakulan bukan\nsaja mengubah paradigma murid dari sekadar belajar kepada berfikir,\nmalah memberi pengupayaan intelektual apabila murid dibimbing dan\ndilatih untuk membuat konjektur, membuktikan konjektur,\nmemberikan penerangan logikal, menganalisa, menilai dan memberi\njustifikasi terhadap semua aktiviti matematik. Latihan sedemikian\nmembentuk murid berkeyakinan dengan diri sendiri dan tabah selaras\ndengan hasrat untuk membentuk pemikir matematik berkeupayaan"
+  },
+  {
+    "id": "mt-y5-021",
+    "year": 5,
+    "section": "Statistik dan Kebarangkalian",
+    "codes": [],
+    "chars": 1141,
+    "text": "tinggi.\nKSSR MATEMATIK TAHUN 5\n7\nKomunikasi Secara Matematik dapat membantu murid menjelaskan\ndan memperkukuhkan pemahaman matematik. Perkongsian\npemahaman matematik secara penulisan dan lisan denga n rakan\nsekelas, guru dan ibu bapa, murid akan dapat meningkatkan\nkeyakinan diri dan memudahkan guru memantau perkembangan\nkemahiran matematik mereka.\nKomunikasi memainkan peranan yang penting dalam memastikan\npembelajaran matematik yang bermakna. Melalui komunikasi, idea\nmatematik dapat diluahkan dan difahami dengan lebih baik.\nKomunikasi secara matematik, sama ada secara lisan, penulisan atau\nmenggunakan simbol dan perwakilan visual (dengan menggunakan\ncarta, graf, gambar rajah dan lain -lain), dapat memb antu murid\nmemahami dan mengaplikasikan matematik dengan lebih efektif.\nBerkomunikasi sesama sendiri atau dengan rakan sebaya, ibu bapa,\norang dewasa dan guru dapat membantu murid menggambarkan,\nmenjelaskan dan memperkukuhkan idea dan pemahaman matematik\nmereka. Bagi memastikan berlakunya proses penjanaan,\nperkongsian dan peningkatan pemahaman, murid perlu diberi\npeluang untuk membahaskan idea matematik mereka secara analitis"
+  },
+  {
+    "id": "mt-y5-022",
+    "year": 5,
+    "section": "Statistik dan Kebarangkalian",
+    "codes": [],
+    "chars": 1120,
+    "text": "dan sistematik. Komunikasi yang melibatkan pelbagai perspektif dan\nsudut pendapat dapat membantu murid meningkatkan pemahaman\nmatematik dengan lebih baik.\nAspek yang penting dalam komunikasi berkesan dalam matematik\nadalah keupayaan untuk memberikan penerangan dengan efektif,\nmemahami dan mengaplikasi notasi matematik dengan betul. Murid\nperlu menggunakan laras bahasa dan simbol matematik dengan betul\nbagi memastikan sesuatu idea matematik dapat dijelaskan dengan\ntepat. Komunikasi secara matematik juga melibatkan penggunaan\npelbagai bahan seperti carta, graf, manipulatif, kalkulator, ko mputer\ndan lain-lain. Murid seharusnya dapat menggunakan bahan tersebut\nbagi menjelaskan idea matematik dan menyelesaikan sesuatu\nmasalah matematik.\nKomunikasi berkesan memerlukan persekitaran yang sentias a peka\nterhadap keperluan murid untuk berasa selesa semasa bercakap,\nbertanya soalan, menjawab soalan dan menghuraikan pernyataan\nkepada rakan sekelas dan juga guru. Murid perlu diberi peluang untuk\nberkomunikasi secara aktif dalam pelbagai suasana, contohnya\nberkomunikasi semasa melaku kan aktiviti secara berpasangan,"
+  },
+  {
+    "id": "mt-y5-023",
+    "year": 5,
+    "section": "Statistik dan Kebarangkalian",
+    "codes": [],
+    "chars": 1165,
+    "text": "berkumpulan atau memberi penerangan kepada seluruh kelas.\nPenilaian terhadap keupayaan murid untuk berkomunikasi secara\nmatematik dengan berkesan perlu menunjukkan bukti bahawa murid\ndapat menjana, menjelaskan dan berkong si idea matematik melalui\npelbagai bentuk komunikasi dalam pelbagai persekitaran. Murid yang\nsentiasa diberi peluang dan galakan untuk mendengar, bertutur,\nKSSR MATEMATIK TAHUN 5\n8\nmembaca dan menulis semasa PdP matematik, akan dapat\nberkomunikasi untuk mempelajari matematik dan belajar untuk\nberkomunikasi secara matematik.\nPerwakilan Matematik sering digunakan untuk mewakili dunia di\nmana kita hidup. Oleh yang demikian, mesti wujud keserupaan antara\naspek-aspek dunia yang diwakili dan aspek -aspek dunia yang\nmewakili. Hubungan abstrak antara dua dunia ini boleh digambarkan\nseperti dalam Rajah 3.\nPerwakilan boleh dianggap sebagai fasilitator yang membolehkan\nperkaitan antara dunia sebenar dan dunia matematik. Formula,\njadual, graf, persamaan dan sebagainya, semua merupakan objek\nmatematik yang digunakan untuk mewakili pelbagai gagas an dan\nhubungan dunia sebenar.\nPerwakilan boleh didefinisikan sebagai “ sebarang tata rajah huruf,"
+  },
+  {
+    "id": "mt-y5-024",
+    "year": 5,
+    "section": "Statistik dan Kebarangkalian",
+    "codes": [],
+    "chars": 1125,
+    "text": "imej atau objek konkrit yang boleh melambangkan at au mewakilkan\nsesuatu yang lain”. Sistem perwakilan secara semula jadi terbahagi\nkepada dalaman dan luaran. Sistem perwakilan dalaman adalah yang\nwujud di dalam fikiran seseorang individu manakala sistem\nperwakilan luaran adalah yang mudah dikongsi dengan dan dilihat\noleh orang lain.\nPerwakilan dalaman terdiri daripada gagasan yang membantu dalam\nmenggambarkan proses manusia mempelajari dan menyelesa ikan\nmasalah dalam matematik dan perwakilan luaran terdiri daripada\nperkara seperti rajah, bahasa rasmi dan notasi lambang. Guna\npelbagai perwakilan untuk menunjukkan satu konsep yang sama\nmembantu bukan sahaja mengembangkan pemahaman konsep yang\nlebih bai k tetapi juga mengukuhkan kebolehan seseorang murid\nmenyelesaikan masalah.\nPerwakilan adalah perlu bagi pemahaman konsep dan hubungan\nmatematik murid. Perwakilan membenarkan murid\nmengkomunikasikan pendekatan, perdebatan dan pemahaman\nmatematik kepada diri mereka sendiri dan kepada orang lain.\nPerwakilan membenarkan murid untuk mengenal hubungan antara\nkonsep yang berkaitan dan mengaplikasikan matematik kepada"
+  },
+  {
+    "id": "mt-y5-025",
+    "year": 5,
+    "section": "Statistik dan Kebarangkalian",
+    "codes": [],
+    "chars": 1105,
+    "text": "masalah yang realistik.\nModel-\nmodel\nKonkrit\nDunia\nMatematik\nRamalan\nDunia\nSebenar\nMelambangkan\nRajah 3: Proses Perwakilan\nMengira Menyemak\nMemudahkan\nKSSR MATEMATIK TAHUN 5\n9\nPerwakilan adalah satu komponen yang penting dalam\nperkembangan pemaha man secara matematik dan pemikiran\nkuantitatif. Tanpa perwakilan, matematik secara keseluruhannya\nadalah abstrak, sebahagian besarnya adalah falsafah dan barangkali\ntidak dapat didekati oleh sebahagian besar daripada populasi.\nDengan perwakilan, gagasan ma tematik boleh dibentuk model,\nhubungan penting boleh dihuraikan dan pemahaman dirangsang\nmelalui satu pembinaan dan urutan teliti bagi pengalaman dan\npemerhatian yang sesuai.\nMurid harus membentuk dan meneroka idea matematik secara\nmendalam melalui peluan g dan pengalaman pembelajaran yang\npelbagai. Kesedaran harus dipupuk dan dikembangkan dalam\nkalangan murid bahawa idea matematik saling berkait dan matematik\nmerupakan ilmu yang menyeluruh; bukan cebisan pengetahuan yang\nterasing. Dengan kesedaran dan kefahaman sedemikian, pengertian\ntentang idea matematik menjadi lebih bermakna dan seterusnya"
+  },
+  {
+    "id": "mt-y5-026",
+    "year": 5,
+    "section": "Statistik dan Kebarangkalian",
+    "codes": [],
+    "chars": 1115,
+    "text": "dapat meningkatkan keupayaan murid untuk mengaplikasikan\nmatematik.\nPeluang dan pengalaman pembelajaran pelbagai yang disediakan\nseharusnya melibatkan murid secara aktif dalam pembelajaran\nmatematik, membantu murid membentuk kefahaman mendalam\ntentang konsep matematik, dan membentuk pengertian yang lebih\nbermakna tentang idea matematik yang pelbagai. Berlandaskan\nkefahaman dan pengertian yang dibentuk, murid berupaya membuat\nperkaitan dan mengaplikasikan idea matematik, seterusnya\nmenjadikan murid lebih yakin untuk meneroka dan mengaplikasikan\nmatematik. Penggunaan bahan bantu belajar, peralatan teknologi dan\npelaksanaan tugasan, amali atau kerja projek seharusnya dirangkum\ndalam pengalaman pembelajaran yang disediakan untuk murid.\nPerkaitan perlu diwujudkan supaya murid dapat mengaitkan\npengetahuan konseptual dan prosedural serta dapat mengaitkan\ntopik-topik dalam matematik khususnya dan matematik dengan\nbidang lain secara amnya. Ini akan meningkatkan kefahaman murid\ndan menjadikan matematik lebih jelas, bermakna dan menarik bagi\nmereka.\nKurikulum matematik umumnya terdiri daripada beberapa bidang"
+  },
+  {
+    "id": "mt-y5-027",
+    "year": 5,
+    "section": "Statistik dan Kebarangkalian",
+    "codes": [],
+    "chars": 1147,
+    "text": "diskret seperti penghitungan, geometri, algebra, pengukuran dan\npenyelesaian masalah. Tanpa membuat kaitan antara bidang-bidang\nini, murid akan belajar dan mengingati terlalu banyak konsep dan\nkemahiran secara berasingan. Sebaliknya, dengan mengenali\nbagaimana ko nsep atau kemahiran dalam bidang yang berbeza\nberhubung kait antara satu sama lain, matematik akan dilihat dan\ndipelajari sebagai satu disiplin ilmu yang menyeluruh serta lebih\nmudah difahami. Apabila idea matematik ini dikaitkan pula dengan\nKSSR MATEMATIK TAHUN 5\n10\npengalaman seharian di dalam dan di luar sekolah, murid akan lebih\nmenyedari kegunaan, kepentingan, kekuatan dan keindahan\nmatematik.\nStandard Proses Matematik\nBerikut adalah standard proses matematik yang perlu dicapai oleh\nmurid melalui pelaksanaan kurikulum ini.\nJadual 1: Standard Proses Matematik\nPENYELESAIAN MASALAH\n Memahami masalah.\n Mengekstrak maklumat yang relevan dalam situasi yang\ndiberi dan menyusun maklumat secara sistematik.\n Merancang pelbagai strategi untuk menyelesaikan\nmasalah.\n Melaksanakan strategi mengikut rancangan yang\nditetapkan.\n Menghasilkan penyelesaian yang menepati kehendak"
+  },
+  {
+    "id": "mt-y5-028",
+    "year": 5,
+    "section": "Statistik dan Kebarangkalian",
+    "codes": [],
+    "chars": 1106,
+    "text": "masalah.\n Membuat tafsiran penyelesaian.\n Membuat semakan dan refleksi bagi penyelesaian dan\nstrategi yang digunakan.\nPENAAKULAN\n Mengenal penaakulan dan pembuktian sebagai asas\nmatematik.\n Mengenal pola, struktur dan kesamaan dalam situasi dunia\nsebenar dan perwakilan simbolik.\n Memilih dan menggunakan pelbagai jenis penaakulan dan\nkaedah pembuktian.\n Membuat, menyiasat dan mengesahkan konjektur\nmatematik.\n Membina dan menilai hujah matematik dan bukti.\n Membuat keputusan dan menjustifikasi keputusan yang\ndibuat.\nKOMUNIKASI SECARA MATEMATIK\n Mengorganisasi dan menggabungkan pemikiran matematik\nmelalui komunikasi untuk menjelas dan mengukuhkan\nkefahaman matematik.\n Mengkomunikasi pemikiran dan idea matematik secara\njelas dan yakin.\n Menggunakan bahasa matematik untuk menyatakan idea\nmatematik dengan tepat.\n Menganalisis dan menilai pemikiran matematik dan strategi\norang lain.\nKSSR MATEMATIK TAHUN 5\n11\nPERWAKILAN\n Menggambarkan idea matematik menggunakan pelbagai\njenis perwakilan.\n Membuat interpretasi daripada perwakilan yang diberikan.\n Memilih jenis perwakilan yang sesuai."
+  },
+  {
+    "id": "mt-y5-029",
+    "year": 5,
+    "section": "Statistik dan Kebarangkalian",
+    "codes": [],
+    "chars": 1117,
+    "text": " Menggunakan pelbagai jenis perwakilan matematik untuk:\n(i) Mempermudahkan idea matematik yang kompleks;\n(ii) Membantu dalam menyelesaikan masalah;\n(iii) Membina model dan mentafsir fenomena matematik;\ndan\n(iv) Membuat hubungan antara pelbagai jenis perwakilan.\nPERKAITAN\n Mengenal pasti dan menggunakan perkaitan antara idea\nmatematik.\n Memahami bagaimana idea matematik saling berhubung\ndan disusun atur menjadi kesatuan yang padu.\n Mengaitkan idea matematik dengan kehidupan harian dan\nbidang lain.\nKemahiran\nKemahiran dalam matematik yang harus dikembangkan dan dipupuk\ndalam kalangan murid meliputi numerasi, mengukur dan membina,\nmengendali dan mentafsir data, manipulasi aritmetik, manipulasi\nalgebra, mengguna algoritma dan menggunakan alat matematik dan\nTMK.\nKemahiran dalam matematik yang menyokong pembelajaran\nmatematik yang berkesan dan berfikrah adalah:\n Kemahiran matematik;\n Kemahiran menganalisis;\n Kemahiran menyelesaikan masalah;\n Kemahiran membuat penyelidikan;\n Kemahiran berkomunikasi; dan\n Kemahiran menggunakan teknologi.\nKemahiran matematik merujuk kepada keupayaan seperti berikut:"
+  },
+  {
+    "id": "mt-y5-030",
+    "year": 5,
+    "section": "Statistik dan Kebarangkalian",
+    "codes": [],
+    "chars": 1123,
+    "text": "(i) Menggunakan laras bahasa matematik yang betul dan\nmengaplikasikan penaakulan mantik;\n(ii) Menyatakan idea matematik secara jitu;\n(iii) Membuat, menguji dan membuktikan konjektur;\n(iv) Mengekstrak makna dari suatu penulisan matematik; dan\n(v) Menggunakan matematik untuk memperihalkan dunia fizikal.\nKSSR MATEMATIK TAHUN 5\n12\nKemahiran menganalisis merujuk kepada keupayaan seperti\nberikut:\n(i) Berfikir secara jelas;\n(ii) Memberi perhatian dan penelitian kepada setiap aspek;\n(iii) Memanipulasi idea yang tepat, jitu dan terperinci;\n(iv) Memahami penaakulan yang kompleks;\n(v) Mengkonstruk dan mempertahan hujah yang logik; dan\n(vi) Mendebatkan hujahan yang tidak munasabah.\nKemahiran menyelesaikan masalah merujuk kepada keupayaan\nseperti berikut:\n(i) Membentuk permasalahan secara tepat dan mengenal pasti isu\nutama permasalahan;\n(ii) Menyampaikan suatu penyelesaian secara jelas dan\nmengeksplisitkan andaian yang dibuat;\n(iii) Menyelesaikan masalah sukar dengan cara menganalisa\nmasalah yang lebih kecil dan khusus;\n(iv) Bersifat terbuka dan menggunakan pendekatan yang berbeza\nuntuk menyelesaikan masalah yang sama;"
+  },
+  {
+    "id": "mt-y5-031",
+    "year": 5,
+    "section": "Statistik dan Kebarangkalian",
+    "codes": [],
+    "chars": 1129,
+    "text": "(v) Menyelesaikan masalah dengan yakin walaupun penyelesaian\ntidak ketara; dan\n(vi) Meminta bantuan sekiranya memerlukan.\nKemahiran membuat penyelidikan merujuk kepada keupayaan\nseperti berikut:\n(i) Merujuk nota, buku teks dan bahan sumber yang lain;\n(ii) Mengakses buku di perpustakaan;\n(iii) Menggunakan pangkalan data;\n(iv) Mendapatkan maklumat dari pelbagai individu; dan\n(v) Berfikir.\nKemahiran berkomunikasi merujuk kepada keupayaan seperti\nberikut:\n(i) Mendengar secara berkesan;\n(ii) Menulis idea matematik secara tepat dan jelas;\n(iii) Menulis esei dan pelaporan; dan\n(iv) Membuat pembentangan.\nKemahiran menggunakan teknologi merujuk kepada keupayaan\nmengguna dan mengendali alat matematik seperti abakus, kalkulator,\nkomputer, perisian pendidikan, laman web di Internet dan pakej\npembelajaran untuk:\n(i) Membentuk dan memahami konsep matematik dengan lebih\nmendalam;\n(ii) Membuat, menguji dan membuktikan konjektur;\n(iii) Meneroka idea matematik; dan\n(iv) Menyelesaikan masalah.\nKSSR MATEMATIK TAHUN 5\n13\nSikap dan Nilai dalam Pendidikan Matematik\nNilai adalah kualiti afektif yang ingin dibentuk melalui PdP matematik"
+  },
+  {
+    "id": "mt-y5-032",
+    "year": 5,
+    "section": "Statistik dan Kebarangkalian",
+    "codes": [],
+    "chars": 1124,
+    "text": "menggunakan konteks yang sesuai. Nilai kebiasaannya diajar dan\ndipelajari secara implisit di dalam sesi pembelajaran. Nilai murni yang\ndipupuk akan seterusnya menjelmakan sikap yang baik. Penerapan\nsikap dan nilai dalam PdP matematik bertujuan m elahirkan insan\nyang berketerampilan dari aspek pengetahuan dan kemahiran\ndi samping memiliki akhlak yang mulia. Penghayatan nilai murni juga\ndapat membentuk generasi muda yang berhemah tinggi dan\nberkeperibadian luhur dan mempunyai sikap yang baik.\nSikap dan nilai yang perlu dibangunkan dalam diri murid melalui PdP\nmatematik ialah:\n1. Nilai matematik merujuk kepada nilai dalam pengetahuan\nmatematik yang merangkumi penekanan kepada sifat-sifat dalam\npengetahuan matematik; dan\n2. Sikap dan nilai sejagat merujuk kepada amalan dan nilai murni\nsejagat yang diterapkan merentas semua mata pelajaran.\nPembentukan nilai melalui PdP matematik juga seharusnya\nmelibatkan unsur ketuhanan, kepercayaan, minat, penghargaan,\nkeyakinan, kecekapan dan ketabahan.\nKepercayaan kepada kekuasaan dan kebesaran tuhan pada asasnya\nboleh dipupuk melalui kandungan dalam kurikulum ini. Perkaitan"
+  },
+  {
+    "id": "mt-y5-033",
+    "year": 5,
+    "section": "Statistik dan Kebarangkalian",
+    "codes": [],
+    "chars": 1111,
+    "text": "antara kandungan yang dipelajari dengan dunia sebenar mampu\nmenampakkan dan mengesahkan lagi kebesaran dan kekuasaan\npencipta alam semesta.\nUnsur sejarah dan patriotisme juga perlu diterapkan mengikut\nkesesuaian tajuk untuk membolehkan murid menghayati matematik\ndan memberangsangkan lagi minat serta keyakinan murid terhadap\nmatematik. Unsur sejarah ini boleh merupakan peristiwa terte ntu\ntentang ahli matematik atau sejarah ringkas tentang sesuatu konsep\natau simbol juga ditekankan dalam kurikulum ini.\nKSSR MATEMATIK TAHUN 5\n14\nKEMAHIRAN ABAD KE-21\nSatu daripada hasrat KSSR adalah untuk melahirkan murid yang\nmempunyai Kemahiran Abad Ke -21 dengan memberi fokus kepada\nkemahiran berfikir serta kemahiran hidup dan kerjaya yang\nberteraskan amalan nilai murni. Kemahiran Abad Ke-21 bermatlamat\nuntuk melahirkan murid yang mempunyai ciri -ciri yang dinyatakan\ndalam profil murid seperti dalam Jadual 2 supaya berupaya bersaing\ndi peringkat global. Penguasaan Standard Kandungan ( SK) dan\nStandard Pembelajaran (SP) dalam KSSR Matematik menyumbang\nkepada pemerolehan Kemahiran Abad Ke-21 dalam kalangan murid."
+  },
+  {
+    "id": "mt-y5-034",
+    "year": 5,
+    "section": "Statistik dan Kebarangkalian",
+    "codes": [],
+    "chars": 1109,
+    "text": "Jadual 2: Profil Murid\nPROFIL MURID PENERANGAN\nBerdaya Tahan Mereka mampu menghadapi dan\nmengatasi kesukaran, mengatasi\ncabaran dengan kebijaksanaan,\nkeyakinan, toleransi dan empati.\nMahir\nBerkomunikasi\nMereka menyuarakan dan meluahkan\nfikiran, idea dan maklumat dengan yakin\ndan kreatif secara lisan dan bertulis,\nmenggunakan pelbagai media dan\nteknologi.\nPROFIL MURID PENERANGAN\nPemikir Mereka berfikir secara kritikal, kreatif\ndan inovatif; mampu untuk menangani\nmasalah yang kompleks dan membuat\nkeputusan yang beretika. Mereka berfikir\ntentang pembelajaran dan diri mereka\nsebagai murid. Mereka menjana soalan\ndan bersifat terbuka kepada perspektif,\nnilai dan tradisi individu dan masyarakat\nlain. Mereka berkeyakinan dan kreatif\ndalam menangani bidang pembelajaran\nyang baharu.\nKerja Sepasukan Mereka boleh bekerjasama secara\nberkesan dan harmoni dengan orang\nlain. Mereka mengalas tanggungjawab\nbersama serta menghormati dan\nmenghargai sumbangan yang diberikan\noleh setiap ahli pasukan. Mereka\nmemperoleh kemahiran interpersonal\nmelalui aktiviti kolaboratif, dan ini\nmenjadikan mereka pemimpin dan ahli"
+  },
+  {
+    "id": "mt-y5-035",
+    "year": 5,
+    "section": "Statistik dan Kebarangkalian",
+    "codes": [],
+    "chars": 1111,
+    "text": "pasukan yang lebih baik.\nBersifat Ingin\nTahu\nMereka membangunkan rasa ingin tahu\nsemula jadi untuk meneroka strategi dan\nidea baru. Mereka mempelajari\nkemahiran yang diperlukan untuk\nmenjalankan inkuiri dan penyelidikan,\nserta menunjukkan sifat berdikari dalam\npembelajaran. Mereka menikmati\npengalaman pembelajaran sepanjang\nhayat secara berterusan.\nKSSR MATEMATIK TAHUN 5\n15\nPROFIL MURID PENERANGAN\nBerprinsip Mereka berintegriti dan jujur,\nkesamarataan, adil dan menghormati\nmaruah individu, kumpulan dan\nkomuniti. Mereka bertanggungjawab\natas tindakan, akibat tindakan serta\nkeputusan mereka.\nBermaklumat Mereka mendapatkan pengetahuan dan\nmembentuk pemahaman yang luas dan\nseimbang merentasi pelbagai disiplin\npengetahuan. Mereka meneroka\npengetahuan dengan cekap dan\nberkesan dalam konteks isu tempatan\ndan global. Mereka memahami isu-isu\netika/undang-undang berkaitan\nmaklumat yang diperoleh.\nPenyayang/\nPrihatin\nMereka menunjukkan empati, belas\nkasihan dan rasa hormat terhadap\nkeperluan dan perasaan orang lain.\nMereka komited untuk berkhidmat\nkepada masyarakat dan memastikan\nkelestarian alam sekitar."
+  },
+  {
+    "id": "mt-y5-036",
+    "year": 5,
+    "section": "Statistik dan Kebarangkalian",
+    "codes": [],
+    "chars": 1121,
+    "text": "Patriotik Mereka mempamerkan kasih sayang,\nsokongan dan rasa hormat terhadap\nnegara.\nKEMAHIRAN BERFIKIR ARAS TINGGI\nKemahiran Berfikir Aras Tinggi (KBAT) dinyatakan dalam kurikulum\nsecara eksplisit supaya guru dapat menterjemahkan dalam PdP bagi\nmerangsang pemikiran berstruktur dan berfokus dalam kalangan\nmurid. Penerangan KBAT adalah berfokus kepada empat tahap\npemikiran seperti Jadual 3.\nJadual 3: Tahap Pemikiran Dalam KBAT\nTAHAP PEMIKIRAN PENERANGAN\nMengaplikasi Menggunakan pengetahuan,\nkemahiran dan nilai dalam situasi\nberlainan untuk melaksanakan\nsesuatu perkara.\nMenganalisis Mencerakinkan maklumat kepada\nbahagian kecil untuk memahami\ndengan lebih mendalam serta hubung\nkait antara bahagian berkenaan.\nMenilai Membuat pertimbangan dan\nkeputusan menggunakan\npengetahuan, pengalaman, kemahiran\ndan nilai serta memberi justifikasi.\nMencipta Menghasilkan idea atau produk atau\nkaedah yang kreatif dan inovatif.\nKSSR MATEMATIK TAHUN 5\n16\nKBAT ialah keupayaan untuk mengaplikasikan pengetahuan,\nkemahiran dan nilai dalam membuat penaakulan dan refleksi bagi\nmenyelesaikan masalah, membuat keputusan, berinovasi dan"
+  },
+  {
+    "id": "mt-y5-037",
+    "year": 5,
+    "section": "Statistik dan Kebarangkalian",
+    "codes": [],
+    "chars": 1158,
+    "text": "berupaya mencipta sesuatu. KBAT merangkumi kemahi ran berfikir\nkritis, kreatif dan menaakul serta strategi berfikir.\nKemahiran berfikir kritis adalah kebolehan untuk menilai sesuatu\nidea secara logik dan rasional untuk membuat pertimbangan yang\nwajar dengan menggunakan alasan dan bukti yang munasabah.\nKemahiran berfikir kreatif adalah kemampuan untuk menghasilkan\natau mencipta sesuatu yang baharu dan bernilai dengan\nmenggunakan daya imaginasi secara asli serta berfikir tidak mengikut\nkelaziman.\nKemahiran menaakul adalah keupayaan individu membuat\npertimbangan dan penilaian secara logik dan rasional.\nStrategi berfikir merupakan cara berfikir yang berstruktur dan\nberfokus untuk menyelesaikan masalah.\nKBAT boleh diaplikasikan dalam bilik darjah melalui aktiviti berbentuk\nmenaakul, pembelajaran inkuiri, penyelesaian masalah dan projek.\nGuru dan murid perlu menggunakan alat berfikir seperti peta\npemikiran dan peta minda serta penyoalan aras tinggi untuk\nmenggalakkan murid berfikir.\nSTRATEGI PENGAJARAN DAN PEMBELAJARAN\nMatematik adalah bidang ilmu yang berteraskan konsep, fakta, sifat,\nperaturan, corak dan proses. PdP matematik yang baik menuntut"
+  },
+  {
+    "id": "mt-y5-038",
+    "year": 5,
+    "section": "Statistik dan Kebarangkalian",
+    "codes": [],
+    "chars": 1101,
+    "text": "guru merancang aktiviti dengan teliti serta menggabungjali nkan\nkepelbagaian strategi yang membolehkan murid bukan sahaja\nmemahami kandungan secara mendalam, malah dicabar untuk\nberfikir pada aras yang lebih tinggi.\nPeluang dan pengalaman pembelajaran yang pelbagai,\npengintegrasian penggunaan TMK dan penyelesaian masalah yang\nmelibatkan keseimbangan kedua -dua soalan rutin dan bukan rutin\njuga ditekankan dalam PdP matematik. Soalan bukan rutin yang\nmemerlukan pemikiran aras tinggi ditekankan bagi mencapai hasrat\nmenghasilkan modal insan yang berfikrah, kreatif dan inovatif, mampu\nbersaing dalam era globalisasi, serta berupaya menghadapi cabaran\nabad ke-21. Lantas, g uru perlu mereka bentuk PdP yang memberi\nruang d an peluang bagi murid membuat konjektur, menaakul,\nbertanya soalan, membuat refleksi dan seterusnya membentuk\nkonsep dan pengetahuan secara kendiri. Maka, teknik penyoalan\nKSSR MATEMATIK TAHUN 5\n17\nyang berstruktur diperlukan bagi membolehkan murid menemui\nperaturan, pola ataupun sifat sesuatu konsep matematik.\nOleh itu, strategi yang digunakan dalam PdP matematik memerlukan"
+  },
+  {
+    "id": "mt-y5-039",
+    "year": 5,
+    "section": "Statistik dan Kebarangkalian",
+    "codes": [],
+    "chars": 1114,
+    "text": "kepelbagaian dan keseimbangan. Penggunaan teknologi seperti\nperisian dinamik, kalkulator grafik, i nternet dan sebagainya perlu\ndiintegrasikan dalam PdP matematik bagi membantu murid\nmembentuk kefahaman mendalam tentang sesuatu konsep\nterutamanya yang melibatkan konsep yang abstrak. Namun, strategi\nyang bersifat tradisional kadang kala masih diperlukan apabila\nmengajar kandungan yang berasaskan prosedural.\nDi samping itu, guru perlu mengguna kan kepelbagaian pendekatan\nPdP seper ti pembelajaran masteri, pembelajaran kontekstual,\npembelajaran berasaskan projek, pembelajaran berasaskan\nmasalah, simulasi, inkuiri penemuan, pendekatan modular dan\npendekatan STEM. Pendekatan sebegini bagi memberikan\npengalaman pembelajaran matematik yang menyeronokkan,\nbermakna, berguna dan mencabar, seterusnya akan membentuk\nkefahaman konsep yang mendalam. Oleh itu, g uru perlu memilih\nstrategi PdP yang sesuai bagi memenuhi keperluan murid yang\nmempunyai kepelbagaian kebolehan, kecenderungan dan minat\ndalam aktiviti yang bermakna dan mencabar yang direka bentuk\nkhusus berdasarkan keperluan mereka.\nPembelajaran Masteri"
+  },
+  {
+    "id": "mt-y5-040",
+    "year": 5,
+    "section": "Statistik dan Kebarangkalian",
+    "codes": [],
+    "chars": 1116,
+    "text": "Pembelajaran masteri merupakan pembelajaran yang memastikan\nsemua murid menguasai objektif pembelajaran yang ditetapkan.\nPembelajaran ini berpegang kepada prinsip bahawa setiap murid\nmampu belajar jika diberi peluang. Peluang perlu diberi kepada murid\nuntuk belajar mengikut kadarnya, tindakan pengayaan dan pemulihan\nperlu dijadikan sebagai sebahagian daripada proses PdP.\nPembelajaran Kontekstual\nPembelajaran kontekstual merupakan pembelajaran yang\nmemerlukan murid membuat perkaitan dengan kehidupan mereka.\nDalam konteks ini, murid tidak belajar secara teori sahaja tetapi dapat\nmengaplikasikan pengetahuan matematik dalam situasi harian. Murid\nakan dapat mengaplikasikan kepelbagaian kemahiran, pengalaman,\ndan budaya setempat, seterusnya menyepadukan kesemua i ni\nkepada pengalaman pembelajaran baharu.\nKSSR MATEMATIK TAHUN 5\n18\nPembelajaran Berasaskan Projek\nPembelajaran berasaskan projek merupakan proses pembelajaran\nyang berfokuskan tugasan amali secara sistematik dan terancang\ndalam jangka masa tertentu bagi menyiasat dan menero ka suatu\npermasalahan, atau menghasilkan suatu produk. Pada kebiasaannya"
+  },
+  {
+    "id": "mt-y5-041",
+    "year": 5,
+    "section": "Statistik dan Kebarangkalian",
+    "codes": [],
+    "chars": 1152,
+    "text": "melibatkan tugasan yang memerlukan aktiviti pengumpulan dan\nanalisis data, melaporkan hasil projek, dan refleksi kendiri. Fokus\npembelajaran ialah kepada prosesnya, yang mana produk atau hasil\nakhir projek bersifat pelengkap kepada pembelajaran.\nPembelajaran Berasaskan Masalah\nPembelajaran berasaskan masalah merupakan pembelajaran yang\nmemberi peluang kepada murid belajar melalui penerokaan masalah\nharian. Murid akan dapat membentuk d aya tahan apabila mereka\nmenghadapi dan mengatasi cabaran dan kesukaran melalui proses\nmentafsir masalah, mengumpul maklumat, mengenal pasti\npenyelesaian yang mungkin, menilai setiap penyelesaian masalah,\ndan membentangkan segala rumusan dan keputusan yang dibuat.\nSimulasi\nSimulasi merupakan pembelajaran yang memberi peluang kepada\nmurid belajar melalui aktiviti yang menyerupai sebenarnya. Contoh\nsimulasi yang utama ialah main peranan, permainan dan penggunaan\nmodel. Dalam main peranan, murid melakonkan se suatu peranan\nsecara spontan berdasarkan syarat yang ditentukan. Murid bermain\nuntuk mempelajari sesuatu konsep ataupun memahami proses dan\nmembuat keputusan. Model boleh digunakan untuk mewakili objek"
+  },
+  {
+    "id": "mt-y5-042",
+    "year": 5,
+    "section": "Statistik dan Kebarangkalian",
+    "codes": [],
+    "chars": 1138,
+    "text": "atau keadaan sebenar.\nInkuiri Penemuan\nInkuiri penemuan merupakan pembelajaran yang menggunakan\nkeperluan ingin tahu murid untuk meneroka sesuatu bidang ilmu.\nPembelajaran berfokuskan kepada pengembangan kemahiran dan\nintelek untuk menimbulkan persoalan dan mencari jawapan yang\nberpunca daripada rasa ingin tahu murid.\nPendekatan Modular\nPendekatan modular ia lah PdP yang berteraskan kepada prinsip\nberpusatkan murid dengan fokus kepada perkembangan kendiri,\nmenggabungjalinkan kemahiran, penyerapan ilmu dan nilai dalam\nmata pelajaran , menyampaikan kandungan dalam urutan secara\nlinear atau non-linear serta memilih dan menyampaikan kandungan,\nkemahiran dan nilai yang dihasratkan secara fleksibel .\nPengoperasian masa PdP juga fleksibel dengan penerapan PdP\nseperti flipped classroom dan sebagainya.\nKSSR MATEMATIK TAHUN 5\n19\nPendekatan STEM ( Science, Technology, Engineering and\nMathematics)\nPendekatan STEM ialah PdP yang mengaplikasikan pengetahuan,\nkemahiran dan nilai STEM melalui inkuiri, penyelesaian masalah atau\nprojek dalam konteks kehidupan harian, alam sekitar dan masyarakat\ntempatan serta global seperti dalam Rajah 4."
+  },
+  {
+    "id": "mt-y5-043",
+    "year": 5,
+    "section": "Statistik dan Kebarangkalian",
+    "codes": [],
+    "chars": 1108,
+    "text": "PdP STEM yang kontekstual dan autentik dapat menggalakkan\npembelajaran mendalam dalam kalangan murid. Murid boleh bekerja\nsecara berkumpulan atau secara individu mengikut kemampuan\nmurid ke arah membudayakan pendekatan STEM dengan\nmengamalkan perkara-perkara seperti berikut:\n1. Menyoal dan mengenal pasti masalah;\n2. Membangunkan dan menggunakan model;\n3. Merancang dan menjalankan penyiasatan;\n4. Menganalisis dan mentafsirkan data;\n5. Menggunakan pemikiran matematik dan pemikiran\nkomputasional;\n6. Membina penjelasan dan mereka bentuk penyelesaian;\n7. Melibatkan diri dalam perbahasan dan perbincangan\nberdasarkan eviden; dan\n8. Mendapatkan maklumat, menilai dan berkomunikasi tentang\nmaklumat tersebut.\nELEMEN MERENTAS KURIKULUM\nElemen Merentas Kurikulum (EMK) ialah unsur nilai tambah yang\nditerapkan dalam pros es PdP selain yang ditetapkan dalam SK.\nElemen-elemen ini diterapkan bertujuan mengukuhkan kemahiran\ndan keterampilan modal insan yang dihasratkan serta dapat\nmenangani cabaran semasa dan masa hadapan. Elemen -elemen di\ndalam EMK adalah seperti berikut:\nRajah 4: STEM Sebagai Pendekatan PdP"
+  },
+  {
+    "id": "mt-y5-044",
+    "year": 5,
+    "section": "Statistik dan Kebarangkalian",
+    "codes": [],
+    "chars": 1156,
+    "text": "KSSR MATEMATIK TAHUN 5\n20\n1. Bahasa\n Penggunaan bahasa pengantar yang betul perlu\ndititikberatkan dalam semua mata pelajaran.\n Semasa PdP bagi setiap mata pelajaran, aspek sebutan,\nstruktur ayat, tatabahasa, istilah dan laras bahasa perlu diberi\npenekanan bagi membantu murid menyusun idea dan\nberkomunikasi secara berkesan.\n2. Kelestarian Alam Sekitar\n Kesedaran mencintai dan menyayangi alam sekitar dalam jiwa\nmurid perlu dipupuk melalui PdP semua mata pelajaran.\n Pengetahuan dan kesedaran terhadap kepentingan alam\nsekitar dalam membentuk etika murid untuk menghargai alam.\n3. Nilai Murni\n Nilai murni diberi penekanan dalam semua mata pelajaran\nsupaya murid sedar akan kepentingan dan mengamalkannya.\n Nilai murni merangkumi aspek kerohanian, kemanusiaan dan\nkewarganegaraan yang menjadi amalan dalam kehidupan\nharian.\n4. Sains dan Teknologi\n Menambahkan minat terhadap sains dan teknologi dapat\nmeningkatkan literasi sains serta teknologi dalam kalangan\nmurid.\n Penggunaan teknologi dalam pengajaran dapat membantu\nserta menyumbang kepada pembelajaran yang lebih cekap\ndan berkesan.\n Pengintegrasian sains dan teknologi dalam PdP merangkumi"
+  },
+  {
+    "id": "mt-y5-045",
+    "year": 5,
+    "section": "Statistik dan Kebarangkalian",
+    "codes": [],
+    "chars": 1106,
+    "text": "empat perkara iaitu:\n(i) Pengetahuan sains dan teknologi (fakta, prinsip, konsep\nyang berkaitan dengan sains dan teknologi);\n(ii) Kemahiran saintifik (proses pemikiran dan kemahiran\nmanipulatif tertentu);\n(iii) Sikap saintifik (seperti ketepatan, kejujuran,\nkeselamatan); dan\n(iv) Penggunaan teknologi dalam aktiviti PdP.\n5. Patriotisme\n Semangat patriotik dapat dipupuk melalui semua mata\npelajaran, aktiviti kokurikulum dan khidmat masyarakat.\n Semangat patriotik dapat melahirkan murid yang mempunyai\nsemangat cintakan negara dan b erbangga sebagai rakyat\nMalaysia.\nKSSR MATEMATIK TAHUN 5\n21\n6. Kreativiti dan Inovasi\n Kreativiti adalah kebolehan menggunakan imaginasi untuk\nmengumpul, mencerna dan menjana idea atau mencipta\nsesuatu yang baharu atau asli melalui ilham atau gabungan\nidea yang ada.\n Inovasi merupakan pengaplikasian kreativiti melalui ubah\nsuaian, membaiki dan mempraktikkan idea.\n Kreativiti dan inovasi saling bergandingan dan perlu untuk\nmemastikan pembangunan modal insan yang mampu\nmenghadapi cabaran abad ke-21.\n Elemen kreativiti dan inovasi perlu diintegrasikan dalam PdP."
+  },
+  {
+    "id": "mt-y5-046",
+    "year": 5,
+    "section": "Statistik dan Kebarangkalian",
+    "codes": [],
+    "chars": 1129,
+    "text": "7. Keusahawanan\n Penerapan elemen keusahawanan bertujuan membentuk ciri-\nciri dan amalan keusahawanan sehingga menjadi satu budaya\ndalam kalangan murid.\n Ciri keusahawanan boleh diterapkan dalam PdP melalui\naktiviti yang mampu memupuk sikap seperti rajin, jujur,\namanah dan bertanggungjawab serta membangunkan minda\nkreatif dan inovatif untuk memacu idea ke pasaran.\n8. Teknologi Maklumat dan Komunikasi\n Penerapan elemen TMK dalam PdP memastikan murid dapat\nmengaplikasi dan mengukuhkan pengetahuan dan kemahiran\nasas TMK yang dipelajari.\n Pengaplikasian TMK bukan sahaja mendorong murid menjadi\nkreatif malah menjadikan PdP lebih menarik dan\nmenyeronokkan serta meningkatkan kualiti pembelajaran.\n TMK diintegrasikan mengikut kesesuaian topik yang hendak\ndiajar dan sebagai pengupaya bagi meningk atkan lagi\nkefahaman murid terhadap kandungan mata pelajaran.\n Salah satu penekanan dalam TMK adalah pemikiran\nkomputasional yang boleh diaplikasikan dalam semua mata\npelajaran. Pemikiran komputasional merupakan satu\nkemahiran untuk menggunakan konsep penaa kulan logik,\nalgoritma, leraian, pengecaman corak, peniskalaan dan"
+  },
+  {
+    "id": "mt-y5-047",
+    "year": 5,
+    "section": "Statistik dan Kebarangkalian",
+    "codes": [],
+    "chars": 1105,
+    "text": "penilaian dalam proses menyelesaikan masalah berbantukan\nkomputer.\nKSSR MATEMATIK TAHUN 5\n22\n9. Kelestarian Global\n Elemen Kelestarian Global bermatlamat melahirkan murid\nberdaya fikir lestari yang bersikap responsif terhadap\npersekitaran dalam kehidupan harian dengan mengaplikasi\npengetahuan, kemahiran dan nilai yang diperolehi melalui\nelemen Penggunaan dan Pengeluaran Lestari,\nKewarganegaraan Global dan Perpaduan.\n Elemen Kelestarian Global penting dalam menyediakan murid\nbagi menghadapi cabaran dan isu semasa di peringkat\ntempatan, negara dan global.\n Elemen ini diajar secara langsung dan secara sisipan dalam\nmata pelajaran yang berkaitan.\n10. Pendidikan Kewangan\n Penerapan elemen Pendidikan Kewangan bertujuan\nmembentuk generasi masa hadapan yang berkeupayaan\nmembuat keputusan kewangan yang bijak, mengamalkan\npengurusan kewangan yang beretika ser ta berkemahiran\nmenguruskan hal ehwal kewangan secara bertanggungjawab.\n Elemen Pendidikan Kewangan boleh diterapkan dalam PdP\nsecara langsung ataupun secara sisipan. Penerapan secara\nlangsung adalah melalui tajuk -tajuk seperti Wang yang"
+  },
+  {
+    "id": "mt-y5-048",
+    "year": 5,
+    "section": "Statistik dan Kebarangkalian",
+    "codes": [],
+    "chars": 1140,
+    "text": "mengandungi elemen kewangan secara eksplisit seperti\npengiraan faedah mudah dan faedah kompaun. Pene rapan\nsecara sisipan pula diintegrasikan melalui tajuk -tajuk lain\nmerentas kurikulum. Pendedahan kepada pengurusan\nkewangan dalam kehidupan sebenar adalah penting bagi\nmenyediakan murid dengan pengetahuan, kemahiran dan\nnilai yang dapat diaplikasikan secara berkesan dan bermakna.\nKSSR MATEMATIK TAHUN 5\n23\nPENTAKSIRAN BILIK DARJAH\nPentaksiran Bilik D arjah (PBD) merupakan proses mendapatkan\nmaklumat tentang perkembangan murid yang dirancang, dilaksana\ndan dilapor oleh guru yang berkenaan. Proses ini berlaku berterusan\nbagi membolehkan guru menentukan tahap penguasaan murid.\nPBD boleh dilaksanakan oleh guru secara formatif dan sumatif.\nPentaksiran secara formatif dilaksanakan seiring dengan proses PdP,\nmanakala pentaksiran secara sumatif dilaksanakan pada akhir\nsesuatu unit pembelajaran, penggal, semester atau tahun. Guru\nperlulah merancang, membina item atau instrumen pentaksiran,\nmentadbir, memeriksa, merekod dan melapor tahap penguasaan\nyang diajar berdasarkan DSKP.\nDalam usaha memastikan pentaksiran membantu meningkatkan"
+  },
+  {
+    "id": "mt-y5-049",
+    "year": 5,
+    "section": "Statistik dan Kebarangkalian",
+    "codes": [],
+    "chars": 1114,
+    "text": "keupayaan dan penguasaan murid, guru haruslah melaksanakan\npentaksiran yang mempunyai ciri-ciri berikut:\n Menggunakan pelbagai kaedah pentaksiran seperti pemerhatian,\nlisan dan penulisan.\n Menggunakan pelbagai strategi pentaksiran yang boleh\ndilaksanakan oleh guru dan murid.\n Mengambil kira pelbagai aras pengetahuan dan kemahiran yang\ndipelajari.\n Membolehkan murid mempamerkan pelbagai keupayaan\npembelajaran.\n Mentaksir tahap penguasaan murid berdasarkan SP dan\nStandard Prestasi (SPi).\n Mengambil tindakan susulan bagi tujuan pemulihan dan\npengukuhan.\nPentaksiran KSSR Matematik melibatkan elemen kandungan,\nkemahiran proses serta sikap dan nilai. Pentaksiran pencapaian\nmurid merujuk kepada kriteria SPi dalam enam tahap penguasaan\nyang memberikan tafsiran tertentu. Pentaksiran KSSR Matematik\njuga perlu dilaporkan dengan menggunakan templat pelaporan yang\ndireka dan dibina untuk merekodkan pencapaian pembelajaran murid.\nPada akhir pembelajaran setiap tahun, laporan pencapaian tahap\npenguasaan keseluruhan direkod berdasarkan rangkuman elemen\nkandungan, kemahiran dan proses, serta sikap dan nilai."
+  },
+  {
+    "id": "mt-y5-050",
+    "year": 5,
+    "section": "Statistik dan Kebarangkalian",
+    "codes": [],
+    "chars": 1124,
+    "text": "KSSR MATEMATIK TAHUN 5\n24\nKandungan\nPentaksiran kandungan pada umumnya ditaksir secara topikal.\nPentaksiran ini bertujuan melihat sejauh mana murid memahami SK\ntertentu secara menyeluruh dan holistik. Kurikulum ini menggariskan\nSK yang disusun mengikut bidang pembelajaran tertentu. Topik-topik\nyang disenaraikan disusun secara hirarki serta menunjukkan\nperkembangan dari segi bidang pembelajaran. Guru perlu mentaksir\nmurid secara holistik. SPi bagi setiap topik dibina berdasarkan\nTahap Penguasaan Umum seperti dalam Jadual 4.\nJadual 4: Tafsiran Umum Tahap Penguasaan Kandungan Matematik\nTAHAP\nPENGUASAAN TAFSIRAN\n1 Tahu pengetahuan asas matematik.\n2 Tahu dan faham pengetahuan asas\nmatematik.\n3\nTahu dan faham pengetahuan asas\nmatematik bagi melakukan operasi asas\nmatematik dan penukaran asas.\n4\nTahu dan faham pengetahuan matematik\nbagi melakukan langkah pengiraan dalam\nmenyelesaikan masalah harian yang rutin.\n5\nMenguasai dan mengaplikasi pengetahuan\ndan kemahiran matematik dalam\nmenyelesaikan masalah harian yang rutin\ndengan pelbagai strategi.\n6\nMenguasai dan mengaplikasi pengetahuan\ndan kemahiran matematik dalam"
+  },
+  {
+    "id": "mt-y5-051",
+    "year": 5,
+    "section": "Statistik dan Kebarangkalian",
+    "codes": [],
+    "chars": 1147,
+    "text": "menyelesaikan masalah harian yang bukan\nrutin secara kreatif dan inovatif.\nKSSR MATEMATIK TAHUN 5\n25\nJadual 5: Tahap Penguasaan Kemahiran Proses Matematik\nTAHAP\nPENGUASAAN TAFSIRAN\n1 Murid berupaya menyatakan aktiviti atau idea matematik dengan menggunakan perwakilan, membuat perkaitan,\nmenaakul dan berkomunikasi serta menyatakan langkah-langkah penyelesaian masalah mekanikal dengan bimbingan.\n2 Murid berupaya menerangkan aktiviti atau idea matematik dengan menggunakan perwakilan, membuat perkaitan,\nmenaakul dan berkomunikasi serta menyelesaikan masalah mekanikal dengan bimbingan.\n3 Murid berupaya melaksanakan aktiviti dan idea matematik dengan menggunakan perwakilan, membuat perkaitan,\nmenaakul dan berkomunikasi serta menyelesaikan masalah mekanikal.\n4 Murid berupaya melaksanakan aktiviti dan idea matematik dengan menggunakan perwakilan, membuat perkaitan,\nmenaakul dan berkomunikasi serta menyelesaikan masalah rutin.\n5\nMurid berupaya melaksanakan aktiviti dan idea matematik dengan menggunakan perwakilan, membuat perkaitan,\nmenaakul dan berkomunikasi serta menyelesaikan masalah rutin yang lebih komplek dengan menggunakan pelbagai"
+  },
+  {
+    "id": "mt-y5-052",
+    "year": 5,
+    "section": "Statistik dan Kebarangkalian",
+    "codes": [],
+    "chars": 1148,
+    "text": "strategi.\n6 Murid berupaya melaksanakan aktiviti dan idea matematik dengan menggunakan perwakilan, membuat perkaitan,\nmenaakul dan berkomunikasi serta menyelesaikan masalah bukan rutin, secara kreatif dan inovatif.\nKemahiran Matematik dan Proses Matematik\nElemen kemahiran matematik dan proses matematik yang perlu dipamerkan dan diamal kan oleh murid ditaksir secara berterusan melalui\npelbagai kaedah seperti pemerhatian, latihan, pembentangan, respon murid secara lisa n, kerja berkumpulan dan sebagainya. Pelaporan\npencapaian elemen ini boleh dilakukan pada pertengahan tahun dan akhir tahun bagi melihat perkembangan murid dan membantu mereka\nmeningkatkan kemahiran.\nDalam proses PdP, guru perlu mentaksir keupayaan kemahi ran matematik bersekali dengan amalan pembelajaran yang ditunjukkan melalui\nproses matematik, iaitu penyelesaian masalah, penaakulan, komunikasi, perkaitan dan perwakilan . Tahap penguasaan kemahiran proses\nmatematik dijelmakan seperti dalam Jadual 5.\nKSSR MATEMATIK TAHUN 5\n26\nSikap dan Nilai\nElemen sikap dan nilai yang perlu dipamerkan dan diamalkan oleh\nmurid juga ditaksir secara berterusan melalui pelbagai kaedah."
+  },
+  {
+    "id": "mt-y5-053",
+    "year": 5,
+    "section": "Statistik dan Kebarangkalian",
+    "codes": [],
+    "chars": 1126,
+    "text": "Pelaporan pencapaian elemen ini boleh dilakukan pada pertengahan\ndan akhir tahun bagi melihat perkemb angan dan membantu murid\nmeningkatkan amalan nilai yang baik seperti dalam Jadual 6.\nJadual 6: Tafsiran Umum Tahap Penguasaan Sikap dan Nilai\nTAHAP\nPENGUASAAN TAFSIRAN\n1 Menyatakan sikap dan nilai berkaitan\nmatematik dengan bimbingan.\n2\nMenjelaskan sikap dan nilai berkaitan\nmatematik dengan memberikan contoh yang\nmunasabah.\n3 Menunjukkan sikap dan nilai berkaitan\nmatematik dalam sesuatu situasi.\n4\nMendemonstrasikan sikap dan nilai berkaitan\nmatematik dalam pelbagai situasi serta\nmenjadi pembimbing kepada rakan lain.\n5\nSentiasa mengamalkan sikap dan nilai\nberkaitan matematik dalam proses\npengajaran dan pembelajaran serta menjadi\npembimbing kepada rakan lain.\n6\nSentiasa mengamalkan sikap dan nilai\nberkaitan matematik dalam kehidupan\nseharian serta menjadi pembimbing dan\nteladan kepada rakan lain.\nTAHAP PENGUASAAN KESELURUHAN\nTahap penguasaan k eseluruhan bagi setiap mata pelajaran perlu\nditentukan pada setiap akhir tahun. Tahap penguasaan keseluruhan\nini merangkumi aspek pengetahuan, kemahiran proses dan nilai."
+  },
+  {
+    "id": "mt-y5-054",
+    "year": 5,
+    "section": "Statistik dan Kebarangkalian",
+    "codes": [],
+    "chars": 1099,
+    "text": "Guru perlu mentaksir murid secara kolektif dan holistik dengan\nmelihat semua aspek semasa proses pembelajaran. Guru hendaklah\nmenggunakan pertimbangan profesional dalam semua proses\npentaksiran, khususnya dalam menentukan tahap penguasaan\nkeseluruhan. Pertimbangan profesional boleh dilakukan berdasarkan\npengetahuan dan pengalaman gur u, int eraksi guru bersama murid\nserta perbincangan bersama rakan sejawat . Guru boleh merujuk\npanduan seperti dalam Jadual 7 untuk menentukan tahap\npenguasaan keseluruhan murid.\nKSSR MATEMATIK TAHUN 5\n27\nJadual 7: Tahap Penguasaan Keseluruhan\nTAHAP\nPENGUASAAN TAFSIRAN\n1\n Mengimbas kembali pengetahuan asas matematik.\n Menggunakan kemahiran proses matematik untuk mengimbas kembali pengetahuan asas matematik dengan\nbimbingan.\n Menyatakan sikap dan nilai berkaitan matematik dengan bimbingan.\n2\n Menerangkan pengetahuan asas matematik.\n Menggunakan kemahiran proses matematik untuk menerangkan pengetahuan asas matematik.\n Menjelaskan sikap dan nilai berkaitan matematik dengan memberikan contoh yang munasabah.\n3\n Mengaplikasi pengetahuan asas matematik."
+  },
+  {
+    "id": "mt-y5-055",
+    "year": 5,
+    "section": "Statistik dan Kebarangkalian",
+    "codes": [],
+    "chars": 1111,
+    "text": " Menggunakan kemahiran proses matematik bagi mengaplikasi pengetahuan asas matematik.\n Menunjukkan sikap dan nilai berkaitan matematik dalam sesuatu situasi.\n4\n Menyelesaikan masalah rutin dalam kehidupan seharian.\n Menggunakan kemahiran proses matematik bagi menyelesaikan masalah rutin.\n Mendemonstrasikan sikap dan nilai berkaitan matematik dalam pelbagai situasi serta menjadi pembimbing kepada\nrakan lain.\n5\n Menyelesaikan masalah rutin yang kompleks dalam kehidupan seharian dengan menggunakan pelbagai strategi\npenyelesaian masalah.\n Menggunakan kemahiran proses matematik bagi menyelesaikan masalah rutin yang kompleks.\n Sentiasa mengamalkan sikap dan nilai berkaitan matematik dalam proses pengajaran dan pembelajaran serta menjadi\npembimbing kepada rakan lain.\n6\n Menyelesaikan masalah harian yang bukan rutin.\n Menggunakan kemahiran proses matematik bagi menyelesaikan masalah bukan rutin.\n Sentiasa mengamalkan sikap dan nilai berkaitan matematik dalam kehidupan seharian serta menjadi pembimbing dan\nteladan kepada rakan lain.\nKSSR MATEMATIK TAHUN 5\n28\nPelaporan Pentaksiran Bilik Darjah"
+  },
+  {
+    "id": "mt-y5-056",
+    "year": 5,
+    "section": "Statistik dan Kebarangkalian",
+    "codes": [],
+    "chars": 1099,
+    "text": "Pentaksiran merupakan proses yang digunakan dalam menentukan\npencapaian pembelajaran . Pencapaian direkodkan dalam templat\npelaporan yang boleh dimuat turun dari laman web BPK . Proses\nmerekod pencapaian murid dilaksanakan berdasarkan Tahap\nPenguasaan yang telah diperincikan dalam DSKP.\nMelalui templat ini, proses pelaporan bagi menyampaikan maklumat\npembelajaran dan pencapaian murid dari semasa ke semasa .\nPelaporan ini merangkumi kemajuan dan perkem bangan murid\ndaripada aspek pengetahuan, kemahiran dan proses serta sikap dan\nnilai seperti yang dihasratkan dalam kurikulum.\nORGANISASI KANDUNGAN\nKSSR Matematik digubal dengan memberi penekanan kepada SK\ndan S P yang perlu diketahui dan dapat dilakukan oleh murid.\nStandard-standard ini dijelmakan mengikut tajuk-tajuk yang\ndikelompokkan dalam bidang pembelaja ran. Tahap perkembangan\npembelajaran murid diukur berdasarkan SPi, dan diorganisasikan\npada setiap tajuk. Kandungan bagi KSSR Matematik adalah\nberdasarkan Bidang Pembelajaran sebagaimana dalam Jadual 8.\nJadual 8: Senarai Tajuk Berdasarkan Bidang Pembelajaran KSSR\nMatematik.\nBIDANG"
+  },
+  {
+    "id": "mt-y5-057",
+    "year": 5,
+    "section": "Perkaitan dan Algebra",
+    "codes": [],
+    "chars": 1115,
+    "text": "Perkaitan dan Algebra  Koordinat, Nisbah dan Kadaran\nStatistik dan\nKebarangkalian\n Pengurusan Data\n Kebolehjadian\nKSSR MATEMATIK TAHUN 5\n29\nKSSR Matematik memberi fokus kepada penguasaan pengetahuan,\nkemahiran proses serta sikap dan nilai yang sesuai dengan tahap\nkebolehan murid . Peruntukan waktu minimum untuk matematik\nTahap I I adalah 96 jam setahun. DSKP KSSR Matematik disusun\ndalam tiga komponen iaitu SK, SP dan SPi. Tafsiran setiap komponen\nseperti dalam Jadual 9.\nObjektif bagi setiap tajuk dieksplisitkan sebagai panduan pengajaran\nbagi menyediakan aktiviti dan persekitaran pembelajaran yang sesuai\ndan relevan dengan kebolehan serta keperluan murid. Guru perlu\nmenggunakan kreativiti dan kebijaksanaan profesional mereka bagi\nmencapai objektif tersebut . A ktiviti yang dicadangkan bukanlah\nsesuatu yang mutlak. Guru disarankan menggunakan sumber yang\npelbagai seperti modul, buku dan internet dalam menyediakan aktiviti\nPdP bersesuaian.\nJadual 9: Tafsiran Standard Kandungan, Standard Pembelajaran dan\nStandard Prestasi\nSTANDARD\nKANDUNGAN\nSTANDARD\nPEMBELAJARAN\nSTANDARD\nPRESTASI\nPenyataan spesifik"
+  },
+  {
+    "id": "mt-y5-058",
+    "year": 5,
+    "section": "Perkaitan dan Algebra",
+    "codes": [],
+    "chars": 721,
+    "text": "tentang perkara\nyang murid patut\nketahui dan boleh\nlakukan dalam\nsuatu tempoh\npersekolahan\nmerangkumi aspek\npengetahuan,\nkemahiran dan nilai.\nSuatu penetapan\nkriteria atau\nindikator kualiti\npembelajaran dan\npencapaian yang\nboleh diukur bagi\nsetiap standard\nkandungan.\nSuatu set kriteria\numum yang\nmenunjukkan\ntahap-tahap\nprestasi yang perlu\nmurid pamerkan\nsebagai tanda\nbahawa sesuatu\nperkara itu telah\ndikuasai murid.\nDalam organisasi kandungan, terdapat lajur Catatan. Lajur ini\nmengandungi cadangan aktiviti dan nota. Guru boleh melaksanakan\naktiviti tambahan selain daripada yang dica dangkan mengikut\nkreativiti dan keperluan untuk mencapai SP.\nKSSR MATEMATIK TAHUN 5\n30\nKSSR MATEMATIK TAHUN 5\n31\nBIDANG PEMBELAJARAN"
+  },
+  {
+    "id": "mt-y5-059",
+    "year": 5,
+    "section": "Nombor dan Operasi",
+    "codes": [
+      "1.1.1",
+      "1.1.2"
+    ],
+    "chars": 1129,
+    "text": "NOMBOR DAN OPERASI\nTAJUK\n1.0 NOMBOR BULAT DAN OPERASI ASAS\nObjektif\nMembolehkan murid:\n Mengetahui, memahami dan mengaplikasi nombor bulat, konsep dan prosedur kemahiran\nbagi operasi asas hingga 1 000 000.\n Mengaplikasi pengetahuan dan kemahiran matematik bagi menyelesaikan masalah\nberkaitan nombor bulat dan operasi asas hingga 1 000 000.\n Menggunakan laras bahasa matematik yang betul berkaitan nombor bulat dan sewaktu\nmelakukan proses operasi asas dan operasi bergabung.\n Membuat penaakulan, membuat perkaitan, membuat perwakilan, berkomunikasi dan\nmenggunakan teknologi sewaktu mempelajari nombor bulat dan operasi asas hingga\n1 000 000.\nKSSR MATEMATIK TAHUN 5\n32\n1.0 NOMBOR BULAT DAN OPERASI ASAS\nSTANDARD KANDUNGAN STANDARD PEMBELAJARAN CATATAN\n1.1 Nilai nombor\nMurid boleh:\n1.1.1 Menyatakan nombor hingga 1 000 000:\n(i) Membaca sebarang nombor dalam\nperkataan.\n(ii) Menyebut sebarang nombor dalam bentuk\nangka.\n(iii) Menulis nombor dalam angka dan\nperkataan.\n1.1.2 Menentukan nilai nombor hingga 1 000 000:\n(i) Menyatakan nilai tempat dan nilai digit bagi\nsebarang nombor.\n(ii) Mencerakinkan sebarang nombor mengikut"
+  },
+  {
+    "id": "mt-y5-060",
+    "year": 5,
+    "section": "Nombor dan Operasi",
+    "codes": [
+      "1.2.1",
+      "1.3.1"
+    ],
+    "chars": 1110,
+    "text": "nilai tempat dan nilai digit.\n(iii) Membandingkan nilai dua nombor.\n(iv) Menyusun nombor mengikut tertib menaik\ndan tertib menurun.\n(v) Melengkapkan sebarang rangkaian nombor\nsecara tertib menaik dan menurun.\nNota:\nSebutan nombor secara betul. 382 425 disebut\nsebagai ‘tiga ratus lapan puluh dua ribu empat\nratus dua puluh lima’ bukan tiga lapan dua empat\ndua lima.\nCadangan Aktiviti:\n Gunakan pelbagai perwakilan termasuk\nmodel konkrit, alat manipulatif, petak grid,\ngambar, garis nombor dan simbol untuk\nmewakili nombor.\n Gunakan TMK untuk menyatakan dan\nmenentukan nilai nombor.\n1.2 Nombor perdana 1.2.1 Mengenal pasti nombor perdana dalam\nlingkungan 100.\nNota:\nNombor perdana ialah nombor yang hanya boleh\ndibahagi dengan 1 dan dirinya sendiri.\nCadangan Aktiviti:\nGunakan TMK untuk mengenal pasti nombor\nperdana.\nKSSR MATEMATIK TAHUN 5\n33\nSTANDARD KANDUNGAN STANDARD PEMBELAJARAN CATATAN\n1.3 Penganggaran 1.3.1 Menganggar suatu kuantiti berdasarkan set\nrujukan yang diberi dan menentukan kewajaran\njawapan.\nNota:\nContoh yang diberi perlu hampir dengan\npengetahuan dan pengalaman murid.\nCadangan Aktiviti:"
+  },
+  {
+    "id": "mt-y5-061",
+    "year": 5,
+    "section": "Nombor dan Operasi",
+    "codes": [
+      "1.4.1",
+      "1.4.2",
+      "1.5.1",
+      "1.5.2",
+      "1.6.1",
+      "1.6.2"
+    ],
+    "chars": 1145,
+    "text": "Gunakan bahan konkrit dan bukan konkrit.\n1.4 Pembundaran\n1.4.1 Membundarkan nombor bulat hingga ratus ribu\nterdekat.\n1.4.2 Mengenal pasti nombor yang mungkin diwakili\noleh suatu nombor yang telah dibundarkan\nhingga ratus ribu terdekat.\nNota:\nPembundaran boleh melibatkan perpuluhan,\nperatus, wang, ukuran dan sukatan.\nCadangan Aktiviti:\nGunakan garis nombor dan pelbagai strategi.\n1.5 Pola nombor 1.5.1 Mengenal pasti pola bagi siri nombor yang\ndiberi secara tertib menaik dan menurun\nsatu-satu hingga sepuluh-sepuluh, seratus-\nseratus, seribu-seribu, sepuluh ribu-sepuluh\nribu dan seratus ribu-seratus ribu.\n1.5.2 Melengkapkan pelbagai pola nombor yang\ndiberi secara tertib menaik dan menurun.\nNota:\nSiri nombor boleh melibatkan sehingga enam\nnombor.\nCadangan Aktiviti:\nBoleh gunakan pelbagai alat mengira dalam\nproses pengiraan untuk membina pola nombor.\nKSSR MATEMATIK TAHUN 5\n34\nSTANDARD KANDUNGAN STANDARD PEMBELAJARAN CATATAN\n1.6 Operasi asas 1.6.1 Menyelesaikan ayat matematik tambah hingga\nlima nombor melibatkan nombor hingga enam\ndigit dan hasil tambahnya dalam lingkungan\n1 000 000.\n1.6.2 Menyelesaikan ayat matematik tolak melibatkan"
+  },
+  {
+    "id": "mt-y5-062",
+    "year": 5,
+    "section": "Nombor dan Operasi",
+    "codes": [
+      "1.6.3",
+      "1.6.4",
+      "1.7.1",
+      "1.8.1",
+      "1.8.2"
+    ],
+    "chars": 1124,
+    "text": "hingga tiga nombor dalam lingkungan\n1 000 000.\n1.6.3 Menyelesaikan ayat matematik darab bagi\nsebarang nombor hingga enam digit dengan\nnombor hingga dua digit, 100 dan 1000, hasil\ndarabnya hingga 1 000 000.\n1.6.4 Menyelesaikan ayat matematik bahagi\nmelibatkan sebarang nombor dalam lingkungan\n1 000 000 dengan nombor hingga dua digit, 100\ndan 1000.\nNota:\nMulakan penolakan melibatkan dua nombor.\nCadangan Aktiviti:\nGunakan bahan konkrit, gambar, garis nombor\ndan pengiraan secara mental aritmetik untuk\nmewakilkan proses pengiraan.\n1.7 Operasi bergabung 1.7.1 Mengira operasi bergabung, dalam lingkungan\n1 000 000, tanpa dan dengan tanda kurung:\n(i) Tambah dan darab\n(ii) Tolak dan darab\n(iii) Tambah dan bahagi\n(iv) Tolak dan bahagi\nNota:\nMulakan operasi bergabung tanpa mengumpul\nsemula.\nCadangan Aktiviti:\nOperasi bergabung boleh melibatkan wang.\nKSSR MATEMATIK TAHUN 5\n35\nSTANDARD KANDUNGAN STANDARD PEMBELAJARAN CATATAN\n1.8 Penggunaan anu 1.8.1 Menentukan nilai satu anu bagi ayat matematik\ndarab melibatkan satu kali pendaraban dengan\nhasil darabnya hingga 1 000 000.\n1.8.2 Menentukan nilai satu anu bagi ayat matematik"
+  },
+  {
+    "id": "mt-y5-063",
+    "year": 5,
+    "section": "Nombor dan Operasi",
+    "codes": [
+      "1.9.1",
+      "1.9.2",
+      "1.9.3"
+    ],
+    "chars": 1101,
+    "text": "bahagi melibatkan sebarang nombor dengan\nnombor hingga dua digit, 100 dan 1000 dalam\nlingkungan 1 000 000.\nNota:\n Anu diwakili dengan huruf.\n Anu boleh berada di tiga kedudukan dalam\nayat matematik:\ni. a × 23 = 46\nii. 114 × b = 342\niii. 20 × 3 = c\n Mulakan nilai nombor yang kecil dahulu.\n1.9 Penyelesaian masalah 1.9.1 Menyelesaikan masalah melibatkan nombor\nbulat hingga 1 000 000 dalam situasi harian.\n1.9.2 Menyelesaikan masalah harian bagi operasi\nasas dan operasi bergabung, hasilnya dalam\nlingkungan 1 000 000.\n1.9.3 Menyelesaikan masalah operasi darab dan\nbahagi dalam situasi harian melibatkan satu\nanu.\nCadangan Aktiviti:\n Mulakan nilai nombor yang kecil dahulu.\n Gunakan Model Polya dalam penyelesaian\nmasalah:\n1. Memahami dan mentafsirkan masalah;\n2. Merancang strategi penyelesaian;\n3. Melaksanakan strategi; dan\n4. Menyemak jawapan.\n Gunakan pelbagai strategi penyelesaian\nmasalah seperti mengenal pasti pola, membuat\njadual, bekerja dari belakang, melukis gambar\nrajah dan mencuba situasi lebih mudah.\n Gunakan pelbagai strategi PdP seperti\npendekatan STEM, pembelajaran masteri,"
+  },
+  {
+    "id": "mt-y5-064",
+    "year": 5,
+    "section": "Nombor dan Operasi",
+    "codes": [],
+    "chars": 1100,
+    "text": "pembelajaran kontekstual dan pendekatan\nmodular.\nKSSR MATEMATIK TAHUN 5\n36\nSTANDARD PRESTASI\nTAHAP PENGUASAAN TAFSIRAN\n1 Membaca ayat matematik yang melibatkan operasi asas dan operasi bergabung tanpa dan dengan tanda\nkurung.\n2  Mengenal pasti nombor perdana.\n Menerangkan prosedur bagi operasi asas dan operasi bergabung tanpa dan dengan tanda kurung.\n3\n Menentukan nilai nombor termasuk menganggar, membundar dan melengkapkan pola nombor\nhingga 1 000 000.\n Menentukan kewajaran jawapan dan menyelesaikan ayat matematik yang melibatkan operasi\nasas dan operasi bergabung tanpa dan dengan tanda kurung.\n4 Menyelesaikan masalah harian rutin melibatkan nombor bulat, operasi asas dan operasi bergabung tanpa dan\ndengan tanda kurung hingga 1 000 000.\n5 Menyelesaikan masalah harian rutin melibatkan nombor bulat, operasi asas dan operasi bergabung\ntanpa dan dengan tanda kurung hingga 1 000 000 dengan pelbagai strategi.\n6 Menyelesaikan masalah harian bukan rutin melibatkan nombor bulat, operasi asas dan operasi bergabung\ntanpa dan dengan tanda kurung hingga 1 000 000 secara kreatif dan inovatif."
+  },
+  {
+    "id": "mt-y5-065",
+    "year": 5,
+    "section": "Nombor dan Operasi",
+    "codes": [
+      "2.1.1",
+      "2.2.1",
+      "2.2.2",
+      "2.2.3"
+    ],
+    "chars": 1141,
+    "text": "KSSR MATEMATIK TAHUN 5\n37\nBIDANG PEMBELAJARAN\nNOMBOR DAN OPERASI\nTAJUK\n2.0 PECAHAN, PERPULUHAN DAN PERATUS\nObjektif\nMembolehkan murid:\n Mengaitkan pecahan, perpuluhan dan peratus dalam kehidupan harian.\n Mengaplikasi pengetahuan dan kemahiran matematik dalam menyelesaikan\nmasalah berkaitan pecahan, perpuluhan dan peratus.\n Membuat penaakulan, membuat perkaitan, membuat perwakilan, membuat\npenerokaan, berkomunikasi dan menggunakan teknologi dalam menyelesaikan\nmasalah berkaitan pecahan, perpuluhan dan peratus.\nKSSR MATEMATIK TAHUN 5\n38\n2.0 PECAHAN, PERPULUHAN DAN PERATUS\nSTANDARD KANDUNGAN STANDARD PEMBELAJARAN CATATAN\n2.1 Pecahan\nMurid boleh:\n2.1.1 Mendarab pecahan bagi dua nombor\nmelibatkan nombor bulat, pecahan wajar dan\nnombor bercampur.\nNota:\nPecahan dengan penyebutnya hingga 10.\nCadangan Aktiviti:\nGunakan bahan konkrit, gambar rajah dan\nperisian.\n2.2 Perpuluhan 2.2.1 Pembundaran perpuluhan hingga tiga tempat\nperpuluhan.\n2.2.2 Menyelesaikan ayat matematik operasi\nbergabung tambah dan tolak perpuluhan hingga\ntiga tempat perpuluhan.\n2.2.3 Mendarab perpuluhan hingga tiga tempat\nperpuluhan dengan nombor hingga dua digit,"
+  },
+  {
+    "id": "mt-y5-066",
+    "year": 5,
+    "section": "Nombor dan Operasi",
+    "codes": [
+      "2.2.4",
+      "2.3.1",
+      "2.3.2",
+      "2.4.1"
+    ],
+    "chars": 1105,
+    "text": "100 dan 1000.\n2.2.4 Membahagi perpuluhan dengan nombor hingga\ndua digit,100, 1000, hasil bahaginya hingga tiga\ntempat perpuluhan.\nNota:\nPembundaran boleh melibatkan wang, ukuran\ndan sukatan.\nCadangan Aktiviti:\nGunakan gambar rajah, garis nombor dan\nperisian.\n2.3 Peratus 2.3.1 Menukar nombor bercampur kepada peratus\ndan sebaliknya.\n2.3.2 Mengira suatu kuantiti daripada peratus hingga\nmelebihi 100% dan sebaliknya.\nCadangan Aktiviti:\n Gunakan pelbagai strategi.\n Gunakan petak seratus dan lipatan kertas.\nKSSR MATEMATIK TAHUN 5\n39\nSTANDARD KANDUNGAN STANDARD PEMBELAJARAN CATATAN\n2.4 Penyelesaian masalah 2.4.1 Menyelesaikan masalah harian melibatkan\npecahan, perpuluhan dan peratus.\nCadangan Aktiviti:\n Gunakan Model Polya dalam penyelesaian\nmasalah seperti berikut:\n1. Memahami dan mentafsirkan masalah;\n2. Merancang strategi penyelesaian;\n3. Melaksanakan strategi; dan\n4. Menyemak jawapan.\n Gunakan pelbagai strategi penyelesaian\nmasalah seperti melukis gambar rajah, dan\nmembuat jadual atau senarai secara\nbersistem.\n Gunakan pelbagai strategi PdP seperti\npendekatan modular, pendekatan STEM dan"
+  },
+  {
+    "id": "mt-y5-067",
+    "year": 5,
+    "section": "Nombor dan Operasi",
+    "codes": [],
+    "chars": 1136,
+    "text": "pembelajaran berasaskan masalah.\nKSSR MATEMATIK TAHUN 5\n40\nSTANDARD PRESTASI\nTAHAP PENGUASAAN TAFSIRAN\n1 Membaca ayat matematik melibatkan pecahan, perpuluhan dan peratus.\n2  Menukar pecahan dan nombor bercampur kepada peratus.\n Membundar perpuluhan.\n3\n Mendarab pecahan melibatkan nombor bulat, pecahan wajar dan nombor bercampur.\n Menentukan kewajaran jawapan dalam penyelesaian ayat matematik operasi asas dan operasi bergabung\nmelibatkan perpuluhan.\n Mengira kuantiti daripada peratus dan sebaliknya.\n4 Menyelesaikan masalah harian rutin melibatkan pecahan, perpuluhan dan peratus.\n5 Menyelesaikan masalah harian rutin melibatkan pecahan, perpuluhan dan peratus dengan pelbagai strategi.\n6 Menyelesaikan masalah harian bukan rutin melibatkan pecahan, perpuluhan dan peratus secara kreatif dan\ninovatif.\nKSSR MATEMATIK TAHUN 5\n41\nBIDANG PEMBELAJARAN\nNOMBOR DAN OPERASI\nTAJUK\n3.0 WANG\nObjektif\nMembolehkan murid:\n Menghubungkaitkan penggunaan wang dalam kehidupan harian.\n Mengaplikasi pengetahuan dan kemahiran pendidikan kewangan dalam kehidupan\nharian.\n Membuat penaakulan dan membuat penerokaan dalam kehidupan harian bagi"
+  },
+  {
+    "id": "mt-y5-068",
+    "year": 5,
+    "section": "Nombor dan Operasi",
+    "codes": [
+      "3.1.1",
+      "3.1.2",
+      "3.1.3",
+      "3.1.4",
+      "3.2.1"
+    ],
+    "chars": 1134,
+    "text": "memberi manfaat demi masa depan.\n Berkomunikasi, membuat perkaitan dan menyelesaikan masalah yang melibatkan\nkewangan.\n Membentuk ciri-ciri dan amalan keusahawanan.\nKSSR MATEMATIK TAHUN 5\n42\n3.0 WANG\nSTANDARD KANDUNGAN STANDARD PEMBELAJARAN CATATAN\n3.1 Operasi asas\nmelibatkan wang\nMurid boleh:\n3.1.1 Menyelesaikan ayat matematik tambah hingga\ntiga nilai wang dan hasil tambahnya hingga\nRM1 000 000.\n3.1.2 Menyelesaikan ayat matematik tolak\nmelibatkan dua nilai wang daripada satu nilai\nwang dalam lingkungan RM1 000 000.\n3.1.3 Menyelesaikan ayat matematik darab\nmelibatkan nilai wang dengan nombor hingga\ndua digit, 100, 1000 dan hasil darabnya hingga\nRM1 000 000.\n3.1.4 Menyelesaikan ayat matematik bahagi\nmelibatkan nilai wang dalam lingkungan\nRM1 000 000 dengan nombor hingga dua digit,\n100 dan 1000.\nCadangan Aktiviti:\n Gunakan wang contoh, gambar, garis\nnombor, perisian dan pengiraan secara\nmental untuk mewakilkan pengiraan\nsebarang operasi asas.\n Gunakan strategi PdP simulasi dan\npermainan.\n3.2 Operasi bergabung\nmelibatkan wang\n3.2.1 Menyelesaikan ayat matematik bagi operasi\nbergabung melibatkan wang, dalam lingkungan"
+  },
+  {
+    "id": "mt-y5-069",
+    "year": 5,
+    "section": "Nombor dan Operasi",
+    "codes": [
+      "3.3.1",
+      "3.3.2",
+      "3.4.1",
+      "3.4.2",
+      "3.5.1"
+    ],
+    "chars": 1138,
+    "text": "RM1 000 000, tanpa dan dengan tanda kurung:\n(i) Tambah dan darab\n(ii) Tolak dan darab\n(iii) Tambah dan bahagi\n(iv) Tolak dan bahagi\nCadangan Aktiviti:\nGunakan wang contoh, gambar, garis nombor,\nperisian dan pengiraan secara mental untuk\nmewakilkan pengiraan operasi bergabung.\nKSSR MATEMATIK TAHUN 5\n43\nSTANDARD KANDUNGAN STANDARD PEMBELAJARAN CATATAN\n3.3 Simpanan dan\npelaburan\n3.3.1 Menerangkan maksud simpanan dan pelaburan.\n3.3.2 Menerangkan maksud faedah mudah dan\nfaedah kompaun dalam simpanan.\nNota:\n Memperkenalkan dividen dan bonus dalam\npelaburan.\n Menerangkan pertambahan dan pengurangan\nnilai sesuatu simpanan dan pelaburan.\n3.4 Kredit dan pengurusan\nhutang\n3.4.1 Menerangkan maksud kredit dan hutang.\n3.4.2 Menerangkan perbezaan harga barangan\nsekiranya pembelian secara kredit dan tunai.\nNota:\n Kredit sebagai fasiliti.\n Menerangkan peranan faedah ke atas\npinjaman.\n Menerangkan mengapa penggunaan kad\nkredit merupakan satu cara berhutang.\n3.5 Penyelesaian masalah 3.5.1 Menyelesaikan masalah melibatkan wang dalam\nlingkungan RM1 000 000 dalam situasi harian.\nCadangan Aktiviti:\n Gunakan Model Polya dalam penyelesaian"
+  },
+  {
+    "id": "mt-y5-070",
+    "year": 5,
+    "section": "Nombor dan Operasi",
+    "codes": [],
+    "chars": 922,
+    "text": "masalah:\n1. Memahami dan mentafsirkan masalah;\n2. Merancang strategi penyelesaian;\n3. Melaksanakan strategi; dan\n4. Menyemak jawapan.\n Gunakan pelbagai strategi penyelesaian\nmasalah seperti mencuba kes lebih mudah dan\ncuba jaya.\n Gunakan pelbagai strategi PdP seperti\nsimulasi, pembelajaran masteri, pembelajaran\nkontekstual dan pembelajaran berasaskan\nprojek.\nKSSR MATEMATIK TAHUN 5\n44\nSTANDARD PRESTASI\nTAHAP PENGUASAAN TAFSIRAN\n1\nMenyatakan maksud simpanan dan pelaburan.\n2 Menjelaskan faedah mudah dan faedah kompaun dalam simpanan.\n3 Menentukan kewajaran jawapan, dan menyelesaikan ayat matematik operasi asas dan operasi bergabung\nmelibatkan wang.\n4 Menyelesaikan masalah harian rutin melibatkan wang.\n5 Menyelesaikan masalah harian rutin melibatkan wang dengan pelbagai strategi.\n6 Menyelesaikan masalah harian bukan rutin melibatkan wang secara kreatif dan inovatif.\nKSSR MATEMATIK TAHUN 5\n45\nBIDANG PEMBELAJARAN"
+  },
+  {
+    "id": "mt-y5-071",
+    "year": 5,
+    "section": "Sukatan dan Geometri",
+    "codes": [
+      "4.1.1",
+      "4.2.1",
+      "4.2.2"
+    ],
+    "chars": 1132,
+    "text": "SUKATAN DAN GEOMETRI\nTAJUK\n4.0 MASA DAN WAKTU\nObjektif\nMembolehkan murid:\n Mengaplikasi pengetahuan dan kemahiran matematik dalam menyelesaikan\nmasalah berkaitan masa dan waktu.\n Membuat penaakulan, perkaitan dan perwakilan serta menggunakan teknologi\ndalam menyelesaikan masalah berkaitan masa dan waktu.\n Menguruskan masa dan waktu dengan efektif dalam kehidupan harian.\nKSSR MATEMATIK TAHUN 5\n46\n4.0 MASA DAN WAKTU\nSTANDARD KANDUNGAN STANDARD PEMBELAJARAN CATATAN\n4.1 Tempoh masa\nMurid boleh:\n4.1.1 Menentukan tempoh masa melibatkan:\n(i) Hari dan jam\n(ii) Bulan dan hari\n(iii) Tahun, bulan dan hari\nNota:\n Memperkenalkan tahun lompat.\n Tempoh masa melibatkan (ii) dan (iii) dikira\ndalam hari sahaja.\n4.2 Perkaitan dalam masa 4.2.1 Menukar unit masa melibatkan pecahan:\n(i) Jam ke minit\n(ii) Hari ke jam\n(iii) Tahun ke bulan\n(iv) Dekad ke tahun\n(v) Abad ke dekad\n(vi) Abad ke tahun\n4.2.2 Menukar unit masa melibatkan perpuluhan:\n(i) Jam ke minit\n(ii) Hari ke jam\n(iii) Tahun ke bulan\n(iv) Dekad ke tahun\n(v) Abad ke dekad\n(vi) Abad ke tahun\nNota:\n Jawapan mesti dalam nombor bulat.\n Pecahan hanya melibatkan unit yang lebih"
+  },
+  {
+    "id": "mt-y5-072",
+    "year": 5,
+    "section": "Sukatan dan Geometri",
+    "codes": [
+      "4.3.1",
+      "4.3.2",
+      "4.4.1"
+    ],
+    "chars": 1112,
+    "text": "besar.\n4.3 Operasi asas\nmelibatkan masa\n4.3.1 Menyelesaikan ayat matematik tambah dan\ntolak masa melibatkan pecahan;\n(i) jam dan minit,\n(ii) hari dan jam,\n(iii) tahun dan bulan,\n(iv) dekad dan tahun,\n(v) abad dan dekad,\n(vi) abad dan tahun,\ntanpa dan dengan melibatkan penukaran unit.\nNota:\nOperasi tambah dan tolak melibatkan pecahan\ndan perpuluhan boleh melibatkan pecahan,\nperpuluhan dan peratus.\nKSSR MATEMATIK TAHUN 5\n47\nSTANDARD KANDUNGAN STANDARD PEMBELAJARAN CATATAN\n4.3.2 Menyelesaikan ayat matematik tambah dan\ntolak masa melibatkan perpuluhan;\n(i) jam dan minit,\n(ii) hari dan jam,\n(iii) tahun dan bulan,\n(iv) dekad dan tahun,\n(v) abad dan dekad,\n(vi) abad dan tahun,\ntanpa dan dengan melibatkan penukaran unit.\n4.4 Penyelesaian masalah 4.4.1 Menyelesaikan masalah berkaitan masa dan\nwaktu dalam situasi harian.\nCadangan Aktiviti:\n Gunakan Model Polya dalam penyelesaian\nmasalah:\n1. Memahami dan mentafsirkan masalah;\n2. Merancang strategi penyelesaian;\n3. Melaksanakan strategi; dan\n4. Menyemak jawapan.\n Gunakan pelbagai strategi penyelesaian\nmasalah seperti mencuba kes lebih mudah\ndan cuba jaya."
+  },
+  {
+    "id": "mt-y5-073",
+    "year": 5,
+    "section": "Sukatan dan Geometri",
+    "codes": [],
+    "chars": 1107,
+    "text": " Gunakan pelbagai strategi PdP seperti\nsimulasi, pembelajaran masteri, pembelajaran\nkontekstual dan pembelajaran berasaskan\nprojek.\nKSSR MATEMATIK TAHUN 5\n48\nSTANDARD PRESTASI\nTAHAP PENGUASAAN TAFSIRAN\n1 Menyatakan tempoh melibatkan unit masa.\n2 Menukar unit masa dalam bentuk pecahan dan perpuluhan.\n3 Menentukan kewajaran jawapan dan menyelesaikan ayat matematik tambah dan tolak masa melibatkan\npecahan dan perpuluhan.\n4 Menyelesaikan masalah harian rutin melibatkan masa dan waktu.\n5 Menyelesaikan masalah harian rutin melibatkan masa dan waktu dengan pelbagai strategi.\n6 Menyelesaikan masalah harian bukan rutin melibatkan masa dan waktu secara kreatif dan inovatif.\nKSSR MATEMATIK TAHUN 5\n49\nBIDANG PEMBELAJARAN\nSUKATAN DAN GEOMETRI\nTAJUK\n5.0 UKURAN DAN SUKATAN\nObjektif\nMembolehkan murid:\n Mengaplikasi pengetahuan dan kemahiran matematik bagi menyelesaikan\nmasalah berkaitan ukuran dan sukatan.\n Membuat penaakulan, membuat perkaitan, membuat perwakilan, membuat\npenerokaan, berkomunikasi dan menggunakan teknologi dalam menyelesaikan\nmasalah berkaitan ukuran dan sukatan.\nKSSR MATEMATIK TAHUN 5"
+  },
+  {
+    "id": "mt-y5-074",
+    "year": 5,
+    "section": "Sukatan dan Geometri",
+    "codes": [
+      "5.1.1",
+      "5.1.2",
+      "5.1.3",
+      "5.1.4",
+      "5.1.5",
+      "5.1.6"
+    ],
+    "chars": 1100,
+    "text": "50\n5.0 UKURAN DAN SUKATAN\nSTANDARD KANDUNGAN STANDARD PEMBELAJARAN CATATAN\n5.1 Panjang\nMurid boleh:\n5.1.1 Menukar unit ukuran panjang melibatkan;\n(i) milimeter dan sentimeter,\n(ii) sentimeter dan meter,\n(iii) meter dan kilometer,\ndalam perpuluhan hingga tiga tempat\nperpuluhan.\n5.1.2 Menukar unit ukuran panjang melibatkan;\n(i) milimeter dan sentimeter,\n(ii) sentimeter dan meter,\n(iii) meter dan kilometer,\ndalam pecahan.\n5.1.3 Menambah hingga tiga ukuran panjang\nmelibatkan perpuluhan dan pecahan tanpa dan\ndengan penukaran unit.\n5.1.4 Menolak melibatkan hingga tiga ukuran panjang\nmelibatkan perpuluhan dan pecahan tanpa dan\ndengan penukaran unit.\n5.1.5 Mendarab ukuran panjang melibatkan\nperpuluhan dan pecahan dengan nombor\nhingga dua digit, 100 dan 1000 tanpa dan\ndengan penukaran unit.\n5.1.6 Membahagi ukuran panjang melibatkan\nperpuluhan dan pecahan dengan nombor\nhingga dua digit, 100 dan 1000 tanpa dan\ndengan penukaran unit.\nCadangan Aktiviti:\n Gunakan objek sebenar dan perisian bagi\npenukaran unit ukuran panjang.\n Gunakan pelbagai strategi pengiraan bagi\nmenyelesaikan ayat matematik."
+  },
+  {
+    "id": "mt-y5-075",
+    "year": 5,
+    "section": "Sukatan dan Geometri",
+    "codes": [
+      "5.2.1",
+      "5.2.2",
+      "5.2.3",
+      "5.2.4",
+      "5.2.5",
+      "5.3.1",
+      "5.3.2",
+      "5.3.3"
+    ],
+    "chars": 1138,
+    "text": "KSSR MATEMATIK TAHUN 5\n51\nSTANDARD KANDUNGAN STANDARD PEMBELAJARAN CATATAN\n5.2 Jisim 5.2.1 Menukar unit jisim melibatkan gram dan kilogram\ndalam bentuk pecahan dan perpuluhan.\n5.2.2 Menambah hingga tiga jisim dalam pecahan dan\nperpuluhan tanpa dan dengan penukaran unit.\n5.2.3 Menolak melibatkan hingga tiga jisim dalam\npecahan dan perpuluhan tanpa dan dengan\npenukaran unit.\n5.2.4 Mendarab jisim dalam pecahan dan perpuluhan\ndengan nombor hingga dua digit, 100 dan 1000\ntanpa dan dengan penukaran unit hingga tiga\ntempat perpuluhan.\n5.2.5 Membahagi jisim dalam pecahan dan perpuluhan\ndengan nombor hingga dua digit, 100 dan 1000\ntanpa dan dengan penukaran unit.\nCadangan Aktiviti:\n Gunakan objek sebenar dan perisian bagi\npenukaran unit jisim.\n Gunakan pelbagai strategi pengiraan bagi\nmenyelesaikan ayat matematik.\n5.3 Isi padu cecair 5.3.1 Menukar unit isi padu melibatkan mililiter dan liter\ndalam bentuk pecahan dan perpuluhan.\n5.3.2 Menambah hingga tiga isi padu cecair dalam\npecahan dan perpuluhan tanpa dan dengan\npenukaran unit.\n5.3.3 Menolak melibatkan hingga tiga isi padu cecair\ndalam pecahan dan perpuluhan tanpa dan dengan"
+  },
+  {
+    "id": "mt-y5-076",
+    "year": 5,
+    "section": "Sukatan dan Geometri",
+    "codes": [
+      "5.3.4",
+      "5.3.5",
+      "5.4.1"
+    ],
+    "chars": 1153,
+    "text": "penukaran unit.\n5.3.4 Mendarab isi padu cecair dalam pecahan dan\nperpuluhan dengan nombor hingga dua digit, 100\ndan 1000 tanpa dan dengan penukaran unit.\n5.3.5 Membahagi isi padu cecair dalam pecahan dan\nperpuluhan dengan nombor hingga dua digit, 100\ndan 1000 tanpa dan dengan penukaran unit.\nCadangan Aktiviti:\n Gunakan objek sebenar dan perisian bagi\npenukaran unit isi padu cecair.\n Gunakan pelbagai strategi pengiraan bagi\nmenyelesaikan ayat matematik.\nKSSR MATEMATIK TAHUN 5\n52\nSTANDARD KANDUNGAN STANDARD PEMBELAJARAN CATATAN\n5.4 Penyelesaian masalah\n5.4.1 Menyelesaikan masalah berkaitan ukuran dan\nsukatan dalam situasi harian.\nCadangan Aktiviti:\n Gunakan Model Polya dalam penyelesaian\nmasalah seperti berikut:\n1. Memahami dan mentafsirkan masalah;\n2. Merancang strategi penyelesaian;\n3. Melaksanakan strategi; dan\n4. Menyemak jawapan.\n Gunakan pelbagai strategi penyelesaian\nmasalah seperti menaakul secara mantik dan\nmengenal pasti pola.\n Gunakan pelbagai strategi PdP seperti\nsimulasi, pendekatan STEM.\nKSSR MATEMATIK TAHUN 5\n53\nSTANDARD PRESTASI\nTAHAP PENGUASAAN TAFSIRAN\n1 Menukar unit ukuran dan sukatan dalam perpuluhan dan pecahan."
+  },
+  {
+    "id": "mt-y5-077",
+    "year": 5,
+    "section": "Sukatan dan Geometri",
+    "codes": [],
+    "chars": 1104,
+    "text": "2 Menerangkan langkah-langkah menyelesaikan ayat matematik pecahan dan perpuluhan melibatkan ukuran\ndan sukatan.\n3 Menentukan kewajaran jawapan dan menyelesaikan ayat matematik pecahan dan perpuluhan melibatkan\nukuran dan sukatan.\n4 Menyelesaikan masalah harian rutin melibatkan ukuran dan sukatan.\n5 Menyelesaikan masalah harian rutin melibatkan ukuran dan sukatan dengan pelbagai strategi.\n6 Menyelesaikan masalah harian bukan rutin melibatkan ukuran dan sukatan secara kreatif dan inovatif.\nKSSR MATEMATIK TAHUN 5\n54\nKSSR MATEMATIK TAHUN 5\n55\nBIDANG PEMBELAJARAN\nSUKATAN DAN GEOMETRI\nTAJUK\n6.0 RUANG\nObjektif\nMembolehkan murid:\n Mengaplikasi pengetahuan dan kemahiran matematik dalam menyelesaikan\nmasalah berkaitan ruang.\n Menghargai dan menghayati keindahan matematik dengan pelbagai bentuk yang\nterhasil dari prisma dan bukan prisma.\n Membuat penaakulan, membuat perkaitan, membuat perwakilan, berkomunikasi\ndan menggunakan teknologi dalam menyelesaikan masalah berkaitan ruang.\nKSSR MATEMATIK TAHUN 5\n56\n6.0 RUANG\nSTANDARD KANDUNGAN STANDARD PEMBELAJARAN CATATAN\n6.1 Poligon sekata\nMurid boleh:"
+  },
+  {
+    "id": "mt-y5-078",
+    "year": 5,
+    "section": "Sukatan dan Geometri",
+    "codes": [
+      "6.1.1",
+      "6.2.1",
+      "6.3.1",
+      "6.3.2",
+      "6.4.1",
+      "6.5.1"
+    ],
+    "chars": 1118,
+    "text": "6.1.1 Menyatakan ciri-ciri poligon sekata dengan\nmerujuk kepada sisi, penjuru, paksi simetri,\nsudut dan pepenjuru.\nNota:\nMemperkenalkan sudut pedalaman.\n6.2 Sudut 6.2.1 Mengukur sudut pada poligon sekata hingga\nlapan sisi.\nNota:\nMengukur sudut pedalaman sahaja.\nPengukuran menggunakan protraktor/jangka\nsudut.\n6.3 Perimeter dan luas 6.3.1 Menentukan perimeter gabungan dua bentuk\npoligon sekata hingga lapan sisi termasuk segi\ntiga bersudut tegak, segi tiga sama kaki dan\nsegi empat tepat.\n6.3.2 Menentukan luas gabungan dua bentuk\nmelibatkan segi empat tepat, segi empat sama,\nsegi tiga sama sisi, segi tiga sama kaki dan\nsegi tiga bersudut tegak.\nCadangan Aktiviti:\nGunakan objek sebenar, model dan gambar rajah\nuntuk mengukuhkan kefahaman murid.\n6.4 Isi padu pepejal 6.4.1 Menentukan isi padu gabungan dua bentuk\nmelibatkan kubus dan kuboid.\nCadangan Aktiviti:\nGunakan objek sebenar, model dan gambar rajah\nuntuk mengukuhkan kefahaman murid.\n6.5 Penyelesaian masalah 6.5.1 Menyelesaikan masalah melibatkan ruang. Cadangan Aktiviti:\n Gunakan pelbagai strategi penyelesaian\nmasalah seperti menaakul secara mantik dan"
+  },
+  {
+    "id": "mt-y5-079",
+    "year": 5,
+    "section": "Sukatan dan Geometri",
+    "codes": [],
+    "chars": 821,
+    "text": "mengenal pasti pola.\n Gunakan pelbagai strategi PdP seperti\nsimulasi, pendekatan STEM.\nKSSR MATEMATIK TAHUN 5\n57\nSTANDARD PRESTASI\nTAHAP PENGUASAAN TAFSIRAN\n1 Menamakan bentuk-bentuk yang terdapat dalam gabungan dua bentuk.\n2 Menerangkan langkah-langkah mengukur sudut pada poligon sekata.\n3\n Mengukur sudut pada poligon sekata.\n Mengira perimeter gabungan dua bentuk poligon sekata.\n Mengira luas gabungan dua bentuk melibatkan segi empat dan segi tiga.\n Mengira isi padu gabungan dua bentuk melibatkan kubus dan kuboid.\n4 Menyelesaikan masalah rutin melibatkan ruang.\n5 Menyelesaikan masalah rutin melibatkan ruang dengan pelbagai strategi.\n6 Menyelesaikan masalah bukan rutin melibatkan ruang secara kreatif dan inovatif.\nKSSR MATEMATIK TAHUN 5\n58\nBIDANG PEMBELAJARAN\nKSSR MATEMATIK TAHUN 5\n59\nBIDANG PEMBELAJARAN"
+  },
+  {
+    "id": "mt-y5-080",
+    "year": 5,
+    "section": "Perkaitan dan Algebra",
+    "codes": [
+      "7.1.1",
+      "7.2.1",
+      "7.3.1"
+    ],
+    "chars": 1099,
+    "text": "PERKAITAN DAN ALGEBRA\nTAJUK\n7.0 KOORDINAT, NISBAH DAN KADARAN\nObjektif\nMembolehkan murid:\n Mengaplikasi pengetahuan dan kemahiran matematik dalam menyelesaikan\nmasalah berkaitan koordinat, nisbah dan kadaran.\n Menghargai dan menghayati keindahan matematik.\n Membuat penaakulan, membuat perkaitan, membuat perwakilan, berkomunikasi\ndan menggunakan teknologi bagi menyelesaikan situasi yang dihadapi dalam\nkoordinat, nisbah dan kadaran.\nKSSR MATEMATIK TAHUN 5\n60\n7.0 KOORDINAT, NISBAH DAN KADARAN\nSTANDARD KANDUNGAN STANDARD PEMBELAJARAN CATATAN\n7.1 Koordinat pada sukuan\npertama\nMurid boleh:\n7.1.1 Menentukan jarak mengufuk dan jarak\nmencancang antara dua koordinat.\nNota:\nMelibatkan pengiraan jarak mengufuk dan jarak\nmencancang.\n7.2 Nisbah 7.2.1 Mewakilkan nisbah dua kuantiti dalam bentuk\na : b yang melibatkan nisbah:\n(i) Bahagian kepada bahagian\n(ii) Bahagian kepada keseluruhan\n(iii) Keseluruhan kepada bahagian\nNota:\nUnit nisbah mesti sama.\nCadangan Aktiviti:\nMenggunakan bahan konkrit dan bukan konkrit\nuntuk mewakilkan nisbah.\n7.3 Kadaran 7.3.1 Menentukan suatu nilai yang tidak diketahui"
+  },
+  {
+    "id": "mt-y5-081",
+    "year": 5,
+    "section": "Perkaitan dan Algebra",
+    "codes": [
+      "7.4.1"
+    ],
+    "chars": 1159,
+    "text": "menggunakan kadaran.\nNota:\nGunakan pelbagai kaedah termasuk kaedah\nunitari.\nCadangan Aktiviti:\nMenggunakan bahan konkrit, pengiraan secara\nmental aritmetik\n7.4 Penyelesaian masalah 7.4.1 Menyelesaikan masalah melibatkan koordinat,\nnisbah dan kadaran dalam situasi harian.\nCadangan Aktiviti:\nGunakan pelbagai strategi penyelesaian masalah\nseperti menggunakan analogi dan melukis\ngambar rajah.\nKSSR MATEMATIK TAHUN 5\n61\nSTANDARD PRESTASI\nTAHAP PENGUASAAN TAFSIRAN\n1  Menyatakan kedudukan paksi-x dan paksi-y pada sukuan pertama.\n Menyebut nisbah yang diberi.\n2\n Menerangkan langkah-langkah dalam menentukan jarak mengufuk dan jarak mencancang antara dua\ntitik.\n Mewakilkan nisbah dua kuantiti.\n3\n Menentukan kewajaran jawapan bagi penyelesaian yang melibatkan jarak mengufuk dan jarak\nmencancang antara dua titik.\n Menentukan kewajaran jawapan bagi perwakilan nisbah dua kuantiti.\n4 Menyelesaikan masalah rutin melibatkan koordinat, nisbah dan kadaran.\n5 Menyelesaikan masalah rutin melibatkan koordinat, nisbah dan kadaran dengan pelbagai strategi.\n6 Menyelesaikan masalah bukan rutin melibatkan koordinat, nisbah dan kadaran secara kreatif dan inovatif."
+  },
+  {
+    "id": "mt-y5-082",
+    "year": 5,
+    "section": "Statistik dan Kebarangkalian",
+    "codes": [
+      "8.1.1",
+      "8.2.1",
+      "8.3.1"
+    ],
+    "chars": 1134,
+    "text": "STATISTIK DAN KEBARANGKALIAN\nTAJUK\n8.0 PENGURUSAN DATA\nObjektif\nMembolehkan murid:\n Berkemahiran memperolehi maklumat daripada carta pai yang diberi.\n Mengaplikasi pengetahuan dan kemahiran matematik bagi menyelesaikan\nmasalah berkaitan pengurusan data.\n Membuat keputusan dan mengeluarkan idea bagi menjelaskan situasi yang\ndihadapi dalam kehidupan harian.\n Membuat penaakulan, membuat perkaitan, membuat perwakilan, berkomunikasi\ndan menggunakan teknologi dalam menyelesaikan masalah berkaitan\npengurusan data.\nKSSR MATEMATIK TAHUN 5\n64\n8.0 PENGURUSAN DATA\nSTANDARD KANDUNGAN STANDARD PEMBELAJARAN CATATAN\n8.1 Carta pai\nMurid boleh:\n8.1.1 Mentafsir carta pai.\nCadangan Aktiviti:\nGunakan carta pai yang diperolehi daripada\npelbagai sumber antaranya keratan akhbar,\nmajalah, jurnal dan laporan.\n8.2 Mod, median, min dan\njulat\n8.2.1 Mengenal dan menentukan mod, median, min,\ndan julat daripada data tak terkumpul.\nNota:\nMelibatkan piktograf, carta palang dan carta pai.\n8.3 Penyelesaian masalah 8.3.1 Menyelesaikan masalah melibatkan\npengurusan data dalam situasi harian.\nCadangan Aktiviti:\n Gunakan Model Polya dalam penyelesaian"
+  },
+  {
+    "id": "mt-y5-083",
+    "year": 5,
+    "section": "Statistik dan Kebarangkalian",
+    "codes": [],
+    "chars": 1135,
+    "text": "masalah seperti berikut:\n1. Memahami dan mentafsirkan masalah;\n2. Merancang strategi penyelesaian;\n3. Melaksanakan strategi; dan\n4. Menyemak jawapan.\n Gunakan pelbagai strategi penyelesaian\nmasalah seperti membuat jadual/carta atau\nsenarai secara bersistem dan melukis gambar\nrajah.\n Gunakan pelbagai strategi PdP seperti\npendekatan STEM dan pembelajaran\nberasaskan projek.\nKSSR MATEMATIK TAHUN 5\n65\nSTANDARD PRESTASI\nTAHAP PENGUASAAN TAFSIRAN\n1 Menyatakan maksud mod, median, min dan julat.\n2 Menerangkan langkah-langkah yang perlu bagi mentafsir data.\n3 Menentukan kewajaran jawapan bagi penyelesaian melibatkan pentafsiran data.\n4 Menyelesaikan masalah harian rutin melibatkan pengurusan data.\n5 Menyelesaikan masalah harian rutin melibatkan pengurusan data menggunakan pelbagai strategi.\n6 Menyelesaikan masalah harian bukan rutin melibatkan pengurusan data secara kreatif dan inovatif.\n67\nPANEL PENGGUBAL\n1. Dr. Rusilawati binti Othman Bahagian Pembangunan Kurikulum\n2. Mazlan bin Awi Bahagian Pembangunan Kurikulum\n3. Kumaresan a/l M. Subramaniam Bahagian Pembangunan Kurikulum\n4. Dr. Hoi Sim Min Bahagian Pembangunan Kurikulum"
+  },
+  {
+    "id": "mt-y5-084",
+    "year": 5,
+    "section": "Statistik dan Kebarangkalian",
+    "codes": [],
+    "chars": 1103,
+    "text": "5. Rabiatul Nazuha binti Mohd Bahagian Pembangunan Kurikulum\n6. Dr. Wong Li Li Bahagian Pembangunan Kurikulum\n7. Nor Fauziah binti Mat Jaafar Bahagian Pembangunan Kurikulum\n8. Che Azmai bin Talib PPD Hulu Terengganu, Kuala Berang, Terengganu\n9. Ismail binti Mokhtar PPD Kuala Selangor, Selangor\n10. Thesok Kumar a/l Nagaratennam PPD Larut Matang dan Selama, Perak\n11. Anidah binti Abd Rahman PPD Petaling Perdana, Selangor\n12. Mohd Bahaudin Bokhari bin Manaf PPW Sentul, Kuala Lumpur\n13. Datin Zaitun binti Othman IPGK Pendidikan Islam, Bangi, Selangor\n14. Ismizah binti Sapuan Sekolah Dalam Hospital Serdang, Selangor\n15. Tong Nget Tai SJK(C) Kiow Nam, Melaka\n16. Sadheeshkumar @ Kuang Leong Yee SJK(T) Vageesar, Kuala Selangor, Selangor\n17. Fariza Nurbaya binti Nordin SK Desa Pandan, Kuala Lumpur\n18. Sherliza binti Ismail SK Kampung Nyior, Terengganu\n19. Zarina binti Zainal SK Kem Terendak 1, Kem Terendak, Melaka\n20. Noraini Asra binti A Rahim SK Lembah Keramat, Kuala Lumpur\n21. Rahayu binti Abdul Rahman SK Putrajaya Presint 9(2), Putrajaya\n22. Zakiah Hanim binti Ahmad SK RU Rendang, Terengganu"
+  },
+  {
+    "id": "mt-y5-085",
+    "year": 5,
+    "section": "Statistik dan Kebarangkalian",
+    "codes": [],
+    "chars": 1156,
+    "text": "23. Salinah binti Maulud SK Seri Delima, W. P. Kuala Lumpur\n24. Abdullah bin Rani SK Tandop Besar, Kuala Nerang, Kedah\n68\nTURUT MENYUMBANG\n1. Sarifah binti Ahmad Bahagian Sumber dan Teknologi Pendidikan\n2. Mohd Sukri bin Mohd Ariffin Lembaga Peperiksaan\n3. Ramlee bin Mohamed JPN Johor\n4. Ishak bin Hassan JPN Kedah\n5. Mohd Yusof bin Ab Rahman JPN Melaka\n6. Siti Mazlifah binti Mahamadan JPN Perlis\n7. Ahmad Alfian bin Ahmad Fauzi PPD Hulu Langat, Selangor\n8. Sitti Junaida Ambo PPD Kota Kinabalu, Sabah\n9. Rozita binti Hasan PPD Kubang Pasu, Jitra, Kedah\n10. Radin Shazlina binti Jamil PPD Kuala Muda/Yan, Sungai Petani, Kedah\n11. Muhammad Suhairi bin Muhammad Room PPD Pasir Gudang, Johor\n12. Bathmasree a/p Nagendrarao PPD Petaling Perdana, Selangor\n13. Dr. Elango a/l Periasamy IPGK Pendidikan Teknik, Negeri Sembilan\n14. Dr. Kalaivani a/p Shanmugam IPGK Tuanku Bainun, Pulau Pinang\n15. Radin Muhd Imaduddin bin Radin Abdul Halim SMK Sijangkang Jaya, Telok Panglima Garang, Selangor\n16. Kavitha a/p Davaraju SJK(T) Rawang, Selangor\n17. Puspaveni a/p Tanappan SJK(T) Sentul, Kuala Lumpur\n18. Masyitah binti Md Tarmizi SK Binjul Dalam, Kuala Ketil, Kedah"
+  },
+  {
+    "id": "mt-y5-086",
+    "year": 5,
+    "section": "Statistik dan Kebarangkalian",
+    "codes": [],
+    "chars": 953,
+    "text": "19. Happyza bin Ahmad SK Pengkalan Taman Pinji Mewah, Lahat, Perak\n20. Suthagar a/l Subramonie SK Kampung Pendamar, Selangor\n21. Suraya binti Abdul Rahman SK Model Khas Bukit Jenun, Kedah\n22. Suhaila binti Ishak SK Serkam Darat, Melaka\nPENGHARGAAN\nPenasihat\nDr. Mohamed bin Abu Bakar\nDatin Dr. Ng Soo Boon\n- Pengarah\n- Timbalan Pengarah\n(Dasar dan Sains & Teknologi)\nPenasihat Editorial\nMohamed Zaki bin Abd. Ghani - Ketua Sektor\nHaji Naza Idris bin Saadon - Ketua Sektor\nMahyudin bin Ahmad - Ketua Sektor\nDr. Rusilawati binti Othman - Ketua Sektor\nMohd Faudzan bin Hamzah - Ketua Sektor\nFazlinah binti Said - Ketua Sektor\nMohamed Salim bin Taufix Rashidi - Ketua Sektor\nHaji Sofian Azmi bin Tajul Arus - Ketua Sektor\nPaizah binti Zakaria - Ketua Sektor\nHajah Norashikin binti Hashim - Ketua Sektor\nPenyelaras Teknikal Penerbitan dan Spesifikasi\nSaripah Faridah binti Syed Khalid\nMior Syazril bin Mohamed Sapawi\nPereka Grafik\nSiti Zulikha binti Zelkepli"
+  }
+]

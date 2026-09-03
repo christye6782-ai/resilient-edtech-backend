@@ -85,6 +85,11 @@ class RevisedLessonPlan(BaseModel):
     assessment: str = ""
     materials: List[str] = Field(default_factory=list)
     alignment_note: str = ""
+    # KBAT / HOTS — a required element of a Malaysian RPH. The Bloom's band the
+    # lesson targets, plus a couple of higher-order questions the teacher can
+    # actually ask in class.
+    kbat_level: str = ""
+    kbat: List[str] = Field(default_factory=list)
 
 class AuditorResult(BaseModel):
     revised_plan: RevisedLessonPlan
